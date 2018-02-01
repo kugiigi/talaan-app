@@ -1,0 +1,15 @@
+{
+    "name": "talaan.kugiigi",
+    "description": "A simple but powerful checklist app.",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Talaan",
+    "hooks": {
+        "talaan": {
+            "apparmor": "talaan/talaan.apparmor",
+            "desktop": "talaan/talaan.desktop"
+        }
+    },
+    "version": "2.30",
+    "maintainer": "Kugi Eusebio <kugi_igi@yahoo.com>",
+    "framework": "ubuntu-sdk-15.04.6"
+}

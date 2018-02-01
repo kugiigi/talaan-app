@@ -1,0 +1,562 @@
+import QtQuick 2.4
+import Ubuntu.Components 1.2
+import QtQuick.Layouts 1.1
+import Ubuntu.Components.Themes.Ambiance 1.3
+import "../components"
+import "../library"
+import Ubuntu.Components.ListItems 1.0 as ListItemOld
+import Ubuntu.Components.Popups 1.0
+import "../library/DataProcess.js" as DataProcess
+import "../library/ProcessFunc.js" as Process
+
+Page{
+    id: pageItems
+    title: currentChecklist
+    //flickable: null
+    property string pageMode
+    property string currentCategory
+    property string currentChecklist
+    property int currentID
+    property var arrItemsStatus: []
+    property int itemsTotal:mainView.listItems.modelChecklistItems.count
+    property int totalChecked
+    property bool hideChecked: false
+
+
+    head.actions: [
+            Action {
+                iconName: hideChecked === false ? "empty-symbolic" : "text-x-generic-symbolic"
+                text: i18n.tr("Hide Checked")
+                onTriggered:{
+                    hideChecked = !hideChecked;
+                    if(hideChecked === true){
+                        groupedList.model = filteredListItems
+                    }else{
+                        groupedList.model = mainView.listItems.modelChecklistItems
+                    }
+                }
+            }
+        ]
+    SortFilterModel {
+        id: filteredListItems
+        model: mainView.listItems.modelChecklistItems
+        sort.property: "name"
+        sort.order: Qt.AscendingOrder;
+        // case insensitive sorting
+        sortCaseSensitivity: Qt.CaseInsensitive
+        filter.property: "status"
+        filter.pattern: /0/
+    }
+
+    //functions
+    function loadChecklist(){
+        mainView.listItems.getItems(currentID)
+    }
+
+    function checkEmpty(){
+        if (mainView.listItems.modelChecklistItems.count === 0) {
+            emptyState.visible = true
+        } else {
+            emptyState.visible = false
+        }
+    }
+
+    function clearFields(){
+        textItemName.text = "";
+        textareaComment.text = "";
+    }
+
+    function getCheckedCount(){
+        var modelItems = mainView.listItems.modelChecklistItems
+        console.log("kinuha total checked")
+        totalChecked = 0;
+        for (var i = 0; i < modelItems.count; i++) {
+            //assign values to the array
+            if(modelItems.get(i).status === 1){
+                totalChecked++;
+            }
+        }
+    }
+
+    function checkComplete(){
+        if(itemsTotal === totalChecked){
+            return true
+        }else{
+            return false
+        }
+    }
+
+onActiveChanged: {
+    bottomEdge.edgeState = "collapsed";
+    clearFields();
+
+    if(active === true){
+        loadChecklist();
+        getCheckedCount();
+        checkEmpty();
+    }
+}
+
+
+    EmptyState {
+        id: emptyState
+        iconName: "stock_note"
+        title: i18n.tr("Checklist is Empty")
+        subTitle: i18n.tr(
+                      "Swipe from the bottom to add items")
+        anchors.centerIn: parent
+        shown: false //bottomEdge.edgeState === "collapsed"
+    }
+    PageBackGround {
+        id: pageBackground
+        bgOpacity: switch(settings.currentTheme){
+                       case "Default":
+                           0.6
+                           break;
+                       case "Ambiance":
+                           1.0
+                           break;
+                       case "SuruDark":
+                           1.0
+                           break;
+                       default:
+                           0.6
+                       }
+    }
+
+
+    ListItemActions {
+            id: leading
+            actions: Action {
+                iconName: "delete"
+                text: i18n.tr("Delete")
+                onTriggered: {
+                   groupedList.model.remove(currentIndex)
+                   DataProcess.deleteItem(currentID,labelName.text)
+                }
+            }
+        }
+    ListItemActions {
+            id: trailing
+
+            actions: [
+                Action {
+                    iconName: "edit"
+                    text: i18n.tr("Edit")
+                    onTriggered:{
+//                            labelName.visible = false
+//                            textName.forceActiveFocus();
+//                            textName.selectAll();
+                        bottomEdge.mode = "edit"
+                        bottomEdge.currentItem = labelName.text
+                        bottomEdge.currentComment = comments
+                        bottomEdge.edgeState = "expanded"
+                    }
+                }
+            ]
+        }
+        //ListView {
+    UbuntuListView {
+            id: groupedList
+
+            //height: contentHeight
+            //anchors { left: parent.left; right: parent.right }
+            anchors.fill: parent
+            interactive: true
+            model: mainView.listItems.modelChecklistItems
+            clip: true
+
+            delegate: //ListItemWithActions {
+               ListItem {
+                id: listWithActions
+                height: units.gu(9)
+                width: parent.width
+                color: "transparent"
+                highlightColor: "grey"
+                property int currentIndex: index
+                //divider.colorFrom : "red"
+                //divider.colorTo : "green"
+                contentItem.anchors{
+                    leftMargin: units.gu(2)
+                    rightMargin: units.gu(2)
+                    topMargin: units.gu(0.5)
+                    bottomMargin: units.gu(0.5)
+                }
+
+                onClicked: {
+                    if(pageMode === "talaan"){
+                    checkItem.checked = !checkItem.checked
+                    if(checkItem.checked){
+                        totalChecked++;
+
+                        if(checkComplete() === true){
+                            PopupUtils.open(dialog)
+                        }
+                    }else{
+                        totalChecked--;
+                    }
+                    console.log("TotalChecked: " + totalChecked)
+                    DataProcess.updateItemStatus(currentID,name,(checkItem.checked === true)? 1: 0);
+                }
+                }
+                leadingActions: leading
+                trailingActions: trailing
+
+                    Item{
+                        id: itemContents
+                        anchors.fill: parent
+                            CheckBox {
+                                id:checkItem
+                                checked: status
+                                enabled: pageMode === "talaan"? true : false
+                                anchors{
+                                    left: parent.left
+                                    verticalCenter: parent.verticalCenter
+                                }
+                            }
+
+                            Label{
+                                id: labelName
+                                text: name
+                                fontSize: "large"
+                                visible: true
+                                wrapMode: Text.WordWrap
+                                font.strikeout: checkItem.checked
+                                verticalAlignment: Text.AlignVCenter
+                                anchors{
+                                    left: checkItem.right
+                                    leftMargin: units.gu(2)
+                                    right: mouseComment.left
+                                    verticalCenter: parent.verticalCenter
+                                }
+                            }
+//                            TextField {
+//                                id: textName
+//                                visible: !labelName.visible
+//                                //placeholderText: i18n.tr("Enter checklist name")
+//                                hasClearButton: false
+//                                text: labelName.text
+//                                anchors{
+//                                    left: checkItem.right
+//                                    leftMargin: units.gu(2)
+//                                    right: mouseComment.left
+//                                    verticalCenter: parent.verticalCenter
+//                                }
+
+//                                style: TextFieldStyle {
+//                                            //overlaySpacing: 0
+//                                            //frameSpacing: 0
+//                                            background: Item {}
+//                                            //color: UbuntuColors.lightAubergine
+//                                        }
+//                                onActiveFocusChanged:{
+//                                    if(active === false){
+//                                        console.log("okay na");
+//                                        labelName.visible = true;
+//                                    }
+//                                }
+//                            }
+                            MouseArea{
+                                id: mouseComment
+                                visible: comments === "" ? false:true
+                                width: itemContents.height * 0.70
+                                height: width
+                                anchors{
+                                    top: parent.top
+                                    bottom: parent.bottom
+                                    right: parent.right
+                                    rightMargin: units.gu(2)
+                                }
+                                onClicked:{
+                                    PopupUtils.open(popoverComponent, mouseComment)
+                                }
+                                Icon {
+
+                                        name: "message"
+                                        color: "gray"
+                                        width: mouseComment.height /1.5
+                                        height: width
+                                        anchors.centerIn: parent
+                                }
+                            Component {
+                                id: popoverComponent
+                                Popover {
+                                    id: popover
+
+                                    Rectangle{
+                                        color: "#336600"
+                                        anchors.fill: parent
+                                    }
+
+                                    Column {
+                                        id: containerLayout
+
+                                        anchors {
+                                            left: parent.left
+                                            top: parent.top
+                                            right: parent.right
+                                        }
+                                        ListItemOld.Caption {
+                                            text: comments
+                                        }
+                                    }
+                                }
+                            }
+                            Component {
+                                id: dialog
+                                Dialog {
+                                    id: dialogue
+                                    title:  "You have completed this Checklist."
+                                    text: "You can view completed checklists from the History tab."
+                                    Button {
+                                        text: "Continue"
+                                        onClicked: {
+                                            PopupUtils.close(dialogue)
+                                            DataProcess.updateChecklistComplete(currentID);
+                                            pageStack.pop();
+                                        }
+                                    }
+//                                    Button {
+//                                        text: "Undo Last Item"
+//                                        onClicked: PopupUtils.close(dialogue)
+//                                    }
+                                }
+                            }
+                        }
+
+                }
+
+           }
+        }
+
+
+    DialogBottomEdge{
+        id: bottomEdge
+
+        property string mode: "add"
+        property string currentItem
+        property string currentComment
+
+        //hintSize: units.gu(6)
+        hintColor: UbuntuColors.green//"lightblue"
+        hintIconName: "go-up"
+        hintIconColor: "black"
+        bgColor: "black"
+        dialogHeight: units.gu(20)
+        bgOpacity: 0.7
+        actionButtonDistance: units.gu(10)
+        //dialogHeight: units.gu(10)
+        //dialogWidth: units.gu(5)
+
+        onEdgeStateChanged:{
+            if(edgeState === "expanded"){
+                textItemName.enabled = true;
+                textareaComment.enabled = true;
+                //timerFocus.start();
+                hintColor = UbuntuColors.red
+                if(bottomEdge.mode === "edit"){
+                    textItemName.text = currentItem;
+                    textareaComment.text = currentComment;
+                }
+               // textItemName.forceActiveFocus();
+            }else if(edgeState === "collapsed"){
+                textItemName.enabled = false;
+                textareaComment.enabled = false;
+                hintColor = UbuntuColors.green
+                console.log(bottomEdge.mode);
+                if(bottomEdge.mode === "edit"){
+                    bottomEdge.mode = "add";
+                    textItemName.text = "";
+                    textareaComment.text = "";
+                }
+                columnDialog.forceActiveFocus(); //remove focus to any element
+            }
+        }
+        Timer {
+            id: timerFocus
+            interval: 1000;
+            onTriggered: {
+                console.log("started");
+            textItemName.forceActiveFocus();
+            }
+        }
+        actions: [
+            DialogAction {
+                iconName: "add"
+                iconColor: "white"
+                backgroundColor: "white" //UbuntuColors.lightGrey
+                //onTriggered: PopupUtils.open(dialogAdd)
+                internalAnchors.margins: units.gu(1)
+
+
+                contents: ColumnLayout{
+                            id: columnDialog
+
+                            //layoutDirection: Qt.RightToLeft
+                            spacing: units.gu(2)
+                            anchors{
+                                top: parent.top
+                                //verticalCenterOffset: units.gu(40)
+                                left: parent.left
+                                right: parent.right
+                                leftMargin: units.gu(2)
+                                topMargin: units.gu(18)
+                            }
+                            transform: Rotation { axis { x: 1; y: 0; z: 0 }  angle: 180}
+
+
+                            TextField {
+                                id: textItemName
+                                placeholderText: i18n.tr("Enter Item name")
+                                Layout.alignment:   Qt.AlignHCenter
+                                anchors{
+                                    left: textareaComment.left
+                                    right: textareaComment.right
+                                }
+                                /*style: TextFieldStyle {
+                                            //overlaySpacing: 0
+                                            //frameSpacing: 0
+                                            background: Item {}
+                                            //color: UbuntuColors.lightAubergine
+                                        }*/
+                                hasClearButton: true
+                                enabled: false
+                            }
+                            TextArea {
+                                id: textareaComment
+                                //width: textItemName.width
+                                Layout.alignment:   Qt.AlignHCenter
+                                height: textItemName.height * 2
+                                //autoSize: true
+                                //contentWidth: textItemName.width
+                                placeholderText: i18n.tr("Add comments (optional)")
+                                enabled: false
+                            }
+                            Button {
+                                text: bottomEdge.mode === "add"? i18n.tr("Add") : i18n.tr("Save")
+                                color: UbuntuColors.green
+                                 activeFocusOnPress: false
+                                Layout.alignment:   Qt.AlignHCenter
+                                anchors{
+                                    left: textareaComment.left
+                                    right: textareaComment.right
+                                }
+
+                                onClicked: {
+                                        var txtName = textItemName.text
+                                        var txtComment = textareaComment.text
+
+                                        if (Process.checkRequired([txtName]) === false) {
+                                            textItemName.forceActiveFocus()
+                                        }else if(bottomEdge.currentItem !== txtName && DataProcess.itemExist(currentID,txtName) === true){
+                                            PopupUtils.open(dialog);
+                                }
+                                        else {
+                                            switch(bottomEdge.mode) {
+                                            case "add":
+                                                DataProcess.saveItem(currentID,currentChecklist,
+                                                                          txtName,
+                                                                          txtComment)
+                                                    textItemName.forceActiveFocus();
+                                                break;
+                                            case "edit":
+                                                DataProcess.updateItem(currentID,bottomEdge.currentItem,
+                                                                          txtName,
+                                                                          txtComment)
+                                                    bottomEdge.edgeState = "collapsed";
+                                                break;
+                                            }
+                                            textItemName.text = ""
+                                            textareaComment.text = ""
+                                            loadChecklist();
+                                            checkEmpty();
+                                        }
+                                }
+                            }
+                            Component {
+                                     id: dialog
+                                     Dialog {
+                                         id: dialogue
+                                         title: i18n.tr("Item already exists in this Checklist!")
+                                         text: i18n.tr("Please change the item name")
+                                         Button {
+                                                          text: "OK"
+                                                          onClicked: PopupUtils.close(dialogue)
+                                                      }
+                                     }
+                            }
+                }
+
+            },
+            DialogAction {
+                iconName: "add"
+                iconColor: "white"
+                backgroundColor: "white" //UbuntuColors.lightGrey
+                //onTriggered: PopupUtils.open(dialogAdd)
+                //internalAnchors.margins: units.gu(10)
+                Label{
+                    anchors{
+                        //bottomMargin: units.gu(10)
+                        //top: parent.bottom
+                        //horizontalCenter: parent.horizontalCenter
+                        centerIn: parent
+                        verticalCenterOffset: units.gu(5)
+                    }
+
+                    id: labelDialogTitle
+                    color: "white"
+                    fontSize: "x-large"
+                    font.bold: true
+                    text: bottomEdge.mode === "add"? i18n.tr("Add an Item") : i18n.tr("Edit an Item")
+                    transform: Rotation { axis { x: 1; y: 0; z: 0 }  angle: 180}
+                }
+            },
+            RadialAction {
+                iconName: "save"
+                iconColor: "white"
+                backgroundColor: "green" //UbuntuColors.lightGrey
+            },
+            RadialAction {
+                iconName: "clear"
+                iconColor: "white"
+                backgroundColor: "grey" //UbuntuColors.lightGrey
+            }
+        ]
+    }
+
+//       Flickable {
+//        id: flickItems
+//        visible: true
+//        boundsBehavior: Flickable.DragAndOvershootBounds
+//        anchors.fill: parent
+//        contentHeight: colChecklist.height + units.gu(1)
+//       /* anchors {
+//            left: parent.left
+//            right: parent.right
+//            bottom: parent.bottom
+//            //bottomMargin: units.gu(3)
+//            top: parent.top
+//            topMargin: units.gu(3)
+//            leftMargin: units.gu(3)
+//        }*/
+
+//        flickableDirection: Flickable.VerticalFlick
+//       clip: true
+
+//        Flow {
+//            id: colChecklist
+//            //anchors { left: parent.left; right: parent.right; top: parent.top; bottom: parent.bottom}
+//            anchors.fill: parent
+//            spacing: units.gu(1)
+
+//            //clip: true*/
+//            Repeater {
+//                model: mainView.listItems.modelChecklistItems
+//                RectangleChecklist {
+//                    bgcolor: model.name
+//                    itemname: model.text
+//                }
+//            }
+//        }
+//    }
+}

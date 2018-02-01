@@ -1,0 +1,312 @@
+V2.30
+* Moved to Github
+  - Updated links/references throughout the app
+* Some UI chnages
+  - Removed strikethrough from the item names and display them in normal color when searching for items within a list for better readability.
+  - Used Suru icons for the checkbox in the checlists
+  - Smaller comment icon in the list page.
+
+* Fixed bugs
+  - [Regression] Option to view All or Remaining is still displayed even when viewing history
+
+V2.25
+* Updated About page to remove old store links and use OpenStore instead
+* Updated default app size (width & height)
+* Minor bug fixes
+  - Changed loading texts when searching
+  - Fixed bug when adding new list from a saved list and the target date is not displayed in the items page
+  - "Uncategorized" category cannot be deleted or edited anymore
+* Some UI changes in the Settings page
+* Find function in the items page will now search for all the items and not just in the current view
+V2.20
+* Fixed various bugs
+  - some theme colors
+  - Sort/Filter icon in the Saved tab search header
+* Improved startup time
+
+Technical
+* Used a template (ListPage) in DefaultTab, SavedTab and HistoryTab
+* Used loader for most objects in Main.qml
+* Changed the startup width to be dynamic based on the desktopAvailableWidth (units.gu(130) or units.gu(50))
+* Changed TargetsPage from PageWithBottom to normal Page
+
+V2.10
+Technical
+* Removed highlight color of ExpandableListItem
+* Fixed incorrect assignment of easing in Targets page
+* Switched places the Add and Search action in the main tabs
+* Changed highlightMoveDuration and highlightResizeDuration of ListViews to sUbuntuAnimation.SnapDuration
+* Updated some animations to UbuntuAnimation.StandardEasing
+* Bug fixes:
+  - current item in Settings page does not reset
+
+
+Functional
+* New loading/activity indicator (with texts)
+* Continual List: Checklists that won't be completed even though all items are checked until you mark as completed
+* Bug fixes:
+  - Completed checklists are now removed from the Lists tab when in multicolumn layout
+* Themes support
+  - Default (Original Theme)
+  - Ambiance
+  - Suru Dark
+* Re-enabled Reminders feature
+
+V2.00
+Functional
+* Changed Talaan tab to Lists tab
+* Fixed bug where adding reminders were disabled when the Remiders page was open from the Talaan page.
+* Fixed bug where the application crash if a comment/notes
+* [Convergence] Show actions when hovering lists for ease of access
+* New navigation panel
+* Some icon and text changes
+* Some minor UI changes (color, placement, anchor)
+* New settings
+	- Load lists with completed items automatically hidden
+	- Split navigation panel when there's enough vertical space
+* Fixed bug where tagging of items as skipped are lost when completed
+* Fixed bug where skipping an already checked item messes up the counts
+* Fixed bug where setting a target date is still possible when editing a saved list
+* Fixed bug where incorrect data and labeling in the View Details dialog
+* Improved performance
+* Sort and Filter settings displayed in the header
+* Overdue lists can now be idenfified with red colored target date icon
+* Updated splash screen
+* Color assignments for Categories
+* Redesigned About page.
+* Sort and Filter settings are now separate for searching.
+* New keyboard shortcuts
+	- Esc -> Dismiss/close search, adding items, etc.
+	- Shift + Enter -> add item when cursor in the description/note text field
+* Fixed bug where the saved selected section in each tab is affecting all
+* Changed the bar in the items page into sections
+* Setting the font to large in the items page now affects the comment/notes as well
+* Various UI changes in the Settings page
+* Comments box is now scrollable and limited to a certain height to avoid oversized comment box
+* Fixed bug where comment box gets cut off in some cases.
+* Fixed bug where last list total and checked total changes to 0 in some cases when switching between multicolumn and single column
+* Added sort feature in the items page
+* Do not show notification when successfully adding items in a list
+* Fixed bug where uncommited words won't be saved when using auto-suggestion
+* Improved radial bottom control
+	- New settings (None,Autohide, Semihide, Always Displayed)
+	- Now usable in almost all pages
+	- Adds the back button when available
+
+Technical
+* Switch to framework version 15.04.6
+* Additional animations
+* Changed subtitle color to theme.palette.normal.background
+* Removed checking of height when switching to multi column
+* Use LiveTimer to hourly check correct tagging of upcoming and overdue targets
+* Changed the placeHolderText of list item comment textbox to "Add Comments/Notes"
+* Updates checklist model when favoriting and unfavoriting lists
+* Used Qt.formatDate for formatiing dates
+* Remove unused assets i.e. images, icons
+* Made all the dialog UI consistent within the app
+* Created 3 versions of the background image that varies in size. Used the accordingly to limit memory usage and better performance
+* Migrated to qmake QtQuick project template
+* Changes in the itemsPage for handling Creating and Editing lists.
+* Added width and height limit for EmptyState and adjust the layout accordingly
+* Make comment show faster (from BriskDuration to FastDuration)
+* Changed initial window hegiht from units.gu(80) to units.gu(85)
+* Refactored settings page
+* Refactored Search header
+* Refactored search functionality in items page
+* Refactored sort/filter
+* Used Keys.onPressed as a workaround on some of the keyboard shortcuts
+* Changed icon of add icon in items page bottom bar from "add" to "ok"
+* Used WorkerScript for loading ListModels
+
+V1.90
+Functional
+* Item comments are now selectable and available for copying.
+* Initial implementation of Reminders and Targets (Reminders are in the form of Alarms)
+* [Convergence] Display Reminders and Targets in the third column
+* [Keyboard shortcut] Ctrl + D for adding/displaying comments/description when adding/editing a list item
+
+Technical
+* Made comment popup a readonly TextArea to allow copying of texts (some other code changes to workaround an issue on autoSize and Loader)
+* Disable closing of the comment popup when tapping to allow selecting texts
+* Put PageBackground in the MainView instead of per page except for bottomedge pages
+* Detect as portrait when height is greater than width + units.gu(30)
+* Changed starting window size to units.gu(80) x units.gu(130)
+
+V1.80
+Functional
+* Search/Find functionality within a list (Ctrl + F)
+* Enabled Sort/Filter action when searching
+* Ability to change the name, category and set target date when creating a new checklist from a saved list
+* Fixed bug where editing saved lists makes it into an incomplete checklist
+* Keyboard Shortcuts changes/additions
+	- [Ctrl + F] Find items within a list
+	- [Ctrl + F -> Ctrl + S] Search for lists
+	- [Ctrl + H] Filter/Unfilter checked items
+
+Technical
+* Removed all old ListItems and replaced with new except ItemSelector
+* Fixed bug on an SQL statement error when search condition is blank
+* Fixed critical program logic error that allows SQL Injection when searching
+* Some minor fixes in the Item page
+* Highlight when hovering on lists
+* Refactored code to count total and checked items in a checklist
+* Fixed bug when deleting items in a list (removes in the model first before checking the status)
+* [Convergence] Update values in the checklist (left column) when something has changed in its items (right column).
+
+V1.71
+* [Search by Category] Fixed bug where highlight does not go away when popover closes
+
+V1.70
+Functional
+* Added Search functionality (Ctrl + F)
+* Dialog to ask if list item comments will included when saving checklists
+
+Technical
+* Anchored ScrollView to the bottom bar when displayed in the Items page
+* Swtched to ubuntu-sdk-15.04.5
+* Fixed highlight color of the listview in ManageCategories page
+
+V1.61
+Technical
+* Changed texts in the empty state of History page
+* Remove list view highlight when returning back to the settings page
+* Fixed regression bug where going back to multi column switches to no selected mode even when a list is selected
+
+V1.60
+Functional
+* Added confirmation dialog when deleting a list
+* Reintroduction of Favorites
+  - The previous concept of Favorites is now called Saved Lists
+  - Favorites are now reintroduced as actual 'favorites' that can be easily seen in one view
+  - Saved lists is located as a separate page like how Favorites was
+  - The new Favorites can be viewed in the Talaan page through sections
+* Moved Sort and Filter to a dialog
+* Replaced Sections with All and Favorites
+* Fixed bug on incorrect Creation and Completion Date in "View Details"
+* Fixed bug when clicking the the actual checkbox will mess up the UI
+* Added new settings (experimental)
+  - Toggle for the List Item surface to be clickable or not
+  - Toggle for bigger font of list items
+
+Technical
+* Changed status "favorited" to "saved"
+* Changed Enter label to "Add"/"Save" when adding new items in a list
+* Used Qt.labs.settings to remember last active section and sortfilter settings
+* Added displaced animation in ListViews
+* User UbuntuListView in the Settings page instead of a flickable and a column
+
+V1.51
+Technical
+* Fixed left anchor of the item label name for normal lists
+
+V1.50
+Functional
+* New icon by Sander Klootwijk
+* Anchored buttons at the bottom in the bottom edge for adding items in a list
+* Keyboard shortcut
+  - Ctrl + L: Add new item in a list
+* Ability to mark an item in a list as important/high priority
+
+Technical
+* [Items Page Bottom Edge] Put activefocus in itemName when hiding the comments texfield
+* Fixed regression when displaying comments of item near the bottom of the page
+* Set currentIndex = -1 of list views when in "No Selected" state
+* Used Pragma user_version for the versioning of the database
+* Hide Skip action when not a checklist
+* [Items Page Bottom Edge] Temporarily replaced BottomEdge with a custom component until SDK offers it as non-modal
+
+V1.41
+* Fixed Bug# 1580620 (unable to delete items in a list)
+* Fixed bug where the app loses count of the remaining items when an item is deleted
+
+V1.40
+Functional
+* Application's UI greatly improved in landscape/windowed mode
+  -> Bottom edge controls are disabled
+  -> Some buttons from the bottom edge becomes buttons in the header
+* Items page header is now in fixed position (won't move when scrolling)
+* Bar with item counts is back at the top
+* Keyboard navigation support
+  -> Ctrl + N - Add new list
+  -> Up/Down to navigate through the lists
+* More details in the View Details dialog
+* Changed the Bottom Edge dialog in the items page to make it work better in any layout
+
+Technical
+* Switched framwork to Ubuntu SDK 15.04.4
+* Use of Adaptive Layout
+* Removal of Tabs/Tab
+* New page(NoSelectedTab). Displayed when no item selected from the left column in multi-column mode
+* Changed highlight color to #4D371300
+* Items page title set to "large"
+* Used BottomEdge from SDK instead of the custom PageWithBottomEdge
+
+V1.30
+Functional
+* Top bar that contains the remaining and total counts is moved at the bottom
+* Fixed bug where adding items in enabled when viewing completed checklists in the history tab
+* Hide and disable Target date when adding a normal list
+* Changed icon for sorting
+* Changed icon for creating new checklist from favorite
+* Ability to clear history
+* New actions in the items page
+  -> Mark as Completed
+  -> Uncheck All
+  -> [Favorites] Create new checklist
+  -> Edit
+
+Technical
+* Set Target Date to null/blank when adding normal list
+* Rewritten code for marking checklist as completed and made it into a function
+
+V1.26
+Functional
+* Fixed Total value in the items page
+* Fixed bug where tapping/clicking the actual checkbox won't do anything
+
+Technical
+* Creation date set to current date when adding new checklist from a favorite
+* Set the Page Headers of each tab to fixed
+* Top bar that contains the remaining and total counts is now section in the listview
+* Cleanup data of favorites (blank creation and completion date)
+
+V1.25
+Functional
+* Minor changes in the About page
+* Palette changes in Items page
+* Target date is now displayed instead of creation date in the default list item layout
+* [Bug #1565486] Fixed a critical bug where sometimes completed checklists are not detected correctly
+* Added a details bar in the items page (Total and remaining counts).
+* Fixed bug wherein there are still checkboxes in the items page when creating a new normal list
+
+Technical
+* Migrated all pages to PageHeader
+* Favorites are now saved with blank target and completion date and date today as creation date.
+
+V1.20
+* Finally fixed the About page issues wth scrolling/flicking
+* Migrated all pages to the new ListItem (ListItemLayout)
+* Fixed the Bug# 1559745 (empty favorited checklists). Deleting the affected favorites and re-favoriting is recommended.
+* Ability to directly add new favorite checklist from the Favorites page
+* Creating a new list from Favorited checklists now works.
+* Introduction of normal lists. There are now two types of lists - Checklist and Normal List.
+* Some UI changes/fixes
+
+V1.11
+* Fixed crashes
+* About page is now fliackable
+* Added new buttons in the About page
+* Sorting are now retained while navigating
+
+V1.10
+* Fixed texts in About page not wrapping correctly
+* Fixed date not properly loaded when editing a checklist
+* Added 'Report a bug' button in About page
+* Added scrollbars
+* New splash screen
+* Filters for dates are now in descending order by default
+* Ability to add new category while creating a new checklist
+* Creating a new checklist will now directly go to the add items page
+
+v1.03
+Initial release
