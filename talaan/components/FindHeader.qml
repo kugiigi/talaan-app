@@ -79,7 +79,9 @@ PageHeader {
             name: "find"
         }
 
-        onTextChanged: delayTimer.restart()
+        onTextChanged: {
+            delayTimer.restart()
+        }
 
         //Timer to delay searching while typing
         Timer {
@@ -88,8 +90,10 @@ PageHeader {
             running: false
             interval: 300
             onTriggered: {
-                console.log("Finding: " + textField.text)
-                search(textField.text)
+                if(textField.text){
+                    console.log("Finding: " + textField.text)
+                    search(textField.text)
+                }
             }
         }
     }
