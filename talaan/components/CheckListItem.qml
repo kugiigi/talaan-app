@@ -63,8 +63,8 @@ Item {
 
     Label {
         id: lblName
+
         text: checklist
-        //font.bold: true
         color: switch (settings.currentTheme) {
                case "Default":
                    theme.palette.normal.background
@@ -83,11 +83,13 @@ Item {
         fontSizeMode: Text.HorizontalFit
         minimumPixelSize: units.gu(2)
         width: itemContents.width - units.gu(18)
+        verticalAlignment: Text.AlignVCenter
         anchors {
             top: parent.top
             topMargin: units.gu(1)
             left: parent.left
             leftMargin: units.gu(1)
+            bottom: !descr ? parent.bottom : undefined
             //right: rowDate.left
             //rightMargin: units.gu(1)
         }
@@ -95,6 +97,7 @@ Item {
     Label {
         id: lblDescr
         text: descr// === "" ? i18n.tr("No Description") : descr
+        visible: descr ? true : false
         color: switch (settings.currentTheme) {
                case "Default":
                    theme.palette.normal.background
@@ -124,7 +127,8 @@ Item {
 
     Row {
         id: rowDate
-        visible: itemHighlight.containsMouse ? false : true /*filter === "category" ? true : false*/
+
+        visible: itemHighlight.containsMouse ? false : true
         spacing: units.gu(0.5)
         anchors {
             top: parent.top
@@ -187,16 +191,20 @@ Item {
     }
     Row {
         id: rowItems
+
         spacing: units.gu(1)
         width: childrenRect.width
+
         anchors {
             right: parent.right
             rightMargin: units.gu(1)
             bottom: parent.bottom
             bottomMargin: units.gu(1)
+//            top: !rowDate.visible ? parent.top : undefined
         }
         Icon {
             id: iconItems
+
             width: units.gu(2)
             height: width
             name: status === "normal" ? "note" : "tick"
@@ -216,10 +224,8 @@ Item {
         }
         Label {
             id: lblItemsupdate
+
             visible: true
-            //width: iconItems.width
-            //height:width
-            //font.bold: true
             color: switch (settings.currentTheme) {
                    case "Default":
                        theme.palette.normal.background

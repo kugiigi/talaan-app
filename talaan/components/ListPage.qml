@@ -554,7 +554,8 @@ PageWithBottom {
                                 default:
                                     "#2D371300"
                                 }
-                divider.visible: true
+                divider.visible: false
+                divider.height: units.gu(0.05)
 
                 Action {
                     id: selectItemAction

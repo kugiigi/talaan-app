@@ -79,7 +79,9 @@ PageHeader {
             name: "find"
         }
 
-        onTextChanged: delayTimer.restart()
+        onTextChanged: {
+            delayTimer.restart()
+        }
 
         //Timer to delay searching while typing
         Timer {

@@ -1,8 +1,10 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
+import Ubuntu.Components.Popups 1.3
 //import QtSystemInfo 5.0
 import "../components"
 import "../components/Common"
+import "../components/Dialogs"
 
 PageWithBottom {
     id: aboutPage
@@ -40,6 +42,21 @@ PageWithBottom {
             }
         }
     }
+
+    function externalLinkConfirmation(link, continueFunction){
+        var dialogConfirm = PopupUtils.open(
+                    dialogExternalLink,null,{"externalURL": link})
+
+        var continueDialog = function (answer) {
+            if(answer){
+                Qt.openUrlExternally(link)
+            }
+        }
+
+        dialogConfirm.proceed.connect(
+                    continueDialog)
+    }
+
 
     ScrollView {
         anchors {
@@ -106,6 +123,8 @@ PageWithBottom {
                     }
                 }
                 Label {
+                    id: labelLicense
+
                     text: "Released under license <a href='https://www.gnu.org/licenses/gpl-3.0.en.html' title='GNU GPL v3'>GNU GPL v3</a>"
                     textSize: Label.Medium
                     horizontalAlignment: Text.AlignHCenter
@@ -116,7 +135,7 @@ PageWithBottom {
                     }
 
                     onLinkActivated: {
-                        Qt.openUrlExternally(link)
+                        externalLinkConfirmation(link)
                     }
                 }
             }
@@ -181,8 +200,7 @@ PageWithBottom {
 
                     action: Action {
                         onTriggered: {
-                            Qt.openUrlExternally(
-                                        "https://github.com/kugiigi/talaan-app/issues")
+                            externalLinkConfirmation("https://github.com/kugiigi/talaan-app/issues")
                         }
                     }
                 }
@@ -197,7 +215,7 @@ PageWithBottom {
 
                     action: Action {
                         onTriggered: {
-                            Qt.openUrlExternally('mailto:kugi_igi@yahoo.com')
+                            externalLinkConfirmation('mailto:kugi_igi@yahoo.com')
                         }
                     }
                 }
@@ -212,7 +230,7 @@ PageWithBottom {
 
                     action: Action {
                         onTriggered: {
-                            Qt.openUrlExternally(
+                            externalLinkConfirmation(
                                         'https://github.com/kugiigi/talaan-app')
                         }
                     }
@@ -228,7 +246,7 @@ PageWithBottom {
 
                     action: Action {
                         onTriggered: {
-                            Qt.openUrlExternally(
+                            externalLinkConfirmation(
                                         'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2GBQRJGLZMBCL')
                         }
                     }
@@ -244,7 +262,7 @@ PageWithBottom {
 
                     action: Action {
                         onTriggered: {
-                            Qt.openUrlExternally(
+                            externalLinkConfirmation(
                                         "https://open.uappexplorer.com/?sort=relevance&search=author%3AKugi%20Eusebio")
                         }
                     }
@@ -264,7 +282,7 @@ PageWithBottom {
 
                     action: Action {
                         onTriggered: {
-                            Qt.openUrlExternally(
+                            externalLinkConfirmation(
                                         'https://github.com/kugiigi')
                         }
                     }
@@ -282,7 +300,7 @@ PageWithBottom {
 
                     action: Action {
                         onTriggered: {
-                            Qt.openUrlExternally(
+                            externalLinkConfirmation(
                                         'mailto:sander.k1007@kpnmail.nl')
                         }
                     }
@@ -301,7 +319,7 @@ PageWithBottom {
 
                     action: Action {
                         onTriggered: {
-                            Qt.openUrlExternally('http://momentjs.com/')
+                            externalLinkConfirmation('http://momentjs.com/')
                         }
                     }
                 }
@@ -316,7 +334,7 @@ PageWithBottom {
 
                     action: Action {
                         onTriggered: {
-                            Qt.openUrlExternally(
+                            externalLinkConfirmation(
                                         'https://github.com/s3u/JSONPath')
                         }
                     }
@@ -324,4 +342,11 @@ PageWithBottom {
             }
         }
     }
+
+
+    DialogExternalLink {
+        id: dialogExternalLink
+    }
+
+
 }

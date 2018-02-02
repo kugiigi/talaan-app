@@ -33,7 +33,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = talaan1.0.0
-DISTDIR = /home/phablet/Documents/Projects/Talaan_QtQuick/talaan/.tmp/talaan1.0.0
+DISTDIR = /home/phablet/Documents/Projects/talaan-app/talaan/.tmp/talaan1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1
 LIBS          = $(SUBLIBS) -lQt5Quick -lQt5Gui -lQt5Qml -lQt5Network -lQt5Core -lGLESv2 -lpthread 
@@ -601,6 +601,7 @@ qrc_talaan.cpp: ../../talaan/talaan.qrc \
 		../../talaan/components/Dialogs/DialogCreateFromSaved.qml \
 		../../talaan/components/Dialogs/DialogIncludeComment.qml \
 		../../talaan/components/Dialogs/DialogAction.qml \
+		../../talaan/components/Dialogs/DialogExternalLink.qml \
 		../../talaan/components/Dialogs/DialogAlarm.qml \
 		../../talaan/components/Dialogs/DialogBottomEdge.qml \
 		../../talaan/library/DBWorker.js \
@@ -641,9 +642,9 @@ qrc_talaan.o: qrc_talaan.cpp
 
 install_config_files: first FORCE
 	@test -d $(INSTALL_ROOT)/talaan || mkdir -p $(INSTALL_ROOT)/talaan
-	-$(INSTALL_FILE) /home/phablet/Documents/Projects/Talaan_QtQuick/talaan/talaan.apparmor $(INSTALL_ROOT)/talaan/
-	-$(INSTALL_FILE) /home/phablet/Documents/Projects/Talaan_QtQuick/talaan/talaan.png $(INSTALL_ROOT)/talaan/
-	-$(INSTALL_FILE) /home/phablet/Documents/Projects/Talaan_QtQuick/talaan/Talaan_Splash.png $(INSTALL_ROOT)/talaan/
+	-$(INSTALL_FILE) /home/phablet/Documents/Projects/talaan-app/talaan/talaan.apparmor $(INSTALL_ROOT)/talaan/
+	-$(INSTALL_FILE) /home/phablet/Documents/Projects/talaan-app/talaan/talaan.png $(INSTALL_ROOT)/talaan/
+	-$(INSTALL_FILE) /home/phablet/Documents/Projects/talaan-app/talaan/Talaan_Splash.png $(INSTALL_ROOT)/talaan/
 
 uninstall_config_files: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/talaan/Talaan_Splash.png
@@ -654,7 +655,7 @@ uninstall_config_files: FORCE
 
 install_desktop_file: first FORCE
 	@test -d $(INSTALL_ROOT)/talaan || mkdir -p $(INSTALL_ROOT)/talaan
-	-$(INSTALL_FILE) /home/phablet/Documents/Projects/Talaan_QtQuick/build/talaan/talaan.desktop $(INSTALL_ROOT)/talaan/
+	-$(INSTALL_FILE) /home/phablet/Documents/Projects/talaan-app/build/talaan/talaan.desktop $(INSTALL_ROOT)/talaan/
 
 uninstall_desktop_file: FORCE
 	-$(DEL_FILE) -r $(INSTALL_ROOT)/talaan/talaan.desktop

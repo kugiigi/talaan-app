@@ -82,5 +82,6 @@
         <file>components/ListPage.qml</file>
         <file>components/BottomEdgeMenu.qml</file>
         <file>library/WorkerScripts/BottomMenuLoader.js</file>
+        <file>components/Dialogs/DialogExternalLink.qml</file>
     </qresource>
 </RCC>

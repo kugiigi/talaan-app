@@ -324,25 +324,25 @@ MainView {
 
             property var pageProperties
 
-            active: false
+            active: true
 
             asynchronous: true
             source: Qt.resolvedUrl("../ui/ItemsPage.qml")
 
             visible: status == Loader.Ready
 
-            onLoaded: {
-                showItemsPage(pageProperties)
-            }
+//            onLoaded: {
+//                showItemsPage(pageProperties)
+//            }
 
             function showItemsPage(properties) {
-                if (!active) {
-                    pageProperties = properties
-                    active = true
-                } else {
+//                if (!active) {
+//                    pageProperties = properties
+//                    active = true
+//                } else {
                     mainLayout.selectItemFromMain(mainLayout.primaryPage, item,
                                                   properties)
-                }
+//                }
             }
         }
 
@@ -359,7 +359,9 @@ MainView {
 
             visible: status == Loader.Ready
 
-            onLoaded: panelLoader.active = true
+            onLoaded: {
+                panelLoader.active = true;
+            }
         }
 
         function switchTab(index) {
@@ -463,7 +465,7 @@ MainView {
 
         function clearitemsPage() {
             //console.log("items page cleared")
-            if (itemsPageLoader.active) {
+            if (itemsPageLoader.item) {
                 itemsPage.currentID = ""
                 itemsPage.currentChecklist = ""
                 itemsPage.currentCategory = ""

@@ -1,10 +1,17 @@
 V2.30
 * Moved to Github
   - Updated links/references throughout the app
-* Some UI chnages
+* UI chnages (Cleaner look)
   - Removed strikethrough from the item names and display them in normal color when searching for items within a list for better readability.
-  - Used Suru icons for the checkbox in the checlists
-  - Smaller comment icon in the list page.
+  - Replaced the checkbox with Suru icons
+  - Smaller comment icon in the list page
+  - Removed list dividers
+
+** Let me know what you think on these changes
+
+* Some refinements in the Find function in the items pages
+* Faster opening of lists on initial app load
+* Confirmation dialog before opening external links
 
 * Fixed bugs
   - [Regression] Option to view All or Remaining is still displayed even when viewing history
