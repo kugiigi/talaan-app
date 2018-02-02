@@ -23,7 +23,8 @@ AP_TEST_FILES += tests/autopilot/run \
 OTHER_FILES += $${CONF_FILES} \
                $${QML_FILES} \
                $${AP_TEST_FILES} \
-               talaan.desktop
+               talaan.desktop \
+    components/Dialogs/DialogExternalLink.qml
 
 #specify where the config files are installed to
 config_files.path = /talaan

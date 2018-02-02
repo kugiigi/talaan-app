@@ -601,6 +601,7 @@ qrc_talaan.cpp: ../../talaan/talaan.qrc \
 		../../talaan/components/Dialogs/DialogCreateFromSaved.qml \
 		../../talaan/components/Dialogs/DialogIncludeComment.qml \
 		../../talaan/components/Dialogs/DialogAction.qml \
+		../../talaan/components/Dialogs/DialogExternalLink.qml \
 		../../talaan/components/Dialogs/DialogAlarm.qml \
 		../../talaan/components/Dialogs/DialogBottomEdge.qml \
 		../../talaan/library/DBWorker.js \

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-01 19:58+0800\n"
+"POT-Creation-Date: 2018-02-03 00:39+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,16 +41,16 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/Main.qml:386
-#: /home/phablet/Documents/Projects/talaan-app/talaan/Main.qml:395
+#: /home/phablet/Documents/Projects/talaan-app/talaan/Main.qml:388
+#: /home/phablet/Documents/Projects/talaan-app/talaan/Main.qml:397
 msgid "No list selected"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/Main.qml:388
+#: /home/phablet/Documents/Projects/talaan-app/talaan/Main.qml:390
 msgid "Select a list from the left column"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/Main.qml:397
+#: /home/phablet/Documents/Projects/talaan-app/talaan/Main.qml:399
 msgid "Select an item from the List, Saved or History tab"
 msgstr ""
 
@@ -82,18 +82,20 @@ msgstr ""
 
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/AlarmReminder.qml:98
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:191
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:31
 msgid "OK"
 msgstr ""
 
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/FindHeader.qml:34
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:871
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:913
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:872
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:914
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/SearchHeader.qml:95
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/AddCategory.qml:261
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:1171
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:1204
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:1174
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:1207
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:297
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:185
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:23
 msgid "Cancel"
 msgstr ""
 
@@ -102,14 +104,14 @@ msgid "Find..."
 msgstr ""
 
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListItemContent.qml:90
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:986
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:989
 msgid "Skipped"
 msgstr ""
 
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:186
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:200
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/AddCategory.qml:274
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:311
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:317
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ManageCategory.qml:45
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/RemindersPage.qml:88
 msgid "Add"
@@ -163,12 +165,12 @@ msgid "Navigation Panel"
 msgstr ""
 
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:387
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:596
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:602
 msgid "Close"
 msgstr ""
 
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:402
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:493
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:499
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/RemindersPage.qml:48
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/RemindersPage.qml:49
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/RemindersPage.qml:50
@@ -183,96 +185,96 @@ msgstr ""
 msgid "Favorites"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:586
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:921
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:674
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:587
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:922
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:676
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ManageCategory.qml:292
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/RemindersPage.qml:325
 msgid "Delete"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:597
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:598
 msgid "List successfully deleted"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:616
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:617
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/AddCategory.qml:274
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:303
 msgid "Save"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:627
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:628
 msgid "List successfully added to Saved Lists"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:637
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:359
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:638
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:365
 msgid "New checklist"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:651
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:372
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:652
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:378
 msgid "New List successfully created"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:675
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:676
 msgid "Unfavorite"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:676
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:677
 msgid "Favorite"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:687
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:688
 msgid "List successfully removed from Favorites"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:692
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:693
 msgid "List successfully added to Favorites"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:700
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:393
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:697
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:701
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:399
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:699
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ManageCategory.qml:307
 msgid "Edit"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:716
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:717
 msgid "Reset"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:802
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:803
 msgid "No matching list found"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:804
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:805
 msgid "No Favorites"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:806
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:807
 msgid "Please try a different query or change the Sort / Filter."
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:820
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:821
 msgid "Loading results"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:821
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:666
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:822
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:668
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/TargetsPage.qml:129
 msgid "Please wait"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:833
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:834
 msgid "Sort / Filter"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:878
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:879
 msgid "Apply"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:902
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/ListPage.qml:903
 msgid "All items under this list will also be deleted permanently."
 msgstr ""
 
@@ -344,23 +346,23 @@ msgid "Already used %1? <b>Skip the tutorial</b>"
 msgstr ""
 
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/Walkthrough.qml:69
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:714
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:716
 msgid "Skip"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/About.qml:134
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/About.qml:153
 msgid "Support"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/About.qml:254
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/About.qml:272
 msgid "Developers"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/About.qml:273
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/About.qml:291
 msgid "Logo"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/About.qml:291
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/About.qml:309
 msgid "Powered by"
 msgstr ""
 
@@ -485,90 +487,90 @@ msgstr ""
 msgid "Loading History"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:332
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:338
 msgid "Find"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:341
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:347
 msgid "Mark as completed"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:350
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:356
 msgid "Uncheck All"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:429
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:435
 msgid "Set Reminders"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:453
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:456
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:459
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:462
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:465
 msgid "Sort"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:453
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:459
 msgid "A-Z"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:456
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:462
 msgid "Z-A"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:459
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:465
 #: /home/phablet/Documents/Projects/talaan-app/talaan/ui/SettingsTab.qml:178
 msgid "Default"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:479
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:485
 msgid "View Details"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:500
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:506
 msgid "Remaining"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:623
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:629
 msgid "No matching item found"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:626
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:632
 msgid "No remaining item"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:629
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:635
 msgid "List is empty"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:634
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:640
 msgid "Please try a different query or try removing the filter if there's any"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:638
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:644
 msgid "Click the '+' button to add more items (Ctrl + L)"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:639
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:645
 msgid "Swipe from the bottom to add more items"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:643
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:649
 msgid "Click the '+' button to add items (Ctrl + L)"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:644
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:650
 msgid "Swipe from the bottom to add items"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:665
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:667
 msgid "Loading list items"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:725
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:727
 msgid "Toggle Priority"
 msgstr ""
 
-#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:1147
+#: /home/phablet/Documents/Projects/talaan-app/talaan/ui/ItemsPage.qml:1150
 msgid "Undo last item"
 msgstr ""
 
@@ -796,6 +798,14 @@ msgstr ""
 
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:83
 msgid "Target Date?"
+msgstr ""
+
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:12
+msgid "Open external link"
+msgstr ""
+
+#: /home/phablet/Documents/Projects/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:13
+msgid "You are about to open an external link. Do you wish to continue?"
 msgstr ""
 
 #: /home/phablet/Documents/Projects/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:9

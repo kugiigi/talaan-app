@@ -90,10 +90,8 @@ PageHeader {
             running: false
             interval: 300
             onTriggered: {
-                if(textField.text){
-                    console.log("Finding: " + textField.text)
-                    search(textField.text)
-                }
+                console.log("Finding: " + textField.text)
+                search(textField.text)
             }
         }
     }

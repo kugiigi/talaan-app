@@ -257,13 +257,19 @@ PageWithBottom {
 
         visible: searchMode ? true : false
 
+        onVisibleChanged: {
+            if(visible){
+                intCurrentSectionIndex = statsSections.selectedIndex
+                statsSections.selectedIndex = 0
+            }
+        }
+
         onCancel: {
+            console.log("currentIndex: " + intCurrentSectionIndex)
             statsSections.selectedIndex = intCurrentSectionIndex
             searchMode = false
         }
         onSearch: {
-            intCurrentSectionIndex = statsSections.selectedIndex
-            statsSections.selectedIndex = 0
             pageItems.searchText = searchText
         }
     }
@@ -656,10 +662,6 @@ PageWithBottom {
     }
 
 
-    //    ActivityIndicator{
-    //        anchors.centerIn: parent
-    //        running: listItems.modelChecklistItems.loadingStatus !== "Ready"
-    //    }
     LoadingComponent {
         visible: listItems.modelChecklistItems.loadingStatus !== "Ready"
         title: i18n.tr("Loading list items")
@@ -825,6 +827,7 @@ PageWithBottom {
                 id: listWithActions
                 height: labelName.height + units.gu(4)
                 width: parent.width
+                divider.visible: false
                 color: "transparent"
                 highlightColor: switch(settings.currentTheme){
                                 case "Default":
