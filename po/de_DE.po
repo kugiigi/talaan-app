@@ -1,93 +1,88 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: Talaan\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-04 08:33+0000\n"
-"PO-Revision-Date: 2018-02-12 13:35+0100\n"
-"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
-"Language-Team: Dutch - vistausss@outlook.com\n"
-"Language: nl_NL\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Daniel Frost <one@frostinfo.de>\n"
+"Language-Team: \n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.6\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:225
 #: /home/ubuntu/Forks/talaan-app/talaan/components/TabActions.qml:19
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:24
 msgid "Lists"
-msgstr "Lijsten"
+msgstr "Listen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:234
 #: /home/ubuntu/Forks/talaan-app/talaan/components/TabActions.qml:31
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:24
 msgid "History"
-msgstr "Geschiedenis"
+msgstr "Verlauf"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:244
 #: /home/ubuntu/Forks/talaan-app/talaan/components/TabActions.qml:25
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:24
 msgid "Saved"
-msgstr "Opgeslagen"
+msgstr "Gespeicherte Listen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:252
 #: /home/ubuntu/Forks/talaan-app/talaan/components/TabActions.qml:38
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:17
 msgid "Settings"
-msgstr "Instellingen"
+msgstr "Einstellungen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:388
 #: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:397
 msgid "No list selected"
-msgstr "Geen lijst geselecteerd"
+msgstr "Keine Liste ausgewählt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:390
 msgid "Select a list from the left column"
-msgstr "Selecteer een lijst in het linkerpaneel"
+msgstr "Wähle eine Liste von der linken Spalte"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:399
 msgid "Select an item from the List, Saved or History tab"
-msgstr "Selecteer een item op het tabblad Lijst, Opgeslagen of Geschiedenis"
+msgstr ""
+"Wähle einen Eintrag aus den Listen, den gespeicherten Listen oder dem Verlauf"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/AddItemsBar.qml:227
 msgid "Enter item name"
-msgstr "Itemnaam invoeren"
+msgstr "Neuen Eintrag eingeben"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/AddItemsBar.qml:277
 msgid "Add comments / notes"
-msgstr "Opmerkingen/notities toevoegen"
+msgstr "Kommentar/Notiz hinzufügen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/AlarmReminder.qml:53
 msgid "Reminder was not set successfully"
-msgstr "Het instellen van de herinnering is mislukt"
+msgstr "Erinnerung setzen war nicht erfolgreich"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/AlarmReminder.qml:59
 msgid "Reminder successfully set"
-msgstr "Het instellen van de herinnering is gelukt"
+msgstr "Erinnerung erfolgreich angelegt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/AlarmReminder.qml:93
 msgid "Error saving the Reminder"
-msgstr "Fout bij opslaan van herinnering"
+msgstr "Fehler beim Setzen der Erinnerung"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/AlarmReminder.qml:94
 msgid ""
 "The Target Date might have already passed or the intended reminder is set in "
 "the past"
 msgstr ""
-"De doeldatum ligt in het verleden of de herinnering staat ingesteld op een "
-"datum in het verleden"
+"Das Datum ist evtl. schon vorbei oder die eingestellte Erinnerung wurde in "
+"der Vergangenheit gesetzt."
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/AlarmReminder.qml:98
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:191
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:31
 msgid "OK"
-msgstr "Oké"
+msgstr "OK"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/FindHeader.qml:34
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:872
@@ -100,16 +95,16 @@ msgstr "Oké"
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:185
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:23
 msgid "Cancel"
-msgstr "Annuleren"
+msgstr "Abbrechen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/FindHeader.qml:48
 msgid "Find..."
-msgstr "Zoeken..."
+msgstr "Suche..."
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListItemContent.qml:90
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:989
 msgid "Skipped"
-msgstr "Overgeslagen"
+msgstr "Übersprungen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:186
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:200
@@ -118,59 +113,59 @@ msgstr "Overgeslagen"
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:45
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:88
 msgid "Add"
-msgstr "Toevoegen"
+msgstr "Hinzufügen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:209
 msgid "Search"
-msgstr "Zoeken"
+msgstr "Suche"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:218
 msgid "Clear History"
-msgstr "Geschiedenis wissen"
+msgstr "Verlauf leeren"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:245
 msgid "Sort/Filter"
-msgstr "Sorteren/Filteren"
+msgstr "Sortieren/Filtern"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:271
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/NavigationSplitPage.qml:80
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:61
 msgid "Upcoming"
-msgstr "Aanstaande"
+msgstr "Anstehend"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:309
 msgid "Normal"
-msgstr "Normaal"
+msgstr "Normal"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:312
 msgid "Checklists"
-msgstr "Controlelijsten"
+msgstr "Kontrolllisten"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:324
 msgid "By Category"
-msgstr "Op categorie"
+msgstr "Nach Kategorie"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:327
 msgid "By Creation"
-msgstr "Op creatiedatum"
+msgstr "Nach Erstellungsdatum"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:330
 msgid "By Target"
-msgstr "Op doel"
+msgstr "Nach Ziele"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:342
 msgid "Reverse"
-msgstr "Omgekeerd"
+msgstr "Umdrehen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:379
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:37
 msgid "Navigation Panel"
-msgstr "Navigatiepaneel"
+msgstr "Navigationsfeld"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:387
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:602
 msgid "Close"
-msgstr "Sluiten"
+msgstr "Schließen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:402
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:499
@@ -182,11 +177,11 @@ msgstr "Sluiten"
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:79
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:120
 msgid "All"
-msgstr "Alles"
+msgstr "Alle"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:402
 msgid "Favorites"
-msgstr "Favorieten"
+msgstr "Favoriten"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:587
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:922
@@ -194,100 +189,100 @@ msgstr "Favorieten"
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:292
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:325
 msgid "Delete"
-msgstr "Verwijderen"
+msgstr "Löschen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:598
 msgid "List successfully deleted"
-msgstr "De lijst is succesvol verwijderd"
+msgstr "Liste erfolgreich gelöscht"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:617
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:274
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:303
 msgid "Save"
-msgstr "Opslaan"
+msgstr "Speichern"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:628
 msgid "List successfully added to Saved Lists"
-msgstr "De lijst is succesvol toegevoegd aan de opgeslagen lijsten"
+msgstr "Liste erfolgreich zu gespeicherten Listen hinzugefügt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:638
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:365
 msgid "New checklist"
-msgstr "Nieuwe controlelijst"
+msgstr "Neue Kontrollliste"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:652
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:378
 msgid "New List successfully created"
-msgstr "De nieuwe lijst is succesvol gecreëerd"
+msgstr "Neue Liste erfolgreich angelegt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:676
 msgid "Unfavorite"
-msgstr "Verwijderen uit favorieten"
+msgstr "Aus Favoriten entfernen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:677
 msgid "Favorite"
-msgstr "Toevoegen aan favorieten"
+msgstr "Favorit"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:688
 msgid "List successfully removed from Favorites"
-msgstr "De lijst is succesvol verwijderd uit de favorieten"
+msgstr "Liste erfolgreich von Favoriten entfernt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:693
 msgid "List successfully added to Favorites"
-msgstr "De lijst is succesvol toegevoegd aan de favorieten"
+msgstr "Liste erfolgreich zu Favoriten hinzugefügt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:701
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:399
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:699
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:307
 msgid "Edit"
-msgstr "Bewerken"
+msgstr "Bearbeiten"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:717
 msgid "Reset"
-msgstr "Standaardwaarden"
+msgstr "Zurücksetzen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:803
 msgid "No matching list found"
-msgstr "Geen overeenkomende lijst gevonden"
+msgstr "Keine passende Liste gefunden"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:805
 msgid "No Favorites"
-msgstr "Geen favorieten"
+msgstr "Keine Favoriten vorhanden"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:807
 msgid "Please try a different query or change the Sort / Filter."
-msgstr "Probeer een andere zoekopdracht of wijzig de sortering/het filter."
+msgstr "Bitte versuche ein andere Suche oder ändere die Sortierung/Filterung."
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:821
 msgid "Loading results"
-msgstr "Bezig met laden van resultaten"
+msgstr "Lade Ergebnisse"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:822
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:668
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:129
 msgid "Please wait"
-msgstr "Even geduld"
+msgstr "Bitte warten"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:834
 msgid "Sort / Filter"
-msgstr "Sorteren/Filteren"
+msgstr "Sortieren/Filtern"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:879
 msgid "Apply"
-msgstr "Toepassen"
+msgstr "Anwenden"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:903
 msgid "All items under this list will also be deleted permanently."
-msgstr "Alle items op deze lijst worden ook permanent verwijderd."
+msgstr "Alle Einträge dieser Liste werden gleichfalls endgültig gelöscht."
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/NavigationFlickable.qml:198
 msgid "Sort and Filter"
-msgstr "Sorteren en filteren"
+msgstr "Sortieren und Filtern"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/PageWithBottom.qml:16
 msgid "Navigation"
-msgstr "Navigatie"
+msgstr "Navigieren"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:54
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:58
@@ -295,110 +290,108 @@ msgstr "Navigatie"
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:482
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:579
 msgid "Select a Category"
-msgstr "Selecteer een categorie"
+msgstr "Wähle eine Kategorie"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:332
 msgid "On"
-msgstr "Op"
+msgstr "Ein"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:340
 msgid "Later than"
-msgstr "Na"
+msgstr "Später als"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:348
 msgid "Earlier than"
-msgstr "Voor"
+msgstr "Zeitiger als"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:22
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:50
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:74
 msgid "Name / Description"
-msgstr "Naam/Omschrijving"
+msgstr "Name/Bezeichnung"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:23
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:51
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:75
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:40
 msgid "Category"
-msgstr "Categorie"
+msgstr "Kategorie"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:23
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:51
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:75
 msgid "Creation Date"
-msgstr "Creatiedatum"
+msgstr "Erstellungsdatum"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:24
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:76
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:490
 msgid "Target Date"
-msgstr "Doeldatum"
+msgstr "Fälligkeitsdatum"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:76
 msgid "Completion Date"
-msgstr "Afronddatum"
+msgstr "Fertigstellungsdatum"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/TextualButtonStyle.qml:48
 #: /home/ubuntu/Forks/talaan-app/talaan/components/TextualButtonStyle.qml:51
 msgid "Pick"
-msgstr "Kiezen"
+msgstr "Auswählen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Walkthrough.qml:69
 #, qt-format
 msgid "Already used %1? <b>Skip the tutorial</b>"
-msgstr "Heeft u %1 al gebruikt? <b>Sla dan de rondleiding over</b>"
+msgstr "Schon verwendet %1? <b>Tutorialskript</b>"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Walkthrough.qml:69
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:716
 msgid "Skip"
-msgstr "Overslaan"
+msgstr "Überspringen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:16
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:496
 msgid "About Talaan"
-msgstr "Over Talaan"
+msgstr "Über Talaan"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:116
 msgid "© Talaan Version "
-msgstr ""
+msgstr "© Talaan Version "
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:128
 msgid "Released under license"
-msgstr ""
+msgstr "Veröffentlicht unter der Lizenz "
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:153
 msgid "Support"
-msgstr "Ondersteuning"
+msgstr "Unterstützung"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:193
 msgid "Report a bug"
-msgstr ""
+msgstr "Fehler melden"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:208
-#, fuzzy
 msgid "Contact Developer"
-msgstr "Ontwikkelaars"
+msgstr "Entwickler kontaktieren"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:223
 msgid "View source"
-msgstr ""
+msgstr "Quellcode"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:239
 msgid "Donate"
-msgstr ""
+msgstr "Spenden"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:255
 msgid "Other apps by the developer"
-msgstr ""
+msgstr "Andere Apps dieses Entwicklers"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:272
 msgid "Developers"
-msgstr "Ontwikkelaars"
+msgstr "Entwickler"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:276
-#, fuzzy
 msgid "Main developer"
-msgstr "Ontwikkelaars"
+msgstr "Verantwortlicher Entwickler"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:291
 msgid "Logo"
@@ -406,158 +399,158 @@ msgstr "Logo"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:309
 msgid "Powered by"
-msgstr "Aangedreven door"
+msgstr "Unterstützt von"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:313
 msgid "Date and Time manipulation"
-msgstr ""
+msgstr "Datum- und Zeitbearbeitung"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:328
 msgid "For processing JSON models"
-msgstr ""
+msgstr "Zur Verarbeitung von JSON Modellen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:38
 msgid "Add New Category"
-msgstr "Nieuwe categorie toevoegen"
+msgstr "Neue Kategorie hinzufügen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:39
 msgid "Edit Category - "
-msgstr "Categorie bewerken - "
+msgstr "Bearbeiten der Kategorie - "
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:135
 msgid "Name:"
-msgstr "Naam:"
+msgstr "Name:"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:145
 msgid "Enter Category name"
-msgstr "Categorienaam invoeren"
+msgstr "Kategorienamen eingeben"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:177
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:410
 msgid "Description:"
-msgstr "Omschrijving:"
+msgstr "Beschreibung:"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:189
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:435
 msgid "Add description (optional)"
-msgstr "Omschrijving toevoegen (optioneel)"
+msgstr "Beschreibung eingeben (optional)"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:218
 msgid "Color:"
-msgstr "Kleur:"
+msgstr "Farbe:"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:34
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:46
 msgid "Create New List"
-msgstr "Nieuwe lijst creëren"
+msgstr "Neue Liste anlegen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:37
 msgid "Edit List - "
-msgstr "Lijst bewerken - "
+msgstr "Bearbeiten der Liste - "
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:40
 msgid "Create New Saved List"
-msgstr "Nieuwe opgeslagen lijst creëren"
+msgstr "Neue gespeicherte Liste anlegen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:228
 msgid "Checklist"
-msgstr "Controlelijst"
+msgstr "Kontrollliste"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:254
 msgid "Continual"
-msgstr "Doorlopende lijst"
+msgstr "Stichpunktliste"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:281
 msgid "List Title:"
-msgstr "Titel van lijst:"
+msgstr "Listenbezeichnung:"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:303
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:34
 msgid "Enter checklist name"
-msgstr "Voer een naam in voor de controlelijst"
+msgstr "Listenbezeichnung hier eingeben"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:672
 msgid "List successfully updated"
-msgstr "De lijst is succesvol bijgewerkt"
+msgstr "Liste erfolgreich aktualisiert"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:681
 msgid "List successfully created"
-msgstr "De lijst is succesvol gecreëerd"
+msgstr "Liste erfolgreich angelegt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:23
 msgid "Searching Lists"
-msgstr "Bezig met zoeken naar lijsten"
+msgstr "Suche Listen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:25
 msgid "Search Lists"
-msgstr "Lijsten zoeken"
+msgstr "Listen suchen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:26
 msgid "No List Created Yet"
-msgstr "Nog geen lijst gecreëerd"
+msgstr "Bisher keine Listen vorhanden"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:28
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:29
 msgid "Favorite a list by using the 'starred' action"
-msgstr "Voeg een lijst toe aan de favorieten door de 'ster' te gebruiken"
+msgstr "Eine Liste mit dem Stern Symbol als Favorit  markieren"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:28
 msgid "Tap/Click the '+' button to add a List"
-msgstr "Druk op de '+'-knop om een lijst toe te voegen"
+msgstr "Berühren/Anklicken von \"+\" um eine Liste hinzuzufügen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:28
 msgid "Swipe from the dome at the bottom edge to add a List"
-msgstr "Veeg vanaf de onderkant om een lijst toe te voegen"
+msgstr "Wischen von der Halbkugel unten um eine Liste hinzuzufügen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:30
 msgid "Loading Lists"
-msgstr "Bezig met laden van lijsten"
+msgstr "Lade Listen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:23
 msgid "Searching History"
-msgstr "Bezig met doorzoeken van geschiedenis"
+msgstr "Durchsuche Verlauf"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:25
 msgid "Search History"
-msgstr "Geschiedenis doorzoeken"
+msgstr "Verlauf durchsuchen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:26
 msgid "History is empty"
-msgstr "Er is geen geschiedenis"
+msgstr "Der Verlauf ist leer"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:29
 msgid "Completed checklists from your Favorites are listed here"
-msgstr "Afgeronde controlelijsten uit uw favorieten worden hier opgesomd"
+msgstr "Erledigte Listen aus den Favoriten sind hier aufgeführt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:30
 msgid "Completed checklists are listed here"
-msgstr "Afgeronde controlelijsten worden hier opgesomd"
+msgstr "Erledigte Listen sind hier aufgeführt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:32
 msgid "Loading History"
-msgstr "Bezig met laden van geschiedenis"
+msgstr "Lade Verlauf"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:338
 msgid "Find"
-msgstr "Zoeken"
+msgstr "Suche"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:347
 msgid "Mark as completed"
-msgstr "Markeren als afgerond"
+msgstr "Alle erledigt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:356
 msgid "Uncheck All"
-msgstr "Alles de-markeren"
+msgstr "Alle unerledigt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:435
 msgid "Set Reminders"
-msgstr "Herinneringen instellen"
+msgstr "Erinnerung setzen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:459
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:462
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:465
 msgid "Sort"
-msgstr "Sorteren"
+msgstr "Sortieren"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:459
 msgid "A-Z"
@@ -570,161 +563,162 @@ msgstr "Z-A"
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:465
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:178
 msgid "Default"
-msgstr "Standaard"
+msgstr "Talaan (Standardthema)"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:485
 msgid "View Details"
-msgstr "Details weergeven"
+msgstr "Details anzeigen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:506
 msgid "Remaining"
-msgstr "Resterend"
+msgstr "Unerledigt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:629
 msgid "No matching item found"
-msgstr "Geen overeenkomend item gevonden"
+msgstr "Keine Suchtreffer gefunden"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:632
 msgid "No remaining item"
-msgstr "Geen resterend item"
+msgstr "Keine Einträge übrig"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:635
 msgid "List is empty"
-msgstr "De lijst is leeg"
+msgstr "Die Liste ist leer"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:640
 msgid "Please try a different query or try removing the filter if there's any"
 msgstr ""
-"Probeer een andere zoekopdracht of verwijder het filter (indien ingesteld)"
+"Bitte versuche eine andere Suchanfrage oder entferne den Filter, falls einer "
+"gesetzt ist"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:644
 msgid "Click the '+' button to add more items (Ctrl + L)"
-msgstr "Klik op de '+'-knop om meer items toe te voegen (Ctrl+L)"
+msgstr "Klicke auf \"+\" um neue Einträge hinzuzufügen (Strg + L)"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:645
 msgid "Swipe from the bottom to add more items"
-msgstr "Veeg vanaf de onderkant om meer items toe te voegen"
+msgstr "Von unten wischen um neue Einträge hinzuzufügen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:649
 msgid "Click the '+' button to add items (Ctrl + L)"
-msgstr "Klik op de '+'-knop om items toe te voegen (Ctrl+L)"
+msgstr "Klicke auf \"+\" um Einträge hinzuzufügen (Strg + L)"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:650
 msgid "Swipe from the bottom to add items"
-msgstr "Veeg vanaf de onderkant om items toe te voegen"
+msgstr "Von unten wischen um Einträge hinzuzufügen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:667
 msgid "Loading list items"
-msgstr "Bezig met laden van lijstitems"
+msgstr "Lade Listeneinträge"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:727
 msgid "Toggle Priority"
-msgstr "Prioriteit toekennen/intrekken"
+msgstr "Priorität umschalten"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:1150
 msgid "Undo last item"
-msgstr "Laatste item ongedaan maken"
+msgstr "Letztes rückgängig machen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:24
 msgid "Categories"
-msgstr "Categorieën"
+msgstr "Kategorien"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:176
 msgid "No Category Exists"
-msgstr "Er zijn geen categorieën"
+msgstr "Keine Kategorie vorhanden"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:178
 msgid "Tap/Click the '+' button to add categories"
-msgstr "Druk op de '+'-knop om categorieën toe te voegen"
+msgstr "\"+\" antippen/anklicken um Kategorien hinzuzufügen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:179
 msgid "Swipe from the bottom to add categories"
-msgstr "Veeg vanaf de onderkant om categorieën toe te voegen"
+msgstr "Von unten wischen um Kategorien hinzuzufügen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:293
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:308
 msgid "Uncategorized"
-msgstr "Niet-gecategoriseerd"
+msgstr "Nicht kategoriesiert"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:345
 msgid "Category successfully deleted"
-msgstr "De categorie is succesvol verwijderd"
+msgstr "Kategorie erfolgreich gelöscht"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:19
 msgid "Reminders"
-msgstr "Herinneringen"
+msgstr "Erinnerungen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:47
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:54
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:65
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:76
 msgid "Current"
-msgstr "Huidige"
+msgstr "Laufend"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:195
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:26
 msgid "Targets"
-msgstr "Doelen"
+msgstr "Ziele"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:270
 msgid "No reminders for any list"
-msgstr "Geen herinneringen, op welke lijst dan ook"
+msgstr "Keine Erinnerungen für irgendeine Liste vorhanden"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:271
 msgid "No reminders for this list"
-msgstr "Geen herinneringen op deze lijst"
+msgstr "Keine Erinnerungen für diese Liste vorhanden"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:274
 msgid "Open a list to set reminders"
-msgstr "Open een lijst om herinneringen toe te voegen"
+msgstr "Eine Liste öffnen um Erinnerung zu setzen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:275
 msgid "Tap/Click the '+' button to add Reminders"
-msgstr "Druk op de '+'-knop om herinneringen toe te voegen"
+msgstr "\"+\" antippen/anklicken um Erinnerungen hinzuzufügen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:23
 msgid "Searching Saved Lists"
-msgstr "Bezig doorzoeken van opgeslagen lijsten"
+msgstr "Durchsuche gespeicherte Listen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:25
 msgid "Search Saved Lists"
-msgstr "Opgeslagen lijsten doorzoeken"
+msgstr "Gespeicherte Listen durchsuchen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:26
 msgid "No Saved Checklists"
-msgstr "Geen opgeslagen controlelijsten"
+msgstr "Keine gespeicherten Listen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:30
 msgid "Save a list from the Lists Tab"
-msgstr "Sla een lijst op via het tabblad Lijsten"
+msgstr "Speichere hier eine Liste aus dem Listen-Tab"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:32
 msgid "Loading Saved Lists"
-msgstr "Bezig met laden van opgeslagen lijsten"
+msgstr "Lade gespeicherte Listen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:98
 msgid "Interface"
-msgstr "Uiterlijk"
+msgstr "Verhalten"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:102
 msgid "Hide completed items"
-msgstr "Afgeronde items verbergen"
+msgstr "Erledigte Einträge ausblenden"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:103
 msgid "When opening lists"
-msgstr "Bij het openen van lijsten:"
+msgstr "zeigt nur offene Einträge in der Listenansicht"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:111
 msgid "Show category colors"
-msgstr "Categoriekleuren weergeven"
+msgstr "Kategoriefarben anzeigen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:112
 msgid "Category color assignment"
-msgstr "Categorie-kleurtoekenning"
+msgstr "farbige Dreiecke je nach Kategorie darstellen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:122
 msgid "Theme"
-msgstr "Thema"
+msgstr "Aussehen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:182
 msgid "Ambiance"
@@ -732,138 +726,138 @@ msgstr "Ambiance"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:186
 msgid "Suru Dark"
-msgstr "Suru donker"
+msgstr "Suru Dark"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:194
 msgid "Accessibility"
-msgstr "Toegankelijkheid"
+msgstr "Oberfläche"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:200
 msgid "Bottom Menu"
-msgstr "Onderste menu"
+msgstr "Fußleistenmenü"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:255
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:327
 msgid "None"
-msgstr "Geen"
+msgstr "Ohne"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:259
 msgid "Radial"
-msgstr "Radiaal"
+msgstr "Halbkugel"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:272
 msgid "Bottom Menu Hint"
-msgstr "Hint"
+msgstr "Fußleistenmenü Hinweis"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:331
 msgid "Autohide"
-msgstr "Automatisch verbergen"
+msgstr "Automatisch ausgeblendet"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:335
 msgid "Semihide"
-msgstr "Semi-verbergen"
+msgstr "Halbversteckt"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:340
 msgid "Always Displayed"
-msgstr "Altijd weergeven"
+msgstr "Immer sichtbar"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:416
 msgid "Larger font size"
-msgstr "Groter lettertype"
+msgstr "Größere Schrift"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:417
 msgid "For list items"
-msgstr "Voor lijstitems"
+msgstr "Listeneinträge größer darstellen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:425
 msgid "Toggle list items via surface"
-msgstr "Lijstitems weergeven/verbergen via oppervlak"
+msgstr "umschalten mit Text und Kästchen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:427
 msgid "Only the checkbox is clickable if disabled"
-msgstr "Als dit is uitgeschakeld, dan is alleen het aankruisvakje aanklikbaar"
+msgstr "deaktiviert: umschalten nur mit Kästchen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:490
 msgid "Manage Categories"
-msgstr "Categorieën beheren"
+msgstr "Kategorien verwalten"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:492
 msgid "Add, edit, and delete categories"
-msgstr "Categorieën toevoegen, bewerken en verwijderen"
+msgstr "Hinzufügen, ändern und löschen von Kategorien"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:498
 msgid "Credits, report bugs, view source code, contact developer, donate"
 msgstr ""
-"Met dank aan, fouten (bugs) rapporteren, broncode bekijken, contact opnemen "
-"met ontwikkelaar, doneren"
+"Mitwirkende, Fehler melden, Quellcode anschauen, die Entwickler "
+"kontaktieren, spenden"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:51
 msgid "Unpin window"
-msgstr "Venster losmaken"
+msgstr "Fenster lösen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:51
 msgid "Pin Window"
-msgstr "Venster vastzetten"
+msgstr "Fenster anheften"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:61
 msgid "Overdue"
-msgstr "Verlopen"
+msgstr "Überfällig"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:108
 msgid "You have no upcoming targets"
-msgstr "U heeft geen aanstaande doelen"
+msgstr "Es gibt keine anstehenden Aufgaben"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:108
 msgid "You have no overdue targets"
-msgstr "U heeft geen verlopen doelen"
+msgstr "Es gibt keine überfälligen Aufgaben"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:109
 msgid "All your upcoming targets will be listed here"
-msgstr "Al uw aanstaande doelen worden hier opgesomd"
+msgstr "Alle anstehenden Aufgaben werden hier aufgelistet"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:109
 msgid "All your overdue targets will be listed here"
-msgstr "Al uw verlopen doelen worden hier opgesomd"
+msgstr "Alle überfälligen Aufgaben werden hier aufgelistet"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:128
 msgid "Loading Targets"
-msgstr "Bezig met laden van doelen"
+msgstr "Lade Aufgaben"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:11
 msgid "New Reminder"
-msgstr "Nieuwe herinnering"
+msgstr "Neue Erinnerung"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:280
 msgid "Silent Reminder"
-msgstr "Stille herinnering"
+msgstr "Stille Erinnerung"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:14
 msgid "New Checklist"
-msgstr "Nieuwe controlelijst"
+msgstr "Neue Kontrollliste"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:28
 msgid "Checklist Name"
-msgstr "Naam van controlelijst"
+msgstr "Kontrolllistenname"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:83
 msgid "Target Date?"
-msgstr "Doeldatum?"
+msgstr "Fälligkeitsdatum?"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:12
 msgid "Open external link"
-msgstr "Externe link openen"
+msgstr "Externen Link öffnen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:13
 msgid "You are about to open an external link. Do you wish to continue?"
-msgstr "U staat op het punt om een externe link te openen. Wilt u doorgaan?"
+msgstr "Es soll ein externer Link geöffnet werden. Soll fortgefahren werden?"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:9
 msgid "Do you want to include the list item comments?"
-msgstr "Wilt u de itemopmerkingen van de lijst bijsluiten?"
+msgstr "Speichern inklusive der Kommentare?"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:21
 msgid "No"
-msgstr "Nee"
+msgstr "Nein"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:29
 msgid "Yes"
@@ -871,53 +865,53 @@ msgstr "Ja"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/Search/SearchHeaderExtension.qml:13
 msgid "Results found: "
-msgstr "Resultaten: "
+msgstr "Gefundene Ergebnisse: "
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:45
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:65
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:80
 msgid "By Name (A-Z)"
-msgstr "Op naam (A-Z)"
+msgstr "Name (A-Z)"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:49
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:69
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:89
 msgid "By Category (A-Z)"
-msgstr "Op categorie (A-Z)"
+msgstr "Kategorie (A-Z)"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:54
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:74
 msgid "By Creation Date (Latest First)"
-msgstr "Op creatiedatum (laatste eerst)"
+msgstr "Erstellungsdatum (letztes zuerst)"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:59
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:94
 msgid "By Target Date (Latest First)"
-msgstr "Op doeldatum (laatste eerst)"
+msgstr "Fälligkeitsdatum (letztes zuerst)"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:85
 msgid "By Completion Date (Latest First)"
-msgstr "Op afronddatum (laatste eerst)"
+msgstr "Erledigungsdatum (letztes zuerst)"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:124
 msgid "Normal Lists Only"
-msgstr "Alleen normale lijsten"
+msgstr "Nur normale Listen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:128
 msgid "Checklists Only"
-msgstr "Alleen controlelijsten"
+msgstr "Nur Kontrolllisten"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:242
 msgid "Reverse Order"
-msgstr "Omgekeerde volgorde"
+msgstr "Umgedrehte Sortierreihenfolge"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:120
 msgid "Today"
-msgstr "Vandaag"
+msgstr "Heute"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:123
 msgid "Yesterday"
-msgstr "Gisteren"
+msgstr "Gestern"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:126
 msgid "Tomorrow"
@@ -925,35 +919,35 @@ msgstr "Morgen"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:129
 msgid "On "
-msgstr "Op "
+msgstr "Ein "
 
 #: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:132
 msgid "Last Week"
-msgstr "Vorige week"
+msgstr "Letzte Woche"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:135
 msgid "Next Week"
-msgstr "Volgende week"
+msgstr "Nächste Woche"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:138
 msgid "Last Month"
-msgstr "Vorige maand"
+msgstr "Letzten Monat"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:141
 msgid "Next Month"
-msgstr "Volgende maand"
+msgstr "Nächsten Monat"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:144
 msgid "This Month"
-msgstr "Deze maand"
+msgstr "Diesen Monat"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:147
 msgid "Older"
-msgstr "Ouder"
+msgstr "Älter"
 
 #: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:150
 msgid "In The Future"
-msgstr "Toekomstig"
+msgstr "In der Zukunft"
 
 #: /home/ubuntu/Forks/talaan-app/build/talaan/talaan.desktop.h:1
 msgid "Talaan"
