@@ -37,7 +37,7 @@ MainView {
         }
     }
 
-    property string current_version: "2.30"
+    property string current_version: "2.38"
     property alias listItems: listItems
     property alias notification: notificationLoader.item
     property alias mainLayout: mainAdaptLayout
@@ -331,18 +331,9 @@ MainView {
 
             visible: status == Loader.Ready
 
-//            onLoaded: {
-//                showItemsPage(pageProperties)
-//            }
-
             function showItemsPage(properties) {
-//                if (!active) {
-//                    pageProperties = properties
-//                    active = true
-//                } else {
-                    mainLayout.selectItemFromMain(mainLayout.primaryPage, item,
+				mainLayout.selectItemFromMain(mainLayout.primaryPage, item,
                                                   properties)
-//                }
             }
         }
 
@@ -629,9 +620,4 @@ MainView {
             id: dummyAlarm
         }
     }
-
-    //    Connections {
-    //        id: keyboard
-    //        target: Qt.inputMethod
-    //    }
 }

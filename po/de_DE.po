@@ -1,93 +1,88 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-18 23:00+0800\n"
-"PO-Revision-Date: 2018-03-01 10:45+0100\n"
-"Last-Translator: advocatux <advocatux@airpost.net>\n"
-"Language-Team: UBports Spanish Team\n"
-"Language: es\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Daniel Frost <one@frostinfo.de>\n"
+"Language-Team: \n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:225
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/TabActions.qml:19
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:24
 msgid "Lists"
-msgstr "Listas"
+msgstr "Listen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:234
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/TabActions.qml:31
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:24
 msgid "History"
-msgstr "Historial"
+msgstr "Verlauf"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:244
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/TabActions.qml:25
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:24
 msgid "Saved"
-msgstr "Guardados"
+msgstr "Gespeicherte Listen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:252
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/TabActions.qml:38
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:17
 msgid "Settings"
-msgstr "Configuración"
+msgstr "Einstellungen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:379
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:388
 msgid "No list selected"
-msgstr "Ninguna lista seleccionada"
+msgstr "Keine Liste ausgewählt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:381
 msgid "Select a list from the left column"
-msgstr "Seleccione una lista de la columna izquierda"
+msgstr "Wähle eine Liste von der linken Spalte"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:390
 msgid "Select an item from the List, Saved or History tab"
 msgstr ""
-"Seleccione un ítem de la lista, de guardados o de la pestaña del historial"
+"Wähle einen Eintrag aus den Listen, den gespeicherten Listen oder dem Verlauf"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AddItemsBar.qml:227
 msgid "Enter item name"
-msgstr "Introduzca el nombre de un ítem"
+msgstr "Neuen Eintrag eingeben"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AddItemsBar.qml:277
 msgid "Add comments / notes"
-msgstr "Añadir comentarios / notas"
+msgstr "Kommentar/Notiz hinzufügen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AlarmReminder.qml:53
 msgid "Reminder was not set successfully"
-msgstr "El recordatorio no se configuró correctamente"
+msgstr "Erinnerung setzen war nicht erfolgreich"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AlarmReminder.qml:59
 msgid "Reminder successfully set"
-msgstr "El recordatorio se configuró correctamente"
+msgstr "Erinnerung erfolgreich angelegt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AlarmReminder.qml:93
 msgid "Error saving the Reminder"
-msgstr "Error guardando el recordatorio"
+msgstr "Fehler beim Setzen der Erinnerung"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AlarmReminder.qml:94
 msgid ""
 "The Target Date might have already passed or the intended reminder is set in "
 "the past"
 msgstr ""
-"La fecha objetivo podría haber pasado ya o el recordatorio previsto está "
-"establecido en el pasado"
+"Das Datum ist evtl. schon vorbei oder die eingestellte Erinnerung wurde in "
+"der Vergangenheit gesetzt."
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AlarmReminder.qml:98
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:191
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:31
 msgid "OK"
-msgstr "Vale"
+msgstr "OK"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/FindHeader.qml:34
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:873
@@ -100,16 +95,16 @@ msgstr "Vale"
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:185
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:23
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Abbrechen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/FindHeader.qml:48
 msgid "Find..."
-msgstr "Encontrar..."
+msgstr "Suche..."
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListItemContent.qml:90
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:989
 msgid "Skipped"
-msgstr "Omitido"
+msgstr "Übersprungen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:186
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:200
@@ -118,25 +113,25 @@ msgstr "Omitido"
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:45
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:88
 msgid "Add"
-msgstr "Añadir"
+msgstr "Hinzufügen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:209
 msgid "Search"
-msgstr "Buscar"
+msgstr "Suche"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:218
 msgid "Clear History"
-msgstr "Borrar historial"
+msgstr "Verlauf leeren"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:245
 msgid "Sort/Filter"
-msgstr "Ordenar/Filtro"
+msgstr "Sortieren/Filtern"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:271
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/NavigationSplitPage.qml:80
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:61
 msgid "Upcoming"
-msgstr "Inminente"
+msgstr "Anstehend"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:309
 msgid "Normal"
@@ -144,33 +139,33 @@ msgstr "Normal"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:312
 msgid "Checklists"
-msgstr "Listas de comprobación"
+msgstr "Kontrolllisten"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:324
 msgid "By Category"
-msgstr "Por categoría"
+msgstr "Nach Kategorie"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:327
 msgid "By Creation"
-msgstr "Por creación"
+msgstr "Nach Erstellungsdatum"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:330
 msgid "By Target"
-msgstr "Por objetivo"
+msgstr "Nach Ziele"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:342
 msgid "Reverse"
-msgstr "Revertir"
+msgstr "Umdrehen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:379
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:37
 msgid "Navigation Panel"
-msgstr "Panel de navegación"
+msgstr "Navigationsfeld"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:387
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:602
 msgid "Close"
-msgstr "Cerrar"
+msgstr "Schließen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:402
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:499
@@ -182,11 +177,11 @@ msgstr "Cerrar"
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:79
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:120
 msgid "All"
-msgstr "Todo"
+msgstr "Alle"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:402
 msgid "Favorites"
-msgstr "Favoritos"
+msgstr "Favoriten"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:588
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:923
@@ -194,102 +189,100 @@ msgstr "Favoritos"
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:292
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:325
 msgid "Delete"
-msgstr "Borrar"
+msgstr "Löschen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:599
 msgid "List successfully deleted"
-msgstr "Lista borrada correctamente"
+msgstr "Liste erfolgreich gelöscht"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:618
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:274
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:303
 msgid "Save"
-msgstr "Guardar"
+msgstr "Speichern"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:629
 msgid "List successfully added to Saved Lists"
-msgstr "Lista añadida correctamente a listas guardadas"
+msgstr "Liste erfolgreich zu gespeicherten Listen hinzugefügt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:639
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:365
 msgid "New checklist"
-msgstr "Nueva lista de comprobación"
+msgstr "Neue Kontrollliste"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:653
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:378
 msgid "New List successfully created"
-msgstr "Nueva lista creada correctamente"
+msgstr "Neue Liste erfolgreich angelegt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:677
 msgid "Unfavorite"
-msgstr "Quitar de favoritos"
+msgstr "Aus Favoriten entfernen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:678
 msgid "Favorite"
-msgstr "Favorito"
+msgstr "Favorit"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:689
 msgid "List successfully removed from Favorites"
-msgstr "Lista eliminada correctamente de favoritos"
+msgstr "Liste erfolgreich von Favoriten entfernt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:694
 msgid "List successfully added to Favorites"
-msgstr "Lista añadida correctamente a favoritos"
+msgstr "Liste erfolgreich zu Favoriten hinzugefügt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:702
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:399
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:699
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:307
 msgid "Edit"
-msgstr "Editar"
+msgstr "Bearbeiten"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:718
 msgid "Reset"
-msgstr "Reiniciar"
+msgstr "Zurücksetzen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:804
 msgid "No matching list found"
-msgstr "No se encontró ninguna lista coincidente"
+msgstr "Keine passende Liste gefunden"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:806
 msgid "No Favorites"
-msgstr "No hay favoritos"
+msgstr "Keine Favoriten vorhanden"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:808
 msgid "Please try a different query or change the Sort / Filter."
-msgstr "Intente una nueva consulta o cambie el Ordenar / Filtro"
+msgstr "Bitte versuche ein andere Suche oder ändere die Sortierung/Filterung."
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:822
 msgid "Loading results"
-msgstr "Cargando resultados"
+msgstr "Lade Ergebnisse"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:823
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:668
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:129
 msgid "Please wait"
-msgstr "Espere por favor"
+msgstr "Bitte warten"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:835
 msgid "Sort / Filter"
-msgstr "Ordenar / Filtro"
+msgstr "Sortieren/Filtern"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:880
 msgid "Apply"
-msgstr "Aplicar"
+msgstr "Anwenden"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:904
 msgid "All items under this list will also be deleted permanently."
-msgstr ""
-"Todos los ítems incluidos en esta lista también serán borrados "
-"permanentemente."
+msgstr "Alle Einträge dieser Liste werden gleichfalls endgültig gelöscht."
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/NavigationFlickable.qml:198
 msgid "Sort and Filter"
-msgstr "Ordenar y filtrar"
+msgstr "Sortieren und Filtern"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/PageWithBottom.qml:16
 msgid "Navigation"
-msgstr "Navegación"
+msgstr "Navigieren"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:54
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:58
@@ -297,110 +290,108 @@ msgstr "Navegación"
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:482
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:579
 msgid "Select a Category"
-msgstr "Seleccionar una categoría"
+msgstr "Wähle eine Kategorie"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:332
 msgid "On"
-msgstr "En"
+msgstr "Ein"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:340
 msgid "Later than"
-msgstr "Más tarde que"
+msgstr "Später als"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:348
 msgid "Earlier than"
-msgstr "Antes de"
+msgstr "Zeitiger als"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:22
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:50
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:74
 msgid "Name / Description"
-msgstr "Nombre / Descripción"
+msgstr "Name/Bezeichnung"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:23
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:51
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:75
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:40
 msgid "Category"
-msgstr "Categoría"
+msgstr "Kategorie"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:23
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:51
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:75
 msgid "Creation Date"
-msgstr "Fecha de creación"
+msgstr "Erstellungsdatum"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:24
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:76
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:490
 msgid "Target Date"
-msgstr "Fecha objetivo"
+msgstr "Fälligkeitsdatum"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:76
 msgid "Completion Date"
-msgstr "Fecha de terminación"
+msgstr "Fertigstellungsdatum"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/TextualButtonStyle.qml:48
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/TextualButtonStyle.qml:51
 msgid "Pick"
-msgstr "Elegir"
+msgstr "Auswählen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Walkthrough.qml:69
 #, qt-format
 msgid "Already used %1? <b>Skip the tutorial</b>"
-msgstr "¿Ha usado %1 ya? <b>Omitir el tutorial</b>"
+msgstr "Schon verwendet %1? <b>Tutorialskript</b>"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Walkthrough.qml:69
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:716
 msgid "Skip"
-msgstr "Omitir"
+msgstr "Überspringen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:16
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:496
 msgid "About Talaan"
-msgstr "Acerca de Talaan"
+msgstr "Über Talaan"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:116
 msgid "© Talaan Version "
-msgstr ""
+msgstr "© Talaan Version "
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:128
 msgid "Released under license"
-msgstr ""
+msgstr "Veröffentlicht unter der Lizenz "
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:153
 msgid "Support"
-msgstr "Soporte"
+msgstr "Unterstützung"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:193
 msgid "Report a bug"
-msgstr ""
+msgstr "Fehler melden"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:208
-#, fuzzy
 msgid "Contact Developer"
-msgstr "Desarrolladores"
+msgstr "Entwickler kontaktieren"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:223
 msgid "View source"
-msgstr ""
+msgstr "Quellcode"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:239
 msgid "Donate"
-msgstr ""
+msgstr "Spenden"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:255
 msgid "Other apps by the developer"
-msgstr ""
+msgstr "Andere Apps dieses Entwicklers"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:272
 msgid "Developers"
-msgstr "Desarrolladores"
+msgstr "Entwickler"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:276
-#, fuzzy
 msgid "Main developer"
-msgstr "Desarrolladores"
+msgstr "Verantwortlicher Entwickler"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:291
 msgid "Logo"
@@ -408,158 +399,158 @@ msgstr "Logo"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:309
 msgid "Powered by"
-msgstr "Impulsado por"
+msgstr "Unterstützt von"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:313
 msgid "Date and Time manipulation"
-msgstr ""
+msgstr "Datum- und Zeitbearbeitung"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:328
 msgid "For processing JSON models"
-msgstr ""
+msgstr "Zur Verarbeitung von JSON Modellen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:38
 msgid "Add New Category"
-msgstr "Añadir nueva categoría"
+msgstr "Neue Kategorie hinzufügen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:39
 msgid "Edit Category - "
-msgstr "Editar categoría - "
+msgstr "Bearbeiten der Kategorie - "
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:135
 msgid "Name:"
-msgstr "Nombre:"
+msgstr "Name:"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:145
 msgid "Enter Category name"
-msgstr "Introduzca el nombre de la categoría"
+msgstr "Kategorienamen eingeben"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:177
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:410
 msgid "Description:"
-msgstr "Descripción:"
+msgstr "Beschreibung:"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:189
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:435
 msgid "Add description (optional)"
-msgstr "Añadir descripción (opcional)"
+msgstr "Beschreibung eingeben (optional)"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:218
 msgid "Color:"
-msgstr "Color:"
+msgstr "Farbe:"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:34
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:46
 msgid "Create New List"
-msgstr "Crear una nueva lista"
+msgstr "Neue Liste anlegen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:37
 msgid "Edit List - "
-msgstr "Editar lista - "
+msgstr "Bearbeiten der Liste - "
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:40
 msgid "Create New Saved List"
-msgstr "Crear una nueva lista guardada"
+msgstr "Neue gespeicherte Liste anlegen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:228
 msgid "Checklist"
-msgstr "Lista de comprobación"
+msgstr "Kontrollliste"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:254
 msgid "Continual"
-msgstr "Continuo"
+msgstr "Stichpunktliste"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:281
 msgid "List Title:"
-msgstr "Título de la lista:"
+msgstr "Listenbezeichnung:"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:303
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:34
 msgid "Enter checklist name"
-msgstr "Introduzca el nombre de la lista de comprobación"
+msgstr "Listenbezeichnung hier eingeben"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:672
 msgid "List successfully updated"
-msgstr "Lista actualizada correctamente"
+msgstr "Liste erfolgreich aktualisiert"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:681
 msgid "List successfully created"
-msgstr "Lista creada correctamente"
+msgstr "Liste erfolgreich angelegt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:23
 msgid "Searching Lists"
-msgstr "Buscando listas"
+msgstr "Suche Listen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:25
 msgid "Search Lists"
-msgstr "Buscar listas"
+msgstr "Listen suchen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:26
 msgid "No List Created Yet"
-msgstr "Ninguna lista creada aún"
+msgstr "Bisher keine Listen vorhanden"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:28
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:29
 msgid "Favorite a list by using the 'starred' action"
-msgstr "Marque una lista como favorita usando la 'estrella'"
+msgstr "Eine Liste mit dem Stern Symbol als Favorit  markieren"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:28
 msgid "Tap/Click the '+' button to add a List"
-msgstr "Toque/Clic sobre el botón '+' para añadir una lista"
+msgstr "Berühren/Anklicken von \"+\" um eine Liste hinzuzufügen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:28
 msgid "Swipe from the dome at the bottom edge to add a List"
-msgstr "Arrastre desde la bóveda en la parte inferior para añadir una lista"
+msgstr "Wischen von der Halbkugel unten um eine Liste hinzuzufügen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:30
 msgid "Loading Lists"
-msgstr "Cargando listas"
+msgstr "Lade Listen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:23
 msgid "Searching History"
-msgstr "Buscando en el historial"
+msgstr "Durchsuche Verlauf"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:25
 msgid "Search History"
-msgstr "Buscar en el historial"
+msgstr "Verlauf durchsuchen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:26
 msgid "History is empty"
-msgstr "El historial está vacío"
+msgstr "Der Verlauf ist leer"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:29
 msgid "Completed checklists from your Favorites are listed here"
-msgstr "Las listas de comprobación completadas de sus favoritos se listan aquí"
+msgstr "Erledigte Listen aus den Favoriten sind hier aufgeführt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:30
 msgid "Completed checklists are listed here"
-msgstr "Las listas de comprobación completadas se listan aquí"
+msgstr "Erledigte Listen sind hier aufgeführt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:32
 msgid "Loading History"
-msgstr "Cargando el historial"
+msgstr "Lade Verlauf"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:338
 msgid "Find"
-msgstr "Encontrar"
+msgstr "Suche"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:347
 msgid "Mark as completed"
-msgstr "Marcar como completado"
+msgstr "Alle erledigt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:356
 msgid "Uncheck All"
-msgstr "Desmarcar todo"
+msgstr "Alle unerledigt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:435
 msgid "Set Reminders"
-msgstr "Establecer recordatorios"
+msgstr "Erinnerung setzen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:459
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:462
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:465
 msgid "Sort"
-msgstr "Ordenar"
+msgstr "Sortieren"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:459
 msgid "A-Z"
@@ -572,389 +563,391 @@ msgstr "Z-A"
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:465
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:178
 msgid "Default"
-msgstr "Predeterminado"
+msgstr "Talaan (Standardthema)"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:485
 msgid "View Details"
-msgstr "Ver detalles"
+msgstr "Details anzeigen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:506
 msgid "Remaining"
-msgstr "Restante"
+msgstr "Unerledigt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:629
 msgid "No matching item found"
-msgstr "No se encontró ningún ítem coincidente"
+msgstr "Keine Suchtreffer gefunden"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:632
 msgid "No remaining item"
-msgstr "Ningún ítem restante"
+msgstr "Keine Einträge übrig"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:635
 msgid "List is empty"
-msgstr "La lista está vacía"
+msgstr "Die Liste ist leer"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:640
 msgid "Please try a different query or try removing the filter if there's any"
-msgstr "Intente una nueva consulta o pruebe a eliminar el filtro si hay alguno"
+msgstr ""
+"Bitte versuche eine andere Suchanfrage oder entferne den Filter, falls einer "
+"gesetzt ist"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:644
 msgid "Click the '+' button to add more items (Ctrl + L)"
-msgstr "Haga clic sobre el botón '+' para añadir más ítems (Ctrl + L)"
+msgstr "Klicke auf \"+\" um neue Einträge hinzuzufügen (Strg + L)"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:645
 msgid "Swipe from the bottom to add more items"
-msgstr "Arrastre desde abajo para añadir más ítems"
+msgstr "Von unten wischen um neue Einträge hinzuzufügen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:649
 msgid "Click the '+' button to add items (Ctrl + L)"
-msgstr "Haga clic sobre el botón '+' para añadir ítems (Ctrl + L)"
+msgstr "Klicke auf \"+\" um Einträge hinzuzufügen (Strg + L)"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:650
 msgid "Swipe from the bottom to add items"
-msgstr "Arrastre desde abajo para añadir ítems"
+msgstr "Von unten wischen um Einträge hinzuzufügen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:667
 msgid "Loading list items"
-msgstr "Cargando la lista de ítems"
+msgstr "Lade Listeneinträge"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:727
 msgid "Toggle Priority"
-msgstr "Alternar la prioridad"
+msgstr "Priorität umschalten"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1150
 msgid "Undo last item"
-msgstr "Deshacer el último ítem"
+msgstr "Letztes rückgängig machen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:24
 msgid "Categories"
-msgstr "Categorías"
+msgstr "Kategorien"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:176
 msgid "No Category Exists"
-msgstr "No existe ninguna categoría"
+msgstr "Keine Kategorie vorhanden"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:178
 msgid "Tap/Click the '+' button to add categories"
-msgstr "Pulse/Clic sobre el botón '+' para añadir categorías"
+msgstr "\"+\" antippen/anklicken um Kategorien hinzuzufügen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:179
 msgid "Swipe from the bottom to add categories"
-msgstr "Arrastre desde abajo para añadir categorías"
+msgstr "Von unten wischen um Kategorien hinzuzufügen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:293
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:308
 msgid "Uncategorized"
-msgstr "Sin clasificar"
+msgstr "Nicht kategoriesiert"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:345
 msgid "Category successfully deleted"
-msgstr "Categoría borrada correctamente"
+msgstr "Kategorie erfolgreich gelöscht"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:19
 msgid "Reminders"
-msgstr "Recordatorios"
+msgstr "Erinnerungen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:47
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:54
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:65
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:76
 msgid "Current"
-msgstr "Actual"
+msgstr "Laufend"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:195
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:26
 msgid "Targets"
-msgstr "Objetivos"
+msgstr "Ziele"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:270
 msgid "No reminders for any list"
-msgstr "Ninguna lista tiene recordatorios"
+msgstr "Keine Erinnerungen für irgendeine Liste vorhanden"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:271
 msgid "No reminders for this list"
-msgstr "Esta lista no tiene recordatorios"
+msgstr "Keine Erinnerungen für diese Liste vorhanden"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:274
 msgid "Open a list to set reminders"
-msgstr "Abra una lista para establecer recordatorios"
+msgstr "Eine Liste öffnen um Erinnerung zu setzen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:275
 msgid "Tap/Click the '+' button to add Reminders"
-msgstr "Toque/Clic sobre el botón '+' para añadir recordatorios"
+msgstr "\"+\" antippen/anklicken um Erinnerungen hinzuzufügen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:23
 msgid "Searching Saved Lists"
-msgstr "Buscando listas guardadas"
+msgstr "Durchsuche gespeicherte Listen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:25
 msgid "Search Saved Lists"
-msgstr "Buscar listas guardadas"
+msgstr "Gespeicherte Listen durchsuchen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:26
 msgid "No Saved Checklists"
-msgstr "No hay guardada ninguna lista de comprobación"
+msgstr "Keine gespeicherten Listen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:30
 msgid "Save a list from the Lists Tab"
-msgstr "Guardar una lista de la pestaña de listas"
+msgstr "Speichere hier eine Liste aus dem Listen-Tab"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:32
 msgid "Loading Saved Lists"
-msgstr "Cargando listas guardadas"
+msgstr "Lade gespeicherte Listen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:98
 msgid "Interface"
-msgstr "Interfaz"
+msgstr "Verhalten"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:102
 msgid "Hide completed items"
-msgstr "Ocultar los ítems completados"
+msgstr "Erledigte Einträge ausblenden"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:103
 msgid "When opening lists"
-msgstr "Cuando abra las listas"
+msgstr "zeigt nur offene Einträge in der Listenansicht"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:111
 msgid "Show category colors"
-msgstr "Mostrar los colores de categoría"
+msgstr "Kategoriefarben anzeigen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:112
 msgid "Category color assignment"
-msgstr "Asignación de los colores de categoría"
+msgstr "farbige Dreiecke je nach Kategorie darstellen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:122
 msgid "Theme"
-msgstr "Tema"
+msgstr "Aussehen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:182
 msgid "Ambiance"
-msgstr "Ambiente"
+msgstr "Ambiance"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:186
 msgid "Suru Dark"
-msgstr "Suru Dark (Suru oscuro)"
+msgstr "Suru Dark"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:194
 msgid "Accessibility"
-msgstr "Accesibilidad"
+msgstr "Oberfläche"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:200
 msgid "Bottom Menu"
-msgstr "Menú inferior"
+msgstr "Fußleistenmenü"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:255
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:327
 msgid "None"
-msgstr "Ninguno"
+msgstr "Ohne"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:259
 msgid "Radial"
-msgstr "Radial"
+msgstr "Halbkugel"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:272
 msgid "Bottom Menu Hint"
-msgstr "Sugerencia del menú inferior"
+msgstr "Fußleistenmenü Hinweis"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:331
 msgid "Autohide"
-msgstr "Ocultar automáticamente"
+msgstr "Automatisch ausgeblendet"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:335
 msgid "Semihide"
-msgstr "Ocultar parcialmente"
+msgstr "Halbversteckt"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:340
 msgid "Always Displayed"
-msgstr "Siempre a la vista"
+msgstr "Immer sichtbar"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:416
 msgid "Larger font size"
-msgstr "Tamaño de letra más grande"
+msgstr "Größere Schrift"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:417
 msgid "For list items"
-msgstr "Para la lista de ítems"
+msgstr "Listeneinträge größer darstellen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:425
 msgid "Toggle list items via surface"
-msgstr "Altenar la lista de ítems vía apariencia"
+msgstr "umschalten mit Text und Kästchen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:427
 msgid "Only the checkbox is clickable if disabled"
-msgstr "Solo la casilla se puede pulsar si se deshabilita"
+msgstr "deaktiviert: umschalten nur mit Kästchen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:490
 msgid "Manage Categories"
-msgstr "Gestionar categorías"
+msgstr "Kategorien verwalten"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:492
 msgid "Add, edit, and delete categories"
-msgstr "Añadir, editar y borrar categorías"
+msgstr "Hinzufügen, ändern und löschen von Kategorien"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:498
 msgid "Credits, report bugs, view source code, contact developer, donate"
 msgstr ""
-"Reconocimientos, informes de errores, ver el código fuente, contactar con el "
-"desarrollador, donar"
+"Mitwirkende, Fehler melden, Quellcode anschauen, die Entwickler "
+"kontaktieren, spenden"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:51
 msgid "Unpin window"
-msgstr "Desanclar la ventana"
+msgstr "Fenster lösen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:51
 msgid "Pin Window"
-msgstr "Anclar la ventana"
+msgstr "Fenster anheften"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:61
 msgid "Overdue"
-msgstr "Vencido"
+msgstr "Überfällig"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:108
 msgid "You have no upcoming targets"
-msgstr "No tiene ningún objetivo inminente"
+msgstr "Es gibt keine anstehenden Aufgaben"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:108
 msgid "You have no overdue targets"
-msgstr "No tiene ningún objetivo vencido"
+msgstr "Es gibt keine überfälligen Aufgaben"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:109
 msgid "All your upcoming targets will be listed here"
-msgstr "Todos sus objetivos inminentes se listarán aquí"
+msgstr "Alle anstehenden Aufgaben werden hier aufgelistet"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:109
 msgid "All your overdue targets will be listed here"
-msgstr "Todos sus objetivos vencidos se listarán aquí"
+msgstr "Alle überfälligen Aufgaben werden hier aufgelistet"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:128
 msgid "Loading Targets"
-msgstr "Cargando objetivos"
+msgstr "Lade Aufgaben"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:11
 msgid "New Reminder"
-msgstr "Nuevo recordatorio"
+msgstr "Neue Erinnerung"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:280
 msgid "Silent Reminder"
-msgstr "Recordatorio silencioso"
+msgstr "Stille Erinnerung"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:14
 msgid "New Checklist"
-msgstr "Nueva lista de comprobación"
+msgstr "Neue Kontrollliste"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:28
 msgid "Checklist Name"
-msgstr "Nombre de la lista de comprobación"
+msgstr "Kontrolllistenname"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:83
 msgid "Target Date?"
-msgstr "¿Fecha objetivo?"
+msgstr "Fälligkeitsdatum?"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:12
 msgid "Open external link"
-msgstr "Abrir enlace externo"
+msgstr "Externen Link öffnen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:13
 msgid "You are about to open an external link. Do you wish to continue?"
-msgstr "Va a abrir un enlace externo. ¿Desea continuar?"
+msgstr "Es soll ein externer Link geöffnet werden. Soll fortgefahren werden?"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:9
 msgid "Do you want to include the list item comments?"
-msgstr "¿Quiere incluir los comentarios de los ítem de la lista?"
+msgstr "Speichern inklusive der Kommentare?"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:21
 msgid "No"
-msgstr "No"
+msgstr "Nein"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:29
 msgid "Yes"
-msgstr "Si"
+msgstr "Ja"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Search/SearchHeaderExtension.qml:13
 msgid "Results found: "
-msgstr "Resultados encontrados: "
+msgstr "Gefundene Ergebnisse: "
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:45
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:65
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:80
 msgid "By Name (A-Z)"
-msgstr "Por nombre (A-Z)"
+msgstr "Name (A-Z)"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:49
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:69
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:89
 msgid "By Category (A-Z)"
-msgstr "Por categoría (A-Z)"
+msgstr "Kategorie (A-Z)"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:54
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:74
 msgid "By Creation Date (Latest First)"
-msgstr "Por fecha de creación (recientes primero)"
+msgstr "Erstellungsdatum (letztes zuerst)"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:59
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:94
 msgid "By Target Date (Latest First)"
-msgstr "Por fecha objetivo (recientes primero)"
+msgstr "Fälligkeitsdatum (letztes zuerst)"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:85
 msgid "By Completion Date (Latest First)"
-msgstr "Por fecha de terminación (recientes primero)"
+msgstr "Erledigungsdatum (letztes zuerst)"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:124
 msgid "Normal Lists Only"
-msgstr "Solo listas normales"
+msgstr "Nur normale Listen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:128
 msgid "Checklists Only"
-msgstr "Solo listas de comprobación"
+msgstr "Nur Kontrolllisten"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:242
 msgid "Reverse Order"
-msgstr "Orden inverso"
+msgstr "Umgedrehte Sortierreihenfolge"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:120
 msgid "Today"
-msgstr "Hoy"
+msgstr "Heute"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:123
 msgid "Yesterday"
-msgstr "Ayer"
+msgstr "Gestern"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:126
 msgid "Tomorrow"
-msgstr "Mañana"
+msgstr "Morgen"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:129
 msgid "On "
-msgstr "En "
+msgstr "Ein "
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:132
 msgid "Last Week"
-msgstr "Semana pasada"
+msgstr "Letzte Woche"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:135
 msgid "Next Week"
-msgstr "Próxima semana"
+msgstr "Nächste Woche"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:138
 msgid "Last Month"
-msgstr "Mes pasado"
+msgstr "Letzten Monat"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:141
 msgid "Next Month"
-msgstr "Próximo mes"
+msgstr "Nächsten Monat"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:144
 msgid "This Month"
-msgstr "Este mes"
+msgstr "Diesen Monat"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:147
 msgid "Older"
-msgstr "Más antiguo"
+msgstr "Älter"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:150
 msgid "In The Future"
-msgstr "En el futuro"
+msgstr "In der Zukunft"
 
 #: /home/phablet/Documents/Projects/Talaan/talaan-app/build/talaan/talaan.desktop.h:1
 msgid "Talaan"

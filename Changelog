@@ -1,3 +1,15 @@
+V2.38
+* German translation
+* Fixed more strings to be translatable
+
+V2.35
+* Xenial (16.04) support
+* Spanish and Dutch translation
+
+Known Issues in 16.04 (xenial): 
+* App window/surface scaling does not work correctly i.e. from Portrait to Landscape 
+* OSK button for Add/Save does not work
+
 V2.30
 * Moved to Github
   - Updated links/references throughout the app
