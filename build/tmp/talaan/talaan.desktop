@@ -1,5 +1,8 @@
 [Desktop Entry]
 Name=Talaan
+Name[de_DE]=Talaan
+Name[es]=Talaan
+Name[nl_NL]=Talaan
 Exec=talaan
 Icon=talaan/talaan.png
 Terminal=false

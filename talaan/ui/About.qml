@@ -13,7 +13,7 @@ PageWithBottom {
     actions: [mainView.bottomMenuActions[4], mainView.bottomMenuActions[4], mainView.bottomMenuActions[1], mainView.bottomMenuActions[0], mainView.bottomMenuActions[2], mainView.bottomMenuActions[5]]
 
     header: PageHeader {
-        title: "About Talaan"
+        title: i18n.tr("About Talaan")
 
         StyleHints {
             backgroundColor: switch(settings.currentTheme){
@@ -113,7 +113,7 @@ PageWithBottom {
                 }
                 Label {
                     id: labelName
-                    text: "© Talaan Version " + mainView.current_version
+                    text: i18n.tr("© Talaan Version ") + mainView.current_version
                     textSize: Label.Medium
                     horizontalAlignment: Text.AlignHCenter
                     anchors {
@@ -125,7 +125,7 @@ PageWithBottom {
                 Label {
                     id: labelLicense
 
-                    text: "Released under license <a href='https://www.gnu.org/licenses/gpl-3.0.en.html' title='GNU GPL v3'>GNU GPL v3</a>"
+                    text: i18n.tr("Released under license") + " <a href='https://www.gnu.org/licenses/gpl-3.0.en.html' title='GNU GPL v3'>GNU GPL v3</a>"
                     textSize: Label.Medium
                     horizontalAlignment: Text.AlignHCenter
                     anchors {
@@ -155,7 +155,7 @@ PageWithBottom {
 
                 //Commented out since rating apps isn't yet supported in OpenStore
 //                NavigationItem {
-//                    titleText.text: "Rate this App"
+//                    titleText.text: i18n.tr("Rate this App")
 //                    iconName: "starred"
 
 //                    anchors {
@@ -174,7 +174,7 @@ PageWithBottom {
 
                 // No equivalent in Github
 //                NavigationItem {
-//                    titleText.text: "Ask a question"
+//                    titleText.text: i18n.tr("Ask a question")
 //                    iconName: "help"
 
 //                    anchors {
@@ -190,7 +190,7 @@ PageWithBottom {
 //                    }
 //                }
                 NavigationItem {
-                    titleText.text: "Report a bug"
+                    titleText.text: i18n.tr("Report a bug")
                     iconName: "mail-mark-important"
 
                     anchors {
@@ -205,7 +205,7 @@ PageWithBottom {
                     }
                 }
                 NavigationItem {
-                    titleText.text: "Contact Developer"
+                    titleText.text: i18n.tr("Contact Developer")
                     iconName: "stock_email"
 
                     anchors {
@@ -220,7 +220,7 @@ PageWithBottom {
                     }
                 }
                 NavigationItem {
-                    titleText.text: "View source"
+                    titleText.text: i18n.tr("View source")
                     iconName: "stock_document"
 
                     anchors {
@@ -236,7 +236,7 @@ PageWithBottom {
                     }
                 }
                 NavigationItem {
-                    titleText.text: "Donate"
+                    titleText.text: i18n.tr("Donate")
                     iconName: "like"
 
                     anchors {
@@ -252,7 +252,7 @@ PageWithBottom {
                     }
                 }
                 NavigationItem {
-                    titleText.text: "Other apps by the developer"
+                    titleText.text: i18n.tr("Other apps by the developer")
                     iconName: "stock_application"
 
                     anchors {
@@ -263,7 +263,7 @@ PageWithBottom {
                     action: Action {
                         onTriggered: {
                             externalLinkConfirmation(
-                                        "https://open.uappexplorer.com/?sort=relevance&search=author%3AKugi%20Eusebio")
+                                        "https://open-store.io/?sort=relevance&search=author%3AKugi%20Eusebio")
                         }
                     }
                 }
@@ -273,7 +273,7 @@ PageWithBottom {
                 }
                 NavigationItem {
                     titleText.text: "Kugi Eusebio"
-                    subText.text: "Main developer"
+                    subText.text: i18n.tr("Main developer")
 
                     anchors {
                         left: parent.left
@@ -310,7 +310,7 @@ PageWithBottom {
                 }
                 NavigationItem {
                     titleText.text: "moment.js"
-                    subText.text: "Date and Time manipulation"
+                    subText.text: i18n.tr("Date and Time manipulation")
 
                     anchors {
                         left: parent.left
@@ -325,7 +325,7 @@ PageWithBottom {
                 }
                 NavigationItem {
                     titleText.text: "jsonpath.js"
-                    subText.text: "For processing JSON models"
+                    subText.text: i18n.tr("For processing JSON models")
 
                     anchors {
                         left: parent.left

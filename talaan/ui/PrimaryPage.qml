@@ -27,7 +27,7 @@ Page {
         anchors.centerIn: parent
         visible: running
 
-        running: mainAdaptLayout.primaryPage === null
+        running: mainAdaptLayout.primaryPage === null || mainView.itemsPage === null
     }
 
     onIsMultiColumnChanged: {
