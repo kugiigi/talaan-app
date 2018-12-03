@@ -263,7 +263,7 @@ PageWithBottom {
                     action: Action {
                         onTriggered: {
                             externalLinkConfirmation(
-                                        "https://open.uappexplorer.com/?sort=relevance&search=author%3AKugi%20Eusebio")
+                                        "https://open-store.io/?sort=relevance&search=author%3AKugi%20Eusebio")
                         }
                     }
                 }

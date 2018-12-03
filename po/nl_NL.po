@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Talaan\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-04 08:33+0000\n"
+"POT-Creation-Date: 2018-11-18 23:00+0800\n"
 "PO-Revision-Date: 2018-02-12 13:35+0100\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch - vistausss@outlook.com\n"
@@ -18,64 +18,64 @@ msgstr ""
 "X-Generator: Poedit 2.0.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:225
-#: /home/ubuntu/Forks/talaan-app/talaan/components/TabActions.qml:19
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:24
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:225
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/TabActions.qml:19
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:24
 msgid "Lists"
 msgstr "Lijsten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:234
-#: /home/ubuntu/Forks/talaan-app/talaan/components/TabActions.qml:31
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:24
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:234
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/TabActions.qml:31
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:24
 msgid "History"
 msgstr "Geschiedenis"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:244
-#: /home/ubuntu/Forks/talaan-app/talaan/components/TabActions.qml:25
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:24
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:244
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/TabActions.qml:25
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:24
 msgid "Saved"
 msgstr "Opgeslagen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:252
-#: /home/ubuntu/Forks/talaan-app/talaan/components/TabActions.qml:38
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:17
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:252
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/TabActions.qml:38
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:17
 msgid "Settings"
 msgstr "Instellingen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:388
-#: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:397
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:379
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:388
 msgid "No list selected"
 msgstr "Geen lijst geselecteerd"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:390
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:381
 msgid "Select a list from the left column"
 msgstr "Selecteer een lijst in het linkerpaneel"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/Main.qml:399
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/Main.qml:390
 msgid "Select an item from the List, Saved or History tab"
 msgstr "Selecteer een item op het tabblad Lijst, Opgeslagen of Geschiedenis"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/AddItemsBar.qml:227
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AddItemsBar.qml:227
 msgid "Enter item name"
 msgstr "Itemnaam invoeren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/AddItemsBar.qml:277
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AddItemsBar.qml:277
 msgid "Add comments / notes"
 msgstr "Opmerkingen/notities toevoegen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/AlarmReminder.qml:53
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AlarmReminder.qml:53
 msgid "Reminder was not set successfully"
 msgstr "Het instellen van de herinnering is mislukt"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/AlarmReminder.qml:59
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AlarmReminder.qml:59
 msgid "Reminder successfully set"
 msgstr "Het instellen van de herinnering is gelukt"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/AlarmReminder.qml:93
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AlarmReminder.qml:93
 msgid "Error saving the Reminder"
 msgstr "Fout bij opslaan van herinnering"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/AlarmReminder.qml:94
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AlarmReminder.qml:94
 msgid ""
 "The Target Date might have already passed or the intended reminder is set in "
 "the past"
@@ -83,878 +83,878 @@ msgstr ""
 "De doeldatum ligt in het verleden of de herinnering staat ingesteld op een "
 "datum in het verleden"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/AlarmReminder.qml:98
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:191
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:31
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/AlarmReminder.qml:98
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:191
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:31
 msgid "OK"
 msgstr "Oké"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/FindHeader.qml:34
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:872
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:914
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:95
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:261
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:1174
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:1207
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:297
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:185
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:23
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/FindHeader.qml:34
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:873
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:915
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:95
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:261
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1174
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1207
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:297
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:185
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:23
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/FindHeader.qml:48
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/FindHeader.qml:48
 msgid "Find..."
 msgstr "Zoeken..."
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListItemContent.qml:90
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:989
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListItemContent.qml:90
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:989
 msgid "Skipped"
 msgstr "Overgeslagen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:186
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:200
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:274
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:317
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:45
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:88
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:186
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:200
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:274
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:317
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:45
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:88
 msgid "Add"
 msgstr "Toevoegen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:209
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:209
 msgid "Search"
 msgstr "Zoeken"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:218
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:218
 msgid "Clear History"
 msgstr "Geschiedenis wissen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:245
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:245
 msgid "Sort/Filter"
 msgstr "Sorteren/Filteren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:271
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/NavigationSplitPage.qml:80
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:61
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:271
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/NavigationSplitPage.qml:80
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:61
 msgid "Upcoming"
 msgstr "Aanstaande"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:309
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:309
 msgid "Normal"
 msgstr "Normaal"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:312
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:312
 msgid "Checklists"
 msgstr "Controlelijsten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:324
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:324
 msgid "By Category"
 msgstr "Op categorie"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:327
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:327
 msgid "By Creation"
 msgstr "Op creatiedatum"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:330
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:330
 msgid "By Target"
 msgstr "Op doel"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:342
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:342
 msgid "Reverse"
 msgstr "Omgekeerd"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:379
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:37
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:379
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:37
 msgid "Navigation Panel"
 msgstr "Navigatiepaneel"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:387
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:602
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:387
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:602
 msgid "Close"
 msgstr "Sluiten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:402
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:499
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:48
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:49
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:50
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:57
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:68
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:79
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:120
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:402
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:499
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:48
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:49
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:50
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:57
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:68
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:79
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:120
 msgid "All"
 msgstr "Alles"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:402
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:402
 msgid "Favorites"
 msgstr "Favorieten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:587
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:922
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:676
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:292
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:325
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:588
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:923
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:676
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:292
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:325
 msgid "Delete"
 msgstr "Verwijderen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:598
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:599
 msgid "List successfully deleted"
 msgstr "De lijst is succesvol verwijderd"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:617
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:274
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:303
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:618
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:274
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:303
 msgid "Save"
 msgstr "Opslaan"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:628
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:629
 msgid "List successfully added to Saved Lists"
 msgstr "De lijst is succesvol toegevoegd aan de opgeslagen lijsten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:638
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:365
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:639
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:365
 msgid "New checklist"
 msgstr "Nieuwe controlelijst"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:652
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:378
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:653
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:378
 msgid "New List successfully created"
 msgstr "De nieuwe lijst is succesvol gecreëerd"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:676
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:677
 msgid "Unfavorite"
 msgstr "Verwijderen uit favorieten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:677
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:678
 msgid "Favorite"
 msgstr "Toevoegen aan favorieten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:688
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:689
 msgid "List successfully removed from Favorites"
 msgstr "De lijst is succesvol verwijderd uit de favorieten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:693
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:694
 msgid "List successfully added to Favorites"
 msgstr "De lijst is succesvol toegevoegd aan de favorieten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:701
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:399
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:699
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:307
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:702
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:399
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:699
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:307
 msgid "Edit"
 msgstr "Bewerken"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:717
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:718
 msgid "Reset"
 msgstr "Standaardwaarden"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:803
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:804
 msgid "No matching list found"
 msgstr "Geen overeenkomende lijst gevonden"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:805
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:806
 msgid "No Favorites"
 msgstr "Geen favorieten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:807
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:808
 msgid "Please try a different query or change the Sort / Filter."
 msgstr "Probeer een andere zoekopdracht of wijzig de sortering/het filter."
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:821
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:822
 msgid "Loading results"
 msgstr "Bezig met laden van resultaten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:822
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:668
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:129
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:823
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:668
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:129
 msgid "Please wait"
 msgstr "Even geduld"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:834
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:835
 msgid "Sort / Filter"
 msgstr "Sorteren/Filteren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:879
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:880
 msgid "Apply"
 msgstr "Toepassen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/ListPage.qml:903
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/ListPage.qml:904
 msgid "All items under this list will also be deleted permanently."
 msgstr "Alle items op deze lijst worden ook permanent verwijderd."
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/NavigationFlickable.qml:198
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/NavigationFlickable.qml:198
 msgid "Sort and Filter"
 msgstr "Sorteren en filteren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/PageWithBottom.qml:16
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/PageWithBottom.qml:16
 msgid "Navigation"
 msgstr "Navigatie"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:54
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:58
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:473
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:482
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:579
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:54
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:58
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:473
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:482
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:579
 msgid "Select a Category"
 msgstr "Selecteer een categorie"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:332
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:332
 msgid "On"
 msgstr "Op"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:340
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:340
 msgid "Later than"
 msgstr "Na"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchHeader.qml:348
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchHeader.qml:348
 msgid "Earlier than"
 msgstr "Voor"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:22
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:50
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:74
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:22
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:50
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:74
 msgid "Name / Description"
 msgstr "Naam/Omschrijving"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:23
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:51
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:75
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:40
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:23
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:51
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:75
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:40
 msgid "Category"
 msgstr "Categorie"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:23
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:51
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:75
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:23
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:51
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:75
 msgid "Creation Date"
 msgstr "Creatiedatum"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:24
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:76
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:490
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:24
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:76
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:490
 msgid "Target Date"
 msgstr "Doeldatum"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SearchSections.qml:76
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SearchSections.qml:76
 msgid "Completion Date"
 msgstr "Afronddatum"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/TextualButtonStyle.qml:48
-#: /home/ubuntu/Forks/talaan-app/talaan/components/TextualButtonStyle.qml:51
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/TextualButtonStyle.qml:48
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/TextualButtonStyle.qml:51
 msgid "Pick"
 msgstr "Kiezen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Walkthrough.qml:69
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Walkthrough.qml:69
 #, qt-format
 msgid "Already used %1? <b>Skip the tutorial</b>"
 msgstr "Heeft u %1 al gebruikt? <b>Sla dan de rondleiding over</b>"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Walkthrough.qml:69
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:716
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Walkthrough.qml:69
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:716
 msgid "Skip"
 msgstr "Overslaan"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:16
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:496
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:16
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:496
 msgid "About Talaan"
 msgstr "Over Talaan"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:116
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:116
 msgid "© Talaan Version "
 msgstr ""
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:128
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:128
 msgid "Released under license"
 msgstr ""
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:153
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:153
 msgid "Support"
 msgstr "Ondersteuning"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:193
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:193
 msgid "Report a bug"
 msgstr ""
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:208
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:208
 #, fuzzy
 msgid "Contact Developer"
 msgstr "Ontwikkelaars"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:223
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:223
 msgid "View source"
 msgstr ""
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:239
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:239
 msgid "Donate"
 msgstr ""
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:255
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:255
 msgid "Other apps by the developer"
 msgstr ""
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:272
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:272
 msgid "Developers"
 msgstr "Ontwikkelaars"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:276
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:276
 #, fuzzy
 msgid "Main developer"
 msgstr "Ontwikkelaars"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:291
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:291
 msgid "Logo"
 msgstr "Logo"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:309
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:309
 msgid "Powered by"
 msgstr "Aangedreven door"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:313
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:313
 msgid "Date and Time manipulation"
 msgstr ""
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/About.qml:328
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/About.qml:328
 msgid "For processing JSON models"
 msgstr ""
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:38
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:38
 msgid "Add New Category"
 msgstr "Nieuwe categorie toevoegen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:39
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:39
 msgid "Edit Category - "
 msgstr "Categorie bewerken - "
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:135
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:135
 msgid "Name:"
 msgstr "Naam:"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:145
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:145
 msgid "Enter Category name"
 msgstr "Categorienaam invoeren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:177
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:410
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:177
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:410
 msgid "Description:"
 msgstr "Omschrijving:"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:189
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:435
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:189
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:435
 msgid "Add description (optional)"
 msgstr "Omschrijving toevoegen (optioneel)"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddCategory.qml:218
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddCategory.qml:218
 msgid "Color:"
 msgstr "Kleur:"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:34
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:46
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:34
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:46
 msgid "Create New List"
 msgstr "Nieuwe lijst creëren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:37
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:37
 msgid "Edit List - "
 msgstr "Lijst bewerken - "
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:40
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:40
 msgid "Create New Saved List"
 msgstr "Nieuwe opgeslagen lijst creëren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:228
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:228
 msgid "Checklist"
 msgstr "Controlelijst"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:254
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:254
 msgid "Continual"
 msgstr "Doorlopende lijst"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:281
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:281
 msgid "List Title:"
 msgstr "Titel van lijst:"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:303
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:34
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:303
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:34
 msgid "Enter checklist name"
 msgstr "Voer een naam in voor de controlelijst"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:672
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:672
 msgid "List successfully updated"
 msgstr "De lijst is succesvol bijgewerkt"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/AddChecklist.qml:681
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/AddChecklist.qml:681
 msgid "List successfully created"
 msgstr "De lijst is succesvol gecreëerd"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:23
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:23
 msgid "Searching Lists"
 msgstr "Bezig met zoeken naar lijsten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:25
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:25
 msgid "Search Lists"
 msgstr "Lijsten zoeken"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:26
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:26
 msgid "No List Created Yet"
 msgstr "Nog geen lijst gecreëerd"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:28
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:29
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:28
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:29
 msgid "Favorite a list by using the 'starred' action"
 msgstr "Voeg een lijst toe aan de favorieten door de 'ster' te gebruiken"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:28
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:28
 msgid "Tap/Click the '+' button to add a List"
 msgstr "Druk op de '+'-knop om een lijst toe te voegen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:28
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:28
 msgid "Swipe from the dome at the bottom edge to add a List"
 msgstr "Veeg vanaf de onderkant om een lijst toe te voegen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/DefaultTab.qml:30
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/DefaultTab.qml:30
 msgid "Loading Lists"
 msgstr "Bezig met laden van lijsten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:23
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:23
 msgid "Searching History"
 msgstr "Bezig met doorzoeken van geschiedenis"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:25
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:25
 msgid "Search History"
 msgstr "Geschiedenis doorzoeken"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:26
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:26
 msgid "History is empty"
 msgstr "Er is geen geschiedenis"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:29
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:29
 msgid "Completed checklists from your Favorites are listed here"
 msgstr "Afgeronde controlelijsten uit uw favorieten worden hier opgesomd"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:30
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:30
 msgid "Completed checklists are listed here"
 msgstr "Afgeronde controlelijsten worden hier opgesomd"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/HistoryTab.qml:32
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/HistoryTab.qml:32
 msgid "Loading History"
 msgstr "Bezig met laden van geschiedenis"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:338
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:338
 msgid "Find"
 msgstr "Zoeken"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:347
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:347
 msgid "Mark as completed"
 msgstr "Markeren als afgerond"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:356
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:356
 msgid "Uncheck All"
 msgstr "Alles de-markeren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:435
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:435
 msgid "Set Reminders"
 msgstr "Herinneringen instellen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:459
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:462
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:465
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:459
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:462
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:465
 msgid "Sort"
 msgstr "Sorteren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:459
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:459
 msgid "A-Z"
 msgstr "A-Z"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:462
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:462
 msgid "Z-A"
 msgstr "Z-A"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:465
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:178
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:465
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:178
 msgid "Default"
 msgstr "Standaard"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:485
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:485
 msgid "View Details"
 msgstr "Details weergeven"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:506
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:506
 msgid "Remaining"
 msgstr "Resterend"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:629
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:629
 msgid "No matching item found"
 msgstr "Geen overeenkomend item gevonden"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:632
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:632
 msgid "No remaining item"
 msgstr "Geen resterend item"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:635
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:635
 msgid "List is empty"
 msgstr "De lijst is leeg"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:640
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:640
 msgid "Please try a different query or try removing the filter if there's any"
 msgstr ""
 "Probeer een andere zoekopdracht of verwijder het filter (indien ingesteld)"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:644
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:644
 msgid "Click the '+' button to add more items (Ctrl + L)"
 msgstr "Klik op de '+'-knop om meer items toe te voegen (Ctrl+L)"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:645
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:645
 msgid "Swipe from the bottom to add more items"
 msgstr "Veeg vanaf de onderkant om meer items toe te voegen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:649
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:649
 msgid "Click the '+' button to add items (Ctrl + L)"
 msgstr "Klik op de '+'-knop om items toe te voegen (Ctrl+L)"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:650
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:650
 msgid "Swipe from the bottom to add items"
 msgstr "Veeg vanaf de onderkant om items toe te voegen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:667
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:667
 msgid "Loading list items"
 msgstr "Bezig met laden van lijstitems"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:727
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:727
 msgid "Toggle Priority"
 msgstr "Prioriteit toekennen/intrekken"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ItemsPage.qml:1150
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1150
 msgid "Undo last item"
 msgstr "Laatste item ongedaan maken"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:24
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:24
 msgid "Categories"
 msgstr "Categorieën"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:176
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:176
 msgid "No Category Exists"
 msgstr "Er zijn geen categorieën"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:178
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:178
 msgid "Tap/Click the '+' button to add categories"
 msgstr "Druk op de '+'-knop om categorieën toe te voegen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:179
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:179
 msgid "Swipe from the bottom to add categories"
 msgstr "Veeg vanaf de onderkant om categorieën toe te voegen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:293
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:308
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:293
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:308
 msgid "Uncategorized"
 msgstr "Niet-gecategoriseerd"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/ManageCategory.qml:345
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/ManageCategory.qml:345
 msgid "Category successfully deleted"
 msgstr "De categorie is succesvol verwijderd"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:19
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:19
 msgid "Reminders"
 msgstr "Herinneringen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:47
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:54
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:65
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:76
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:47
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:54
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:65
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:76
 msgid "Current"
 msgstr "Huidige"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:195
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:26
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:195
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:26
 msgid "Targets"
 msgstr "Doelen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:270
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:270
 msgid "No reminders for any list"
 msgstr "Geen herinneringen, op welke lijst dan ook"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:271
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:271
 msgid "No reminders for this list"
 msgstr "Geen herinneringen op deze lijst"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:274
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:274
 msgid "Open a list to set reminders"
 msgstr "Open een lijst om herinneringen toe te voegen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/RemindersPage.qml:275
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/RemindersPage.qml:275
 msgid "Tap/Click the '+' button to add Reminders"
 msgstr "Druk op de '+'-knop om herinneringen toe te voegen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:23
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:23
 msgid "Searching Saved Lists"
 msgstr "Bezig doorzoeken van opgeslagen lijsten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:25
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:25
 msgid "Search Saved Lists"
 msgstr "Opgeslagen lijsten doorzoeken"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:26
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:26
 msgid "No Saved Checklists"
 msgstr "Geen opgeslagen controlelijsten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:30
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:30
 msgid "Save a list from the Lists Tab"
 msgstr "Sla een lijst op via het tabblad Lijsten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SavedTab.qml:32
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SavedTab.qml:32
 msgid "Loading Saved Lists"
 msgstr "Bezig met laden van opgeslagen lijsten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:98
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:98
 msgid "Interface"
 msgstr "Uiterlijk"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:102
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:102
 msgid "Hide completed items"
 msgstr "Afgeronde items verbergen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:103
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:103
 msgid "When opening lists"
 msgstr "Bij het openen van lijsten:"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:111
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:111
 msgid "Show category colors"
 msgstr "Categoriekleuren weergeven"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:112
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:112
 msgid "Category color assignment"
 msgstr "Categorie-kleurtoekenning"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:122
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:122
 msgid "Theme"
 msgstr "Thema"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:182
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:182
 msgid "Ambiance"
 msgstr "Ambiance"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:186
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:186
 msgid "Suru Dark"
 msgstr "Suru donker"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:194
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:194
 msgid "Accessibility"
 msgstr "Toegankelijkheid"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:200
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:200
 msgid "Bottom Menu"
 msgstr "Onderste menu"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:255
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:327
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:255
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:327
 msgid "None"
 msgstr "Geen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:259
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:259
 msgid "Radial"
 msgstr "Radiaal"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:272
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:272
 msgid "Bottom Menu Hint"
 msgstr "Hint"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:331
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:331
 msgid "Autohide"
 msgstr "Automatisch verbergen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:335
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:335
 msgid "Semihide"
 msgstr "Semi-verbergen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:340
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:340
 msgid "Always Displayed"
 msgstr "Altijd weergeven"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:416
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:416
 msgid "Larger font size"
 msgstr "Groter lettertype"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:417
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:417
 msgid "For list items"
 msgstr "Voor lijstitems"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:425
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:425
 msgid "Toggle list items via surface"
 msgstr "Lijstitems weergeven/verbergen via oppervlak"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:427
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:427
 msgid "Only the checkbox is clickable if disabled"
 msgstr "Als dit is uitgeschakeld, dan is alleen het aankruisvakje aanklikbaar"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:490
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:490
 msgid "Manage Categories"
 msgstr "Categorieën beheren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:492
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:492
 msgid "Add, edit, and delete categories"
 msgstr "Categorieën toevoegen, bewerken en verwijderen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/SettingsTab.qml:498
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/SettingsTab.qml:498
 msgid "Credits, report bugs, view source code, contact developer, donate"
 msgstr ""
 "Met dank aan, fouten (bugs) rapporteren, broncode bekijken, contact opnemen "
 "met ontwikkelaar, doneren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:51
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:51
 msgid "Unpin window"
 msgstr "Venster losmaken"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:51
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:51
 msgid "Pin Window"
 msgstr "Venster vastzetten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:61
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:61
 msgid "Overdue"
 msgstr "Verlopen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:108
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:108
 msgid "You have no upcoming targets"
 msgstr "U heeft geen aanstaande doelen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:108
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:108
 msgid "You have no overdue targets"
 msgstr "U heeft geen verlopen doelen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:109
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:109
 msgid "All your upcoming targets will be listed here"
 msgstr "Al uw aanstaande doelen worden hier opgesomd"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:109
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:109
 msgid "All your overdue targets will be listed here"
 msgstr "Al uw verlopen doelen worden hier opgesomd"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/ui/TargetsPage.qml:128
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/ui/TargetsPage.qml:128
 msgid "Loading Targets"
 msgstr "Bezig met laden van doelen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:11
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:11
 msgid "New Reminder"
 msgstr "Nieuwe herinnering"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:280
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:280
 msgid "Silent Reminder"
 msgstr "Stille herinnering"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:14
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:14
 msgid "New Checklist"
 msgstr "Nieuwe controlelijst"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:28
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:28
 msgid "Checklist Name"
 msgstr "Naam van controlelijst"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:83
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:83
 msgid "Target Date?"
 msgstr "Doeldatum?"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:12
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:12
 msgid "Open external link"
 msgstr "Externe link openen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:13
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:13
 msgid "You are about to open an external link. Do you wish to continue?"
 msgstr "U staat op het punt om een externe link te openen. Wilt u doorgaan?"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:9
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:9
 msgid "Do you want to include the list item comments?"
 msgstr "Wilt u de itemopmerkingen van de lijst bijsluiten?"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:21
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:21
 msgid "No"
 msgstr "Nee"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:29
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:29
 msgid "Yes"
 msgstr "Ja"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/Search/SearchHeaderExtension.qml:13
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/Search/SearchHeaderExtension.qml:13
 msgid "Results found: "
 msgstr "Resultaten: "
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:45
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:65
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:80
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:45
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:65
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:80
 msgid "By Name (A-Z)"
 msgstr "Op naam (A-Z)"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:49
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:69
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:89
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:49
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:69
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:89
 msgid "By Category (A-Z)"
 msgstr "Op categorie (A-Z)"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:54
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:74
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:54
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:74
 msgid "By Creation Date (Latest First)"
 msgstr "Op creatiedatum (laatste eerst)"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:59
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:94
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:59
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:94
 msgid "By Target Date (Latest First)"
 msgstr "Op doeldatum (laatste eerst)"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:85
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:85
 msgid "By Completion Date (Latest First)"
 msgstr "Op afronddatum (laatste eerst)"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:124
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:124
 msgid "Normal Lists Only"
 msgstr "Alleen normale lijsten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:128
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:128
 msgid "Checklists Only"
 msgstr "Alleen controlelijsten"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:242
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:242
 msgid "Reverse Order"
 msgstr "Omgekeerde volgorde"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:120
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:120
 msgid "Today"
 msgstr "Vandaag"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:123
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:123
 msgid "Yesterday"
 msgstr "Gisteren"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:126
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:126
 msgid "Tomorrow"
 msgstr "Morgen"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:129
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:129
 msgid "On "
 msgstr "Op "
 
-#: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:132
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:132
 msgid "Last Week"
 msgstr "Vorige week"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:135
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:135
 msgid "Next Week"
 msgstr "Volgende week"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:138
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:138
 msgid "Last Month"
 msgstr "Vorige maand"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:141
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:141
 msgid "Next Month"
 msgstr "Volgende maand"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:144
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:144
 msgid "This Month"
 msgstr "Deze maand"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:147
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:147
 msgid "Older"
 msgstr "Ouder"
 
-#: /home/ubuntu/Forks/talaan-app/talaan/library/ProcessFunc.js:150
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/talaan/library/ProcessFunc.js:150
 msgid "In The Future"
 msgstr "Toekomstig"
 
-#: /home/ubuntu/Forks/talaan-app/build/talaan/talaan.desktop.h:1
+#: /home/phablet/Documents/Projects/Talaan/talaan-app/build/talaan/talaan.desktop.h:1
 msgid "Talaan"
 msgstr "Talaan"

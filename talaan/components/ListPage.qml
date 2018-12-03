@@ -378,7 +378,7 @@ PageWithBottom {
                 Action {
                     text: i18n.tr("Navigation Panel")
                     iconName: "navigation-menu"
-                    visible: primaryLeftPage.isMultiColumn ? false : true
+                    visible: mainView.navigationPanel ? primaryLeftPage.isMultiColumn ? false : true : false
                     onTriggered: {
                         mainView.navigationPanel.toggle()
                     }
@@ -479,6 +479,7 @@ PageWithBottom {
     ScrollView {
         anchors.fill: parent
         anchors.topMargin: root.header.height
+        visible: mainView.itemsPage ? true : false
 
         UbuntuListView {
             id: groupedList

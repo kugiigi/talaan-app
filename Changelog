@@ -1,6 +1,6 @@
 V2.38
-* added German translation
-* made some more strings translatabel
+* German translation
+* Fixed more strings to be translatable
 
 V2.35
 * Xenial (16.04) support
