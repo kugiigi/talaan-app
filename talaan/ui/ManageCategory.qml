@@ -325,17 +325,17 @@ PageWithBottom {
         Dialog {
             id: dialogue
             title: "Delete Category"
-            text: "Are you sure you want to delete this category?<br>If you continue, all lists under this category will be moved under 'Uncategorized'"
+            text: i18n.tr("Are you sure you want to delete this category?<br>If you continue, all lists under this category will be moved under 'Uncategorized'")
             Row {
                 id: buttonsRow
                 spacing: width * 0.1
                 Button {
-                    text: "Cancel"
+                    text: i18n.tr("Cancel")
                     width: parent.width * 0.45
                     onClicked: PopupUtils.close(dialogue)
                 }
                 Button {
-                    text: "Delete"
+                    text: i18n.tr("Delete")
                     color: UbuntuColors.red
                     width: parent.width * 0.45
                     onClicked: {

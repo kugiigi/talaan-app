@@ -332,7 +332,7 @@ Page {
 
             Label {
                 id: categoryLabel
-                text: "Category:"
+                text: i18n.tr("Category:")
                 color: switch (settings.currentTheme) {
                        case "Default":
                            "#3D1400"
@@ -608,7 +608,7 @@ Page {
 
         Button {
             id: btnCancel
-            text: "Cancel"
+            text: i18n.tr("Cancel")
             activeFocusOnPress: false
             anchors {
                 left: parent.left
@@ -623,7 +623,7 @@ Page {
             }
         }
         Button {
-            text: pageAddChecklist.actionMode === "add" ? "Create" : "Save"
+            text: pageAddChecklist.actionMode === i18n.tr("add") ? i18n.tr("Create") : i18n.tr("Save")
             color: UbuntuColors.green
             activeFocusOnPress: false
             anchors {
@@ -712,9 +712,9 @@ Page {
         Dialog {
             id: dialogue
             title: "List Already Exist!"
-            text: "That list already exist in that category. You may change the name or move to another category."
+            text: i18n.tr("That list already exist in that category. You may change the name or move to another category.")
             Button {
-                text: "OK"
+                text: i18n.tr("OK")
                 onClicked: PopupUtils.close(dialogue)
             }
         }
