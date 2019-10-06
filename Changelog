@@ -1,6 +1,14 @@
+V2.39
+* Czech translation
+* Fixed #11: lists not shown on app-startup
+
 V2.38
 * German translation
-* Fixed more strings to be translatable
+* Made more strings to be translatable
+* Bug fixes
+  - Fixed #1 Untranslatable app
+  - Fixed #6 ItemsPage does not show when a list is selected immediately after startup
+  - Fixed #9 Update Open Store link
 
 V2.35
 * Xenial (16.04) support

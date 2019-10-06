@@ -91,19 +91,21 @@ PageWithBottom {
 
     //functions
     function loadChecklist() {
-        groupedList.currentIndex = -1
-        if (!searchHeader.searchActive) {
-            mainView.listItems.modelChecklist.getChecklists(pagemode, favorite,
-                                                            groupings, filter,
-                                                            order, "", "", "")
-        } else {
-            mainView.listItems.modelChecklist.getChecklists(pagemode, false,
-                                                            searchGroupings,
-                                                            searchFilter,
-                                                            searchOrder,
-                                                            searchType,
-                                                            searchCondition,
-                                                            searchText)
+        if (active) {
+            groupedList.currentIndex = -1
+            if (!searchHeader.searchActive) {
+                mainView.listItems.modelChecklist.getChecklists(pagemode, favorite,
+                                                                groupings, filter,
+                                                                order, "", "", "")
+            } else {
+                mainView.listItems.modelChecklist.getChecklists(pagemode, false,
+                                                                searchGroupings,
+                                                                searchFilter,
+                                                                searchOrder,
+                                                                searchType,
+                                                                searchCondition,
+                                                                searchText)
+            }
         }
     }
 
