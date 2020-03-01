@@ -607,6 +607,7 @@ PageWithBottom {
             }
         }
     }
+    
     onHideCheckedChanged: {
         commentBubble.hideNotification(
                     ) //workaround on crash when commentBubble set currentindex to -1
@@ -734,6 +735,14 @@ PageWithBottom {
                     } else {
                         groupedList.changPriority("Normal", value)
                     }
+                }
+            },
+            Action {
+                iconName: "info"
+                text: i18n.tr("View Details")
+
+                onTriggered: {
+                    PopupUtils.open(dialogItemDetails,null,{"title": groupedList.model.get(value).itemName,"description": groupedList.model.get(value).comments})
                 }
             }
         ]
@@ -1221,6 +1230,10 @@ PageWithBottom {
                         }
                     }
                 }
+            }
+            
+            DialogItemDetails {
+                id: dialogItemDetails
             }
 
             ListViewPositioner {
