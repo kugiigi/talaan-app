@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: Talaan\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-10-07 16:24+0000\n"
-"PO-Revision-Date: 2018-02-12 13:35+0100\n"
+"PO-Revision-Date: 2020-07-03 19:12+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch - vistausss@outlook.com\n"
 "Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.3.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/Main.qml:225
@@ -57,19 +57,19 @@ msgstr "Selecteer een item op het tabblad Lijst, Opgeslagen of Geschiedenis"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/AddItemsBar.qml:227
 msgid "Enter item name"
-msgstr "Itemnaam invoeren"
+msgstr "Voer een itemnaam in"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/AddItemsBar.qml:277
 msgid "Add comments / notes"
-msgstr "Opmerkingen/notities toevoegen"
+msgstr "Opmerkingen/Aantekeningen toevoegen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/AlarmReminder.qml:53
 msgid "Reminder was not set successfully"
-msgstr "Het instellen van de herinnering is mislukt"
+msgstr "Er kan geen herinnering worden ingesteld"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/AlarmReminder.qml:59
 msgid "Reminder successfully set"
-msgstr "Het instellen van de herinnering is gelukt"
+msgstr "De herinnering is ingesteld"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/AlarmReminder.qml:93
 msgid "Error saving the Reminder"
@@ -80,8 +80,8 @@ msgid ""
 "The Target Date might have already passed or the intended reminder is set in "
 "the past"
 msgstr ""
-"De doeldatum ligt in het verleden of de herinnering staat ingesteld op een "
-"datum in het verleden"
+"De doeldatum is verstreken of de herinnering staat ingesteld op een datum in "
+"het verleden"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/AlarmReminder.qml:98
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:191
@@ -136,7 +136,7 @@ msgstr "Sorteren/Filteren"
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/NavigationSplitPage.qml:80
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/TargetsPage.qml:61
 msgid "Upcoming"
-msgstr "Aanstaande"
+msgstr "Ingepland"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:311
 msgid "Normal"
@@ -152,7 +152,7 @@ msgstr "Op categorie"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:329
 msgid "By Creation"
-msgstr "Op creatiedatum"
+msgstr "Op aanmaakdatum"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:332
 msgid "By Target"
@@ -198,7 +198,7 @@ msgstr "Verwijderen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:601
 msgid "List successfully deleted"
-msgstr "De lijst is succesvol verwijderd"
+msgstr "De lijst is verwijderd"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:620
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddCategory.qml:274
@@ -208,7 +208,7 @@ msgstr "Opslaan"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:631
 msgid "List successfully added to Saved Lists"
-msgstr "De lijst is succesvol toegevoegd aan de opgeslagen lijsten"
+msgstr "De lijst is toegevoegd aan de opgeslagen lijsten"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:641
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:365
@@ -218,7 +218,7 @@ msgstr "Nieuwe controlelijst"
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:655
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:378
 msgid "New List successfully created"
-msgstr "De nieuwe lijst is succesvol gecreëerd"
+msgstr "De nieuwe lijst is aangemaakt"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:679
 msgid "Unfavorite"
@@ -230,18 +230,18 @@ msgstr "Toevoegen aan favorieten"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:691
 msgid "List successfully removed from Favorites"
-msgstr "De lijst is succesvol verwijderd uit de favorieten"
+msgstr "De lijst is verwijderd uit de favorieten"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:696
 msgid "List successfully added to Favorites"
-msgstr "De lijst is succesvol toegevoegd aan de favorieten"
+msgstr "De lijst is toegevoegd aan de favorieten"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:704
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:399
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:699
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ManageCategory.qml:307
 msgid "Edit"
-msgstr "Bewerken"
+msgstr "Aanpassen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:720
 msgid "Reset"
@@ -257,17 +257,17 @@ msgstr "Geen favorieten"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:810
 msgid "Please try a different query or change the Sort / Filter."
-msgstr "Probeer een andere zoekopdracht of wijzig de sortering/het filter."
+msgstr "Probeer een andere zoekopdracht of pas de sortering/het filter aan."
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:824
 msgid "Loading results"
-msgstr "Bezig met laden van resultaten"
+msgstr "Bezig met laden van resultaten..."
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:825
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:668
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/TargetsPage.qml:129
 msgid "Please wait"
-msgstr "Even geduld"
+msgstr "Even geduld..."
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:837
 msgid "Sort / Filter"
@@ -279,7 +279,7 @@ msgstr "Toepassen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/ListPage.qml:906
 msgid "All items under this list will also be deleted permanently."
-msgstr "Alle items op deze lijst worden ook permanent verwijderd."
+msgstr "Alle items op deze lijst worden eveneens permanent verwijderd."
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/NavigationFlickable.qml:198
 msgid "Sort and Filter"
@@ -307,7 +307,7 @@ msgstr "Na"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/SearchHeader.qml:348
 msgid "Earlier than"
-msgstr "Voor"
+msgstr "Vóór"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/SearchSections.qml:22
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/SearchSections.qml:50
@@ -326,7 +326,7 @@ msgstr "Categorie"
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/SearchSections.qml:51
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/SearchSections.qml:75
 msgid "Creation Date"
-msgstr "Creatiedatum"
+msgstr "Aanmaakdatum"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/SearchSections.qml:24
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/SearchSections.qml:76
@@ -346,7 +346,7 @@ msgstr "Kiezen"
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/Walkthrough.qml:69
 #, qt-format
 msgid "Already used %1? <b>Skip the tutorial</b>"
-msgstr "Heeft u %1 al gebruikt? <b>Sla dan de rondleiding over</b>"
+msgstr "Heb je %1 al eens gebruikt? <b>Sla dan de rondleiding over</b>"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/Walkthrough.qml:69
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:716
@@ -360,11 +360,11 @@ msgstr "Over Talaan"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:116
 msgid "© Talaan Version "
-msgstr ""
+msgstr "© Talaan, versie "
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:128
 msgid "Released under license"
-msgstr ""
+msgstr "Uitgebracht onder de licentie"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:153
 msgid "Support"
@@ -372,33 +372,31 @@ msgstr "Ondersteuning"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:193
 msgid "Report a bug"
-msgstr ""
+msgstr "Bug melden"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:208
-#, fuzzy
 msgid "Contact Developer"
-msgstr "Ontwikkelaars"
+msgstr "Contact opnemen met ontwikkelaar"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:223
 msgid "View source"
-msgstr ""
+msgstr "Broncode bekijken"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:239
 msgid "Donate"
-msgstr ""
+msgstr "Doneren"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:255
 msgid "Other apps by the developer"
-msgstr ""
+msgstr "Andere apps van deze ontwikkelaar"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:272
 msgid "Developers"
 msgstr "Ontwikkelaars"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:276
-#, fuzzy
 msgid "Main developer"
-msgstr "Ontwikkelaars"
+msgstr "Hoofdontwikkelaar"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:291
 msgid "Logo"
@@ -410,19 +408,19 @@ msgstr "Aangedreven door"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:313
 msgid "Date and Time manipulation"
-msgstr ""
+msgstr "Datum- en tijdmanipulatie"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/About.qml:328
 msgid "For processing JSON models"
-msgstr ""
+msgstr "Voor het verwerken van JSON-bestanden"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddCategory.qml:38
 msgid "Add New Category"
-msgstr "Nieuwe categorie toevoegen"
+msgstr "Categorie toevoegen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddCategory.qml:39
 msgid "Edit Category - "
-msgstr "Categorie bewerken - "
+msgstr "Categorie aanpassen - "
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddCategory.qml:135
 msgid "Name:"
@@ -430,7 +428,7 @@ msgstr "Naam:"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddCategory.qml:145
 msgid "Enter Category name"
-msgstr "Categorienaam invoeren"
+msgstr "Voer een categorienaam in "
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddCategory.qml:177
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddChecklist.qml:410
@@ -449,15 +447,15 @@ msgstr "Kleur:"
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddChecklist.qml:34
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddChecklist.qml:46
 msgid "Create New List"
-msgstr "Nieuwe lijst creëren"
+msgstr "Lijst maken"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddChecklist.qml:37
 msgid "Edit List - "
-msgstr "Lijst bewerken - "
+msgstr "Lijst aanpassen - "
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddChecklist.qml:40
 msgid "Create New Saved List"
-msgstr "Nieuwe opgeslagen lijst creëren"
+msgstr "Opgeslagen lijst maken"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddChecklist.qml:228
 msgid "Checklist"
@@ -469,24 +467,24 @@ msgstr "Doorlopende lijst"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddChecklist.qml:281
 msgid "List Title:"
-msgstr "Titel van lijst:"
+msgstr "Lijstnaam:"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddChecklist.qml:303
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:34
 msgid "Enter checklist name"
-msgstr "Voer een naam in voor de controlelijst"
+msgstr "Geef de controlelijst een naam"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddChecklist.qml:672
 msgid "List successfully updated"
-msgstr "De lijst is succesvol bijgewerkt"
+msgstr "De lijst is bijgewerkt"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/AddChecklist.qml:681
 msgid "List successfully created"
-msgstr "De lijst is succesvol gecreëerd"
+msgstr "De lijst is aangemaakt"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/DefaultTab.qml:23
 msgid "Searching Lists"
-msgstr "Bezig met zoeken naar lijsten"
+msgstr "Bezig met zoeken naar lijsten..."
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/DefaultTab.qml:25
 msgid "Search Lists"
@@ -494,16 +492,16 @@ msgstr "Lijsten zoeken"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/DefaultTab.qml:26
 msgid "No List Created Yet"
-msgstr "Nog geen lijst gecreëerd"
+msgstr "Je hebt nog geen lijst gemaakt"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/DefaultTab.qml:28
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SavedTab.qml:29
 msgid "Favorite a list by using the 'starred' action"
-msgstr "Voeg een lijst toe aan de favorieten door de 'ster' te gebruiken"
+msgstr "Voeg een lijst toe aan je favorieten door op de 'ster' te drukken"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/DefaultTab.qml:28
 msgid "Tap/Click the '+' button to add a List"
-msgstr "Druk op de '+'-knop om een lijst toe te voegen"
+msgstr "Druk/Klik op de '+'-knop om een lijst toe te voegen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/DefaultTab.qml:28
 msgid "Swipe from the dome at the bottom edge to add a List"
@@ -511,11 +509,11 @@ msgstr "Veeg vanaf de onderkant om een lijst toe te voegen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/DefaultTab.qml:30
 msgid "Loading Lists"
-msgstr "Bezig met laden van lijsten"
+msgstr "Bezig met laden van lijsten..."
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/HistoryTab.qml:23
 msgid "Searching History"
-msgstr "Bezig met doorzoeken van geschiedenis"
+msgstr "Bezig met doorzoeken van geschiedenis..."
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/HistoryTab.qml:25
 msgid "Search History"
@@ -527,7 +525,7 @@ msgstr "Er is geen geschiedenis"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/HistoryTab.qml:29
 msgid "Completed checklists from your Favorites are listed here"
-msgstr "Afgeronde controlelijsten uit uw favorieten worden hier opgesomd"
+msgstr "Afgeronde controlelijsten uit je favorieten worden hier opgesomd"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/HistoryTab.qml:30
 msgid "Completed checklists are listed here"
@@ -535,7 +533,7 @@ msgstr "Afgeronde controlelijsten worden hier opgesomd"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/HistoryTab.qml:32
 msgid "Loading History"
-msgstr "Bezig met laden van geschiedenis"
+msgstr "Bezig met laden van geschiedenis..."
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:338
 msgid "Find"
@@ -547,7 +545,7 @@ msgstr "Markeren als afgerond"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:356
 msgid "Uncheck All"
-msgstr "Alles de-markeren"
+msgstr "Niets aankruisen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:435
 msgid "Set Reminders"
@@ -574,7 +572,7 @@ msgstr "Standaard"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:485
 msgid "View Details"
-msgstr "Details weergeven"
+msgstr "Details tonen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:506
 msgid "Remaining"
@@ -586,7 +584,7 @@ msgstr "Geen overeenkomend item gevonden"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:632
 msgid "No remaining item"
-msgstr "Geen resterend item"
+msgstr "Geen items meer"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:635
 msgid "List is empty"
@@ -599,7 +597,7 @@ msgstr ""
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:644
 msgid "Click the '+' button to add more items (Ctrl + L)"
-msgstr "Klik op de '+'-knop om meer items toe te voegen (Ctrl+L)"
+msgstr "Druk/Klik op de '+'-knop om meer items toe te voegen (Ctrl+L)"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:645
 msgid "Swipe from the bottom to add more items"
@@ -607,7 +605,7 @@ msgstr "Veeg vanaf de onderkant om meer items toe te voegen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:649
 msgid "Click the '+' button to add items (Ctrl + L)"
-msgstr "Klik op de '+'-knop om items toe te voegen (Ctrl+L)"
+msgstr "Druk/Klik op de '+'-knop om items toe te voegen (Ctrl+L)"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:650
 msgid "Swipe from the bottom to add items"
@@ -615,7 +613,7 @@ msgstr "Veeg vanaf de onderkant om items toe te voegen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:667
 msgid "Loading list items"
-msgstr "Bezig met laden van lijstitems"
+msgstr "Bezig met laden van lijstitems..."
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ItemsPage.qml:727
 msgid "Toggle Priority"
@@ -635,7 +633,7 @@ msgstr "Er zijn geen categorieën"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ManageCategory.qml:178
 msgid "Tap/Click the '+' button to add categories"
-msgstr "Druk op de '+'-knop om categorieën toe te voegen"
+msgstr "Druk/Klik op de '+'-knop om categorieën toe te voegen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ManageCategory.qml:179
 msgid "Swipe from the bottom to add categories"
@@ -644,11 +642,11 @@ msgstr "Veeg vanaf de onderkant om categorieën toe te voegen"
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ManageCategory.qml:293
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ManageCategory.qml:308
 msgid "Uncategorized"
-msgstr "Niet-gecategoriseerd"
+msgstr "Ongecategoriseerd"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/ManageCategory.qml:345
 msgid "Category successfully deleted"
-msgstr "De categorie is succesvol verwijderd"
+msgstr "De categorie is verwijderd"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/RemindersPage.qml:19
 msgid "Reminders"
@@ -680,11 +678,11 @@ msgstr "Open een lijst om herinneringen toe te voegen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/RemindersPage.qml:275
 msgid "Tap/Click the '+' button to add Reminders"
-msgstr "Druk op de '+'-knop om herinneringen toe te voegen"
+msgstr "Druk/Klik op de '+'-knop om herinneringen toe te voegen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SavedTab.qml:23
 msgid "Searching Saved Lists"
-msgstr "Bezig doorzoeken van opgeslagen lijsten"
+msgstr "Bezig doorzoeken van opgeslagen lijsten..."
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SavedTab.qml:25
 msgid "Search Saved Lists"
@@ -700,7 +698,7 @@ msgstr "Sla een lijst op via het tabblad Lijsten"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SavedTab.qml:32
 msgid "Loading Saved Lists"
-msgstr "Bezig met laden van opgeslagen lijsten"
+msgstr "Bezig met laden van opgeslagen lijsten..."
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SettingsTab.qml:98
 msgid "Interface"
@@ -716,7 +714,7 @@ msgstr "Bij het openen van lijsten:"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SettingsTab.qml:111
 msgid "Show category colors"
-msgstr "Categoriekleuren weergeven"
+msgstr "Categoriekleuren tonen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SettingsTab.qml:112
 msgid "Category color assignment"
@@ -753,7 +751,7 @@ msgstr "Radiaal"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SettingsTab.qml:272
 msgid "Bottom Menu Hint"
-msgstr "Hint"
+msgstr "Hint omtrent onderste menu"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SettingsTab.qml:331
 msgid "Autohide"
@@ -761,11 +759,11 @@ msgstr "Automatisch verbergen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SettingsTab.qml:335
 msgid "Semihide"
-msgstr "Semi-verbergen"
+msgstr "Deels verbergen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SettingsTab.qml:340
 msgid "Always Displayed"
-msgstr "Altijd weergeven"
+msgstr "Altijd tonen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SettingsTab.qml:416
 msgid "Larger font size"
@@ -777,7 +775,7 @@ msgstr "Voor lijstitems"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SettingsTab.qml:425
 msgid "Toggle list items via surface"
-msgstr "Lijstitems weergeven/verbergen via oppervlak"
+msgstr "Lijstitems tonen/verbergen via oppervlak"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SettingsTab.qml:427
 msgid "Only the checkbox is clickable if disabled"
@@ -789,13 +787,13 @@ msgstr "Categorieën beheren"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SettingsTab.qml:492
 msgid "Add, edit, and delete categories"
-msgstr "Categorieën toevoegen, bewerken en verwijderen"
+msgstr "Categorieën toevoegen, aanpassen en verwijderen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/SettingsTab.qml:498
 msgid "Credits, report bugs, view source code, contact developer, donate"
 msgstr ""
-"Met dank aan, fouten (bugs) rapporteren, broncode bekijken, contact opnemen "
-"met ontwikkelaar, doneren"
+"Met dank aan, bugs melden, broncode bekijken, contact opnemen met "
+"ontwikkelaar, doneren"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/TargetsPage.qml:51
 msgid "Unpin window"
@@ -807,27 +805,27 @@ msgstr "Venster vastzetten"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/TargetsPage.qml:61
 msgid "Overdue"
-msgstr "Verlopen"
+msgstr "Verstreken"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/TargetsPage.qml:108
 msgid "You have no upcoming targets"
-msgstr "U heeft geen aanstaande doelen"
+msgstr "Je hebt geen ingeplande doelen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/TargetsPage.qml:108
 msgid "You have no overdue targets"
-msgstr "U heeft geen verlopen doelen"
+msgstr "Je hebt geen verstreken doelen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/TargetsPage.qml:109
 msgid "All your upcoming targets will be listed here"
-msgstr "Al uw aanstaande doelen worden hier opgesomd"
+msgstr "Al je ingeplande doelen worden hier opgesomd"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/TargetsPage.qml:109
 msgid "All your overdue targets will be listed here"
-msgstr "Al uw verlopen doelen worden hier opgesomd"
+msgstr "Al je verstreken doelen worden hier opgesomd"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/ui/TargetsPage.qml:128
 msgid "Loading Targets"
-msgstr "Bezig met laden van doelen"
+msgstr "Bezig met laden van doelen..."
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:11
 msgid "New Reminder"
@@ -855,11 +853,11 @@ msgstr "Externe link openen"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:13
 msgid "You are about to open an external link. Do you wish to continue?"
-msgstr "U staat op het punt om een externe link te openen. Wilt u doorgaan?"
+msgstr "Je staat op het punt om een externe link te openen. Weet je het zeker?"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:9
 msgid "Do you want to include the list item comments?"
-msgstr "Wilt u de itemopmerkingen van de lijst bijsluiten?"
+msgstr "Wil je de itemopmerkingen van de lijst bijsluiten?"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:21
 msgid "No"
@@ -888,7 +886,7 @@ msgstr "Op categorie (A-Z)"
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:54
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:74
 msgid "By Creation Date (Latest First)"
-msgstr "Op creatiedatum (laatste eerst)"
+msgstr "Op aanmaakdatum (laatste eerst)"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:59
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/master/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:94
