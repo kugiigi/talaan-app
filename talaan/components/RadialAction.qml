@@ -8,8 +8,7 @@ Action {
                                   "black"
                                   break
                               case "Ambiance":
-                                  theme.palette.highlighted.overlayText
-                                  break
+                              case "System":
                               case "SuruDark":
                                   theme.palette.highlighted.overlayText
                                   break
@@ -21,8 +20,7 @@ Action {
                                         "white"
                                         break
                                     case "Ambiance":
-                                        theme.palette.highlighted.overlay
-                                        break
+                                    case "System":
                                     case "SuruDark":
                                         theme.palette.highlighted.overlay
                                         break

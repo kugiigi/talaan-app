@@ -54,6 +54,7 @@ Page {
                              case "Default":
                                  "#3D1400"
                                  break
+                             case "System":
                              case "Ambiance":
                                  theme.palette.normal.background
                                  break
@@ -92,7 +93,7 @@ Page {
                 textareaDescr.text = description
 
                 if (targetDate !== "") {
-                    targetDtLabel.date = new Date(targetDate) //Process.dateFormat(1, targetDate)
+                    targetDtLabel.date = new Date(targetDate)
                     switchTarget.checked = true
                 }
             }
@@ -167,8 +168,7 @@ Page {
                      "#371300"
                      break
                  case "Ambiance":
-                     theme.palette.normal.background
-                     break
+                 case "System":
                  case "SuruDark":
                      theme.palette.normal.background
                      break
@@ -180,8 +180,7 @@ Page {
                        0.6
                        break
                    case "Ambiance":
-                       1.0
-                       break
+                   case "System":
                    case "SuruDark":
                        1.0
                        break
@@ -193,7 +192,7 @@ Page {
         id: flickDialog
         boundsBehavior: Flickable.DragAndOvershootBounds
         contentHeight: columnContent.height + units.gu(1)
-        interactive: true //keyboard.target.visible === true ? true : false
+        interactive: true
 
         anchors {
             left: parent.left
@@ -231,8 +230,7 @@ Page {
                                "#3D1400"
                                break
                            case "Ambiance":
-                               theme.palette.normal.backgroundText
-                               break
+                           case "System":
                            case "SuruDark":
                                theme.palette.normal.backgroundText
                                break
@@ -257,8 +255,7 @@ Page {
                                "#3D1400"
                                break
                            case "Ambiance":
-                               theme.palette.normal.backgroundText
-                               break
+                           case "System":
                            case "SuruDark":
                                theme.palette.normal.backgroundText
                                break
@@ -284,8 +281,7 @@ Page {
                            "#3D1400"
                            break
                        case "Ambiance":
-                           theme.palette.normal.backgroundText
-                           break
+                       case "System":
                        case "SuruDark":
                            theme.palette.normal.backgroundText
                            break
@@ -310,8 +306,6 @@ Page {
                 }
 
                 style: TextFieldStyle {
-                    //overlaySpacing: 0
-                    //frameSpacing: 0
                     background: Item {
                     }
                     color: switch (settings.currentTheme) {
@@ -319,8 +313,7 @@ Page {
                                "white"
                                break
                            case "Ambiance":
-                               theme.palette.normal.backgroundText
-                               break
+                           case "System":
                            case "SuruDark":
                                theme.palette.normal.backgroundText
                                break
@@ -338,8 +331,7 @@ Page {
                            "#3D1400"
                            break
                        case "Ambiance":
-                           theme.palette.normal.backgroundText
-                           break
+                       case "System":
                        case "SuruDark":
                            theme.palette.normal.backgroundText
                            break
@@ -384,7 +376,6 @@ Page {
                     }
                 }
 
-                //property string selectedCategory:categoryItemSelector.model.get(categoryItemSelector.selectedIndex).name
                 anchors {
                     left: parent.left
                     right: parent.right
@@ -400,8 +391,6 @@ Page {
 
                     onMessage: bottomEdgePage.commitWithProperties({
                                                                        mode: "add"
-                                                                       //actionMode: pageAddChecklist.actionMode,
-                                                                       //mode: pageAddChecklist.mode
                                                                    })
                 }
             }
@@ -413,8 +402,7 @@ Page {
                            "#3D1400"
                            break
                        case "Ambiance":
-                           theme.palette.normal.backgroundText
-                           break
+                       case "System":
                        case "SuruDark":
                            theme.palette.normal.backgroundText
                            break
@@ -428,7 +416,7 @@ Page {
             }
             TextArea {
                 id: textareaDescr
-                //width: units.gu(20)
+
                 height: textName.height + units.gu(1)
                 autoSize: true
                 contentWidth: units.gu(30)
@@ -440,8 +428,6 @@ Page {
                     rightMargin: units.gu(2)
                 }
                 style: TextFieldStyle {
-                    //overlaySpacing: 0
-                    //frameSpacing: 0
                     background: Item {
                     }
                     color: switch (settings.currentTheme) {
@@ -449,8 +435,7 @@ Page {
                                "white"
                                break
                            case "Ambiance":
-                               theme.palette.normal.backgroundText
-                               break
+                           case "System":
                            case "SuruDark":
                                theme.palette.normal.backgroundText
                                break
@@ -468,8 +453,7 @@ Page {
                                     "#2D371300"
                                     break
                                 case "Ambiance":
-                                    theme.palette.highlighted.background
-                                    break
+                                case "System":
                                 case "SuruDark":
                                     theme.palette.highlighted.background
                                     break
@@ -494,8 +478,7 @@ Page {
                                "#3D1400"
                                break
                            case "Ambiance":
-                               theme.palette.normal.backgroundText
-                               break
+                           case "System":
                            case "SuruDark":
                                theme.palette.normal.backgroundText
                                break
@@ -530,7 +513,7 @@ Page {
 
                     height: units.gu(3)
                     text: Qt.formatDateTime(
-                              date, "ddd, MMMM d, yyyy") //"dddd, MMMM d yyyy")
+                              date, "ddd, MMMM d, yyyy")
                     visible: switchTarget.checked
                     color: theme.palette.normal.foregroundText
                     fontSizeMode: Text.HorizontalFit
@@ -574,8 +557,6 @@ Page {
                         if (checked === true
                                 && pageAddChecklist.actionMode !== "edit") {
                             targetDtAction.trigger()
-                            //                            PickerPanel.openDatePicker(targetDtLabel, "date",
-                            //                                                       "Years|Months|Days")
                         }
                     }
                 }
@@ -591,8 +572,7 @@ Page {
                    "#463030"
                    break
                case "Ambiance":
-                   theme.palette.normal.foreground
-                   break
+               case "System":
                case "SuruDark":
                    theme.palette.normal.foreground
                    break
@@ -616,7 +596,6 @@ Page {
                 verticalCenter: parent.verticalCenter
             }
             action: Action {
-                //shortcut: "Esc"
                 onTriggered: {
                     pageAddChecklist.cancel()
                 }
@@ -632,7 +611,6 @@ Page {
                 verticalCenter: parent.verticalCenter
             }
             action: Action {
-                //shortcut: "Ctrl+S"
                 onTriggered: {
 
                     /*Commits the OSK*/

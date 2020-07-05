@@ -35,8 +35,7 @@ ScrollView {
                      "#4c341a"
                      break
                  case "Ambiance":
-                     theme.palette.normal.background
-                     break
+                 case "System":
                  case "SuruDark":
                      theme.palette.normal.background
                      break
@@ -48,8 +47,7 @@ ScrollView {
                        0.6
                        break
                    case "Ambiance":
-                       1.0
-                       break
+                   case "System":
                    case "SuruDark":
                        1.0
                        break
@@ -95,8 +93,7 @@ ScrollView {
                                         "#2D371300"
                                         break
                                     case "Ambiance":
-                                        theme.palette.highlighted.background
-                                        break
+                                    case "System":
                                     case "SuruDark":
                                         theme.palette.highlighted.background
                                         break
@@ -114,8 +111,7 @@ ScrollView {
                                      1.0
                                      break
                                  case "Ambiance":
-                                     0.5
-                                     break
+                                 case "System":
                                  case "SuruDark":
                                      0.5
                                      break
@@ -134,8 +130,7 @@ ScrollView {
                                        theme.palette.normal.background
                                        break
                                    case "Ambiance":
-                                       theme.palette.normal.backgroundText
-                                       break
+                                   case "System":
                                    case "SuruDark":
                                        theme.palette.normal.backgroundText
                                        break
@@ -154,8 +149,7 @@ ScrollView {
                                        theme.palette.normal.overlay
                                        break
                                    case "Ambiance":
-                                       theme.palette.normal.overlayText
-                                       break
+                                   case "System":
                                    case "SuruDark":
                                        theme.palette.normal.overlayText
                                        break
@@ -204,8 +198,7 @@ ScrollView {
                                          theme.palette.normal.background
                                          break
                                      case "Ambiance":
-                                         theme.palette.normal.backgroundText
-                                         break
+                                     case "System":
                                      case "SuruDark":
                                          theme.palette.normal.backgroundText
                                          break
@@ -217,8 +210,7 @@ ScrollView {
                                        theme.palette.normal.background
                                        break
                                    case "Ambiance":
-                                       theme.palette.normal.backgroundText
-                                       break
+                                   case "System":
                                    case "SuruDark":
                                        theme.palette.normal.backgroundText
                                        break
@@ -238,8 +230,7 @@ ScrollView {
                                    theme.palette.normal.overlay
                                    break
                                case "Ambiance":
-                                   theme.palette.normal.overlayText
-                                   break
+                               case "System":
                                case "SuruDark":
                                    theme.palette.normal.overlayText
                                    break

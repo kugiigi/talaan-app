@@ -61,12 +61,6 @@ Dialog {
         }
     }
 
-//    Label {
-//        id: targetLabel
-//        text: i18n.tr("Target Date?")
-//        verticalAlignment: Text.AlignVCenter
-//    }
-
     ListItem{
         id: targetLabel
         divider.visible: false
@@ -106,8 +100,7 @@ Dialog {
                             "#2D371300"
                             break;
                         case "Ambiance":
-                            theme.palette.highlighted.background
-                            break;
+                        case "System":
                         case "SuruDark":
                             theme.palette.highlighted.background
                             break;

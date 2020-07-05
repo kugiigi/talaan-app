@@ -363,8 +363,7 @@ PageWithBottom {
                                  "#3D1400"
                                  break
                              case "Ambiance":
-                                 theme.palette.normal.background
-                                 break
+                             case "System":
                              case "SuruDark":
                                  theme.palette.normal.foreground
                                  break
@@ -549,8 +548,7 @@ PageWithBottom {
                                     "#2D371300"
                                     break
                                 case "Ambiance":
-                                    theme.palette.highlighted.background
-                                    break
+                                case "System":
                                 case "SuruDark":
                                     theme.palette.highlighted.background
                                     break
@@ -770,8 +768,7 @@ PageWithBottom {
                                theme.palette.normal.background
                                break
                            case "Ambiance":
-                               theme.palette.normal.backgroundText
-                               break
+                           case "System":
                            case "SuruDark":
                                theme.palette.normal.backgroundText
                                break
@@ -998,7 +995,6 @@ PageWithBottom {
                 text: "Older than a <b>YEAR</b> ago"
                 onClicked: {
                     clearHistory("year")
-                    //PopupUtils.close(dialogue)
                 }
                 color: theme.palette.normal.backgroundTertiaryText
             }

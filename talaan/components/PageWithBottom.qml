@@ -21,11 +21,8 @@ Page {
     property int leadingActionsCount: root.header.leadingActionBar.actions.length
     property int trailingActionsCount: root.header.trailingActionBar.actions.length
 
-    //    property alias bottomEdgeMenu: bottomEdgeMenu
-
 
     onTrailingActionsCountChanged: {
-//        console.log("onTrailingActionsCountChanged");
         if (root.enableBottom) {
             if (bottomType === "Radial") {
                 loadRadialModel()
@@ -36,7 +33,6 @@ Page {
     }
 
     onLeadingActionsCountChanged: {
-//        console.log("onLeadingActionsCountChanged");
         if (root.enableBottom) {
             if (bottomType === "Radial") {
                 loadRadialModel()
@@ -95,33 +91,6 @@ Page {
 
         var msg = {'model': listModel, 'hideTrailingActions': root.hideTrailingActions,'hideTrailingActions': root.hideTrailingActions, 'trailing': trailingActionBarActions, 'leading': leadingActionBarActions,'navigation': navigationActions};
         workerScript.sendMessage(msg);
-
-//        if (trailingActionBarActions.length > 0 && !root.hideTrailingActions) {
-
-//            for (var i = trailingActionsCount - 1; i > -1; i--) {
-//                if (trailingActionBarActions[i].visible) {
-//                    listModel.append({
-//                                         action: trailingActionBarActions[i]
-//                                     })
-//                }
-//            }
-//        }
-
-//        if (leadingActionBarActions.length > 0 && !root.hideLeadingActions) {
-//            for (var i = 0; i < leadingActionBarActions.length; i++) {
-//                if (leadingActionBarActions[i].visible) {
-//                    listModel.append({
-//                                         action: leadingActionBarActions[i]
-//                                     })
-//                }
-//            }
-//        }
-
-//        if (navigationActions.length > 0) {
-//            listModel.append({
-//                                 action: customActions
-//                             })
-//        }
     }
 
     function loadRadialModel() {
@@ -166,9 +135,7 @@ Page {
         iconName: root.customActionsIcon
         text: root.customActionsLabel
         onTriggered: {
-
-
-            //            customPanel.open()
+//~             customPanel.open()
         }
     }
 
@@ -180,10 +147,7 @@ Page {
 
     Loader {
         id: bottomMenuLoader
-        //        active: root.enableBottom
-        //        anchors.fill: parent
         z: 100
-        //        sourceComponent: bottomMenuComponent
         asynchronous: true
         visible: keyboard.target.visible ? false : status == Loader.Ready ? true :false
 
@@ -200,8 +164,7 @@ Page {
                         return "#513838"
                         break
                     case "Ambiance":
-                        return theme.palette.highlighted.background
-                        break
+                    case "System":
                     case "SuruDark":
                         return theme.palette.highlighted.background
                         break
@@ -215,8 +178,7 @@ Page {
                         return "white"
                         break
                     case "Ambiance":
-                        return theme.palette.highlighted.backgroundText
-                        break
+                    case "System":
                     case "SuruDark":
                         return theme.palette.highlighted.backgroundText
                         break
@@ -254,52 +216,6 @@ Page {
         }
     }
 
-    //    Component {
-    //        id: bottomMenuComponent
-    //        RadialBottomEdge {
-    //            id: radialBottomMenu
-    //            hintColor: switch (settings.currentTheme) {
-    //                       case "Default":
-    //                           "#513838"
-    //                           break
-    //                       case "Ambiance":
-    //                           theme.palette.highlighted.background
-    //                           break
-    //                       case "SuruDark":
-    //                           theme.palette.highlighted.background
-    //                           break
-    //                       default:
-    //                           "#513838"
-    //                       }
-    //            hintIconColor: switch (settings.currentTheme) {
-    //                           case "Default":
-    //                               "white"
-    //                               break
-    //                           case "Ambiance":
-    //                               theme.palette.highlighted.backgroundText
-    //                               break
-    //                           case "SuruDark":
-    //                               theme.palette.highlighted.backgroundText
-    //                               break
-    //                           default:
-    //                               "white"
-    //                           }
-    //            bgColor: "black"
-    //            bgOpacity: 0.3
-    //            actionButtonDistance: units.gu(10)
-    //            visible: keyboard.target.visible ? false : true
-    //            actions: root.actions
-    //            mode: root.bottomMode
-    //            semiHideOpacity: 30
-    //            timeoutSeconds: 2
-    //        }
-    //    }
-
-    //    BottomEdgeMenu {
-    //        id: bottomEdgeMenu
-    //        model: listModel
-    //        anchorSide: root.bottomAnchor
-    //    }
     Connections {
         id: keyboard
         target: Qt.inputMethod

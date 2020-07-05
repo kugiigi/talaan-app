@@ -21,8 +21,7 @@ Page {
                                            "#3D1400"
                                            break
                                        case "Ambiance":
-                                           theme.palette.normal.backgroundText
-                                           break
+                                       case "System":
                                        case "SuruDark":
                                            theme.palette.normal.backgroundText
                                            break
@@ -44,8 +43,7 @@ Page {
                                  "#3D1400"
                                  break
                              case "Ambiance":
-                                 theme.palette.normal.background
-                                 break
+                             case "System":
                              case "SuruDark":
                                  theme.palette.normal.foreground
                                  break
@@ -63,7 +61,6 @@ Page {
             }
 
             mainView.listItems.modelCategories.isListOnly = false
-            //textName.forceActiveFocus()
 
             //loads data when in edit mode
             if (mode === "edit") {
@@ -81,8 +78,7 @@ Page {
                      "#371300"
                      break
                  case "Ambiance":
-                     theme.palette.normal.background
-                     break
+                 case "System":
                  case "SuruDark":
                      theme.palette.normal.background
                      break
@@ -94,8 +90,7 @@ Page {
                        0.6
                        break
                    case "Ambiance":
-                       1.0
-                       break
+                   case "System":
                    case "SuruDark":
                        1.0
                        break
@@ -108,7 +103,7 @@ Page {
         id: flickDialog
         boundsBehavior: Flickable.DragAndOvershootBounds
         contentHeight: columnContent.height + units.gu(1)
-        interactive: true //keyboard.target.visible === true ? true : false
+        interactive: true
 
         anchors {
             left: parent.left
@@ -152,8 +147,6 @@ Page {
                 }
 
                 style: TextFieldStyle {
-                    //overlaySpacing: 0
-                    //frameSpacing: 0
                     background: Item {
                     }
                     color: switch (settings.currentTheme) {
@@ -161,8 +154,7 @@ Page {
                                "white"
                                break
                            case "Ambiance":
-                               theme.palette.normal.backgroundText
-                               break
+                           case "System":
                            case "SuruDark":
                                theme.palette.normal.backgroundText
                                break
@@ -194,8 +186,6 @@ Page {
                     rightMargin: units.gu(2)
                 }
                 style: TextFieldStyle {
-                    //overlaySpacing: 0
-                    //frameSpacing: 0
                     background: Item {
                     }
                     color: switch (settings.currentTheme) {
@@ -203,8 +193,7 @@ Page {
                                "white"
                                break
                            case "Ambiance":
-                               theme.palette.normal.backgroundText
-                               break
+                           case "System":
                            case "SuruDark":
                                theme.palette.normal.backgroundText
                                break
@@ -243,8 +232,7 @@ Page {
                    "#463030"
                    break
                case "Ambiance":
-                   theme.palette.normal.foreground
-                   break
+               case "System":
                case "SuruDark":
                    theme.palette.normal.foreground
                    break
@@ -285,7 +273,7 @@ Page {
 
                 var txtName = textName.text
                 var txtDescr = textareaDescr.text
-                var txtColor = colorPicker.selectedColor //categoryIcon;
+                var txtColor = colorPicker.selectedColor
 
                 if (Process.checkRequired([txtName]) === false) {
                     textName.forceActiveFocus()
@@ -310,14 +298,11 @@ Page {
                     }
 
                     mainView.listItems.modelCategories.getCategories()
-                    //checkEmpty()
                     pageAddCategory.saved()
                     try {
                         pageAddChecklist.createdCategory = txtName
                     } catch (err) {
-
-
-                        //                        console.log("not from add checklist page")
+//~                         console.log("not from add checklist page")
                     }
                 }
             }

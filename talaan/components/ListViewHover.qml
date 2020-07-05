@@ -40,8 +40,7 @@ MouseArea {
                        alreadyHighlighted ? "transparent" : "#1A371300"
                        break
                    case "Ambiance":
-                       alreadyHighlighted ? "transparent" : theme.palette.highlighted.background
-                       break
+                   case "System":
                    case "SuruDark":
                        alreadyHighlighted ? "transparent" : theme.palette.highlighted.background
                        break

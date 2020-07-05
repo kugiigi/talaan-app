@@ -21,8 +21,7 @@ ListItem {
                    theme.palette.normal.background
                    break;
                case "Ambiance":
-                   theme.palette.normal.backgroundText
-                   break;
+               case "System":
                case "SuruDark":
                    theme.palette.normal.backgroundText
                    break;

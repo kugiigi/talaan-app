@@ -13,12 +13,6 @@ Panel {
 
     locked: model.count > 0 ? false : true
     z: 1000
-//    anchors {
-//        right: anchorSide === "Right" ? parent.right : undefined
-//        left: anchorSide === "Left" ? parent.left : undefined
-
-//        bottom: parent.bottom
-//    }
     width: units.gu(5)
     triggerSize: units.gu(5)
     hideTimeout: 4000
@@ -83,7 +77,7 @@ Panel {
             anchors.fill: parent
             currentIndex: -1
             clip: true
-//            model: listModel
+            
             delegate: ListItem {
                 id: listItem
                 width: parent.width
@@ -92,8 +86,7 @@ Panel {
                                     "#2D371300"
                                     break
                                 case "Ambiance":
-                                    theme.palette.highlighted.background
-                                    break
+                                case "System":
                                 case "SuruDark":
                                     theme.palette.highlighted.background
                                     break
@@ -111,15 +104,13 @@ Panel {
                                    theme.palette.normal.background
                                    break
                                case "Ambiance":
-                                   theme.palette.normal.backgroundText
-                                   break
+                               case "System":
                                case "SuruDark":
                                    theme.palette.normal.backgroundText
                                    break
                                default:
                                    theme.palette.normal.background
                                }
-                        //                            font.weight: Font.Normal
                     }
 
                     Icon {
@@ -131,8 +122,7 @@ Panel {
                                    theme.palette.normal.overlay
                                    break
                                case "Ambiance":
-                                   theme.palette.normal.overlayText
-                                   break
+                               case "System":
                                case "SuruDark":
                                    theme.palette.normal.overlayText
                                    break

@@ -9,7 +9,6 @@ import Ubuntu.Layouts 1.0
 import "../library/DataProcess.js" as DataProcess
 import "../library/ProcessFunc.js" as Process
 
-//Page {
 PageWithBottom{
     id: pageReminders
 
@@ -23,6 +22,7 @@ PageWithBottom{
                              case "Default":
                                  "#3D1400"
                                  break
+                             case "System":
                              case "Ambiance":
                                  theme.palette.normal.background
                                  break
@@ -115,7 +115,6 @@ PageWithBottom{
     }
 
     function switchToCurrent() {
-        //console.log("Current")
         var checklistId = itemsPage.currentID
         var preRegexp = /^\[Talaan\]\w|\W\(/
         var postRegexp = /\)$/
@@ -124,7 +123,6 @@ PageWithBottom{
     }
 
     function switchToAll() {
-        //console.log("All")
         sortedAlarms.filter.pattern = /^\[Talaan\]\w|\W\(\d{1,}\)$/
     }
 
@@ -235,7 +233,7 @@ PageWithBottom{
         id: sortedAlarms
         model: alarmModel
         filter.property: "message"
-        filter.pattern: /^\[Talaan\]\w|\W\(\d{1,}\)$/ /*/\[Talaan_\d{1,}\]$/*/
+        filter.pattern: /^\[Talaan\]\w|\W\(\d{1,}\)$/
 
         onCountChanged: {
             if (count === 0) {
@@ -308,8 +306,7 @@ PageWithBottom{
                                         "#2D371300"
                                         break
                                     case "Ambiance":
-                                        theme.palette.highlighted.background
-                                        break
+                                    case "System":
                                     case "SuruDark":
                                         theme.palette.highlighted.background
                                         break

@@ -66,14 +66,8 @@ PageWithBottom {
 
     onSearchModeChanged: {
         if (!searchMode) {
-            //searchHeader.extension = null
-            //defaultHeader.extension = statsSections
-            //statsSections.visible = true
             pageItems.header = defaultHeader
         } else {
-            //defaultHeader.extension = null
-            ///searchHeader.extension = statsSections
-            //statsSections.visible = false
             pageItems.header = searchHeader
         }
     }
@@ -103,7 +97,6 @@ PageWithBottom {
 
     /*function used for keyboard shortcut*/
     function switchSection() {
-        //event.accepted = true;
         if (statsSections.visible) {
             statsSections.selectedIndex = statsSections.selectedIndex === 0 ? 1 : 0
         }
@@ -117,9 +110,6 @@ PageWithBottom {
         mainView.listItems.modelChecklistItems.getItems(currentID, status,
                                                         pageItems.searchText,
                                                         intSort)
-        //getCheckedCount()
-        //currentTotal = mainView.listItems.modelChecklistItems.count
-        //checkEmpty()
     }
 
     function checkEmpty() {
@@ -146,7 +136,6 @@ PageWithBottom {
 
     function checkComplete() {
         if (currentTotal - totalChecked === 0) {
-            //(itemsTotal === totalChecked) {
             return true
         } else {
             return false
@@ -218,17 +207,14 @@ PageWithBottom {
 
             if ((pageMode === "talaan") && currentStatus === "incomplete"
                     && settings.listItemHideChecked) {
-                //hideChecked = true
                 statsSections.selectedIndex = 1
             } else {
                 loadChecklist(null)
             }
-            //checkEmpty()
         } else {
             if (!mainLayout.multiColumn) {
                 mainLayout.resetCurrentIndex()
             }
-            //hideChecked = false
             statsSections.selectedIndex = 0
             bottomEdgePage.panelClose()
         }
@@ -283,6 +269,7 @@ PageWithBottom {
                              case "Default":
                                  "#3D1400"
                                  break
+                             case "System":
                              case "Ambiance":
                                  theme.palette.normal.background
                                  break
@@ -307,32 +294,20 @@ PageWithBottom {
         }
 
         extension: (pageMode === "talaan")
-                   && currentStatus === "incomplete" ? statsSections : null //statsSections
+                   && currentStatus === "incomplete" ? statsSections : null
 
         trailingActionBar {
-            numberOfSlots: 3 //mainLayout.multiColumn ? 4 : 2
+            numberOfSlots: 3
             actions: [
                 Action {
                     iconName: "add"
                     text: i18n.tr("Add")
                     shortcut: "Ctrl+L"
-                    visible: /*!bottomEdgePage.enabled
-                                                                     && */ pageMode !== "history" ? true : false
+                    visible: pageMode !== "history" ? true : false
                     onTriggered: {
                         addNew()
                     }
                 },
-                //                Action {
-                //                    iconName: hideChecked === false ? "empty-symbolic" : "text-x-generic-symbolic"
-                //                    text: hideChecked ? i18n.tr("Show All") : i18n.tr(
-                //                                            "Hide Checked")
-                //                    shortcut: "Ctrl+H"
-                //                    //enabled: checkComplete() === true ? false : true
-                //                    visible: pageMode === "talaan" ? true : false
-                //                    onTriggered: {
-                //                        hideChecked = !hideChecked
-                //                    }
-                //                },
                 Action {
                     iconName: "find"
                     text: i18n.tr("Find")
@@ -437,19 +412,7 @@ PageWithBottom {
                              && mainView.listItems.modelChecklistItems.count > 0
                              && mainView.mainLayout.columns !== 3 ? true : false
                     onTriggered: {
-                        /*if (mainLayout.columns < 3) {
-                                                                    navigatedToPage = true
-                                                                                                            }*/
                         remindersPageLoader.showRemindersPage("current")
-//                        mainView.mainLayout.addPageToNextColumn(itemsPage,
-//                                                                remindersPage)
-                        //                                        mainView.mainLayout.addPageToNextColumn(
-                        //                                                    itemsPage, Qt.resolvedUrl("RemindersPage.qml"))
-                        /*primaryLeftPage.adaptLayout.addPageToCurrentColumn(
-                                                                            //primaryLeftPage.adaptLayout.primaryPage,
-                                                                                                                                pageItems,
-                                                                                                                                                                                    Qt.resolvedUrl("RemindersPage.qml"))*/
-                        //mainView.mainLayout.switchNoSelected(true)
                     }
                 },
                 Action {
@@ -679,7 +642,7 @@ PageWithBottom {
             onTriggered: {
                 var currentItemName = groupedList.model.get(value).itemName
                 DataProcess.deleteItem(
-                            currentID /*groupedList.currentItem.itemID*/,
+                            currentID,
                             currentItemName)
                 currentTotal--
                 var currentItemStatus = groupedList.model.get(value).status
@@ -698,7 +661,7 @@ PageWithBottom {
             Action {
                 iconName: "edit"
                 text: i18n.tr("Edit")
-                //visible: pageMode === "history"? false : true
+
                 onTriggered: {
                     var currentItemName = groupedList.model.get(value).itemName
                     var currentItemComment = groupedList.model.get(
@@ -715,7 +678,7 @@ PageWithBottom {
             Action {
                 iconName: "redo"
                 text: i18n.tr("Skip")
-                visible: pageMode === "talaan" /*|| pageMode === "normal" || currentStatus === "normal" */ ? true : false
+                visible: pageMode === "talaan" ? true : false
                 onTriggered: {
                     groupedList.changeStatus(2, value)
                     if (checkComplete() === true) {
@@ -726,7 +689,7 @@ PageWithBottom {
             Action {
                 iconName: "mail-mark-important"
                 text: i18n.tr("Toggle Priority")
-                visible: pageMode === "talaan" /*|| pageMode === "normal" || currentStatus === "normal"*/ ? true : false
+                visible: pageMode === "talaan" ? true : false
                 onTriggered: {
                     var currentPriority = groupedList.model.get(value).priority
 
@@ -843,8 +806,7 @@ PageWithBottom {
                                     "#2D371300"
                                     break;
                                 case "Ambiance":
-                                    theme.palette.highlighted.background
-                                    break;
+                                case "System":
                                 case "SuruDark":
                                     theme.palette.highlighted.background
                                     break;
@@ -896,7 +858,7 @@ PageWithBottom {
 
                         property bool checked: false
 
-                        width: units.gu(3) //checked ? units.gu(3.5) : units.gu(2)
+                        width: units.gu(3)
                         height: width
                         visible: pageMode !== "talaan" && pageMode !== "history" ? false : true
                         enabled: pageMode === "history" ? false : true
@@ -968,6 +930,7 @@ PageWithBottom {
                                    checkAbstractButton.visible === true && status !== 0
                                            && pageMode !== "history" && !itemsPage.searchMode ? theme.palette.normal.backgroundSecondaryText : priority === "High" ? theme.palette.normal.field : theme.palette.normal.background
                                    break
+                               case "System":
                                case "Ambiance":
                                    checkAbstractButton.visible === true && status !== 0
                                            && pageMode !== "history" && !itemsPage.searchMode ? theme.palette.normal.overlayText : priority === "High" ? theme.palette.normal.backgroundText : theme.palette.normal.backgroundText
@@ -998,9 +961,7 @@ PageWithBottom {
                               && status === 2 ? i18n.tr("Skipped") : ""
                         fontSize: "small"
                         font.weight: Font.DemiBold
-                        //color: "red"
                         font.bold: true
-                        //font.italic: true
                         verticalAlignment: Text.AlignVCenter
                         horizontalAlignment: Text.AlignRight
                         anchors {
@@ -1014,15 +975,12 @@ PageWithBottom {
                         id: mouseComment
 
                         visible: comments === "" ? false : true
-                        width: units.gu(5) //labelName.height * 3
+                        width: units.gu(5)
                         height: width
                         preventStealing: true
                         anchors {
-                            //top: parent.top
-                            //bottom: parent.bottom
                             verticalCenter: parent.verticalCenter
                             right: parent.right
-                            //rightMargin: units.gu(1)
                         }
 
                         onClicked: {
@@ -1043,11 +1001,11 @@ PageWithBottom {
                                         - commentBubble.bubbleWidth - units.gu(
                                             1)
 
-                                //commentBubble.message = comments
                                 switch (settings.currentTheme) {
                                 case "Default":
                                     bubbleBgColor = "#513838"
                                     break
+                                case "System":
                                 case "Ambiance":
                                     bubbleBgColor = theme.palette.normal.foreground
                                     break
@@ -1063,7 +1021,6 @@ PageWithBottom {
 
                                 if (commentBubble.y + commentBubble.height + units.gu(
                                             1) > (pageItems.height - pageItems.header.height)) {
-                                    //commentBubble.y = mapped.y - commentBubble.height / 2
                                     commentBubble.y = commentBubble.y
                                             - ((commentBubble.y + commentBubble.height + units.gu(
                                                     1)) - (pageItems.height
@@ -1079,8 +1036,7 @@ PageWithBottom {
                                 iconComment.color = "#513838"
                                 break
                             case "Ambiance":
-                                iconComment.color = theme.palette.normal.backgroundText
-                                break
+                            case "System":
                             case "SuruDark":
                                 iconComment.color = theme.palette.normal.backgroundText
                                 break
@@ -1095,6 +1051,7 @@ PageWithBottom {
                             case "Default":
                                 iconComment.color = "white"
                                 break
+                            case "System":
                             case "Ambiance":
                                 iconComment.color = theme.palette.selected.foreground
                                 break
@@ -1115,8 +1072,7 @@ PageWithBottom {
                                        "#513838"
                                        break
                                    case "Ambiance":
-                                       theme.palette.normal.backgroundText
-                                       break
+                                   case "System":
                                    case "SuruDark":
                                        theme.palette.normal.backgroundText
                                        break
@@ -1243,7 +1199,6 @@ PageWithBottom {
         }
     }
 
-    //AddItemsBar_Bottom {
     AddItemsBar {
         id: bottomEdgePage
         property string currentItem
@@ -1284,12 +1239,10 @@ PageWithBottom {
                 case "add":
                     DataProcess.saveItem(currentID, currentChecklist, txtName,
                                          txtComment)
-                    //                    mainView.notification.showNotification(
-                    //                                "Item added successfully", UbuntuColors.green)
                     itemName.text = ""
                     comments.text = ""
                     itemName.forceActiveFocus()
-                    //itemsTotal++
+
                     currentTotal++
                     break
                 case "edit":
@@ -1304,7 +1257,6 @@ PageWithBottom {
                 isCommentsShown = false
                 loadChecklist(hideChecked === true ? 0 : null,
                                                      pageItems.searchText)
-                //checkEmpty()
             }
         }
     }

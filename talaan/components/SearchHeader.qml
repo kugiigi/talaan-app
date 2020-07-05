@@ -12,7 +12,6 @@ PageHeader {
     property string sectionMode
     property bool searchActive: false
     property string searchPlaceHolderText
-    //property ListModel selectionModel
     property alias selectedSection: searchSections.selectedSection
     property bool noCancel: false
     signal cancel
@@ -37,7 +36,6 @@ PageHeader {
 
     function stopSearch() {
 
-        //        console.log("stopSearch")
         searchActive = false
 
         if (textLoader.item !== null) {
@@ -74,6 +72,7 @@ PageHeader {
                          case "Default":
                              "#3D1400"
                              break
+                         case "System":
                          case "Ambiance":
                              theme.palette.normal.background
                              break
@@ -194,16 +193,13 @@ PageHeader {
 
                 onVisibleChanged: {
                     if (!visible) {
-
-
-                        //text = ""
+//~                         text = ""
                     } else {
                         if (actionCancel.visible) {
                             // Force active focus when this becomes the current PageHead state and
                             // show OSK if appropriate.
                             forceActiveFocus()
                         }
-                        //delayTimer.restart()
                     }
                 }
 
@@ -220,7 +216,6 @@ PageHeader {
                     id: delayTimer
                     interval: 500
                     onTriggered: {
-                        //console.log("searched: " + textField.text)
                         search(textField.text, "")
                     }
                 }
@@ -257,7 +252,7 @@ PageHeader {
                     property bool highlighted: false
                     property string condition
 
-                    text: "-" //i18n.tr("On")
+                    text: "-"
                     height: units.gu(3)
                     width: parent.width * 0.3
                     verticalAlignment: Text.AlignVCenter
@@ -271,11 +266,6 @@ PageHeader {
                         verticalCenter: parent.verticalCenter
                     }
 
-                    //                    onVisibleChanged: {
-                    //                        if (visible) {
-                    //                            delayTimerDate.restart()
-                    //                        }
-                    //                    }
                     onTextChanged: {
                         if (text === "-") {
                             mainHeader.searchActive = false
@@ -423,8 +413,6 @@ PageHeader {
                     id: delayTimerDate
                     interval: 400
                     onTriggered: {
-
-                        //console.log("Searched")
                         search(Process.dateFormat(0, targetDtLabel.date),
                                conditionLabel.condition)
                     }
@@ -487,11 +475,6 @@ PageHeader {
                         }
                     }
 
-                    //                    onVisibleChanged: {
-                    //                        if (visible) {
-                    //                            delayTimerSelection.restart()
-                    //                        }
-                    //                    }
                     Rectangle {
                         z: -1
                         anchors.centerIn: parent
@@ -539,7 +522,6 @@ PageHeader {
                         UbuntuListView {
                             id: selectionListView
                             height: units.gu(20)
-                            //width: units.gu(20)
                             interactive: true
                             clip: true
                             anchors {
@@ -547,7 +529,7 @@ PageHeader {
                                 top: parent.top
                                 right: parent.right
                             }
-                            model: mainView.listItems.modelCategories //selectionModel
+                            model: mainView.listItems.modelCategories
                             currentIndex: -1
                             delegate: ListItem {
                                 id: listItem
@@ -574,7 +556,6 @@ PageHeader {
                     id: delayTimerSelection
                     interval: 400
                     onTriggered: {
-                        //console.log("Searched")
                         if (selectionLabel.text !== i18n.tr(
                                     "Select a Category")) {
                             search(selectionLabel.text, "")
