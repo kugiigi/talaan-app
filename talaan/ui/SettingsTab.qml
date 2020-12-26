@@ -15,15 +15,13 @@ PageWithBottom {
 
     header: PageHeader {
         title: i18n.tr("Settings")
-        //flickable: flickableSettings
         StyleHints {
             backgroundColor: switch (settings.currentTheme) {
                              case "Default":
                                  "#3D1400"
                                  break
+                             case "System":
                              case "Ambiance":
-                                 theme.palette.normal.background
-                                 break
                              case "SuruDark":
                                  theme.palette.normal.foreground
                                  break
@@ -48,7 +46,6 @@ PageWithBottom {
         if (!active) {
 
             navigationListView.currentIndex = -1
-            // mainLayout.noSelected = true
         }
     }
 
@@ -57,7 +54,7 @@ PageWithBottom {
             left: parent.left
             right: parent.right
             top: parent.top
-            bottom: parent.bottom//navigationListView.top
+            bottom: parent.bottom
             topMargin: settingsPage.header.height
         }
 
@@ -118,7 +115,7 @@ PageWithBottom {
 
                 ExpandableListItem {
                     id: themeExpandedListItem
-                    listViewHeight: units.gu(21)
+                    listViewHeight: units.gu(28)
                     titleText.text: i18n.tr("Theme")
                     titleText.textSize: Label.Medium
                     subText.textSize: Label.Small
@@ -127,9 +124,8 @@ PageWithBottom {
                                      case "Default":
                                          theme.palette.normal.background
                                          break
+                                     case "System":
                                      case "Ambiance":
-                                         theme.palette.normal.backgroundText
-                                         break
                                      case "SuruDark":
                                          theme.palette.normal.backgroundText
                                          break
@@ -140,9 +136,8 @@ PageWithBottom {
                                    case "Default":
                                        theme.palette.normal.background
                                        break
+                                   case "System":
                                    case "Ambiance":
-                                       theme.palette.normal.backgroundText
-                                       break
                                    case "SuruDark":
                                        theme.palette.normal.backgroundText
                                        break
@@ -153,9 +148,8 @@ PageWithBottom {
                                    case "Default":
                                        theme.palette.normal.background
                                        break
+                                   case "System":
                                    case "Ambiance":
-                                       theme.palette.normal.backgroundText
-                                       break
                                    case "SuruDark":
                                        theme.palette.normal.backgroundText
                                        break
@@ -176,6 +170,10 @@ PageWithBottom {
                         themeModel.append({
                                               value: "Default",
                                               text: i18n.tr("Default")
+                                          })
+                        themeModel.append({
+                                              value: "System",
+                                              text: i18n.tr("System")
                                           })
                         themeModel.append({
                                               value: "Ambiance",
@@ -205,9 +203,8 @@ PageWithBottom {
                                      case "Default":
                                          theme.palette.normal.background
                                          break
+                                     case "System":
                                      case "Ambiance":
-                                         theme.palette.normal.backgroundText
-                                         break
                                      case "SuruDark":
                                          theme.palette.normal.backgroundText
                                          break
@@ -218,9 +215,8 @@ PageWithBottom {
                                    case "Default":
                                        theme.palette.normal.background
                                        break
+                                   case "System":
                                    case "Ambiance":
-                                       theme.palette.normal.backgroundText
-                                       break
                                    case "SuruDark":
                                        theme.palette.normal.backgroundText
                                        break
@@ -231,9 +227,8 @@ PageWithBottom {
                                    case "Default":
                                        theme.palette.normal.background
                                        break
+                                   case "System":
                                    case "Ambiance":
-                                       theme.palette.normal.backgroundText
-                                       break
                                    case "SuruDark":
                                        theme.palette.normal.backgroundText
                                        break
@@ -258,10 +253,6 @@ PageWithBottom {
                                                    value: "Radial",
                                                    text: i18n.tr("Radial")
                                                })
-//                        bottomMenuTypeModel.append({
-//                                                   value: "Panel",
-//                                                   text: i18n.tr("Panel")
-//                                               })
                         bottomMenuTypeExpandedListItem.model = bottomMenuTypeModel
                     }
                 }
@@ -277,9 +268,8 @@ PageWithBottom {
                                      case "Default":
                                          theme.palette.normal.background
                                          break
+                                     case "System":
                                      case "Ambiance":
-                                         theme.palette.normal.backgroundText
-                                         break
                                      case "SuruDark":
                                          theme.palette.normal.backgroundText
                                          break
@@ -290,9 +280,8 @@ PageWithBottom {
                                    case "Default":
                                        theme.palette.normal.background
                                        break
+                                   case "System":
                                    case "Ambiance":
-                                       theme.palette.normal.backgroundText
-                                       break
                                    case "SuruDark":
                                        theme.palette.normal.backgroundText
                                        break
@@ -303,9 +292,8 @@ PageWithBottom {
                                    case "Default":
                                        theme.palette.normal.background
                                        break
+                                   case "System":
                                    case "Ambiance":
-                                       theme.palette.normal.backgroundText
-                                       break
                                    case "SuruDark":
                                        theme.palette.normal.backgroundText
                                        break
@@ -443,8 +431,6 @@ PageWithBottom {
                     highlightResizeDuration: UbuntuAnimation.SnapDuration
                     height: contentHeight
                     anchors {
-                        //bottom: parent.bottom
-                        //bottomMargin: units.gu(1)
                         left: parent.left
                         right: parent.right
                     }
@@ -500,12 +486,4 @@ PageWithBottom {
                                     })
         }
     }
-
-//    ListItem.ThinDivider {
-//        anchors {
-//            bottom: navigationListView.top
-//            //bottomMargin: units.gu(-0.5)
-//        }
-//    }
-
 }

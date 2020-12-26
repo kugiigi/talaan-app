@@ -70,8 +70,7 @@ Item {
                    theme.palette.normal.background
                    break
                case "Ambiance":
-                   theme.palette.normal.backgroundText
-                   break
+               case "System":
                case "SuruDark":
                    theme.palette.normal.backgroundText
                    break
@@ -90,21 +89,18 @@ Item {
             left: parent.left
             leftMargin: units.gu(1)
             bottom: !descr ? parent.bottom : undefined
-            //right: rowDate.left
-            //rightMargin: units.gu(1)
         }
     }
     Label {
         id: lblDescr
-        text: descr// === "" ? i18n.tr("No Description") : descr
+        text: descr
         visible: descr ? true : false
         color: switch (settings.currentTheme) {
                case "Default":
                    theme.palette.normal.background
                    break
                case "Ambiance":
-                   theme.palette.normal.backgroundText
-                   break
+               case "System":
                case "SuruDark":
                    theme.palette.normal.backgroundText
                    break
@@ -146,8 +142,7 @@ Item {
                        status !== 'complete' && overdue ? theme.palette.normal.negative : theme.palette.normal.background
                        break
                    case "Ambiance":
-                       status !== 'complete' && overdue ? theme.palette.normal.negative : theme.palette.normal.backgroundText
-                       break
+                   case "System":
                    case "SuruDark":
                        status !== 'complete' && overdue ? theme.palette.normal.negative : theme.palette.normal.backgroundText
                        break
@@ -163,8 +158,7 @@ Item {
                        theme.palette.normal.background
                        break
                    case "Ambiance":
-                       theme.palette.normal.backgroundText
-                       break
+                   case "System":
                    case "SuruDark":
                        theme.palette.normal.backgroundText
                        break
@@ -174,7 +168,7 @@ Item {
             fontSize: "small"
             verticalAlignment: Text.AlignVCenter
             anchors.verticalCenter: parent.verticalCenter
-            text: target_dt === '' ? '' : Process.relativeDate(target_dt,"ddd, MMM d, yyyy","Basic") /*Qt.formatDate(target_dt,"ddd, MMM d, yyyy")*/ /*Process.historyDate(target_dt)*/ //creation_dt//Process.historyDate(creation_dt)
+            text: target_dt === '' ? '' : Process.relativeDate(target_dt,"ddd, MMM d, yyyy","Basic")
         }
     }
     Label {
@@ -200,7 +194,6 @@ Item {
             rightMargin: units.gu(1)
             bottom: parent.bottom
             bottomMargin: units.gu(1)
-//            top: !rowDate.visible ? parent.top : undefined
         }
         Icon {
             id: iconItems
@@ -213,8 +206,7 @@ Item {
                        theme.palette.normal.background
                        break
                    case "Ambiance":
-                       theme.palette.normal.backgroundText
-                       break
+                   case "System":
                    case "SuruDark":
                        theme.palette.normal.backgroundText
                        break
@@ -231,8 +223,7 @@ Item {
                        theme.palette.normal.background
                        break
                    case "Ambiance":
-                       theme.palette.normal.backgroundText
-                       break
+                   case "System":
                    case "SuruDark":
                        theme.palette.normal.backgroundText
                        break

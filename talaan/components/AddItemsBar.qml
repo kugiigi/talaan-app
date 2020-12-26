@@ -27,8 +27,7 @@ Panel {
     align: Qt.AlignBottom
     animate: true
     hintSize: 0
-    //hideTimeout: 5000
-    height: addItemBar.height //units.gu(6)
+    height: addItemBar.height
 
     anchors{
         left: parent.left
@@ -77,8 +76,7 @@ Panel {
                    "#513838"
                    break
                case "Ambiance":
-                   theme.palette.normal.foreground
-                   break
+               case "System":
                case "SuruDark":
                    theme.palette.normal.foreground
                    break
@@ -131,8 +129,7 @@ Panel {
                    "#463030"
                    break
                case "Ambiance":
-                   theme.palette.normal.foreground
-                   break
+               case "System":
                case "SuruDark":
                    theme.palette.normal.foreground
                    break
@@ -235,7 +232,7 @@ Panel {
             color: "transparent"
             activeFocusOnPress: false
             action: Action {
-                iconName:  "close" //"go-down"
+                iconName:  "close"
                 shortcut: textFieldName.activeFocus || textAreaComments.activeFocus ? "Esc" : undefined
                 onTriggered: {
                     addItemsBar.cancel()
@@ -284,12 +281,6 @@ Panel {
                 top: textFieldName.bottom
                 topMargin: units.gu(1)
             }
-
-//            onVisibleChanged: {
-//                if (visible) {
-//                    textAreaComments.forceActiveFocus()
-//                }
-//            }
 
             UbuntuNumberAnimation on opacity {
                 id: openingAnimation

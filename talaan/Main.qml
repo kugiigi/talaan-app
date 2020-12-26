@@ -32,12 +32,15 @@ MainView {
         case "SuruDark":
             "Ubuntu.Components.Themes.SuruDark"
             break
+        case "System":
+            ""
+            break
         default:
             "Ubuntu.Components.Themes.SuruDark"
         }
     }
 
-    property string current_version: "2.41"
+    property string current_version: "2.42"
     property alias listItems: listItems
     property alias notification: notificationLoader.item
     property alias mainLayout: mainAdaptLayout
@@ -65,12 +68,7 @@ MainView {
         MetaData.executeUserVersion2()
         MetaData.executeUserVersion3()
 
-        //        mainAdaptLayout.switchTab(0)
-        //        navigationflickableLoader.active = true
         defaultTabLoader.active = true
-        //        panelLoader.active = true
-        //        savedTabLoader.active = true
-        //        historyTabLoader.active = true
     }
 
     Keys.onPressed: {
@@ -78,7 +76,6 @@ MainView {
         case primaryLeftPage.isMultiColumn:
             switch (true) {
             case event.key == Qt.Key_S && event.modifiers == Qt.ControlModifier:
-                //event.accepted = true;
                 navigationPageLoader.item.header.startSearch()
                 break
             }
@@ -86,7 +83,6 @@ MainView {
         case itemsPage && itemsPage.visible:
             switch (true) {
             case event.key == Qt.Key_H && event.modifiers == Qt.ControlModifier:
-                //event.accepted = true;
                 itemsPage.switchSection()
                 break
             }
@@ -102,11 +98,11 @@ MainView {
         property bool listItemHideChecked: false
         property bool panelSplit: true
         property bool categoryColors: false
-        property string radialBottomMenu: "Always" //Old
+        property string radialBottomMenu: "Always"
         property string bottomMenuHint: "Always"
         property string bottomMenuType: "Radial"
         property string bottomMenuAnchor: "Right"
-        property string currentTheme: "Default"
+        property string currentTheme: "System"
 
         Settings {
             property alias listItemClickable: settings.listItemClickable
@@ -133,9 +129,8 @@ MainView {
                  case "Default":
                      false
                      break
+                 case "System":
                  case "Ambiance":
-                     true
-                     break
                  case "SuruDark":
                      true
                      break
@@ -146,9 +141,8 @@ MainView {
                  case "Default":
                      "#371300"
                      break
+                 case "System":
                  case "Ambiance":
-                     theme.palette.normal.background
-                     break
                  case "SuruDark":
                      theme.palette.normal.background
                      break
@@ -159,9 +153,8 @@ MainView {
                    case "Default":
                        0.4
                        break
+                   case "System":
                    case "Ambiance":
-                       1.0
-                       break
                    case "SuruDark":
                        1.0
                        break
@@ -180,7 +173,6 @@ MainView {
 
         anchors {
             top: parent.top
-            //bottom: parent.bottom
             horizontalCenter: parent.horizontalCenter
             margins: units.gu(2)
         }
@@ -304,14 +296,6 @@ MainView {
                 PageColumn {
                     fillWidth: true
                 }
-                // column #2
-                /*dummy column as a workaround since AdaptivePageLayout does not adjust when both layouts have th same number of columns*/
-                //                PageColumn {
-                //                    minimumWidth: units.gu(0)
-                //                    maximumWidth: units.gu(1)
-                //                    preferredWidth: units.gu(0)
-                //                    //fillWidth: true
-                //                }
             }
         ]
         anchors.fill: parent
@@ -455,7 +439,6 @@ MainView {
         }
 
         function clearitemsPage() {
-            //console.log("items page cleared")
             if (itemsPageLoader.item) {
                 itemsPage.currentID = ""
                 itemsPage.currentChecklist = ""

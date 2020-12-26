@@ -1,3 +1,10 @@
+V2.42
+* Updated Dutch translation
+* Support system theme
+* Changed default theme to System
+* Fixed ExpandableListItem not correctly displaying the selected value
+* Code cleanup
+
 V2.41
 * arm64 support
 * Add "Show Details" action in an item

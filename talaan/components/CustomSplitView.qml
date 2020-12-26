@@ -27,7 +27,6 @@ Item {
     property real defaultDivider: parent === null ? 0 : parent.height/ 2
     property real minimumItemHeight:0
 
-    //: units.gu(30)
     Behavior on y {
         UbuntuNumberAnimation {
         }
@@ -52,7 +51,7 @@ Item {
         z: 3
         anchors {
             left: parent.left
-            right: parent.right /*top: parent.top*/
+            right: parent.right
         }
         y: defaultDivider
         height: units.gu(2)
@@ -61,8 +60,7 @@ Item {
                    highlighted ? theme.palette.normal.selection : Qt.lighter(Qt.lighter("#2E2020"))
                    break
                case "Ambiance":
-                   highlighted ? theme.palette.normal.selection : theme.palette.normal.overlay
-                   break
+               case "System":
                case "SuruDark":
                    highlighted ? theme.palette.normal.selection : theme.palette.normal.overlay
                    break
@@ -85,8 +83,7 @@ Item {
                                "#371300"
                                break
                            case "Ambiance":
-                               theme.palette.normal.overlayText
-                               break
+                           case "System":
                            case "SuruDark":
                                theme.palette.normal.overlayText
                                break

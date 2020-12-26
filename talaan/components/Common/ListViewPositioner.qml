@@ -10,6 +10,7 @@ Rectangle {
                                      case "Default":
                                          theme.palette.normal.overlay
                                          break;
+                                     case "System":
                                      case "Ambiance":
                                          theme.palette.normal.backgroundSecondaryText
                                          break;
@@ -65,13 +66,6 @@ Rectangle {
         }
     }
 
-//    Behavior on opacity {
-//        UbuntuNumberAnimation {
-//            easing.type: Easing.OutCubic
-//            duration: UbuntuAnimation.SlowDuration
-//        }
-//    }
-
     Behavior on color {
         ColorAnimation {
             easing: UbuntuAnimation.StandardEasing
@@ -101,7 +95,7 @@ Rectangle {
 
         onPressedChanged: {
             if (pressed) {
-                root.color = "#3A000000" //UbuntuColors.blue //"#4A3D1400"
+                root.color = "#3A000000"
             } else {
                 root.color = bgColor
             }
@@ -113,7 +107,6 @@ Rectangle {
         interval: 1000
         running: true
         onTriggered: {
-            //root.opacity = 0
             root.hide = true
         }
     }

@@ -15,8 +15,7 @@ ListItem {
                         "#2D371300"
                         break;
                     case "Ambiance":
-                        theme.palette.highlighted.background
-                        break;
+                    case "System":
                     case "SuruDark":
                         theme.palette.highlighted.background
                         break;
@@ -31,8 +30,7 @@ ListItem {
                          theme.palette.normal.background
                          break
                      case "Ambiance":
-                         theme.palette.normal.backgroundText
-                         break
+                     case "System":
                      case "SuruDark":
                          theme.palette.normal.backgroundText
                          break
@@ -44,8 +42,7 @@ ListItem {
                             theme.palette.normal.background
                             break
                         case "Ambiance":
-                            theme.palette.normal.backgroundText
-                            break
+                        case "System":
                         case "SuruDark":
                             theme.palette.normal.backgroundText
                             break
@@ -60,8 +57,7 @@ ListItem {
                        UbuntuColors.jet
                        break
                    case "Ambiance":
-                       theme.palette.normal.backgroundText
-                       break
+                   case "System":
                    case "SuruDark":
                        theme.palette.normal.backgroundText
                        break
@@ -78,8 +74,7 @@ ListItem {
                        theme.palette.normal.overlay
                        break
                    case "Ambiance":
-                       theme.palette.normal.backgroundText
-                       break
+                   case "System":
                    case "SuruDark":
                        theme.palette.normal.backgroundText
                        break

@@ -14,21 +14,6 @@ Item {
         rightMargin: units.gu(2)
     }
 
-//    CheckBox {
-//        id: checkItem
-//        checked: status === 0 ? false : true
-//        visible: pageMode !== "talaan" && pageMode !== "history" ? false : true
-//        enabled: pageMode === "history" ? false : true
-//        anchors {
-//            left: parent.left
-//            verticalCenter: parent.verticalCenter
-//        }
-
-//        onClicked: {
-//            listWithActions.clicked()
-//        }
-//    }
-
     Icon {
         id: checkItem
 
@@ -45,9 +30,6 @@ Item {
            left: parent.left
            verticalCenter: parent.verticalCenter
         }
-//        onClicked: {
-//                    listWithActions.clicked()
-//                }
     }
 
     Label {
@@ -67,6 +49,7 @@ Item {
                    checkItem.visible === true
                       && status !== 0 ? "blue" : "red"
                    break;
+               case "System":
                case "SuruDark":
                    checkItem.visible === true
                       && status !== 0 ? theme.palette.normal.backgroundSecondaryText : theme.palette.normal.foregroundText
@@ -79,7 +62,7 @@ Item {
         anchors {
             left: checkItem.visible === true ? checkItem.right : parent.left
             leftMargin: units.gu(2)
-            right: labelSkipped.left //mouseComment.left
+            right: labelSkipped.left
             rightMargin: units.gu(1)
             verticalCenter: parent.verticalCenter
         }
@@ -105,15 +88,12 @@ Item {
         id: mouseComment
 
         visible: comments === "" ? false : true
-        width: units.gu(6) //labelName.height * 3
+        width: units.gu(6)
         height: width
         preventStealing: true
         anchors {
-            //top: parent.top
-            //bottom: parent.bottom
             verticalCenter: parent.verticalCenter
             right: parent.right
-            //rightMargin: units.gu(1)
         }
 
         onClicked: {
@@ -148,7 +128,7 @@ Item {
         Icon {
             id: iconComment
             name: "message"
-            color: "#513838" //UbuntuColors.midAubergine
+            color: "#513838"
             width: mouseComment.height / 1.5
             height: width
             anchors.centerIn: parent

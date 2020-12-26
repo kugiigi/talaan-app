@@ -8,7 +8,6 @@ import "../components/Dialogs"
 
 PageWithBottom {
     id: aboutPage
-    //property string current_version: "1.40"
 
     actions: [mainView.bottomMenuActions[4], mainView.bottomMenuActions[4], mainView.bottomMenuActions[1], mainView.bottomMenuActions[0], mainView.bottomMenuActions[2], mainView.bottomMenuActions[5]]
 
@@ -20,6 +19,7 @@ PageWithBottom {
                              case "Default":
                                  "#3D1400"
                                  break;
+                             case "System":
                              case "Ambiance":
                                  theme.palette.normal.background
                                  break;
@@ -143,7 +143,6 @@ PageWithBottom {
             Column {
                 id: bodyColumn
                 anchors {
-                    //margins: units.gu(3)
                     top: iconlabelGroup.bottom
                     topMargin: units.gu(3)
                     left: parent.left

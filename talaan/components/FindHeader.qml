@@ -12,6 +12,7 @@ PageHeader {
                          case "Default":
                              "#3D1400"
                              break
+                         case "System":
                          case "Ambiance":
                              theme.palette.normal.background
                              break
@@ -30,7 +31,7 @@ PageHeader {
         }
         actions: Action {
             id: actionCancel
-            //shortcut: "Esc"
+
             text: i18n.tr("Cancel")
             onTriggered: {
                 cancel()
