@@ -214,7 +214,7 @@ PageWithBottom {
 
                     action: Action {
                         onTriggered: {
-                            externalLinkConfirmation('mailto:kugi_igi@yahoo.com')
+                            externalLinkConfirmation('mailto:kugi_eusebio@protonmail.com')
                         }
                     }
                 }
@@ -235,7 +235,7 @@ PageWithBottom {
                     }
                 }
                 NavigationItem {
-                    titleText.text: i18n.tr("Donate")
+                    titleText.text: i18n.tr("Donate via Paypal")
                     iconName: "like"
 
                     anchors {
@@ -247,6 +247,22 @@ PageWithBottom {
                         onTriggered: {
                             externalLinkConfirmation(
                                         'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2GBQRJGLZMBCL')
+                        }
+                    }
+                }
+                NavigationItem {
+                    titleText.text: i18n.tr("Donate via LibrePay")
+                    iconName: "unlike"
+
+                    anchors {
+                        left: parent.left
+                        right: parent.right
+                    }
+
+                    action: Action {
+                        onTriggered: {
+                            externalLinkConfirmation(
+                                        'https://liberapay.com/kugi_eusebio/donate')
                         }
                     }
                 }

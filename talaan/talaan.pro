@@ -14,7 +14,7 @@ QML_FILES += $$files(*.qml,true) \
 
 CONF_FILES +=  talaan.apparmor \
                talaan.png \
-               Talaan_Splash.png
+               splash.svg
 
 AP_TEST_FILES += tests/autopilot/run \
                  $$files(tests/*.py,true)
@@ -116,6 +116,7 @@ DISTFILES += \
     assets/images/background@small.png \
     components/circle.png \
     Talaan_Splash.png \
+    splash.svg \
     components/ListViewHighlight.qml.wb4457 \
     ui/ItemsPage.qml.Ag5775 \
     components/Dialogs/DialogAction.qml \
