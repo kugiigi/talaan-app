@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-05 19:12+0000\n"
-"PO-Revision-Date: 2019-10-06 15:58+0200\n"
+"POT-Creation-Date: 2019-10-07 16:24+0000\n"
+"PO-Revision-Date: 2020-07-22 21:02+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -433,7 +433,7 @@ msgstr "Saisissez le nom de la catégorie"
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/talaan-app/talaan/ui/AddCategory.qml:169
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/talaan-app/talaan/ui/AddChecklist.qml:399
 msgid "Description:"
-msgstr ""
+msgstr "Description :"
 
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/talaan-app/talaan/ui/AddCategory.qml:181
 #: /home/kugi/Nextcloud/UbuntuHomeDesktop/Developments/Talaan/talaan-app/talaan/ui/AddChecklist.qml:423
