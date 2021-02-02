@@ -22,12 +22,13 @@ PageWithBottom {
 
     header: PageHeader {
         title: i18n.tr("Categories")
-        //flickable: groupedList
+        
         StyleHints {
             backgroundColor: switch(settings.currentTheme){
                              case "Default":
                                  "#3D1400"
                                  break;
+                             case "System":
                              case "Ambiance":
                                  theme.palette.normal.background
                                  break;
@@ -43,7 +44,7 @@ PageWithBottom {
             Action {
                 iconName: "add"
                 text: i18n.tr("Add")
-                //visible: mainLayout.columns === 1 ? false : true
+
                 onTriggered: {
                     addNew()
                 }
@@ -160,7 +161,6 @@ PageWithBottom {
     }
 
     onActiveChanged: {
-        //bottomEdge.edgeState = "collapsed"
         if (active === true) {
             loadCategories()
         } else {
@@ -221,8 +221,7 @@ PageWithBottom {
                                     "#2D371300"
                                     break;
                                 case "Ambiance":
-                                    theme.palette.highlighted.background
-                                    break;
+                                case "System":
                                 case "SuruDark":
                                     theme.palette.highlighted.background
                                     break;
@@ -252,8 +251,7 @@ PageWithBottom {
                                      theme.palette.normal.background
                                      break;
                                  case "Ambiance":
-                                     theme.palette.normal.backgroundText
-                                     break;
+                                 case "System":
                                  case "SuruDark":
                                      theme.palette.normal.backgroundText
                                      break;
@@ -265,8 +263,7 @@ PageWithBottom {
                                         theme.palette.normal.background
                                         break;
                                     case "Ambiance":
-                                        theme.palette.normal.backgroundText
-                                        break;
+                                    case "System":
                                     case "SuruDark":
                                         theme.palette.normal.backgroundText
                                         break;

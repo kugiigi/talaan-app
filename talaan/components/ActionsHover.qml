@@ -21,6 +21,7 @@ Item {
                case "Default":
                    highlighted ? positiveAction ? theme.palette.highlighted.raised : theme.palette.normal.negative : theme.palette.normal.foreground
                    break
+               case "System":
                case "Ambiance":
                    highlighted ? positiveAction ? theme.palette.highlighted.overlayText : theme.palette.normal.negative : theme.palette.normal.overlay
                    break
@@ -36,7 +37,7 @@ Item {
 
         MouseArea {
             anchors.fill: parent
-            //                                acceptedButtons: Qt.NoButton
+
             hoverEnabled: true
             cursorShape: Qt.PointingHandCursor
             onContainsMouseChanged: {

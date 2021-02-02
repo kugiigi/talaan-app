@@ -20,7 +20,7 @@ Dialog {
 
     OptionSelector {
         id: optionReminder
-        //text: i18n.tr("Reminder")
+
         containerHeight: itemHeight * 3
         model: listmodelReminder
         enabled: itemsPage.currentTargetDate === "" ? false : true
@@ -42,7 +42,7 @@ Dialog {
 
         onSelectedIndexChanged: {
             var selectedReminder = model.get(selectedIndex).value
-            console.log("nagchange: " + selectedReminder)
+            
             if (selectedReminder === "Custom") {
                 customSelected = true
             } else {
@@ -107,12 +107,6 @@ Dialog {
         }
     }
 
-
-    //    Label {
-    //        id: targetLabel
-    //        text: i18n.tr("Reminder Date & Time")
-    //        verticalAlignment: Text.AlignVCenter
-    //    }
     ListItem {
         id: targetDtListItem
 
@@ -124,8 +118,7 @@ Dialog {
                             "#2D371300"
                             break;
                         case "Ambiance":
-                            theme.palette.highlighted.background
-                            break;
+                        case "System":
                         case "SuruDark":
                             theme.palette.highlighted.background
                             break;
@@ -164,7 +157,6 @@ Dialog {
             horizontalAlignment: Text.AlignHCenter
             anchors {
                 left: parent.left
-                //leftMargin: units.gu(3)
                 right: parent.right
                 top: parent.top
                 bottom: parent.bottom
@@ -186,11 +178,6 @@ Dialog {
     }
 
 
-    //    Label {
-    //        id: targetTimeLabel
-    //        text: i18n.tr("Reminder Time")
-    //        verticalAlignment: Text.AlignVCenter
-    //    }
     ListItem {
         id: targetTimeListItem
 
@@ -201,8 +188,7 @@ Dialog {
                             "#2D371300"
                             break;
                         case "Ambiance":
-                            theme.palette.highlighted.background
-                            break;
+                        case "System":
                         case "SuruDark":
                             theme.palette.highlighted.background
                             break;
@@ -231,7 +217,7 @@ Dialog {
         }
         Label {
             id: targetTimeLabel
-            property date date//: new Date();
+            property date date
             property bool highlighted: false
             property alias mouseAreaTime: mouseAreaTime
 
@@ -307,7 +293,6 @@ Dialog {
                 var selectedReminder = optionReminder.model.get(
                             optionReminder.selectedIndex).value
                 var newDate
-                // = new Date()
                 if (optionReminder.customSelected) {
                     newDate = targetDtLabel.date
                     newDate.setHours(targetTimeLabel.date.getHours())

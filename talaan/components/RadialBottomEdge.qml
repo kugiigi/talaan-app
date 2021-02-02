@@ -70,7 +70,6 @@ Item {
         color: bgColor
         anchors.fill: parent
         visible: bottomEdgeHint.y !== collapsedPosition
-        //opacity: bgOpacity * ((root.height - bottomEdgeHint.y) / root.height)
         opacity: bgOpacity * (((root.height - bottomEdgeHint.y) / root.height) * 2)
         MouseArea {
             anchors.fill: parent
@@ -114,7 +113,6 @@ Item {
         Repeater {
             id: actionList
             visible: false
-            //enabled: actions.count > 0
             model: actions !== null ? actions : null
             delegate: Rectangle {
                 id: actionDelegate
@@ -312,14 +310,6 @@ Item {
 
         state: root.height > units.gu(75) ? "middle" : "right"
 
-        //        onHeightEnoughChanged: {
-        //            console.log("nagchange hieghtenough")
-        //            if(heightEnough){
-        //                backActionLoader.state = "middle"
-        //            }else{
-        //                backActionLoader.state = "right"
-        //            }
-        //        }
         states: [
             State {
                 name: "right"
@@ -334,7 +324,7 @@ Item {
                 PropertyChanges {
                     target: backActionLoader
                     anchors.rightMargin: units.gu(1)
-                    anchors.topMargin: 0 //actionButtonDistance / 2
+                    anchors.topMargin: 0
                 }
             },
             State {
@@ -354,9 +344,6 @@ Item {
                 }
             }
         ]
-        anchors {
-            //top: bottomEdgeHint.bottom
-        }
 
         sourceComponent: backActionComponent
         asynchronous: true
@@ -379,6 +366,7 @@ Item {
                    case "Default":
                        theme.palette.normal.overlay
                        break
+                   case "System":
                    case "Ambiance":
                        theme.palette.normal.foreground
                        break
@@ -405,6 +393,7 @@ Item {
                        case "Default":
                            UbuntuColors.porcelain
                            break
+                       case "System":
                        case "Ambiance":
                            theme.palette.normal.foregroundText
                            break
@@ -434,12 +423,13 @@ Item {
 
                 onPressedChanged: {
                     if (pressed) {
-                        recBack.color = "#3A000000" //"#0AFFFFFF"
+                        recBack.color = "#3A000000"
                     } else {
                         switch (settings.currentTheme) {
                         case "Default":
                             recBack.color = theme.palette.normal.overlay
                             break
+                        case "System":
                         case "Ambiance":
                             recBack.color = theme.palette.normal.foreground
                             break

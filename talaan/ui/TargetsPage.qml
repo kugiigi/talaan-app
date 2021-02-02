@@ -9,7 +9,7 @@ import Ubuntu.Components.Popups 1.3
 import "../library/DataProcess.js" as DataProcess
 import "../library/ProcessFunc.js" as Process
 
-//PageWithBottom {
+
 Page{
     id: pageTargets
 
@@ -20,8 +20,6 @@ Page{
     property string dialogResponse
     property bool noBackground: false
 
-//    actions: [mainView.bottomMenuActions[4],mainView.bottomMenuActions[4],mainView.bottomMenuActions[1],mainView.bottomMenuActions[2],mainView.bottomMenuActions[3],mainView.bottomMenuActions[5]]
-
     header: PageHeader {
         title: i18n.tr("Targets")
         StyleHints {
@@ -29,6 +27,7 @@ Page{
                              case "Default":
                                  "#3D1400"
                                  break;
+                             case "System":
                              case "Ambiance":
                                  theme.palette.normal.background
                                  break;
@@ -108,20 +107,13 @@ Page{
         title: mainSections.selectedIndex === 0 ? i18n.tr("You have no upcoming targets") : i18n.tr("You have no overdue targets")
         subTitle: mainSections.selectedIndex === 0 ? i18n.tr("All your upcoming targets will be listed here") : i18n.tr("All your overdue targets will be listed here")
         anchors {
-            //top: parent.top
             right: parent.right
             left: parent.left
-            //bottom: parent.bottom
             verticalCenter: parent.verticalCenter
             margins: units.gu(1)
         }
         shown: sortedTargets.count === 0 && listItems.modelTargets.loadingStatus === 'Ready'
     }
-
-//    ActivityIndicator{
-//        anchors.centerIn: parent
-//        running: listItems.modelTargets.loadingStatus !== "Ready"
-//    }
 
     LoadingComponent{
         visible: listItems.modelTargets.loadingStatus !== "Ready"
@@ -137,8 +129,7 @@ Page{
                      "#371300"
                      break;
                  case "Ambiance":
-                     theme.palette.normal.background
-                     break;
+                 case "System":
                  case "SuruDark":
                      theme.palette.normal.background
                      break;
@@ -150,8 +141,7 @@ Page{
                            0.6
                            break;
                        case "Ambiance":
-                           1.0
-                           break;
+                       case "System":
                        case "SuruDark":
                            1.0
                            break;
@@ -200,8 +190,7 @@ Page{
                                     "#2D371300"
                                     break;
                                 case "Ambiance":
-                                    theme.palette.highlighted.background
-                                    break;
+                                case "System":
                                 case "SuruDark":
                                     theme.palette.highlighted.background
                                     break;
@@ -218,8 +207,7 @@ Page{
                                      theme.palette.normal.background
                                      break;
                                  case "Ambiance":
-                                     theme.palette.normal.backgroundText
-                                     break;
+                                 case "System":
                                  case "SuruDark":
                                      theme.palette.normal.backgroundText
                                      break;
@@ -232,26 +220,16 @@ Page{
                                         theme.palette.normal.background
                                         break;
                                     case "Ambiance":
-                                        theme.palette.normal.backgroundText
-                                        break;
+                                    case "System":
                                     case "SuruDark":
                                         theme.palette.normal.backgroundText
                                         break;
                                     default:
                                         theme.palette.normal.background
                                     }
-                    //                    Icon {
-                    //                        id: iconImage
-                    //                        SlotsLayout.position: SlotsLayout.Trailing
-                    //                        width: listWithActions.height * 0.4
-                    //                        height: width
-                    //                        name: "reminder"
-                    //                        visible: reminder ? true : false
-                    //                        color: theme.palette.normal.base
-                    //                    }
                 }
             }
-            section.property: "header" //"target_dt"
+            section.property: "header"
             section.criteria: ViewSection.FullString
             section.labelPositioning: ViewSection.InlineLabels
                                       || ViewSection.CurrentLabelAtStart
@@ -259,7 +237,6 @@ Page{
                 height: units.gu(4)
                 divider.visible: true
                 divider.height: units.gu(0.2)
-                //color: "#2A666666"
                 highlightColor: "transparent"
                 Label {
                     color: switch(settings.currentTheme){
@@ -267,8 +244,7 @@ Page{
                                theme.palette.normal.background
                                break;
                            case "Ambiance":
-                               theme.palette.normal.backgroundText
-                               break;
+                           case "System":
                            case "SuruDark":
                                theme.palette.normal.backgroundText
                                break;
@@ -285,7 +261,7 @@ Page{
                         left: parent.left
                         leftMargin: units.gu(1)
                     }
-                    text: section //Process.historyDate(section)
+                    text: section
                 }
             }
         }
