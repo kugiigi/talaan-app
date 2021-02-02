@@ -63,6 +63,7 @@
         <file>assets/images/background@medium.png</file>
         <file>assets/images/background.png</file>
         <file>Talaan_Splash.png</file>
+        <file>splash.svg</file>
         <file>components/Common/ListViewPositioner.qml</file>
         <file>library/moment.js</file>
         <file>components/Common/HeaderWithSubtitle.qml</file>
