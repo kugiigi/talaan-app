@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-02 11:09+0000\n"
+"POT-Creation-Date: 2021-02-11 11:14+0000\n"
 "PO-Revision-Date: 2019-08-10 21:29+0200\n"
 "Last-Translator: Dub <dub@dubix.eu>\n"
 "Language-Team: UBports Czech Team\n"
@@ -370,51 +370,59 @@ msgstr "Vydáno pod licensí"
 msgid "Support"
 msgstr "Podpora"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:192
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:157
+msgid "Rate this App"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:171
 msgid "Report a bug"
 msgstr "Oznámit bug"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:207
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:186
 msgid "Contact Developer"
 msgstr "Kontaktovat vývojáře"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:222
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:201
 msgid "View source"
 msgstr "Zobrazot zdrojový kód"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:238
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:217
 msgid "Donate via Paypal"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:254
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:233
 msgid "Donate via LibrePay"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:270
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:249
+msgid "View in OpenStore"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:264
 msgid "Other apps by the developer"
 msgstr "Ostatní aplikace od vývojáře"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:287
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:281
 msgid "Developers"
 msgstr "Vývojáři"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:291
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:285
 msgid "Main developer"
 msgstr "Hlavní vývojář"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:306
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:300
 msgid "Logo"
 msgstr "Logo"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:324
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:318
 msgid "Powered by"
 msgstr "Běží na"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:328
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:322
 msgid "Date and Time manipulation"
 msgstr "Manipulace s datem a časem"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:343
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:337
 msgid "For processing JSON models"
 msgstr "Pro zpracování modelů JSON"
 

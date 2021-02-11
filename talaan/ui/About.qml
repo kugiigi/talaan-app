@@ -153,41 +153,20 @@ PageWithBottom {
                 }
 
                 //Commented out since rating apps isn't yet supported in OpenStore
-//                NavigationItem {
-//                    titleText.text: i18n.tr("Rate this App")
-//                    iconName: "starred"
+                NavigationItem {
+                    titleText.text: i18n.tr("Rate this App")
+                    iconName: "starred"
+                   anchors {
+                        left: parent.left
+                        right: parent.right
+                    }
+                   action: Action {
+                        onTriggered: {
+                            externalLinkConfirmation("openstore://talaan.kugiigi")
+                        }
+                    }
+                }
 
-//                    anchors {
-//                        left: parent.left
-//                        right: parent.right
-//                    }
-
-//                    action: Action {
-//                        onTriggered: {
-//                            Qt.openUrlExternally(
-//                                        "scope://com.canonical.scopes.clickstore?q=Talaan")
-//                        }
-//                    }
-//                }
-
-
-                // No equivalent in Github
-//                NavigationItem {
-//                    titleText.text: i18n.tr("Ask a question")
-//                    iconName: "help"
-
-//                    anchors {
-//                        left: parent.left
-//                        right: parent.right
-//                    }
-
-//                    action: Action {
-//                        onTriggered: {
-//                            Qt.openUrlExternally(
-//                                        "https://answers.launchpad.net/talaan-app")
-//                        }
-//                    }
-//                }
                 NavigationItem {
                     titleText.text: i18n.tr("Report a bug")
                     iconName: "mail-mark-important"
@@ -263,6 +242,21 @@ PageWithBottom {
                         onTriggered: {
                             externalLinkConfirmation(
                                         'https://liberapay.com/kugi_eusebio/donate')
+                        }
+                    }
+                }
+                NavigationItem {
+                    titleText.text: i18n.tr("View in OpenStore")
+                    iconName: "ubuntu-store-symbolic"
+
+                    anchors {
+                        left: parent.left
+                        right: parent.right
+                    }
+
+                    action: Action {
+                        onTriggered: {
+                            externalLinkConfirmation("openstore://talaan.kugiigi")
                         }
                     }
                 }

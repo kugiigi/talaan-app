@@ -40,7 +40,7 @@ MainView {
         }
     }
 
-    property string current_version: "2.43"
+    property string current_version: "2.44"
     property alias listItems: listItems
     property alias notification: notificationLoader.item
     property alias mainLayout: mainAdaptLayout

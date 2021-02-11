@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Talaan\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-02 11:09+0000\n"
+"POT-Creation-Date: 2021-02-11 11:14+0000\n"
 "PO-Revision-Date: 2020-07-03 19:12+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch - vistausss@outlook.com\n"
@@ -371,51 +371,59 @@ msgstr "Uitgebracht onder de licentie"
 msgid "Support"
 msgstr "Ondersteuning"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:192
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:157
+msgid "Rate this App"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:171
 msgid "Report a bug"
 msgstr "Bug melden"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:207
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:186
 msgid "Contact Developer"
 msgstr "Contact opnemen met ontwikkelaar"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:222
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:201
 msgid "View source"
 msgstr "Broncode bekijken"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:238
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:217
 msgid "Donate via Paypal"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:254
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:233
 msgid "Donate via LibrePay"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:270
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:249
+msgid "View in OpenStore"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:264
 msgid "Other apps by the developer"
 msgstr "Andere apps van deze ontwikkelaar"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:287
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:281
 msgid "Developers"
 msgstr "Ontwikkelaars"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:291
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:285
 msgid "Main developer"
 msgstr "Hoofdontwikkelaar"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:306
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:300
 msgid "Logo"
 msgstr "Logo"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:324
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:318
 msgid "Powered by"
 msgstr "Aangedreven door"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:328
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:322
 msgid "Date and Time manipulation"
 msgstr "Datum- en tijdmanipulatie"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:343
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:337
 msgid "For processing JSON models"
 msgstr "Voor het verwerken van JSON-bestanden"
 
