@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-02 11:09+0000\n"
+"POT-Creation-Date: 2021-02-11 11:14+0000\n"
 "PO-Revision-Date: 2018-03-01 10:45+0100\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
@@ -373,53 +373,61 @@ msgstr ""
 msgid "Support"
 msgstr "Soporte"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:192
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:157
+msgid "Rate this App"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:171
 msgid "Report a bug"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:207
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:186
 #, fuzzy
 msgid "Contact Developer"
 msgstr "Desarrolladores"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:222
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:201
 msgid "View source"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:238
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:217
 msgid "Donate via Paypal"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:254
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:233
 msgid "Donate via LibrePay"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:270
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:249
+msgid "View in OpenStore"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:264
 msgid "Other apps by the developer"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:287
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:281
 msgid "Developers"
 msgstr "Desarrolladores"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:291
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:285
 #, fuzzy
 msgid "Main developer"
 msgstr "Desarrolladores"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:306
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:300
 msgid "Logo"
 msgstr "Logo"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:324
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:318
 msgid "Powered by"
 msgstr "Impulsado por"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:328
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:322
 msgid "Date and Time manipulation"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:343
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:337
 msgid "For processing JSON models"
 msgstr ""
 
