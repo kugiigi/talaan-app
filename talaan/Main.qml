@@ -228,7 +228,6 @@ MainView {
                 backgroundColor: UbuntuColors.red
                 onTriggered: {
                     mainLayout.switchTab(2)
-                    console.log("history")
                 }
             },
             RadialAction {
@@ -455,7 +454,6 @@ MainView {
         onColumnsChanged: {
             multiColumn = columns > 1
             if (!multiColumn && noSelected) {
-                console.log("removed the noselected")
                 removePages(noSelectedPage)
             } else if (noSelected) {
                 checkNoSelected()

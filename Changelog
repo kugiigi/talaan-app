@@ -2,6 +2,7 @@ V2.44
 * Updated French translations
 * Re-enabled "Rate this app" in About page
 * Added "View in store" in About page
+* Enabled filter while searching within a list
 
 V2.43
 * Moved to framework 16.04.4

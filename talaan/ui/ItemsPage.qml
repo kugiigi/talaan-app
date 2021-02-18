@@ -242,6 +242,9 @@ PageWithBottom {
         property int intCurrentSectionIndex
 
         visible: searchMode ? true : false
+        
+        extension: visible && (pageMode === "talaan")
+                   && currentStatus === "incomplete" ? statsSections : null
 
         onVisibleChanged: {
             if(visible){
@@ -251,7 +254,6 @@ PageWithBottom {
         }
 
         onCancel: {
-            console.log("currentIndex: " + intCurrentSectionIndex)
             statsSections.selectedIndex = intCurrentSectionIndex
             searchMode = false
         }

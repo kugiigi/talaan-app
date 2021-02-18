@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-11 11:14+0000\n"
+"POT-Creation-Date: 2021-02-18 06:30+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Daniel Frost <one@frostinfo.de>\n"
 "Language-Team: \n"
@@ -24,28 +24,28 @@ msgstr "Listen"
 msgid "History"
 msgstr "Verlauf"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:236
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:235
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:25
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:24
 msgid "Saved"
 msgstr "Gespeicherte Listen"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:244
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:243
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:38
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:17
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:363
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:372
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:362
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:371
 msgid "No list selected"
 msgstr "Keine Liste ausgewählt"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:365
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:364
 msgid "Select a list from the left column"
 msgstr "Wähle eine Liste von der linken Spalte"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:374
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:373
 msgid "Select an item from the List, Saved or History tab"
 msgstr ""
 "Wähle einen Eintrag aus den Listen, den gespeicherten Listen oder dem Verlauf"
@@ -89,8 +89,8 @@ msgstr "OK"
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:914
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchHeader.qml:94
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:249
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1139
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1172
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1141
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1174
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:283
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:178
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:23
@@ -102,14 +102,14 @@ msgid "Find..."
 msgstr "Suche..."
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListItemContent.qml:73
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:961
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:963
 msgid "Skipped"
 msgstr "Übersprungen"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:188
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:202
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:262
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:304
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:306
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:46
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:88
 msgid "Add"
@@ -163,13 +163,13 @@ msgid "Navigation Panel"
 msgstr "Navigationsfeld"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:388
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:565
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:567
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogItemDetails.qml:78
 msgid "Close"
 msgstr "Schließen"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:403
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:462
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:464
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:48
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:49
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:50
@@ -186,7 +186,7 @@ msgstr "Favoriten"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:588
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:922
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:640
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:642
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:289
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:322
 msgid "Delete"
@@ -207,12 +207,12 @@ msgid "List successfully added to Saved Lists"
 msgstr "Liste erfolgreich zu gespeicherten Listen hinzugefügt"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:639
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:340
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:342
 msgid "New checklist"
 msgstr "Neue Kontrollliste"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:653
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:353
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:355
 msgid "New List successfully created"
 msgstr "Neue Liste erfolgreich angelegt"
 
@@ -233,8 +233,8 @@ msgid "List successfully added to Favorites"
 msgstr "Liste erfolgreich zu Favoriten hinzugefügt"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:702
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:374
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:663
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:376
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:665
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:304
 msgid "Edit"
 msgstr "Bearbeiten"
@@ -260,7 +260,7 @@ msgid "Loading results"
 msgstr "Lade Ergebnisse"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:822
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:632
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:634
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/TargetsPage.qml:121
 msgid "Please wait"
 msgstr "Bitte warten"
@@ -345,7 +345,7 @@ msgid "Already used %1? <b>Skip the tutorial</b>"
 msgstr "Schon verwendet %1? <b>Tutorialskript</b>"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Walkthrough.qml:69
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:680
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:682
 msgid "Skip"
 msgstr "Überspringen"
 
@@ -543,93 +543,93 @@ msgstr "Erledigte Listen sind hier aufgeführt"
 msgid "Loading History"
 msgstr "Lade Verlauf"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:313
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:315
 msgid "Find"
 msgstr "Suche"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:322
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:324
 msgid "Mark as completed"
 msgstr "Alle erledigt"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:331
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:333
 msgid "Uncheck All"
 msgstr "Alle unerledigt"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:410
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:412
 msgid "Set Reminders"
 msgstr "Erinnerung setzen"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:422
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:425
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:428
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:424
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:427
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:430
 msgid "Sort"
 msgstr "Sortieren"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:422
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:424
 msgid "A-Z"
 msgstr "A-Z"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:425
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:427
 msgid "Z-A"
 msgstr "Z-A"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:428
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:430
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:172
 msgid "Default"
 msgstr "Talaan (Standardthema)"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:448
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:705
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:450
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:707
 msgid "View Details"
 msgstr "Details anzeigen"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:469
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:471
 msgid "Remaining"
 msgstr "Unerledigt"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:593
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:595
 msgid "No matching item found"
 msgstr "Keine Suchtreffer gefunden"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:596
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:598
 msgid "No remaining item"
 msgstr "Keine Einträge übrig"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:599
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:601
 msgid "List is empty"
 msgstr "Die Liste ist leer"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:604
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:606
 msgid "Please try a different query or try removing the filter if there's any"
 msgstr ""
 "Bitte versuche eine andere Suchanfrage oder entferne den Filter, falls einer "
 "gesetzt ist"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:608
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:610
 msgid "Click the '+' button to add more items (Ctrl + L)"
 msgstr "Klicke auf \"+\" um neue Einträge hinzuzufügen (Strg + L)"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:609
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:611
 msgid "Swipe from the bottom to add more items"
 msgstr "Von unten wischen um neue Einträge hinzuzufügen"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:613
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:615
 msgid "Click the '+' button to add items (Ctrl + L)"
 msgstr "Klicke auf \"+\" um Einträge hinzuzufügen (Strg + L)"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:614
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:616
 msgid "Swipe from the bottom to add items"
 msgstr "Von unten wischen um Einträge hinzuzufügen"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:631
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:633
 msgid "Loading list items"
 msgstr "Lade Listeneinträge"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:691
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:693
 msgid "Toggle Priority"
 msgstr "Priorität umschalten"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1115
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1117
 msgid "Undo last item"
 msgstr "Letztes rückgängig machen"
 
