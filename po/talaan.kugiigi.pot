@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-18 06:30+0000\n"
+"POT-Creation-Date: 2021-03-30 12:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -965,6 +965,6 @@ msgstr ""
 msgid "In The Future"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/build/arm-linux-gnueabihf/app/talaan/talaan.desktop.h:1
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/build/aarch64-linux-gnu/app/talaan/talaan.desktop.h:1
 msgid "Talaan"
 msgstr ""
