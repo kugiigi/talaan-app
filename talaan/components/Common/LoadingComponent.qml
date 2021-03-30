@@ -11,15 +11,6 @@ Item {
 
     anchors.fill: parent
 
-    //height: childrenRect.height
-
-//    anchors {
-//        right: parent.right
-//        left: parent.left
-//        verticalCenter: parent.verticalCenter
-//        margins: units.gu(1)
-//    }
-
     onVisibleChanged: {
         if(visible){
             timer.start()
@@ -32,7 +23,7 @@ Item {
     ActivityIndicator {
         id: loadingIndicator
         anchors.centerIn: parent
-        running: true
+        running: root.visible
     }
 
     Timer {
