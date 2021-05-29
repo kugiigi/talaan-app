@@ -8,14 +8,13 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-30 12:24+0000\n"
-"PO-Revision-Date: 2021-02-09 21:57+0100\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2021-04-05 15:13+0200\n"
+"Last-Translator: Anne017\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.2\n"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:217
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:19
@@ -60,7 +59,6 @@ msgid "Enter item name"
 msgstr "Saisissez un nom d'élément"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/AddItemsBar.qml:274
-#, fuzzy
 msgid "Add comments / notes"
 msgstr "Ajouter des commentaires / notes"
 
@@ -249,7 +247,6 @@ msgid "Reset"
 msgstr "Réinitialiser"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:803
-#, fuzzy
 msgid "No matching list found"
 msgstr "Aucun élément correspondant trouvé"
 
@@ -258,7 +255,6 @@ msgid "No Favorites"
 msgstr "Aucun favoris"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:807
-#, fuzzy
 msgid "Please try a different query or change the Sort / Filter."
 msgstr ""
 "Veuillez essayer une autre recherche ou modifier les paramètres de tri/"
@@ -378,7 +374,7 @@ msgstr "Aide"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:157
 msgid "Rate this App"
-msgstr ""
+msgstr "Noter cette application"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:171
 msgid "Report a bug"
@@ -394,15 +390,15 @@ msgstr "Consulter le code source"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:217
 msgid "Donate via Paypal"
-msgstr ""
+msgstr "Faire un don via PayPal"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:233
 msgid "Donate via LibrePay"
-msgstr ""
+msgstr "Faire un don via LibrePay"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:249
 msgid "View in OpenStore"
-msgstr ""
+msgstr "Afficher dans l'OpenStore"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:264
 msgid "Other apps by the developer"
@@ -433,7 +429,6 @@ msgid "For processing JSON models"
 msgstr "Pour le traitement des modèles JSON"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:37
-#, fuzzy
 msgid "Add New Category"
 msgstr "Ajouter une catégorie"
 
@@ -465,9 +460,8 @@ msgstr "Couleur :"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:34
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:46
-#, fuzzy
 msgid "Create New List"
-msgstr "Créer une liste"
+msgstr "Créer une nouvelle liste"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:37
 msgid "Edit List - "
@@ -609,7 +603,6 @@ msgid "No remaining item"
 msgstr "Aucun élément correspondant"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:601
-#, fuzzy
 msgid "List is empty"
 msgstr "La liste est vide"
 
@@ -714,7 +707,6 @@ msgid "Searching Saved Lists"
 msgstr "Recherche dans les listes enregistrées"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:25
-#, fuzzy
 msgid "Search Saved Lists"
 msgstr "Recherche dans les listes enregistrées"
 
@@ -723,9 +715,8 @@ msgid "No Saved Checklists"
 msgstr "Aucune liste enregistrée"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:30
-#, fuzzy
 msgid "Save a list from the Lists Tab"
-msgstr "Enregistrer une liste à partir de l'onglet de Talaan"
+msgstr "Enregistrer une liste à partir de l'onglet Listes"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:32
 msgid "Loading Saved Lists"
@@ -757,7 +748,7 @@ msgstr "Thème"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:176
 msgid "System"
-msgstr ""
+msgstr "Système"
 
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:180
 msgid "Ambiance"
