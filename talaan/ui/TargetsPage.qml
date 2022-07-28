@@ -29,8 +29,6 @@ Page{
                                  break;
                              case "System":
                              case "Ambiance":
-                                 theme.palette.normal.background
-                                 break;
                              case "SuruDark":
                                  theme.palette.normal.foreground
                                  break;
