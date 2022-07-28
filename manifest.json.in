@@ -9,7 +9,7 @@
             "desktop": "talaan/talaan.desktop"
         }
     },
-    "version": "2.45",
+    "version": "2.46",
     "maintainer": "Kugi Eusebio <kugi_eusebio@protonmail.com>",
     "framework": "ubuntu-sdk-16.04.4"
 }

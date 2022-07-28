@@ -1,3 +1,9 @@
+V2.46
+* Updated French translations (Thanks Anne017)
+* Deleted extra translation template file
+* Set the minimum Qt version to 5.12
+* Adjusted header color in Ambiance theme
+
 V2.45
 * Norwegian translation
 * Fixed unresponsiveness on the Pinephone
