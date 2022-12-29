@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-29 13:42+0000\n"
+"POT-Creation-Date: 2022-12-29 16:18+0000\n"
 "PO-Revision-Date: 2018-03-01 10:45+0100\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
@@ -17,49 +17,49 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:255
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:254
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:19
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/DefaultTab.qml:24
 msgid "Lists"
 msgstr "Listas"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:264
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:263
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:31
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/HistoryTab.qml:24
 msgid "History"
 msgstr "Historial"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:273
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:272
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:25
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:24
 msgid "Saved"
 msgstr "Guardados"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:281
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:280
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:38
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:17
 msgid "Settings"
 msgstr "Configuración"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:400
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:409
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:399
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:408
 msgid "No list selected"
 msgstr "Ninguna lista seleccionada"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:402
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:401
 msgid "Select a list from the left column"
 msgstr "Seleccione una lista de la columna izquierda"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:411
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:410
 msgid "Select an item from the List, Saved or History tab"
 msgstr ""
 "Seleccione un ítem de la lista, de guardados o de la pestaña del historial"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/AddItemsBar.qml:224
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/AddItemsBar.qml:225
 msgid "Enter item name"
 msgstr "Introduzca el nombre de un ítem"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/AddItemsBar.qml:274
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/AddItemsBar.qml:276
 msgid "Add comments / notes"
 msgstr "Añadir comentarios / notas"
 
