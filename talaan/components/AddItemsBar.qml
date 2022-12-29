@@ -211,6 +211,7 @@ Panel {
             height: units.gu(4.3)
             visible: false
             InputMethod.extensions: { "enterKeyText": i18n.dtr("talaan-app", addItemsBar.mode === "add" ? "Add" : "Save") }
+            onAccepted: btnAdd.action.trigger()
 
             anchors {
                 left: btnAddComment.right
