@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 
 Item {
     id: root
@@ -497,7 +497,7 @@ Item {
             height: gridView.cellHeight
             z: 100
             color: "transparent"
-            border.color: UbuntuColors.blue //theme.palette.normal.selection
+            border.color: LomiriColors.blue //theme.palette.normal.selection
             border.width: units.gu(1)
             //radius: 5
             //            x: gridView.currentItem.x
@@ -518,7 +518,7 @@ Item {
         highlightFollowsCurrentItem: true
         highlight: highlight
 
-        highlightMoveDuration: UbuntuAnimation.BriskDuration
+        highlightMoveDuration: LomiriAnimation.BriskDuration
         snapMode: GridView.SnapToRow
 
 

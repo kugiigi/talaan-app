@@ -1,11 +1,11 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Themes.Ambiance 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Themes.Ambiance 1.3
 import "../components"
 import "../components/Dialogs"
 import "../library"
-import Ubuntu.Components.Popups 1.3
-import Ubuntu.Layouts 1.0
+import Lomiri.Components.Popups 1.3
+import Lomiri.Layouts 1.0
 import "../library/DataProcess.js" as DataProcess
 import "../library/ProcessFunc.js" as Process
 
@@ -30,7 +30,7 @@ PageWithBottom{
                              default:
                                  "#3D1400"
                              }
-            dividerColor: UbuntuColors.slate
+            dividerColor: LomiriColors.slate
         }
         extension: Sections {
             id: mainSections
@@ -282,7 +282,7 @@ PageWithBottom{
             id: scrollTargetList
             anchors.fill: parent
 
-            UbuntuListView {
+            LomiriListView {
                 id: groupedList
 
                 anchors.fill: parent
@@ -297,8 +297,8 @@ PageWithBottom{
                 property string category
                 delegate: ListItem {
                     id: listWithActions
-                    divider.colorFrom: UbuntuColors.darkGrey
-                    divider.colorTo: UbuntuColors.warmGrey
+                    divider.colorFrom: LomiriColors.darkGrey
+                    divider.colorTo: LomiriColors.warmGrey
                     highlightColor: switch (settings.currentTheme) {
                                     case "Default":
                                         "#2D371300"

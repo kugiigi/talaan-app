@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.0 as ListItem
+import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.0 as ListItem
 
 Page {
     id: walkthrough
@@ -15,7 +15,7 @@ Page {
     property list<Component> model
 
     // Property to set the color of bottom cirle to indicate the user's progress
-    property color completeColor: UbuntuColors.green
+    property color completeColor: LomiriColors.green
 
     // Property to set the color of the bottom circle to indicate the slide still left to cover
     property color inCompleteColor: "grey"
@@ -39,7 +39,7 @@ Page {
         model: walkthrough.model
         snapMode: ListView.SnapOneItem
         orientation: Qt.Horizontal
-        highlightMoveDuration: UbuntuAnimation.FastDuration
+        highlightMoveDuration: LomiriAnimation.FastDuration
         highlightRangeMode: ListView.StrictlyEnforceRange
         highlightFollowsCurrentItem: true
 
@@ -107,7 +107,7 @@ Page {
                 color: listView.currentIndex >= index ? completeColor : inCompleteColor
                 Behavior on color {
                     ColorAnimation {
-                        duration: UbuntuAnimation.FastDuration
+                        duration: LomiriAnimation.FastDuration
                     }
                 }
             }

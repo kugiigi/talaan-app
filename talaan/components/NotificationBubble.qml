@@ -1,10 +1,10 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Item {
     id: mainContainer
     property string message
-    property color bgColor: UbuntuColors.warmGrey
+    property color bgColor: LomiriColors.warmGrey
     property int showDuration: 3000
     property alias notifyLoaderItem: notifyLoader.item
     property alias internalAnchors: mainContainer.anchors
@@ -82,21 +82,21 @@ Item {
             property bool isOpening: false
             property bool isClosing: false
 
-            UbuntuNumberAnimation on y {
+            LomiriNumberAnimation on y {
                 id: openingAnimation
 
                 from: 0 //parent === null ? 0 : parent.height
                 to: bubbleOffset //units.gu(5)//parent === null ? 1 : parent.height - (frameShape.height * 2)
-                duration: UbuntuAnimation.BriskDuration //SnapDuration
-                easing: UbuntuAnimation.StandardEasing
+                duration: LomiriAnimation.BriskDuration //SnapDuration
+                easing: LomiriAnimation.StandardEasing
             }
 
-            UbuntuNumberAnimation on opacity {
+            LomiriNumberAnimation on opacity {
                 id: closingAnimation
                 from: 1
                 to: 0
-                duration: UbuntuAnimation.SlowDuration
-                easing: UbuntuAnimation.StandardEasing
+                duration: LomiriAnimation.SlowDuration
+                easing: LomiriAnimation.StandardEasing
                 running: false
 
                 onRunningChanged: {
@@ -121,7 +121,7 @@ Item {
             Label {
                 id: messageLabel
                 text: message
-                color: UbuntuColors.porcelain
+                color: LomiriColors.porcelain
                 anchors.verticalCenter: parent.verticalCenter
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere

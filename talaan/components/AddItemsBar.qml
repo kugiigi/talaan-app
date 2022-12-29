@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Keyboard 0.1
+import Lomiri.Components 1.3
+import Lomiri.Keyboard 0.1
 
 Panel {
     id: addItemsBar
@@ -91,9 +91,9 @@ Panel {
         z: -1
 
         Behavior on opacity {
-            UbuntuNumberAnimation {
+            LomiriNumberAnimation {
                 easing.type: Easing.OutCubic
-                duration: UbuntuAnimation.SlowDuration
+                duration: LomiriAnimation.SlowDuration
             }
         }
 
@@ -148,20 +148,20 @@ Panel {
             bottom: parent.bottom
         }
 
-        UbuntuNumberAnimation on height {
+        LomiriNumberAnimation on height {
             id: resizeBigAnimation
             from: units.gu(6)
             to: units.gu(16)
-            duration: UbuntuAnimation.BriskDuration
-            easing: UbuntuAnimation.StandardEasing
+            duration: LomiriAnimation.BriskDuration
+            easing: LomiriAnimation.StandardEasing
             running: false
         }
-        UbuntuNumberAnimation on height {
+        LomiriNumberAnimation on height {
             id: resizeSmallAnimation
             from: units.gu(16)
             to: units.gu(6)
-            duration: UbuntuAnimation.BriskDuration
-            easing: UbuntuAnimation.StandardEasing
+            duration: LomiriAnimation.BriskDuration
+            easing: LomiriAnimation.StandardEasing
             running: false
         }
 
@@ -282,12 +282,12 @@ Panel {
                 topMargin: units.gu(1)
             }
 
-            UbuntuNumberAnimation on opacity {
+            LomiriNumberAnimation on opacity {
                 id: openingAnimation
                 from: 0
                 to: 1
-                duration: UbuntuAnimation.SleepyDuration
-                easing: UbuntuAnimation.StandardEasing
+                duration: LomiriAnimation.SleepyDuration
+                easing: LomiriAnimation.StandardEasing
                 running: false
             }
         }

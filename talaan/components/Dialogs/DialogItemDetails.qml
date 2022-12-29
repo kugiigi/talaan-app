@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 
 Component {
     id: dialogItemDetails
@@ -76,7 +76,7 @@ Component {
 
             Button {
                 text: i18n.tr("Close")
-                color: UbuntuColors.warmGrey
+                color: LomiriColors.warmGrey
                 anchors {
                     left: parent.left
                     right: parent.right

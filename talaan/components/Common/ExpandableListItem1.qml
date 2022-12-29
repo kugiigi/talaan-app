@@ -20,7 +20,7 @@
   * Some modifications by Nick Luigi V. Eusebio for Talaan <https://launchpad.net/talaan-app>
                     */
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 
 /*
@@ -95,9 +95,9 @@ ListItem {
     }
 
     Behavior on height {
-        UbuntuNumberAnimation {
-            easing: UbuntuAnimation.StandardEasing
-            duration: UbuntuAnimation.SnapDuration
+        LomiriNumberAnimation {
+            easing: LomiriAnimation.StandardEasing
+            duration: LomiriAnimation.SnapDuration
         }
     }
 
@@ -108,9 +108,9 @@ ListItem {
         opacity: 0
         height: headerListItem.height //units.gu(8)
         Behavior on opacity {
-            UbuntuNumberAnimation {
+            LomiriNumberAnimation {
                 easing.type: Easing.OutCubic
-                duration: UbuntuAnimation.BriskDuration
+                duration: LomiriAnimation.BriskDuration
             }
         }
         anchors {
@@ -190,7 +190,7 @@ ListItem {
                 asynchronous: true
 
                 Behavior on rotation {
-                    UbuntuNumberAnimation {
+                    LomiriNumberAnimation {
                     }
                 }
             }

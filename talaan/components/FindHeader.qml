@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 PageHeader {
     id: mainHeader
@@ -20,7 +20,7 @@ PageHeader {
                          default:
                              "#3D1400"
                          }
-        dividerColor: UbuntuColors.slate
+        dividerColor: LomiriColors.slate
     }
 
     trailingActionBar {

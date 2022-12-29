@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Rectangle {
     id: root
@@ -68,8 +68,8 @@ Rectangle {
 
     Behavior on color {
         ColorAnimation {
-            easing: UbuntuAnimation.StandardEasing
-            duration: UbuntuAnimation.BriskDuration
+            easing: LomiriAnimation.StandardEasing
+            duration: LomiriAnimation.BriskDuration
         }
     }
 

@@ -1,9 +1,9 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Themes.Ambiance 1.3
-import Ubuntu.Components.ListItems 1.0 as ListItemOld
-import Ubuntu.Components.Popups 1.3
-import Ubuntu.Components.Pickers 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Themes.Ambiance 1.3
+import Lomiri.Components.ListItems 1.0 as ListItemOld
+import Lomiri.Components.Popups 1.3
+import Lomiri.Components.Pickers 1.3
 import "../library/DataProcess.js" as DataProcess
 import "../components"
 import "../library"
@@ -62,7 +62,7 @@ Page {
                              default:
                                  "#3D1400"
                              }
-            dividerColor: UbuntuColors.slate
+            dividerColor: LomiriColors.slate
         }
     }
 
@@ -601,7 +601,7 @@ Page {
         }
         Button {
             text: pageAddChecklist.actionMode === "add" ? "Create" : "Save"
-            color: UbuntuColors.green
+            color: LomiriColors.green
             activeFocusOnPress: false
             anchors {
                 right: parent.right
@@ -646,7 +646,7 @@ Page {
                                                         intContinual)
                             mainView.notification.showNotification(
                                         i18n.tr("List successfully updated"),
-                                        UbuntuColors.green)
+                                        LomiriColors.green)
                             break
                         case "add":
                             newChecklist = DataProcess.saveChecklist(
@@ -655,7 +655,7 @@ Page {
                                         intContinual)
                             mainView.notification.showNotification(
                                         i18n.tr("List successfully created"),
-                                        UbuntuColors.green)
+                                        LomiriColors.green)
                             break
                         }
                         try {

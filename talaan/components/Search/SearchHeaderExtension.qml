@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Item {
     id: root
@@ -11,7 +11,7 @@ Item {
     Label {
         id: label
         text: i18n.tr("Results found: ") + searchTotal
-        color: UbuntuColors.blue
+        color: LomiriColors.blue
         fontSizeMode: Text.HorizontalFit
         textSize: Label.Medium
         minimumPixelSize: units.gu(2)

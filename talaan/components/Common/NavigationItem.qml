@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 ListItem {
     id: root
@@ -54,7 +54,7 @@ ListItem {
             SlotsLayout.position: SlotsLayout.Trailing
             color: switch (settings.currentTheme) {
                    case "Default":
-                       UbuntuColors.jet
+                       LomiriColors.jet
                        break
                    case "Ambiance":
                    case "System":
@@ -62,7 +62,7 @@ ListItem {
                        theme.palette.normal.backgroundText
                        break
                    default:
-                       UbuntuColors.jet
+                       LomiriColors.jet
                    }
             width: units.gu(3)
         }

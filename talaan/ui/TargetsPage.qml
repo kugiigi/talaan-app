@@ -1,11 +1,11 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import QtQuick.Layouts 1.1
-import Ubuntu.Components.Themes.Ambiance 1.3
+import Lomiri.Components.Themes.Ambiance 1.3
 import "../components"
 import "../components/Common"
 import "../library"
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components.Popups 1.3
 import "../library/DataProcess.js" as DataProcess
 import "../library/ProcessFunc.js" as Process
 
@@ -36,7 +36,7 @@ Page{
                                  "#3D1400"
                              }
 
-            dividerColor: UbuntuColors.slate
+            dividerColor: LomiriColors.slate
         }
 
 
@@ -157,7 +157,7 @@ Page{
             bottom: parent.bottom
             topMargin: pageTargets.header.height
         }
-        UbuntuListView {
+        LomiriListView {
             id: targetList
 
             property string category
@@ -170,15 +170,15 @@ Page{
             highlightFollowsCurrentItem: true
             highlight: ListViewHighlight {
             }
-            highlightMoveDuration: UbuntuAnimation.SnapDuration
-            highlightResizeDuration: UbuntuAnimation.SnapDuration
+            highlightMoveDuration: LomiriAnimation.SnapDuration
+            highlightResizeDuration: LomiriAnimation.SnapDuration
 
-            UbuntuNumberAnimation on opacity {
+            LomiriNumberAnimation on opacity {
                 running: targetList.count > 0
                 from: 0
                 to: 1
-                easing: UbuntuAnimation.StandardEasing
-                duration: UbuntuAnimation.FastDuration
+                easing: LomiriAnimation.StandardEasing
+                duration: LomiriAnimation.FastDuration
             }
 
             delegate: ListItem {

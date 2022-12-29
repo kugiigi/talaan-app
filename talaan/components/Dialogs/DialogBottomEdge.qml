@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 //import QtGraphicalEffects 1.0
 import "../../library/ProcessFunc.js" as Process
 
@@ -11,7 +11,7 @@ Item {
     property string hintIconName: "view-grid-symbolic"
     property alias hintIconSource: hintIcon.source
     property alias edgeState: bottomEdgeHint.state
-    property color hintIconColor: UbuntuColors.coolGrey
+    property color hintIconColor: LomiriColors.coolGrey
     property bool bottomEdgeEnabled: true
     property color bgColor: "black"
     property real bgOpacity: 0.6
@@ -262,7 +262,7 @@ Item {
                     id:anim
                     target: bottomEdgeHint
                     property: "y"
-                    duration: UbuntuAnimation.BriskDuration
+                    duration: LomiriAnimation.BriskDuration
                 }
                 onRunningChanged:  {
 
@@ -277,7 +277,7 @@ Item {
                 SmoothedAnimation {
                     target: bottomEdgeHint
                     property: "y"
-                    duration: UbuntuAnimation.BriskDuration
+                    duration: LomiriAnimation.BriskDuration
                 }
                 onRunningChanged:  {
 
@@ -288,24 +288,24 @@ Item {
             }
         ]
     }
-    UbuntuNumberAnimation on expandedPosition {
+    LomiriNumberAnimation on expandedPosition {
         id: anchorKeyboardAnimation
 
         from: bottomEdge.height * 0.5
         to: (bottomEdge.parent.height / 1.5) - dialogFullHeight - units.gu(7)
-        duration: UbuntuAnimation.FastDuration//BriskDuration
-        easing: UbuntuAnimation.StandardEasing
+        duration: LomiriAnimation.FastDuration//BriskDuration
+        easing: LomiriAnimation.StandardEasing
         running: false
 
     }
 
-    UbuntuNumberAnimation on expandedPosition {
+    LomiriNumberAnimation on expandedPosition {
         id: unanchorKeyboardAnimation
 
         from:  (bottomEdge.parent.height / 1.5) - dialogFullHeight - units.gu(7)
         to: bottomEdge.height * 0.5
-        duration: UbuntuAnimation.FastDuration//BriskDuration
-        easing: UbuntuAnimation.StandardEasing
+        duration: LomiriAnimation.FastDuration//BriskDuration
+        easing: LomiriAnimation.StandardEasing
         running: false
     }
     Connections {

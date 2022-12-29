@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import QtQuick.Window 2.2
 import Qt.labs.settings 1.0
 import "components"
@@ -253,7 +253,7 @@ MainView {
                 iconName: "note"
                 label: i18n.tr("Lists")
                 iconColor: "white"
-                backgroundColor: UbuntuColors.blue
+                backgroundColor: LomiriColors.blue
                 onTriggered: {
                     mainLayout.switchTab(0)
                 }
@@ -262,7 +262,7 @@ MainView {
                 iconName: "history"
                 label: i18n.tr("History")
                 iconColor: "white"
-                backgroundColor: UbuntuColors.red
+                backgroundColor: LomiriColors.red
                 onTriggered: {
                     mainLayout.switchTab(2)
                 }
@@ -271,7 +271,7 @@ MainView {
                 iconName: "bookmark"
                 label: i18n.tr("Saved")
                 iconColor: "white"
-                backgroundColor: UbuntuColors.midAubergine
+                backgroundColor: LomiriColors.midAubergine
                 onTriggered: {
                     mainLayout.switchTab(1)
                 }
@@ -280,19 +280,19 @@ MainView {
                 label: i18n.tr("Settings")
                 iconName: "settings"
                 iconColor: "white"
-                backgroundColor: UbuntuColors.coolGrey
+                backgroundColor: LomiriColors.coolGrey
                 onTriggered: {
                     mainLayout.switchTab(3)
                 }
             },
             RadialAction {
                 iconName: "cancel"
-                iconColor: UbuntuColors.coolGrey
+                iconColor: LomiriColors.coolGrey
                 hide: true
             },
             RadialAction {
                 iconName: "cancel"
-                iconColor: UbuntuColors.coolGrey
+                iconColor: LomiriColors.coolGrey
                 hide: true
             }
         ]

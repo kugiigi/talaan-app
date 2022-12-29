@@ -1,12 +1,12 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 //import QtGraphicalEffects 1.0
 
 Item {
     id: mainContainer
     property string message
     property double fontSize
-    property color bgColor: UbuntuColors.warmGrey
+    property color bgColor: LomiriColors.warmGrey
     property int showDuration: 2000
     property alias notifyLoaderItem: notifyLoader.item
     property alias internalAnchors: mainContainer.anchors
@@ -82,12 +82,12 @@ Item {
             property bool isClosing: false
             property bool textFocused: false
 
-            UbuntuNumberAnimation on x {
+            LomiriNumberAnimation on x {
                 id: openingAnimation
                 from: startPosition
                 to: endPosition
-                duration: UbuntuAnimation.BriskDuration
-                easing: UbuntuAnimation.StandardEasing
+                duration: LomiriAnimation.BriskDuration
+                easing: LomiriAnimation.StandardEasing
                 onRunningChanged: {
                     if (!running) {
                         isShown = true
@@ -95,12 +95,12 @@ Item {
                 }
             }
 
-            UbuntuNumberAnimation on opacity {
+            LomiriNumberAnimation on opacity {
                 id: closingAnimation
                 from: 1
                 to: 0
-                duration: UbuntuAnimation.SlowDuration
-                easing: UbuntuAnimation.StandardEasing
+                duration: LomiriAnimation.SlowDuration
+                easing: LomiriAnimation.StandardEasing
                 running: false
 
                 onRunningChanged: {

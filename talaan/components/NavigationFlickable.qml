@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItemOld
+import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.3 as ListItemOld
 import "../components/Common"
 import "../components/SortFilter"
 
@@ -67,7 +67,7 @@ ScrollView {
             id: column
             width: parent.width
 
-            UbuntuListView {
+            LomiriListView {
                 id: listView
                 model: actions
                 interactive: false
@@ -75,8 +75,8 @@ ScrollView {
                 highlightFollowsCurrentItem: true
                 highlight: ListViewHighlight {
                 }
-                highlightMoveDuration: UbuntuAnimation.SnapDuration
-                highlightResizeDuration: UbuntuAnimation.SnapDuration
+                highlightMoveDuration: LomiriAnimation.SnapDuration
+                highlightResizeDuration: LomiriAnimation.SnapDuration
 
                 anchors {
                     right: parent.right

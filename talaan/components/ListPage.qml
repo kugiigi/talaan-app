@@ -1,7 +1,7 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Themes.Ambiance 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Themes.Ambiance 1.3
+import Lomiri.Components.Popups 1.3
 import Qt.labs.settings 1.0
 import "../ui"
 import "SortFilter"
@@ -188,7 +188,7 @@ PageWithBottom {
         text: i18n.tr("Add")
         iconName: "add"
         iconColor: "white"
-        backgroundColor: UbuntuColors.green
+        backgroundColor: LomiriColors.green
         onTriggered: {
             addNew()
         }
@@ -370,7 +370,7 @@ PageWithBottom {
                              default:
                                  "#3D1400"
                              }
-            dividerColor: UbuntuColors.slate
+            dividerColor: LomiriColors.slate
         }
         extension: searchHeaderExtension.visible ? searchHeaderExtension : mainSections
 
@@ -482,7 +482,7 @@ PageWithBottom {
         anchors.topMargin: root.header.height
         visible: mainView.itemsPage ? true : false
 
-        UbuntuListView {
+        LomiriListView {
             id: groupedList
 
             property string filter
@@ -499,15 +499,15 @@ PageWithBottom {
             highlightFollowsCurrentItem: true
             highlight: ListViewHighlight {
             }
-            highlightMoveDuration: UbuntuAnimation.SnapDuration
-            highlightResizeDuration: UbuntuAnimation.SnapDuration
+            highlightMoveDuration: LomiriAnimation.SnapDuration
+            highlightResizeDuration: LomiriAnimation.SnapDuration
 
-            UbuntuNumberAnimation on opacity {
+            LomiriNumberAnimation on opacity {
                 running: groupedList.count > 0
                 from: 0
                 to: 1
-                easing: UbuntuAnimation.StandardEasing
-                duration: UbuntuAnimation.FastDuration
+                easing: LomiriAnimation.StandardEasing
+                duration: LomiriAnimation.FastDuration
             }
 
             onCurrentIndexChanged: {
@@ -528,9 +528,9 @@ PageWithBottom {
             }
 
             displaced: Transition {
-                UbuntuNumberAnimation {
+                LomiriNumberAnimation {
                     properties: "x,y"
-                    duration: UbuntuAnimation.BriskDuration
+                    duration: LomiriAnimation.BriskDuration
                 }
             }
 
@@ -597,7 +597,7 @@ PageWithBottom {
                                 mainView.notification.showNotification(
                                             i18n.tr(
                                                 "List successfully deleted"),
-                                            UbuntuColors.coolGrey)
+                                            LomiriColors.coolGrey)
 
                                 /*Clear Items page when current item was deleted*/
                                 if (itemsPage.currentID === id) {
@@ -627,7 +627,7 @@ PageWithBottom {
                                     mainView.notification.showNotification(
                                                 i18n.tr(
                                                     "List successfully added to Saved Lists"),
-                                                UbuntuColors.green)
+                                                LomiriColors.green)
                                 }
 
                                 dialogIncludeComment.proceed.connect(
@@ -651,7 +651,7 @@ PageWithBottom {
                                     mainView.notification.showNotification(
                                                 i18n.tr(
                                                     "New List successfully created"),
-                                                UbuntuColors.green)
+                                                LomiriColors.green)
 
                                     /*WORKAROUND: For known issue of not opening the list in 3 column mode*/
                                     mainAdaptLayout.switchTab(0)

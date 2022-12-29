@@ -1,8 +1,8 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-//import Ubuntu.Layouts 1.0
-import Ubuntu.Components.Pickers 1.3
-import Ubuntu.Components.Popups 1.0
+import Lomiri.Components 1.3
+//import Lomiri.Layouts 1.0
+import Lomiri.Components.Pickers 1.3
+import Lomiri.Components.Popups 1.0
 import "../library/ProcessFunc.js" as Process
 
 PageHeader {
@@ -80,7 +80,7 @@ PageHeader {
                          default:
                              "#3D1400"
                          }
-        dividerColor: UbuntuColors.slate
+        dividerColor: LomiriColors.slate
     }
 
     trailingActionBar {
@@ -152,9 +152,9 @@ PageHeader {
             }
 
             Behavior on opacity {
-                UbuntuNumberAnimation {
-                    easing: UbuntuAnimation.StandardEasing
-                    duration: UbuntuAnimation.SnapDuration
+                LomiriNumberAnimation {
+                    easing: LomiriAnimation.StandardEasing
+                    duration: LomiriAnimation.SnapDuration
                 }
             }
         }
@@ -230,9 +230,9 @@ PageHeader {
             opacity: visible ? 1 : 0
 
             Behavior on opacity {
-                UbuntuNumberAnimation {
-                    easing: UbuntuAnimation.StandardEasing
-                    duration: UbuntuAnimation.SnapDuration
+                LomiriNumberAnimation {
+                    easing: LomiriAnimation.StandardEasing
+                    duration: LomiriAnimation.SnapDuration
                 }
             }
         }
@@ -429,9 +429,9 @@ PageHeader {
             opacity: visible ? 1 : 0
 
             Behavior on opacity {
-                UbuntuNumberAnimation {
-                    easing: UbuntuAnimation.StandardEasing
-                    duration: UbuntuAnimation.SnapDuration
+                LomiriNumberAnimation {
+                    easing: LomiriAnimation.StandardEasing
+                    duration: LomiriAnimation.SnapDuration
                 }
             }
         }
@@ -517,7 +517,7 @@ PageHeader {
                             }
                         }
 
-                        UbuntuListView {
+                        LomiriListView {
                             id: selectionListView
                             height: units.gu(20)
                             interactive: true

@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Item {
     id: root
@@ -8,7 +8,7 @@ Item {
     property color hintColor: Theme.palette.normal.overlay
     property string hintIconName: "view-grid-symbolic"
     property alias hintIconSource: hintIcon.source
-    property color hintIconColor: UbuntuColors.coolGrey
+    property color hintIconColor: LomiriColors.coolGrey
     property bool bottomEdgeEnabled: true
     property color bgColor: "black"
     property real bgOpacity: 0.7
@@ -57,9 +57,9 @@ Item {
     }
 
     Behavior on opacity {
-        UbuntuNumberAnimation {
+        LomiriNumberAnimation {
             easing.type: Easing.OutCubic
-            duration: UbuntuAnimation.SlowDuration
+            duration: LomiriAnimation.SlowDuration
         }
     }
 
@@ -138,7 +138,7 @@ Item {
                 Behavior on color {
                     ColorAnimation {
                         easing.type: Easing.OutCubic
-                        duration: UbuntuAnimation.BriskDuration
+                        duration: LomiriAnimation.BriskDuration
                     }
                 }
 
@@ -293,7 +293,7 @@ Item {
                 SmoothedAnimation {
                     target: bottomEdgeHint
                     property: "y"
-                    duration: UbuntuAnimation.BriskDuration
+                    duration: LomiriAnimation.BriskDuration
                 }
             }
         ]
@@ -380,7 +380,7 @@ Item {
             Behavior on color {
                 ColorAnimation {
                     easing.type: Easing.OutCubic
-                    duration: UbuntuAnimation.BriskDuration
+                    duration: LomiriAnimation.BriskDuration
                 }
             }
 
@@ -391,7 +391,7 @@ Item {
                 name: leadingActions.get(0).action.iconName
                 color: switch (settings.currentTheme) {
                        case "Default":
-                           UbuntuColors.porcelain
+                           LomiriColors.porcelain
                            break
                        case "System":
                        case "Ambiance":
@@ -401,7 +401,7 @@ Item {
                            theme.palette.normal.overlayText
                            break
                        default:
-                           UbuntuColors.porcelain
+                           LomiriColors.porcelain
                        }
             }
 

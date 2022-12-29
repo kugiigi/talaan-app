@@ -1,12 +1,12 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import Qt.labs.settings 1.0
-import Ubuntu.Components.Themes.Ambiance 1.3
+import Lomiri.Components.Themes.Ambiance 1.3
 import "../components"
 import "../components/Dialogs"
 import "../components/Common"
 import "../library"
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components.Popups 1.3
 import "../library/DataProcess.js" as DataProcess
 import "../library/ProcessFunc.js" as Process
 
@@ -279,7 +279,7 @@ PageWithBottom {
                              default:
                                  theme.palette.normal.background
                              }
-            dividerColor: UbuntuColors.slate
+            dividerColor: LomiriColors.slate
         }
         contents: Label {
             id: lblHead
@@ -351,7 +351,7 @@ PageWithBottom {
                             mainView.notification.showNotification(
                                         i18n.tr(
                                             "New List successfully created"),
-                                        UbuntuColors.green)
+                                        LomiriColors.green)
                             mainLayout.switchTab(0)
                             mainLayout.selectItemFromMain(
                                         mainLayout.primaryPage, itemsPage, {
@@ -563,7 +563,7 @@ PageWithBottom {
 
             Button {
                 text: i18n.tr("Close")
-                color: UbuntuColors.warmGrey
+                color: LomiriColors.warmGrey
                 onClicked: {
                     PopupUtils.close(infoDialogue)
                 }
@@ -715,7 +715,7 @@ PageWithBottom {
         id: mainScrollView
         anchors.fill: parent
         anchors.topMargin: pageItems.header.height
-        UbuntuListView {
+        LomiriListView {
             id: groupedList
 
             anchors {
@@ -730,12 +730,12 @@ PageWithBottom {
             }
             highlightMoveDuration: 200
 
-            UbuntuNumberAnimation on opacity {
+            LomiriNumberAnimation on opacity {
                 running: groupedList.count > 1
                 from: 0
                 to: 1
                 easing.type: Easing.OutCubic
-                duration: UbuntuAnimation.SlowDuration
+                duration: LomiriAnimation.SlowDuration
             }
 
             MessageBubble {
@@ -752,9 +752,9 @@ PageWithBottom {
             }
 
             displaced: Transition {
-                UbuntuNumberAnimation {
+                LomiriNumberAnimation {
                     properties: "x,y"
-                    duration: UbuntuAnimation.FastDuration
+                    duration: LomiriAnimation.FastDuration
                 }
             }
 
@@ -1085,8 +1085,8 @@ PageWithBottom {
 
                             Behavior on color {
                                 ColorAnimation {
-                                    easing: UbuntuAnimation.StandardEasing
-                                    duration: UbuntuAnimation.BriskDuration
+                                    easing: LomiriAnimation.StandardEasing
+                                    duration: LomiriAnimation.BriskDuration
                                 }
                             }
                         }
@@ -1104,14 +1104,14 @@ PageWithBottom {
 
                     Button {
                         text: "Continue"
-                        color: UbuntuColors.green
+                        color: LomiriColors.green
                         onClicked: {
                             dialogue.proceed()
                             PopupUtils.close(dialogue)
                         }
                     }
                     Button {
-                        color: UbuntuColors.red
+                        color: LomiriColors.red
                         text: i18n.tr("Undo last item")
                         onClicked: {
                             dialogue.undo()
@@ -1233,7 +1233,7 @@ PageWithBottom {
             } else if (bottomEdgePage.currentItem !== txtName
                        && DataProcess.itemExist(currentID, txtName) === true) {
                 mainView.notification.showNotification(
-                            "Item name already exists!", UbuntuColors.red)
+                            "Item name already exists!", LomiriColors.red)
             } else {
                 switch (bottomEdgePage.mode) {
                 case "add":
@@ -1251,7 +1251,7 @@ PageWithBottom {
                                            txtComment)
                     bottomEdgePage.panelClose()
                     mainView.notification.showNotification(
-                                "Item updated successfully", UbuntuColors.green)
+                                "Item updated successfully", LomiriColors.green)
                     break
                 }
                 isCommentsShown = false

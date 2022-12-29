@@ -15,7 +15,7 @@
  */
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 /*!
     \qmltype PullToRefresh
@@ -34,8 +34,8 @@ import Ubuntu.Components 1.3
     \qml
     import QtQuick 2.2
     import QtQuick.XmlListModel 2.0
-    import Ubuntu.Components 1.2
-    import Ubuntu.Components.ListItems 1.0
+    import Lomiri.Components 1.2
+    import Lomiri.Components.ListItems 1.0
 
     MainView {
         width: units.gu(40)
@@ -68,8 +68,8 @@ import Ubuntu.Components 1.3
     }
     \endqml
 
-    \note UbuntuListView has a built-in PullToRefresh, therefore it is recommended
-    to use UbuntuListView instead of ListView.
+    \note LomiriListView has a built-in PullToRefresh, therefore it is recommended
+    to use LomiriListView instead of ListView.
 
     The component will also show the progress of the model's update when the refresh
     gets initiated by the model or from other party. Style implementations can decide
@@ -84,8 +84,8 @@ import Ubuntu.Components 1.3
     \qml
     import QtQuick 2.2
     import QtQuick.XmlListModel 2.0
-    import Ubuntu.Components 1.2
-    import Ubuntu.Components.ListItems 1.0
+    import Lomiri.Components 1.2
+    import Lomiri.Components.ListItems 1.0
 
     MainView {
         width: units.gu(40)
@@ -132,8 +132,8 @@ import Ubuntu.Components 1.3
     \qml
     import QtQuick 2.2
     import QtQuick.XmlListModel 2.0
-    import Ubuntu.Components 1.2
-    import Ubuntu.Components.ListItems 1.0
+    import Lomiri.Components 1.2
+    import Lomiri.Components.ListItems 1.0
 
     MainView {
         id: main

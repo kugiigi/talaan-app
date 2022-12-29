@@ -1,11 +1,11 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 //import QtQuick.Layouts 1.1
-import Ubuntu.Components.Themes.Ambiance 1.3
+import Lomiri.Components.Themes.Ambiance 1.3
 import "../components"
 import "../library"
-//import Ubuntu.Components.Popups 1.3
-import Ubuntu.Layouts 1.0
+//import Lomiri.Components.Popups 1.3
+import Lomiri.Layouts 1.0
 import "../library/DataProcess.js" as DataProcess
 import "../library/ProcessFunc.js" as Process
 
@@ -51,7 +51,7 @@ Page {
     //        //title: "Sample"
     //        StyleHints {
     //            backgroundColor: "#3D1400"
-    //            dividerColor: UbuntuColors.slate
+    //            dividerColor: LomiriColors.slate
     //        }
     //        extension: Sections{
 

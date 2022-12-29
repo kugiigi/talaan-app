@@ -1,10 +1,10 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 //import QtQuick.Layouts 1.1
-import Ubuntu.Components.Themes.Ambiance 1.3
+import Lomiri.Components.Themes.Ambiance 1.3
 import "../components"
 import "../library"
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components.Popups 1.3
 import "../library/DataProcess.js" as DataProcess
 import "../library/ProcessFunc.js" as Process
 
@@ -36,7 +36,7 @@ PageWithBottom {
                              default:
                                  "#3D1400"
                              }
-            dividerColor: UbuntuColors.slate
+            dividerColor: LomiriColors.slate
         }
         trailingActionBar.actions: [
             Action {
@@ -54,7 +54,7 @@ PageWithBottom {
         id: addRadialAction
         iconName: "add"
         iconColor: "white"
-        backgroundColor: UbuntuColors.green
+        backgroundColor: LomiriColors.green
         onTriggered: {
             addNew()
         }
@@ -186,7 +186,7 @@ PageWithBottom {
     ScrollView {
         anchors.fill: parent
         anchors.topMargin: pageCategories.header.height
-        UbuntuListView {
+        LomiriListView {
             id: groupedList
 
             property string category
@@ -202,18 +202,18 @@ PageWithBottom {
             highlightMoveDuration: 200
 
 
-            UbuntuNumberAnimation on opacity {
+            LomiriNumberAnimation on opacity {
                 running: groupedList.count > 0
                 from: 0
                 to: 1
-                easing: UbuntuAnimation.StandardEasing
-                duration: UbuntuAnimation.FastDuration
+                easing: LomiriAnimation.StandardEasing
+                duration: LomiriAnimation.FastDuration
             }
 
             delegate: ListItem {
                 id: listWithActions
-                divider.colorFrom: UbuntuColors.darkGrey
-                divider.colorTo: UbuntuColors.warmGrey
+                divider.colorFrom: LomiriColors.darkGrey
+                divider.colorTo: LomiriColors.warmGrey
                 highlightColor: switch(settings.currentTheme){
                                 case "Default":
                                     "#2D371300"
@@ -331,14 +331,14 @@ PageWithBottom {
                 }
                 Button {
                     text: "Delete"
-                    color: UbuntuColors.red
+                    color: LomiriColors.red
                     width: parent.width * 0.45
                     onClicked: {
                         dialogResponse = "YES"
                         PopupUtils.close(dialogue)
                         mainView.notification.showNotification(
                                     i18n.tr("Category successfully deleted"),
-                                    UbuntuColors.coolGrey)
+                                    LomiriColors.coolGrey)
                     }
                 }
             }

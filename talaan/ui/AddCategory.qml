@@ -1,8 +1,8 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Themes.Ambiance 1.3
-import Ubuntu.Components.Popups 1.3
-//import Ubuntu.Components.Pickers 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Themes.Ambiance 1.3
+import Lomiri.Components.Popups 1.3
+//import Lomiri.Components.Pickers 1.3
 import "../library/DataProcess.js" as DataProcess
 import "../components"
 import "../components/Common/ColorPicker"
@@ -50,7 +50,7 @@ Page {
                              default:
                                  "#3D1400"
                              }
-            dividerColor: UbuntuColors.slate
+            dividerColor: LomiriColors.slate
         }
     }
 
@@ -261,7 +261,7 @@ Page {
             text: pageAddCategory.mode === "add" ? i18n.tr(
                                                        "Add") : i18n.tr("Save")
             activeFocusOnPress: false
-            color: UbuntuColors.green
+            color: LomiriColors.green
             anchors {
                 right: parent.right
                 rightMargin: units.gu(2)

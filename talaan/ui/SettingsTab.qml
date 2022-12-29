@@ -1,7 +1,7 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
-//import Ubuntu.Layouts 1.0
+import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.3 as ListItem
+//import Lomiri.Layouts 1.0
 import "../components"
 import "../components/Common"
 
@@ -28,7 +28,7 @@ PageWithBottom {
                              default:
                                  "#3D1400"
                              }
-            dividerColor: UbuntuColors.slate
+            dividerColor: LomiriColors.slate
         }
         leadingActionBar {
             actions: Action {
@@ -66,12 +66,12 @@ PageWithBottom {
             contentHeight: _settingsColumn.height
             anchors.fill: parent
 
-            UbuntuNumberAnimation on opacity {
+            LomiriNumberAnimation on opacity {
                 running: settingsListView.visible
                 from: 0
                 to: 1
-                easing: UbuntuAnimation.StandardEasing
-                duration: UbuntuAnimation.FastDuration
+                easing: LomiriAnimation.StandardEasing
+                duration: LomiriAnimation.FastDuration
             }
 
             function positionViewAtBeginning() {
@@ -418,7 +418,7 @@ PageWithBottom {
                         settings.listItemClickable = checkboxValue
                     }
                 }
-                UbuntuListView {
+                LomiriListView {
                     id: navigationListView
 
                     interactive: false
@@ -427,8 +427,8 @@ PageWithBottom {
                     highlightFollowsCurrentItem: true
                     highlight: ListViewHighlight {
                     }
-                    highlightMoveDuration: UbuntuAnimation.SnapDuration
-                    highlightResizeDuration: UbuntuAnimation.SnapDuration
+                    highlightMoveDuration: LomiriAnimation.SnapDuration
+                    highlightResizeDuration: LomiriAnimation.SnapDuration
                     height: contentHeight
                     anchors {
                         left: parent.left
@@ -436,12 +436,12 @@ PageWithBottom {
                     }
                     model: navigationsModel
 
-                    UbuntuNumberAnimation on opacity {
+                    LomiriNumberAnimation on opacity {
                         running: navigationListView.visible
                         from: 0
                         to: 1
-                        easing: UbuntuAnimation.StandardEasing
-                        duration: UbuntuAnimation.FastDuration
+                        easing: LomiriAnimation.StandardEasing
+                        duration: LomiriAnimation.FastDuration
                     }
 
                     delegate: NavigationItem {

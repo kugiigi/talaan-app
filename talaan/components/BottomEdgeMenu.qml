@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 Panel {
     id: root
@@ -71,7 +71,7 @@ Panel {
             left: root.anchorSide === "Left" ? parent.left : undefined
         }
         color: theme.palette.normal.foreground
-        UbuntuListView {
+        LomiriListView {
             id: ubuntuListView
 
             anchors.fill: parent
