@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Talaan\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-28 09:58+0000\n"
+"POT-Creation-Date: 2022-12-29 13:42+0000\n"
 "PO-Revision-Date: 2020-07-03 19:12+0200\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch - vistausss@outlook.com\n"
@@ -18,40 +18,40 @@ msgstr ""
 "X-Generator: Poedit 2.3.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:217
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:255
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:19
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/DefaultTab.qml:24
 msgid "Lists"
 msgstr "Lijsten"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:226
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:264
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:31
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/HistoryTab.qml:24
 msgid "History"
 msgstr "Geschiedenis"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:235
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:273
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:25
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:24
 msgid "Saved"
 msgstr "Opgeslagen"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:243
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:281
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:38
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:17
 msgid "Settings"
 msgstr "Instellingen"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:362
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:371
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:400
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:409
 msgid "No list selected"
 msgstr "Geen lijst geselecteerd"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:364
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:402
 msgid "Select a list from the left column"
 msgstr "Selecteer een lijst in het linkerpaneel"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:373
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:411
 msgid "Select an item from the List, Saved or History tab"
 msgstr "Selecteer een item op het tabblad Lijst, Opgeslagen of Geschiedenis"
 

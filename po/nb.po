@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-28 09:58+0000\n"
+"POT-Creation-Date: 2022-12-29 13:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: JanConGitHub <janc@sherdahl.no>\n"
 "Language-Team: NORWEGIAN <LL@li.org>\n"
@@ -17,42 +17,42 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:217
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:255
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:19
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/DefaultTab.qml:24
 msgid "Lists"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:226
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:264
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:31
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/HistoryTab.qml:24
 #, fuzzy
 msgid "History"
 msgstr "Slett logg"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:235
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:273
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:25
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:24
 #, fuzzy
 msgid "Saved"
 msgstr "Lagre"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:243
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:281
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:38
 #: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:17
 msgid "Settings"
 msgstr "Innstillinger"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:362
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:371
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:400
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:409
 msgid "No list selected"
 msgstr "Ingen liste valgt"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:364
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:402
 msgid "Select a list from the left column"
 msgstr "Velg en liste fra den venstre kolonnen"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:373
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:411
 #, fuzzy
 msgid "Select an item from the List, Saved or History tab"
 msgstr "Velg en enhet fra den venstre kolonnen"
