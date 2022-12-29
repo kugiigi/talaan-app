@@ -40,7 +40,44 @@ MainView {
         }
     }
 
-    property string current_version: "2.46"
+    // Change theme in real time when set to follow system theme
+    // Only works when the app gets unfocused then focused
+    // Possibly ideal so the change won't happen while the user is using the app
+    property string previousTheme: Theme.name
+    onActiveFocusChanged: {
+        if (settings.currentTheme == "System") {
+            if (activeFocus && previousTheme !== theme.name) {
+                    theme.name = Theme.name
+                    theme.name = Qt.binding( function() {
+                                                    if (settings.currentTheme == "") {
+                                                        return ""
+                                                    } else {
+                                                        switch (settings.currentTheme) {
+                                                            case "Default":
+                                                                return "Ubuntu.Components.Themes.SuruDark"
+                                                                break
+                                                            case "Ambiance":
+                                                                return "Ubuntu.Components.Themes.Ambiance"
+                                                                break
+                                                            case "SuruDark":
+                                                                return "Ubuntu.Components.Themes.SuruDark"
+                                                                break
+                                                            case "System":
+                                                                return ""
+                                                                break
+                                                            default:
+                                                                return "Ubuntu.Components.Themes.SuruDark"
+                                                        }
+                                                    }
+                                            }
+                                )
+            } else {
+                previousTheme = Theme.name
+            }
+        }
+    }
+
+    property string current_version: "2.47"
     property alias listItems: listItems
     property alias notification: notificationLoader.item
     property alias mainLayout: mainAdaptLayout
