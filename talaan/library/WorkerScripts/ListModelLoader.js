@@ -3,190 +3,425 @@ WorkerScript.onMessage = function (msg) {
 
     var i
     var txtName
-    var txtComments
+    var txtValue
     var txtStatus
-    var txtPriority
 
     var intID
     var txtDescr
     var txtColor
     var txtCategory
     var txtCategoryColor
-    var txtCreationDT
-    var txtCompletionDT
-    var txtTargetDT
-    var boolOverdue
-    var intCompleted
+    var txtIcon
     var intTotal
-    var intContinual
     var txtHeader
-    var boolFavorite
 
-    var txtTargetDt
+    var txtDate
+    var txtDateValue
     var txtID
-    var boolReminder
 
-    msg.model.clear()
+    var txtLabel
+
+    var txtCode
+    var txtSysmbol
+
+    var realTravelValue
+    var realRate
+    var txtHomeCur
+    var txtTravelCur
+
+    var previousSortField = ""
+    var currentSortField = ""
+    var childArray = []
+
+    var result
+
+    if(msg.model){
+       msg.model.clear()
+    }
 
     switch (msg.mode) {
-    case "ListItems":
+    case "Today":
+
+    case "Recent":
+
+    case "Yesterday":
+
+    case "This Week":
+
+    case "This Month":
+
+    case "Last Week":
+
+    case "Last Month":
+
+    case "Calendar (By Day)":
+
+    case "Calendar (By Week)":
+
+    case "Calendar (By Month)":
+
+    case "Calendar (Custom)":
 
         for (i = 0; i < msg.result.length; i++) {
+
+            intID = msg.result[i].expense_id
+            txtCategory = msg.result[i].category_name
             txtName = msg.result[i].name
-            txtComments = msg.result[i].comments
-            txtStatus = msg.result[i].status
-            txtPriority = msg.result[i].priority
+            txtDescr = msg.result[i].descr
+            txtDateValue = msg.result[i].date
+            txtDate = relativeDate(txtDateValue, "ddd, MMM d, yyyy", "Basic")
+            txtValue = msg.result[i].value
+            realTravelValue = msg.result[i].travel_value
+            realRate = msg.result[i].rate
+            txtHomeCur = msg.result[i].home_currency
+            txtTravelCur = msg.result[i].travel_currency
+
+            currentSortField = txtCategory
+
+
+            if (previousSortField !== currentSortField) {
+                childArray.push({
+                                    expense_id: intID,
+                                    category_name: txtCategory,
+                                    name: txtName,
+                                    descr: txtDescr,
+                                    date: txtDate,
+                                    dateValue: txtDateValue,
+                                    value: txtValue,
+                                    rate: realRate,
+                                    homeCur: txtHomeCur,
+                                    travelCur: txtTravelCur,
+                                    travel_value: realTravelValue
+                                })
+                msg.model.append({
+                                     category_name: txtCategory,
+                                     childModel: childArray,
+                                     total: txtValue,
+                                     count: 1
+                                 })
+                childArray = []
+
+
+            } else {
+                var currentIndex = msg.model.count - 1
+                var totalValue = msg.model.get(currentIndex).total
+
+                //WORKAROUND: App crashes in Xenial without this line
+                var currentCount = msg.model.get(currentIndex).count_1
+
+                currentCount = msg.model.get(currentIndex).count
+
+                msg.model.get(currentIndex).childModel.append({
+                                                                  expense_id: intID,
+                                                                  category_name: txtCategory,
+                                                                  name: txtName,
+                                                                  descr: txtDescr,
+                                                                  date: txtDate,
+                                                                  dateValue: txtDateValue,
+                                                                  value: txtValue,
+                                                                  rate: realRate,
+                                                                  homeCur: txtHomeCur,
+                                                                  travelCur: txtTravelCur,
+                                                                  travel_value: realTravelValue
+                                                              })
+
+//                msg.model.setProperty(currentIndex, "total", Math.round(
+//                                          (totalValue + txtValue) * 100) / 100)
+                msg.model.setProperty(currentIndex, "total", totalValue + txtValue)
+                msg.model.setProperty(currentIndex, "count", currentCount + 1)
+            }
+
+            previousSortField = currentSortField
+        }
+        break
+    case "ExpenseAutoComplete":
+        for (i = 0; i < msg.result.length; i++) {
+            txtName = msg.result[i].name
+            txtValue = msg.result[i].value
             msg.model.append({
-                                 itemName: txtName,
-                                 comments: txtComments,
-                                 status: txtStatus,
-                                 priority: txtPriority
+                                 name: txtName,
+                                 value: txtValue
                              })
         }
         break
-    case "Lists":
-
+    case "QuickRecent":
         for (i = 0; i < msg.result.length; i++) {
-            intID = msg.result[i].id
+            txtCategory = msg.result[i].category_name
             txtName = msg.result[i].name
             txtDescr = msg.result[i].descr
-            txtCategory = msg.result[i].category
-            txtCategoryColor = msg.result[i].categoryColor
-            txtCategoryColor = txtCategoryColor === "default" ? "white" : txtCategoryColor
-            txtCreationDT = Qt.formatDate(msg.result[i].creation_dt,
-                                          "ddd, MMMM d, yyyy")
+            txtValue = msg.result[i].value
 
-            var petsa = moment(msg.result[i].completion_dt)
-            txtCompletionDT = msg.result[i].completion_dt
-                    !== null ? /*petsa.format("MMMM DD, YYYY")*/Qt.formatDate(msg.result[i].completion_dt,
-                                                                              "ddd, MMMM d, yyyy") : ""/*dateFormat(
-                                   2, msg.result[i].completion_dt) : ""*/
-            txtStatus = msg.result[i].status
-            txtTargetDT = (msg.result[i].target_dt === null ? "" : msg.result[i].target_dt)
-            boolOverdue = msg.result[i].overdue === 0 ? false : true
-            intCompleted = msg.result[i].completed
-            intTotal = msg.result[i].total
-            boolFavorite = msg.result[i].favorite === 0 ? false : true
-            intContinual = msg.result[i].continual
+            txtDateValue = msg.result[i].date
+            txtDate = relativeDate(txtDateValue, "ddd, MMM d, yyyy", "Basic")
 
-            switch (msg.group) {
-            case "category":
-                txtHeader = txtCategory + "|" + txtCategoryColor
-                break
-            case "creation_date":
-                txtHeader = relativeDate(msg.result[i].creation_dt,
-                                                 "dddd, MMMM d, yyyy",
-                                                 "Basic")
-                break
-            case "target_date":
-                txtHeader = txtTargetDT === "" ? "No Target Date" : relativeDate(
-                                                     txtTargetDT,
-                                                     "dddd, MMMM d, yyyy",
-                                                     "Basic")
-                break
-            case "completion_date":
-                txtHeader = relativeDate(
-                            msg.result[i].completion_dt,
-                            "dddd, MMMM d, yyyy",
-                            "Advanced")
-                break
-            default:
-                txtHeader = ""
-            }
+            //Travel Data
+            realTravelValue = msg.result[i].travel_value
+            realRate = msg.result[i].rate
+            txtHomeCur = msg.result[i].home_currency
+            txtTravelCur = msg.result[i].travel_currency
 
             msg.model.append({
-                                 id: intID,
-                                 checklist: txtName,
+                                 category_name: txtCategory,
+                                 quickname: txtName,
+                                 quickdate: txtDate,
                                  descr: txtDescr,
-                                 category: txtCategory,
-                                 categoryColor: txtCategoryColor,
-                                 creation_dt: txtCreationDT,
-                                 completion_dt: txtCompletionDT,
-                                 status: txtStatus,
-                                 target_dt: txtTargetDT,
-                                 overdue: boolOverdue,
-                                 completed: intCompleted,
-                                 total: intTotal,
-                                 header: txtHeader,
-                                 favorite: boolFavorite,
-                                 continual: intContinual
+                                 quickvalue: txtValue,
+                                 rate: realRate,
+                                 homeCur: txtHomeCur,
+                                 travelCur: txtTravelCur,
+                                 travel_value: realTravelValue
                              })
         }
+        break
+    case "QuickAdd":
+        for (i = 0; i < msg.result.length; i++) {
+            intID = msg.result[i].quick_id
+            txtCategory = msg.result[i].category_name
+            txtName = msg.result[i].name
+            txtDescr = msg.result[i].descr
+            txtValue = msg.result[i].value
 
+            msg.model.append({
+                                 quick_id: intID,
+                                 category_name: txtCategory,
+                                 quickname: txtName,
+                                 quickdate: "",
+                                 descr: txtDescr,
+                                 quickvalue: txtValue,
+                                 rate: 0,
+                                 homeCur: "",
+                                 travelCur: "",
+                                 travel_value: 0
+                             })
+        }
+        break
+    case "QuickTop":
+        for (i = 0; i < msg.result.length; i++) {
+            txtCategory = msg.result[i].category_name
+            txtName = msg.result[i].name
+            txtValue = msg.result[i].value
 
+            //Travel Data
+            realTravelValue = msg.result[i].travel_value
+            realRate = msg.result[i].rate
+            txtHomeCur = msg.result[i].home_currency
+            txtTravelCur = msg.result[i].travel_currency
 
+            msg.model.append({
+                                 category_name: txtCategory,
+                                 quickname: txtName,
+                                 quickdate: "",
+                                 descr: "",
+                                 quickvalue: txtValue,
+                                 rate: realRate,
+                                 homeCur: txtHomeCur,
+                                 travelCur: txtTravelCur,
+                                 travel_value: realTravelValue
+                             })
+        }
         break
     case "Categories":
         for (i = 0; i < msg.result.length; i++) {
-            txtName = msg.result[i].name
+            txtName = msg.result[i].category_name
             txtDescr = msg.result[i].descr
-            txtColor = msg.result[i].icon
+            txtIcon = msg.result[i].icon
+            txtColor = msg.result[i].color
             msg.model.append({
-                                 categoryname: txtName,
+                                 category_name: txtName,
                                  descr: txtDescr,
+                                 icon: txtIcon,
                                  colorValue: txtColor
                              })
         }
         break
+    case "Report":
 
-    case "Targets":
+        var datasets
+        var arrDatasets = []
+        var arrData = []
+        var chartData
+
+
+        if (msg.result.data.length > 1) {
+
+            switch (msg.result.type) {
+            case "LINE":
+                var arrLabels = []
+                var arrAvg = []
+                var averageDataset
+                var total = 0
+                var average = 0
+
+                for (i = 0; i < msg.result.data.length; i++) {
+                    total = total + msg.result.data[i].total
+                }
+
+                average = Math.round((total / msg.result.data.length) * 100) / 100
+
+                for (i = 0; i < msg.result.data.length; i++) {
+                    intTotal = msg.result.data[i].total
+
+                    txtLabel = msg.result.data[i].label
+
+                    switch (msg.result.dateMode) {
+                    case "Month":
+                        txtLabel = moment().month(parseInt(txtLabel) - 1).format("MMM")
+                        break
+                    case "Week":
+                         txtLabel = "Week " + txtLabel
+                        break
+                    case "Day":
+                        txtLabel = moment(txtLabel).date() + " (" + moment(txtLabel).format('ddd') + ")"
+                        break
+                    }
+
+                    arrLabels.push(txtLabel)
+                    arrData.push(Math.round(intTotal * 100) / 100)
+                    arrAvg.push(average)
+                }
+
+                datasets = {
+                    fillColor: "rgba(220,220,220,0.5)",
+                    strokeColor: "rgba(220,220,220,1)",
+                    pointColor: "rgba(220,220,220,1)",
+                    pointStrokeColor: "#ffffff",
+                    data: arrData
+                }
+
+
+                arrDatasets.push(datasets)
+
+
+                averageDataset = {
+                    fillColor: "transparent",
+                    strokeColor: "lightsalmon",
+                    pointColor: "transparent",
+                    pointStrokeColor: "transparent",
+                    data: arrAvg
+                }
+
+                arrDatasets.push(averageDataset)
+
+                chartData = {
+                    labels: arrLabels,
+                    datasets: arrDatasets
+                }
+
+                break
+            case "PIE":
+                var total = 0
+
+                for (i = 0; i < msg.result.data.length; i++) {
+                        total = total + msg.result.data[i].value
+                }
+
+
+                for (i = 0; i < msg.result.data.length; i++) {
+                    datasets = {
+                        value: msg.result.data[i].value
+                        ,color: msg.result.data[i].color
+                        ,category: msg.result.data[i].category
+                        ,percentage: Math.round(((msg.result.data[i].value / total) * 100) * 100) / 100
+                    }
+
+                    arrDatasets.push(datasets)
+                }
+
+                chartData = arrDatasets
+
+                break
+            }
+        }else{
+            chartData = null
+        }
+
+        result = chartData
+
+        break
+    case "Currencies":
         for (i = 0; i < msg.result.length; i++) {
-            txtID = msg.result[i].id
-            txtName = msg.result[i].name
-            txtTargetDt = msg.result[i].target_dt
-            boolOverdue = msg.result[i].overdue === 0 ? false : true
-            boolReminder = boolOverdue
-            txtHeader = relativeDate(txtTargetDt,
-                                             "dddd, MMMM d, yyyy",
-                                             "Advanced")
+            txtCode = msg.result[i].currency_code
+            txtDescr = msg.result[i].description
+            txtSysmbol = msg.result[i].symbol
             msg.model.append({
-                                    checklistid: txtID,
-                                    checklist: txtName,
-                                    target_dt: txtTargetDt,
-                                    overdue: boolOverdue,
-                                    reminder: boolReminder,
-                                    header: txtHeader
-                                })
+                                 currency_code: txtCode,
+                                 descr: txtDescr,
+                                 symbol: txtSysmbol
+                             })
         }
         break
     }
 
-    //Extra processes needed in specific cases
-    if (msg.extra !== null && msg.extra !== undefined) {
-
-        if (msg.extra === 'Categories') {
-            var j = 0
-            var boolFound = false
-            var category = "Uncategorized"
-
-            while (j != msg.model.count - 1 && boolFound === false) {
-                boolFound = (category === msg.model.get(j).categoryname)
-                j++
-            }
-
-            if (boolFound === false) {
-                msg.model.append({
-                                     categoryname: "Uncategorized",
-                                     descr: "Uncategorized lists",
-                                     colorValue: "white"
-                                 })
-            }
-        }
+    if(msg.model){
+       msg.model.sync() // updates the changes to the list
+//       msg.model.clear() //clear model after sync to remove from memory (assumption only :))
     }
 
-    msg.model.sync() // updates the changes to the list
-    msg.model.clear() //clear model after sync to remove from memory (assumption only :))
     WorkerScript.sendMessage({
-                                 mode: msg.mode
+                                 mode: msg.mode,
+                                 result: result
                              })
-
 }
 
+
 /*Functions*/
+
 
 //Converts dates into user friendly format when necessary
 function relativeDate(petsa, format, mode){
 if(petsa !== null){
+    var dtPetsa
+    var engPetsa
+
+    dtPetsa = moment(petsa)
+
+    var comparisonValues = getDateComparisonValues(petsa)
+
+
+    switch(true){
+    case dtPetsa.isSame(comparisonValues.today,'day'):
+        engPetsa = "Today"
+        break
+    case dtPetsa.isSame(comparisonValues.yesterday,'day'):
+        engPetsa = "Yesterday"
+        break
+    case dtPetsa.isSame(comparisonValues.tomorrow,'day'):
+        engPetsa = "Tomorrow"
+        break
+    case dtPetsa.isBetween(comparisonValues.thisWeekFirstDay,comparisonValues.thisWeekLastDay,'day',[]) && mode === "Advanced":
+        engPetsa = "On " + dtPetsa.format("dddd")
+        break
+    case dtPetsa.isBetween(comparisonValues.lastWeekFirstDay,comparisonValues.lastWeekLastDay,'day',[]) && mode === "Advanced":
+        engPetsa = "Last Week"
+        break
+    case dtPetsa.isBetween(comparisonValues.nextWeekFirstDay,comparisonValues.nextWeekLastDay,'day',[]) && mode === "Advanced":
+        engPetsa = "Next Week"
+        break
+    case dtPetsa.isBetween(comparisonValues.lastMonthFirstDay,comparisonValues.lastMonthLastDay,'day',[]) && mode === "Advanced":
+        engPetsa = "Last Month"
+        break
+    case dtPetsa.isBetween(comparisonValues.nextMonthFirstDay,comparisonValues.nextMonthLastDay,'day',[]) && mode === "Advanced":
+        engPetsa = "Next Month"
+        break
+    case dtPetsa.isBetween(comparisonValues.thisMonthFirstDay,comparisonValues.thisMonthLastDay,'day',[]) && mode === "Advanced":
+        engPetsa = "This Month"
+        break
+    case dtPetsa.isSameOrBefore(comparisonValues.lastMonthFirstDay,'day') && mode === "Advanced":
+        engPetsa = "Older"
+        break
+    case dtPetsa.isSameOrAfter(comparisonValues.nextMonthLastDay,'day') && mode === "Advanced":
+        engPetsa = "In The Future"
+        break
+    default:
+        engPetsa = Qt.formatDate(petsa,format)
+        break
+    }
+}
+return engPetsa
+}
+
+//Gets date values for use in evaluating dates
+function getDateComparisonValues(){
     var today
     var yesterday
     var tomorrow
@@ -202,70 +437,48 @@ if(petsa !== null){
     var thisMonthLastDay
     var thisWeekFirstDay
     var thisWeekLastDay
-    var dtPetsa
-    var engPetsa
-
-    dtPetsa = moment(petsa)
+    var sevenDaysago
+    var result = []
 
     today = moment()
     yesterday = moment().subtract(1, 'day')
     tomorrow = moment().add(1, 'day')
 
-//    WORKAROUND: add/minus one day until isBetween inclusivity is supported in the version of moment.js used.
-    lastWeekFirstDay = moment().subtract(1, 'week').startOf('week')//.subtract(1,'day')
-    lastWeekLastDay = moment().subtract(1, 'week').endOf('week')//.add(1,'day')
-    lastMonthFirstDay = moment().subtract(1, 'month').startOf('month')//.subtract(1,'day')
-    lastMonthLastDay = moment().subtract(1, 'month').endOf('month')//.add(1,'day')
-    nextWeekFirstDay = moment().add(1, 'week').startOf('week')//.subtract(1,'day')
-    nextWeekLastDay = moment().add(1, 'week').endOf('week')//.add(1,'day')
-    nextMonthFirstDay = moment().add(1, 'month').startOf('month')//.subtract(1,'day')
-    nextMonthLastDay = moment().add(1, 'month').endOf('month')//.add(1,'day')
-    thisMonthFirstDay = moment().startOf('month')
-    thisMonthLastDay = moment().endOf('month')
-    thisWeekFirstDay = moment().startOf('week')
-    thisWeekLastDay = moment().endOf('week')
+        lastWeekFirstDay = moment().subtract(1, 'week').startOf('week')//.subtract(1,'day')
+        lastWeekLastDay = moment().subtract(1, 'week').endOf('week')//.add(1,'day')
+        lastMonthFirstDay = moment().subtract(1, 'month').startOf('month')//.subtract(1,'day')
+        lastMonthLastDay = moment().subtract(1, 'month').endOf('month')//.add(1,'day')
+        nextWeekFirstDay = moment().add(1, 'week').startOf('week')//.subtract(1,'day')
+        nextWeekLastDay = moment().add(1, 'week').endOf('week')//.add(1,'day')
+        nextMonthFirstDay = moment().add(1, 'month').startOf('month')//.subtract(1,'day')
+        nextMonthLastDay = moment().add(1, 'month').endOf('month')//.add(1,'day')
+        thisMonthFirstDay = moment().startOf('month')
+        thisMonthLastDay = moment().endOf('month')
+        thisWeekFirstDay = moment().startOf('week')
+        thisWeekLastDay = moment().endOf('week')
+        sevenDaysago = moment().subtract(6, 'day')
 
+    result ={
+                    today: today,
+                    yesterday: yesterday,
+                    tomorrow: tomorrow,
+                    lastWeekFirstDay: lastWeekFirstDay,
+                    lastWeekLastDay: lastWeekLastDay,
+                    lastMonthFirstDay: lastMonthFirstDay,
+                    lastMonthLastDay: lastMonthLastDay,
+                    nextWeekFirstDay: nextWeekFirstDay,
+                    nextWeekLastDay: nextWeekLastDay,
+                    nextMonthFirstDay: nextMonthFirstDay,
+                    nextMonthLastDay: nextMonthLastDay,
+                    thisMonthFirstDay: thisMonthFirstDay,
+                    thisMonthLastDay: thisMonthLastDay,
+                    thisWeekFirstDay: thisWeekFirstDay,
+                    thisWeekLastDay: thisWeekLastDay,
+                    sevenDaysago: sevenDaysago
+                }
 
-    switch(true){
-    case dtPetsa.isSame(today,'day'):
-        engPetsa = "Today"
-        break
-    case dtPetsa.isSame(yesterday,'day'):
-        engPetsa = "Yesterday"
-        break
-    case dtPetsa.isSame(tomorrow,'day'):
-        engPetsa = "Tomorrow"
-        break
-    case dtPetsa.isBetween(thisWeekFirstDay,thisWeekLastDay,'day',[]) && mode === "Advanced":
-        engPetsa = "On " + dtPetsa.format("dddd")
-        break
-    case dtPetsa.isBetween(lastWeekFirstDay,lastWeekLastDay,'day',[]) && mode === "Advanced":
-        engPetsa = "Last Week"
-        break
-    case dtPetsa.isBetween(nextWeekFirstDay,nextWeekLastDay,'day',[]) && mode === "Advanced":
-        engPetsa = "Next Week"
-        break
-    case dtPetsa.isBetween(lastMonthFirstDay,lastMonthLastDay,'day',[]) && mode === "Advanced":
-        engPetsa = "Last Month"
-        break
-    case dtPetsa.isBetween(nextMonthFirstDay,nextMonthLastDay,'day',[]) && mode === "Advanced":
-        engPetsa = "Next Month"
-        break
-    case dtPetsa.isBetween(thisMonthFirstDay,thisMonthLastDay,'day',[]) && mode === "Advanced":
-        engPetsa = "This Month"
-        break
-    case dtPetsa.isSameOrBefore(lastMonthFirstDay,'day') && mode === "Advanced":
-        engPetsa = "Older"
-        break
-    case dtPetsa.isSameOrAfter(nextMonthLastDay,'day') && mode === "Advanced":
-        engPetsa = "In The Future"
-        break
-    default:
-        engPetsa = Qt.formatDate(petsa,format)
-        break
-    }
-}
-return engPetsa
+    return result;
+
 }
 
 

@@ -1,641 +1,482 @@
-import QtQuick 2.4
-import Ubuntu.Components 1.3
-import QtQuick.Window 2.2
-import Qt.labs.settings 1.0
+import QtQuick 2.12
+import Lomiri.Components 1.3 as UT
+import QtQuick.Controls 2.12
+import QtQuick.Controls.Suru 2.2
+import QtQuick.Layouts 1.12
+import UserMetrics 0.1
+import Lomiri.Components.Themes.Ambiance 1.3 as Ambiance
+import Lomiri.Components.Themes.SuruDark 1.3 as SuruDark
+import "library/database.js" as Database
+import "library/dataUtils.js" as DataUtils
+import "library/functions.js" as Functions
+import "common/pages" as PageComponents
+import "common/menus" as Menus
+import "components/pages" as Pages
+import "components/models" as Models
+import "common" as Common
 import "components"
-import "ui"
-import "library/MetaData.js" as MetaData
-import "library/DataProcess.js" as DataProcess
-import "library"
 
-
-MainView {
+ApplicationWindow {
     id: mainView
-    // objectName for functional testing purposes (autopilot-qt5)
-    objectName: "Talaan"
+    objectName: "mainView"
 
-    // Note! applicationName needs to match the "name" field of the click manifest
-    applicationName: "talaan.kugiigi"
-
-    width: Screen.desktopAvailableWidth < units.gu(130) ? units.gu(50) : units.gu(130)
-    height: units.gu(89)
-
-    anchorToKeyboard: true
-    theme.name: {
-        switch (settings.currentTheme) {
-        case "Default":
-            "Ubuntu.Components.Themes.SuruDark"
-            break
-        case "Ambiance":
-            "Ubuntu.Components.Themes.Ambiance"
-            break
-        case "SuruDark":
-            "Ubuntu.Components.Themes.SuruDark"
-            break
-        case "System":
-            ""
-            break
-        default:
-            "Ubuntu.Components.Themes.SuruDark"
+    readonly property string current_version: "3.0"
+    readonly property var suruTheme: switch(settings.currentTheme) {
+            case "Ambiance":
+            case "Ubuntu.Components.Themes.Ambiance":
+            case "Lomiri.Components.Themes.Ambiance":
+                return Suru.Light
+                break
+            case "SuruDark":
+            case "Ubuntu.Components.Themes.SuruDark":
+            case "Lomiri.Components.Themes.SuruDark":
+                return Suru.Dark
+                break
+            case "Default":
+            case "System":
+            default:
+                if (Theme.name == "Lomiri.Components.Themes.SuruDark") {
+                    return Suru.Dark
+                } else {
+                    return Suru.Light
+                }
+                break
         }
-    }
+    readonly property QtObject uitkColors: Suru.theme === Suru.Dark ? suruDarkTheme : ambianceTheme
+    
+    readonly property string displayMode: "Phone" //"Desktop" //"Phone" //"Tablet"
+    readonly property bool isWideLayout: width >= Suru.units.gu(110)
+    readonly property var dataUtils: DataUtils.dataUtils
+//~     readonly property var profiles: dataUtils.profiles
+    readonly property var lists: dataUtils.lists()
+    readonly property var listItems: dataUtils.listItems()
+    readonly property var categories: dataUtils.categories()
+//~     readonly property var expenses: dataUtils.expenses(settings.activeProfile)   
+//~     readonly property var quickExpenses: dataUtils.quickExpenses(settings.activeProfile)   
+//~     readonly property var dashboard: dataUtils.dashboard(settings.activeProfile)   
+    property string currentDate: Functions.getToday()
 
-    // Change theme in real time when set to follow system theme
-    // Only works when the app gets unfocused then focused
-    // Possibly ideal so the change won't happen while the user is using the app
-    property string previousTheme: Theme.name
-    onActiveFocusChanged: {
-        if (settings.currentTheme == "System") {
-            if (activeFocus && previousTheme !== theme.name) {
-                    theme.name = Theme.name
-                    theme.name = Qt.binding( function() {
-                                                    if (settings.currentTheme == "") {
-                                                        return ""
-                                                    } else {
-                                                        switch (settings.currentTheme) {
-                                                            case "Default":
-                                                                return "Ubuntu.Components.Themes.SuruDark"
-                                                                break
-                                                            case "Ambiance":
-                                                                return "Ubuntu.Components.Themes.Ambiance"
-                                                                break
-                                                            case "SuruDark":
-                                                                return "Ubuntu.Components.Themes.SuruDark"
-                                                                break
-                                                            case "System":
-                                                                return ""
-                                                                break
-                                                            default:
-                                                                return "Ubuntu.Components.Themes.SuruDark"
-                                                        }
-                                                    }
-                                            }
-                                )
-            } else {
-                previousTheme = Theme.name
+    readonly property alias userMetric: userMetric
+    readonly property alias settings: settingsLoader.item
+    readonly property alias tooltip: globalTooltip
+    readonly property alias mainModels: listModelsLoader.item
+    readonly property alias keyboard: keyboardRec.keyboard
+    readonly property alias keyboardRectangle: keyboardRec
+    readonly property var mainPage: mainPageLoader.item.mainPage
+    readonly property var sidePage: mainPageLoader.item.sidePage
+//~     readonly property var detailedListPage: mainPageLoader.item.detailedListPage
+    readonly property var mainSurface: mainPageLoader.item
+    readonly property alias drawer: drawerLoader.item
+    readonly property alias popupPage: popupPageLoader.item
+//~     readonly property alias newExpenseView: newExpenseViewLoader.item
+
+    readonly property bool sidePageIsOpen: sidePage && sidePage.visible
+
+    property bool temporaryDisableColorOverlay: false
+
+    title: "Talaan - ToDo Na To"
+    visible: false
+    minimumWidth: Suru.units.gu(30)
+
+    Suru.theme: suruTheme //Suru.Light //Suru.Dark
+
+    width: switch (displayMode) {
+           case "Phone":
+               units.gu(50)
+               break
+           case "Tablet":
+               units.gu(100)
+               break
+           case "Desktop":
+               units.gu(120)
+               break
+           default:
+               units.gu(120)
+               break
+           }
+    height: switch (displayMode) {
+            case "Phone":
+                units.gu(89)
+                break
+            case "Tablet":
+                units.gu(56)
+                break
+            case "Desktop":
+                units.gu(68)
+                break
+            default:
+                units.gu(68)
+                break
             }
-        }
-    }
-
-    property string current_version: "2.47"
-    property alias listItems: listItems
-    property alias notification: notificationLoader.item
-    property alias mainLayout: mainAdaptLayout
-    property alias navigationPage: navigationPageLoader.item
-    property bool enableBottomMenu: settings.bottomMenuType !== "None"
-                                    && mainAdaptLayout.columns === 1 ? true : false
-    property list<RadialAction> bottomActions
-    property alias bottomMenuActions: bottomMenuActions.actions
-
-    property alias defaultTab: defaultTabLoader.item
-    property alias savedTab: savedTabLoader.item
-    property alias historyTab: historyTabLoader.item
-    property alias settingsTab: settingsTabLoader.item
-    property alias remindersPage: remindersPageLoader.item
-    property alias itemsPage: itemsPageLoader.item
-    property alias navigationPanel: panelLoader.item
-    property alias navigationflickable: navigationflickableLoader.item
 
     Component.onCompleted: {
-        //Meta data processing
-        MetaData.createInitialData()
-        DataProcess.cleanSaved()
-        DataProcess.cleanNormalLists()
-        MetaData.executeUserVersion1()
-        MetaData.executeUserVersion2()
-        MetaData.executeUserVersion3()
+        /*Meta data processing*/
+        let _currentDataBaseVersion = Database.checkUserVersion()
 
-        defaultTabLoader.active = true
+        if (_currentDataBaseVersion === 0) {
+            Database.createInitialData()
+        }
+
+        Database.databaseUpgrade(_currentDataBaseVersion)
+
+//~         Check if still needed or better solution
+        Database.cleanSaved()
+        Database.cleanNormalLists()
+
+        settingsLoader.active = true
     }
 
-    Keys.onPressed: {
-        switch (true) {
-        case primaryLeftPage.isMultiColumn:
-            switch (true) {
-            case event.key == Qt.Key_S && event.modifiers == Qt.ControlModifier:
-                navigationPageLoader.item.header.startSearch()
-                break
-            }
-            //break /*commented out to allow other keys to process*/
-        case itemsPage && itemsPage.visible:
-            switch (true) {
-            case event.key == Qt.Key_H && event.modifiers == Qt.ControlModifier:
-                itemsPage.switchSection()
-                break
-            }
-            break
+    function initDataUtils() {
+        dataUtils = Qt.binding( function() { return DataUtils.dataUtils } )
+        lists = Qt.binding( function() { return dataUtils.lists() } )
+//~         categories = Qt.binding( function() { return dataUtils.categories(settings.activeProfile) } )
+//~         expenses = Qt.binding( function() { return dataUtils.expenses(settings.activeProfile) } )
+        listModelsLoader.active = true
+    }
+
+    function checkIfDayChanged() {
+        if (!Functions.isToday(currentDate)) {
+            currentDate = Functions.getToday()
         }
     }
 
-    Item {
-        id: settings
+    Ambiance.Palette { id: ambianceTheme }
+    SuruDark.Palette { id: suruDarkTheme }
 
-        property bool listItemClickable: true
-        property bool listItemFontSize: false
-        property bool listItemHideChecked: false
-        property bool panelSplit: true
-        property bool categoryColors: false
-        property string radialBottomMenu: "Always"
-        property string bottomMenuHint: "Always"
-        property string bottomMenuType: "Radial"
-        property string bottomMenuAnchor: "Right"
-        property string currentTheme: "System"
+    Metric {
+        id: userMetric
 
-        Settings {
-            property alias listItemClickable: settings.listItemClickable
-            property alias listItemFontSize: settings.listItemFontSize
-            property alias listItemHideChecked: settings.listItemHideChecked
-            property alias panelSplit: settings.panelSplit
-            property alias categoryColors: settings.categoryColors
-            property alias radialBottomMenu: settings.radialBottomMenu
-            property alias bottomMenuHint: settings.bottomMenuHint
-            property alias bottomMenuType: settings.bottomMenuType
-            property alias bottomMenuAnchor: settings.bottomMenuAnchor
-            property alias currentTheme: settings.currentTheme
-        }
+        property string circleMetric
+
+        name: "todoList"
+        format: circleMetric
+        emptyFormat: i18n.tr("Nothing to do :)")
+        domain: "talaan.kugiigi"
     }
 
-    ListModels {
-        id: listItems
+    UT.MainView {
+        //Only for making translation work
+        id: dummyMainView
+        applicationName: "talaan.kugiigi"
         visible: false
     }
 
-    PageBackGround {
-        id: pageBackground
-        noImage: switch (settings.currentTheme) {
-                 case "Default":
-                     false
-                     break
-                 case "System":
-                 case "Ambiance":
-                 case "SuruDark":
-                     true
-                     break
-                 default:
-                     false
-                 }
-        bgColor: switch (settings.currentTheme) {
-                 case "Default":
-                     "#371300"
-                     break
-                 case "System":
-                 case "Ambiance":
-                 case "SuruDark":
-                     theme.palette.normal.background
-                     break
-                 default:
-                     "#371300"
-                 }
-        bgOpacity: switch (settings.currentTheme) {
-                   case "Default":
-                       0.4
-                       break
-                   case "System":
-                   case "Ambiance":
-                   case "SuruDark":
-                       1.0
-                       break
-                   default:
-                       0.4
-                   }
-    }
+    Connections {
+        target: Qt.application
 
-    Loader {
-        id: notificationLoader
-
-        z: 100
-
-        asynchronous: true
-        visible: status == Loader.Ready
-
-        anchors {
-            top: parent.top
-            horizontalCenter: parent.horizontalCenter
-            margins: units.gu(2)
-        }
-
-        Component.onCompleted: {
-            setSource(Qt.resolvedUrl("../components/NotificationBubble.qml"), {
-                          bubbleOffset: units.gu(8)
-                      })
+        onStateChanged: {
+            if (state == Qt.ApplicationActive) {
+                checkIfDayChanged()
+            }
         }
     }
 
+    UT.LiveTimer {
+        frequency: UT.LiveTimer.Hour
+        onTrigger: {
+            checkIfDayChanged()
+        }
+    }
+
+    Common.GlobalTooltip {
+        id: globalTooltip
+        parent: mainView.mainFocusScope
+        marginTop: Suru.units.gu(10)
+    }
+
     Loader {
-        id: panelLoader
+        id: settingsLoader
 
         active: false
         asynchronous: true
-        source: Qt.resolvedUrl("../components/NavigationPanel.qml")
+        sourceComponent: SettingsComponent {}
 
-        visible: status == Loader.Ready
-        z: 100
-        width: parent.width >= units.gu(60) ? units.gu(30) : parent.width * 0.7
-        anchors {
-            left: parent.left
-            topMargin: mainAdaptLayout.primaryPage.header.extension
-                       !== null ? mainAdaptLayout.primaryPage.header.height
-                                  - mainAdaptLayout.primaryPage.header.extension.height : mainAdaptLayout.primaryPage.header.height
-            top: parent.top
-            bottom: parent.bottom
+        onLoaded: listModelsLoader.active = true
+    }
+
+    Loader {
+        id: listModelsLoader
+
+        active: false
+        asynchronous: true
+        sourceComponent: Models.MainModels {
+            id: listModels
         }
 
-        onLoaded: item.navigationFlickable = Qt.binding(function () {
-            return primaryLeftPage.isMultiColumn ? null : navigationflickable
-        })
+        onLoaded: {
+            mainPageLoader.active = true
+//~             newExpenseViewLoader.active = true
+            popupPageLoader.active = true
+            drawerLoader.active = true
+        }
     }
 
-    ActionList {
-        id: bottomMenuActions
+    FocusScope {
+        id: mainFocusScope
 
-        actions: [
-            RadialAction {
-                iconName: "note"
-                label: i18n.tr("Lists")
-                iconColor: "white"
-                backgroundColor: UbuntuColors.blue
-                onTriggered: {
-                    mainLayout.switchTab(0)
-                }
-            },
-            RadialAction {
-                iconName: "history"
-                label: i18n.tr("History")
-                iconColor: "white"
-                backgroundColor: UbuntuColors.red
-                onTriggered: {
-                    mainLayout.switchTab(2)
-                }
-            },
-            RadialAction {
-                iconName: "bookmark"
-                label: i18n.tr("Saved")
-                iconColor: "white"
-                backgroundColor: UbuntuColors.midAubergine
-                onTriggered: {
-                    mainLayout.switchTab(1)
-                }
-            },
-            RadialAction {
-                label: i18n.tr("Settings")
-                iconName: "settings"
-                iconColor: "white"
-                backgroundColor: UbuntuColors.coolGrey
-                onTriggered: {
-                    mainLayout.switchTab(3)
-                }
-            },
-            RadialAction {
-                iconName: "cancel"
-                iconColor: UbuntuColors.coolGrey
-                hide: true
-            },
-            RadialAction {
-                iconName: "cancel"
-                iconColor: UbuntuColors.coolGrey
-                hide: true
-            }
-        ]
-    }
-
-    AdaptivePageLayout {
-        id: mainAdaptLayout
-
-        property bool multiColumn: columns > 1
-        property bool noSelected: true
-
-        layouts: [
-            PageColumnsLayout {
-                when: width > units.gu(80) && width < units.gu(
-                          130) // && !portrait
-                // column #0
-                PageColumn {
-                    minimumWidth: units.gu(40)
-                    maximumWidth: units.gu(60)
-                    preferredWidth: width > units.gu(
-                                        90) ? units.gu(45) : units.gu(40)
-                }
-                // column #1
-                PageColumn {
-                    fillWidth: true
-                }
-            },
-            PageColumnsLayout {
-                when: width >= units.gu(130) // && !portrait
-                // column #0
-                PageColumn {
-                    minimumWidth: units.gu(65)
-                    maximumWidth: units.gu(110)
-                    preferredWidth: units.gu(70)
-                }
-                // column #1
-                PageColumn {
-                    fillWidth: true
-                }
-            }
-        ]
         anchors.fill: parent
-        primaryPage: primaryLeftPage
-
-        property int selectedTabIndex: 100
 
         Loader {
-            id: itemsPageLoader
-
-            property var pageProperties
-
-            active: true
-
-            asynchronous: true
-            source: Qt.resolvedUrl("../ui/ItemsPage.qml")
-
-            visible: status == Loader.Ready
-
-            function showItemsPage(properties) {
-				mainLayout.selectItemFromMain(mainLayout.primaryPage, item,
-                                                  properties)
-            }
-        }
-
-        NoSelectedPage {
-            id: noSelectedPage
-        }
-
-        Loader {
-            id: navigationflickableLoader
+            id: drawerLoader
 
             active: false
             asynchronous: true
-            source: Qt.resolvedUrl("../components/NavigationFlickable.qml")
+            sourceComponent: MenuDrawer {
+                id: drawer
 
-            visible: status == Loader.Ready
+                listViewTopMargin: mainView.mainPage && mainView.mainPage.pageHeader.expanded ? mainView.mainPage.pageHeader.height : 0
+                model:  [ categoriesAction, quickTemplatesAction, settingsAction, aboutAction ]
 
-            onLoaded: {
-                panelLoader.active = true;
-            }
-        }
+                Common.BaseAction {
+                    id: categoriesAction
 
-        function switchTab(index) {
-            selectedTabIndex = index
-            if (navigationflickable) {
-                navigationflickable.currentTab = index
-            }
-            clearitemsPage()
-        }
+                    text: i18n.tr("Categories")
+                    iconName: "stock_note"
 
-        function checkNoSelected() {
-            if (multiColumn) {
-                mainAdaptLayout.clearitemsPage()
-                if (noSelected) {
-                    switch (selectedTabIndex) {
-                    case 0:
+                    onTrigger: popupPage("qrc:///components/pages/CategoriesPage.qml")
+                }
 
-                    case 1:
+                Common.BaseAction {
+                    id: quickTemplatesAction
 
-                    case 2:
-                        primaryPage.pageStack.addPageToNextColumn(
-                                    primaryPage, noSelectedPage, {
-                                        iconName: "stock_note",
-                                        title: i18n.tr("No list selected"),
-                                        subTitle: i18n.tr(
-                                                      "Select a list from the left column")
-                                    })
-                        break
-                    case 3:
-                        primaryPage.pageStack.addPageToNextColumn(
-                                    primaryPage, noSelectedPage, {
-                                        iconName: "settings",
-                                        title: i18n.tr("No list selected"),
-                                        subTitle: i18n.tr(
-                                                      "Select an item from the List, Saved or History tab")
-                                    })
-                        break
+                    text: i18n.tr("Quick Templates")
+                    iconName: "scope-manager"
+
+                    onTrigger: {
+                        let _properties = {
+                            coloredCategory: mainView.detailedListPage.coloredCategory
+                            , homeCurrency: mainView.settings.currentCurrency
+                        }
+                        popupPage("qrc:///components/pages/QuickExpensesPage.qml", _properties)
                     }
                 }
-            } else {
-                if (noSelected) {
-                    removePages(primaryPage)
+
+                Common.BaseAction {
+                    id: settingsAction
+
+                    text: i18n.tr("Settings")
+                    iconName: "settings"
+
+                    onTrigger: popupPage("qrc:///components/pages/SettingsPage.qml")
+                }
+
+                Common.BaseAction {
+                    id: aboutAction
+
+                    text: i18n.tr("About")
+                    iconName: "info"
+
+                    onTrigger: popupPage("qrc:///components/pages/AboutPage.qml")
+                }
+
+                function popupPage(source, properties) {
+                    mainView.popupPage.openInPage(source, properties)
                 }
             }
+
+            visible: status == Loader.Ready
         }
 
-        function resetCurrentIndex() {
-            defaultTab.mainListView.currentIndex = -1
-            savedTab.mainListView.currentIndex = -1
-            historyTab.mainListView.currentIndex = -1
-            settingsTab.mainListView.currentIndex = -1
-        }
+        Loader {
+            id: mainPageLoader
 
-        function selectItemFromMain(pageSource, page, properties) {
-            noSelected = false
-            mainAdaptLayout.clearitemsPage()
+            active: false
+            asynchronous: true
+            visible: status == Loader.Ready
+            anchors.fill: parent
+            sourceComponent: Item {
+                property alias sidePage: sidePage
+                property alias mainPage: corePage
+//~                 property alias detailedListPage: detailedListPage
 
-            var incubator = primaryPage.pageStack.addPageToNextColumn(
-                        pageSource, page, properties)
-            if (incubator && incubator.status == Component.Loading) {
-                incubator.onStatusChanged = function (status) {
-                    if (status == Component.Ready) {
-                        // connect page's destruction to decrement model
-                        incubator.object.Component.destruction.connect(
-                                    function () {
-                                        if (!multiColumn) {
-                                            noSelected = true
-                                        }
-                                    })
+                PageComponents.BasePageStack {
+                    id: corePage
+
+                    anchors {
+                        fill: parent
+                        rightMargin: mainView.isWideLayout ? sidePage.width : 0
+                    }
+
+                    isWideLayout: width > Suru.units.gu(90)
+                    enableBottomGestureHint: !mainView.settings.hideBottomHint
+                    enableHeaderPullDown: mainView.settings.headerPullDown
+                    enableBottomSideSwipe: mainView.settings.sideSwipe
+                    enableDirectActions: mainView.settings.directActions
+                    enableDirectActionsDelay: mainView.settings.quickActionEnableDelay
+                    enableBottomQuickSwipe: mainView.settings.quickSideSwipe
+                    enableHorizontalSwipe: mainView.settings.horizontalSwipe
+                    enableHorizontalDirectActions: mainView.settings.horizontalDirectActions
+                    horizontalDirectActionsSensitivity: mainView.settings.horizontalDirectActionsSensitivity
+                    bottomGestureAreaHeight: mainView.settings.bottomGesturesAreaHeight
+                    directActionsHeight: mainView.settings.quickActionsHeight
+
+//~                     customTitleItem {
+//~                         sourceComponent: mainView.mainModels.profilesModel.count > 1 ? profilePickerComponent : null
+//~                         hideOnExpand: false
+//~                         fillWidth: false
+//~                         alignment: Qt.AlignLeft
+//~                     }
+
+                    initialItem: Pages.DashboardPage {
+                        title: i18n.tr("Talaan")
+                    }
+
+                    Behavior on anchors.rightMargin {
+                        NumberAnimation {
+                            easing: Suru.animations.EasingIn
+                            duration: Suru.animations.SnapDuration
+                        }
+                    }
+
+                    Pages.BottomSwipeUpConnection {
+                        target: corePage.middleBottomGesture
+                        enabled: !sidePage.middleBottomGesture.dragging
                     }
                 }
-            }
 
-            if (page.mainListView !== undefined) {
-                page.mainListView.positionViewAtBeginning()
-            }
-        }
-
-        function showThirdColumn(pageSource, page, properties) {
-            var incubator = primaryPage.pageStack.addPageToNextColumn(
-                        pageSource, page, properties)
-            if (incubator && incubator.status == Component.Loading) {
-                incubator.onStatusChanged = function (status) {
-                    if (status == Component.Ready) {
-                        // connect page's destruction to decrement model
-                        incubator.object.Component.destruction.connect(
-                                    function () {
-                                        if (!multiColumn) {
-                                            noSelected = true
-                                        }
-                                    })
+                Rectangle {
+                    anchors {
+                        horizontalCenter: corePage.right
+                        top: parent.top
+                        bottom: parent.bottom
+                        margins: Suru.units.gu(2)
                     }
+                    width: Suru.units.dp(1)
+                    visible: sidePage.visible && !(!mainView.isWideLayout && sidePage.forceShowInNarrow)
+                    color: Suru.neutralColor
                 }
-            }
-        }
 
-        function switchNoSelected(boolFlag) {
-            noSelected = boolFlag
-            checkNoSelected()
-        }
+                PageComponents.BasePageStack {
+                    id: sidePage
 
-        function clearitemsPage() {
-            if (itemsPageLoader.item) {
-                itemsPage.currentID = ""
-                itemsPage.currentChecklist = ""
-                itemsPage.currentCategory = ""
-                itemsPage.currentDescr = ""
-                itemsPage.currentStatus = ""
-                itemsPage.currentTargetDate = ""
-                itemsPage.currentTotal = 0
-                itemsPage.totalChecked = 0
-                itemsPage.searchText = ""
-            }
-        }
+                    readonly property bool shownInNarrow: !mainView.isWideLayout
+                    property bool forceShowInNarrow: false
 
-        onColumnsChanged: {
-            multiColumn = columns > 1
-            if (!multiColumn && noSelected) {
-                removePages(noSelectedPage)
-            } else if (noSelected) {
-                checkNoSelected()
-            }
-        }
+                    anchors {
+                        top: parent.top
+                        bottom: parent.bottom
+                        right: parent.right
+                    }
 
-        onSelectedTabIndexChanged: {
-            switch (selectedTabIndex) {
-            case 0:
-                removePages()
-                defaultTab.mainListView.positionViewAtBeginning()
-                primaryLeftPage.setPage(defaultTab)
-                switchNoSelected(true)
-                break
-            case 1:
-                removePages()
-                savedTab.mainListView.positionViewAtBeginning()
-                primaryLeftPage.setPage(savedTab)
-                switchNoSelected(true)
-                break
-            case 2:
-                removePages()
-                historyTab.mainListView.positionViewAtBeginning()
-                primaryLeftPage.setPage(historyTab)
-                switchNoSelected(true)
-                break
-            case 3:
-                removePages()
-                settingsTab.mainListView.positionViewAtBeginning()
-                primaryLeftPage.setPage(settingsTab)
-                switchNoSelected(true)
-                break
-            }
-        }
+                    width: shownInNarrow ? parent.width : Suru.units.gu(50)
+                    isWideLayout: width > Suru.units.gu(60)
+                    forceShowBackButton: shownInNarrow
+                    enableShortcuts: true
+                    enableBottomGestureHint: !mainView.settings.hideBottomHint
+                    enableHeaderPullDown: mainView.settings.headerPullDown
+                    enableBottomSideSwipe: mainView.settings.sideSwipe
+                    enableDirectActions: mainView.settings.directActions
+                    enableDirectActionsDelay: mainView.settings.quickActionEnableDelay
+                    enableBottomQuickSwipe: mainView.settings.quickSideSwipe
+                    enableHorizontalSwipe: mainView.settings.horizontalSwipe
+                    enableHorizontalDirectActions: mainView.settings.horizontalDirectActions
+                    horizontalDirectActionsSensitivity: mainView.settings.horizontalDirectActionsSensitivity
+                    bottomGestureAreaHeight: mainView.settings.bottomGesturesAreaHeight
+                    directActionsHeight: mainView.settings.quickActionsHeight
+                    initialItem: Pages.ListItemsPage {
+                        id: listItemsPage
 
-        PrimaryPage {
-            id: primaryLeftPage
-        }
+                        listData: mainView.mainModels.listItemsModel.listData
+//~                         sort: mainView.settings.detailedListSort
+//~                         order: mainView.settings.detailedListOrder
 
-        Loader {
-            id: defaultTabLoader
+//~                         onSortChanged: mainView.settings.detailedListSort = sort
+//~                         onOrderChanged: mainView.settings.detailedListOrder = order
+                    }
 
-            active: false
-            asynchronous: true
-            source: Qt.resolvedUrl("../ui/DefaultTab.qml")
+                    visible: opacity > 0
+                    opacity: mainView.isWideLayout || forceShowInNarrow ? 1 : 0
+                    title: i18n.tr("To Do Na To!")
 
-            visible: status == Loader.Ready
+                    Behavior on opacity {
+                        NumberAnimation {
+                            easing: Suru.animations.EasingIn
+                            duration: Suru.animations.SnapDuration
+                        }
+                    }
 
-            onLoaded: {
-                mainAdaptLayout.switchTab(0)
-                navigationflickableLoader.active = true
-                savedTabLoader.active = true
-                historyTabLoader.active = true
-                settingsTabLoader.active = true
-            }
-        }
+                    function show() {
+                        pageHeader.expanded = corePage.pageHeader.expanded
+                        forceShowInNarrow = true
+                    }
 
-        Loader {
-            id: savedTabLoader
+                    function hide() {
+                        corePage.pageHeader.expanded = pageHeader.expanded
+                        forceShowInNarrow = false
+                    }
 
-            active: false
-            asynchronous: true
-            source: Qt.resolvedUrl("../ui/SavedTab.qml")
+                    onBack: hide()
+                    onCurrentItemChanged: {
+                        if (currentItem.hasOwnProperty("shownInNarrow")) {
+                            currentItem.shownInNarrow = Qt.binding(function() { return sidePage.shownInNarrow } )
+                        }
+                    }
 
-            visible: status == Loader.Ready
-        }
-
-        Loader {
-            id: historyTabLoader
-
-            active: false
-            asynchronous: true
-            source: Qt.resolvedUrl("../ui/HistoryTab.qml")
-
-            visible: status == Loader.Ready
-        }
-
-        Loader {
-            id: settingsTabLoader
-
-            active: false
-            asynchronous: true
-            source: Qt.resolvedUrl("../ui/SettingsTab.qml")
-
-            visible: status == Loader.Ready
-        }
-
-        Loader {
-            id: navigationPageLoader
-
-            active: primaryLeftPage.isMultiColumn ? true : false
-            source: Qt.resolvedUrl("../ui/NavigationSplitPage.qml")
-            asynchronous: true
-            visible: status == Loader.Ready
-
-            onLoaded: {
-                item.navigationFlickable = Qt.binding(function () {
-                    return primaryLeftPage.isMultiColumn ? navigationflickable : null
-                })
-                primaryLeftPage.adaptLayout.primaryPage = item
-                primaryLeftPage.adaptLayout.switchToTwoColumn()
-            }
-        }
-
-        Loader {
-            id: remindersPageLoader
-
-            property string pagemode: "all"
-
-            active: false
-            asynchronous: true
-            source: Qt.resolvedUrl("../ui/RemindersPage.qml")
-
-            visible: status == Loader.Ready
-
-            onLoaded: {
-                showRemindersPage(pagemode)
-            }
-
-            function showRemindersPage(mode) {
-                if (!active) {
-                    pagemode = mode
-                    active = true
-                } else {
-                    if (mode === "all") {
-                        primaryLeftPage.adaptLayout.addPageToCurrentColumn(
-                                    primaryLeftPage.adaptLayout.primaryPage,
-                                    remindersPage, {
-                                        pagemode: mode
-                                    })
-                        mainView.mainLayout.switchNoSelected(true)
-                    } else {
-
-                        mainView.mainLayout.addPageToNextColumn(itemsPage,
-                                                                remindersPage, {
-                                                                    pagemode: mode
-                                                                })
+                    Pages.BottomSwipeUpConnection {
+                        target: sidePage.middleBottomGesture
+                        enabled: !corePage.middleBottomGesture.dragging
                     }
                 }
             }
+
+            onLoaded: mainView.visible = true
         }
 
-        //WORKAROUND: Dummy Alarm component to avoid issues on apparmor denial
-        Alarm {
-            id: dummyAlarm
+//~         Loader {
+//~             id: newExpenseViewLoader
+
+//~             active: false
+//~             asynchronous: true
+//~             visible: status == Loader.Ready
+//~             anchors.fill: parent
+//~             sourceComponent: Pages.NewExpenseView {
+//~                 currentHomeCurrency: mainView.settings.currentCurrency
+//~                 currentTravelCurrency: mainView.settings.travelCurrency
+//~                 currentExchangeRate: mainView.settings.exchangeRate
+//~                 isColoredText: mainView.settings.coloredText
+//~                 isTravelMode: mainView.settings.travelMode
+//~                 isWideLayout: mainView.isWideLayout
+//~                 dragDistance: {
+//~                     if (mainPage.middleBottomGesture.dragging) {
+//~                         return mainPage.middleBottomGesture.distance
+//~                     }
+
+//~                     if (sidePage.middleBottomGesture.dragging) {
+//~                         return sidePage.middleBottomGesture.distance
+//~                     }
+
+//~                     return 0
+//~                 }
+//~             }
+//~         }
+
+        Loader {
+            id: popupPageLoader
+
+            active: false
+            asynchronous: true
+            sourceComponent: PopupPageStack {
+                onAboutToShow: pageHeader.expanded = mainView.mainPage.pageHeader.expanded
+                onAboutToHide: mainView.mainPage.pageHeader.expanded = pageHeader.expanded
+            }
+        }
+    }
+
+    Common.KeyboardRectangle {
+        id: keyboardRec
+    }
+
+    // Customize the global attached tooltip in QQC2 components
+    Control {
+        ToolTip.toolTip {
+            readonly property real centeredImplicitWidth: Math.max(ToolTip.toolTip.background ? ToolTip.toolTip.background.implicitWidth : 0,
+                                ToolTip.toolTip.contentItem.implicitWidth + ToolTip.toolTip.leftPadding + ToolTip.toolTip.rightPadding)
+            implicitWidth: Math.min(parent.width, centeredImplicitWidth)
+            contentItem: Label {
+                text: ToolTip.toolTip.text
+                wrapMode: Text.WordWrap
+                color: Suru.backgroundColor
+            }
         }
     }
 }

@@ -1,19 +1,32 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-#include <QQuickView>
-//#include <QQmlContext>
+#include <QQmlContext>
+#include <QSettings>
+#include <QQuickStyle>
+#include <QDebug>
 
 int main(int argc, char *argv[])
 {
+    //~ QGuiApplication::setApplicationName("Talaan");
+    QGuiApplication::setApplicationName("talaan.kugiigi");
+
     QGuiApplication app(argc, argv);
 
-    // Lets get the color names
-    //QStringList colors = QColor::colorNames();
+    QSettings settings;
+    QString style = QQuickStyle::name();
+    if (settings.contains("style")) {
+        QQuickStyle::setStyle(settings.value("style").toString());
+    }
+    else {
+        settings.setValue("style", "Suru");
+        QQuickStyle::setStyle("Suru");
+    }
 
-    QQuickView view;
-    //view.rootContext()->setContextProperty("colors", QVariant::fromValue(colors));
-    view.setSource(QUrl(QStringLiteral("qrc:///Main.qml")));
-    view.setResizeMode(QQuickView::SizeRootObjectToView);
-    view.show();
+    QQmlApplicationEngine engine;
+    engine.rootContext()->setContextProperty("availableStyles", QQuickStyle::availableStyles());
+    engine.load(QUrl(QStringLiteral("qrc:///Main.qml")));
+    if (engine.rootObjects().isEmpty())
+        return -1;
+
     return app.exec();
 }

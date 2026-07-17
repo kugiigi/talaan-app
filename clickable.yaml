@@ -1,0 +1,2 @@
+builder: qmake
+framework: ubuntu-touch-24.04-1.x

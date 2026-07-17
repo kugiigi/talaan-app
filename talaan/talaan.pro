@@ -3,7 +3,7 @@ TARGET = talaan
 
 load(ubuntu-click)
 
-QT += qml quick
+QT += qml quick gui quickcontrols2
 
 SOURCES += main.cpp
 
@@ -23,8 +23,7 @@ AP_TEST_FILES += tests/autopilot/run \
 OTHER_FILES += $${CONF_FILES} \
                $${QML_FILES} \
                $${AP_TEST_FILES} \
-               talaan.desktop \
-    components/Dialogs/DialogExternalLink.qml
+               talaan.desktop
 
 #specify where the config files are installed to
 config_files.path = /talaan

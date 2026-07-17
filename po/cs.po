@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-29 16:18+0000\n"
+"POT-Creation-Date: 2026-07-17 07:49+0000\n"
 "PO-Revision-Date: 2019-08-10 21:29+0200\n"
 "Last-Translator: Dub <dub@dubix.eu>\n"
 "Language-Team: UBports Czech Team\n"
@@ -17,962 +17,1992 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.6\n"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:254
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:19
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/DefaultTab.qml:24
-msgid "Lists"
-msgstr "Seznamy"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:263
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:31
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/HistoryTab.qml:24
-msgid "History"
-msgstr "Historie"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:272
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:25
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:24
-msgid "Saved"
-msgstr "Uloženo"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:280
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TabActions.qml:38
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:17
-msgid "Settings"
-msgstr "Nastavení"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:399
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:408
-msgid "No list selected"
-msgstr "Nevybrán žádný seznam"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:401
-msgid "Select a list from the left column"
-msgstr "Vyberte seznam z levého sloupce"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:410
-msgid "Select an item from the List, Saved or History tab"
-msgstr "Vyberte položku z karty Seznam, Uložené nebo Historie"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/AddItemsBar.qml:225
-msgid "Enter item name"
-msgstr "Zadejte název položky"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/AddItemsBar.qml:276
-msgid "Add comments / notes"
-msgstr "Přidej komentář / poznámku"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/AlarmReminder.qml:53
-msgid "Reminder was not set successfully"
-msgstr "Připomenutí nebylo nastaveno"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/AlarmReminder.qml:59
-msgid "Reminder successfully set"
-msgstr "Připomenutí úspěšně nastaveno"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/AlarmReminder.qml:93
-msgid "Error saving the Reminder"
-msgstr "Při ukládání připomenutí došlo k chybě"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/AlarmReminder.qml:94
-msgid ""
-"The Target Date might have already passed or the intended reminder is set in "
-"the past"
-msgstr ""
-"Cílové datum už pravděpodobně uplynulo nebo je zamýšlená upomínka nastavena "
-"v minulosti"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/AlarmReminder.qml:98
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:184
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:31
-msgid "OK"
-msgstr "OK"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/FindHeader.qml:33
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:872
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:914
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchHeader.qml:92
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:249
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1139
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1172
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:283
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:178
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:23
-msgid "Cancel"
-msgstr "Zrušit"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/FindHeader.qml:47
-msgid "Find..."
-msgstr "Najít..."
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListItemContent.qml:73
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:961
-msgid "Skipped"
-msgstr "Přeskočeno"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:188
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:202
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:262
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:304
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:44
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:86
-msgid "Add"
-msgstr "Přidat"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:211
-msgid "Search"
-msgstr "Hledat"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:220
-msgid "Clear History"
-msgstr "Smazat historii"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:247
-msgid "Sort/Filter"
-msgstr "Seřadit/Filtrovat"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:273
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/NavigationSplitPage.qml:80
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/TargetsPage.qml:58
-msgid "Upcoming"
-msgstr "V přípravě"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:311
-msgid "Normal"
-msgstr "Normální"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:314
-msgid "Checklists"
-msgstr "Zaškrtávací seznamy"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:326
-msgid "By Category"
-msgstr "Podle kategorie"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:329
-msgid "By Creation"
-msgstr "Podle vytvoření"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:332
-msgid "By Target"
-msgstr "Podle cíle"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:344
-msgid "Reverse"
-msgstr "Obrátit"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:380
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:35
-msgid "Navigation Panel"
-msgstr "Navigační panel"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:388
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:565
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogItemDetails.qml:78
-msgid "Close"
-msgstr "Zavřít"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:403
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:462
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:46
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:47
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:48
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:55
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:66
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:77
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:120
-msgid "All"
-msgstr "Vše"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:403
-msgid "Favorites"
-msgstr "Oblíbené"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:588
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:922
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:640
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:287
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:320
-msgid "Delete"
-msgstr "Smazat"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:599
-msgid "List successfully deleted"
-msgstr "Seznam byl úspěšně vymazán"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:618
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:262
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:289
-msgid "Save"
-msgstr "Uložit"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:629
-msgid "List successfully added to Saved Lists"
-msgstr "Seznam byl úspěšně přidán do uložených seznamů"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:639
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:340
-msgid "New checklist"
-msgstr "Nový zaškrtávací seznam"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:653
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:353
-msgid "New List successfully created"
-msgstr "Nový seznam byl úspěšně vytvořen"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:677
-msgid "Unfavorite"
-msgstr "Neoblíbené"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:678
-msgid "Favorite"
-msgstr "Oblíbené"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:689
-msgid "List successfully removed from Favorites"
-msgstr "Seznam byl úspěšně odebrán z oblíbených"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:694
-msgid "List successfully added to Favorites"
-msgstr "Seznam byl úspěšně přidán do oblíbených"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:702
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:374
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:663
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:302
-msgid "Edit"
-msgstr "Editovat"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:718
-msgid "Reset"
-msgstr "Resetovat"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:803
-msgid "No matching list found"
-msgstr "Nebyl nalezen žádný odpovídající seznam"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:805
-msgid "No Favorites"
-msgstr "Žádné oblíbení"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:807
-msgid "Please try a different query or change the Sort / Filter."
-msgstr "Zkuste prosím jiný dotaz nebo změňte Řazení / Filtrování."
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:821
-msgid "Loading results"
-msgstr "Načítám výsledky"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:822
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:632
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/TargetsPage.qml:119
-msgid "Please wait"
-msgstr "Prosím čekejte"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:834
-msgid "Sort / Filter"
-msgstr "Řazení / Filtr"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:879
-msgid "Apply"
-msgstr "Použít"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListPage.qml:903
-msgid "All items under this list will also be deleted permanently."
-msgstr "Všechny položky v tomto seznamu budou také trvale smazány."
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/NavigationFlickable.qml:192
-msgid "Sort and Filter"
-msgstr "Seřadit a filtrovat"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/PageWithBottom.qml:16
-msgid "Navigation"
-msgstr "Navigace"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchHeader.qml:52
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchHeader.qml:56
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchHeader.qml:459
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchHeader.qml:468
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchHeader.qml:558
-msgid "Select a Category"
-msgstr "Vybrat kategorii"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchHeader.qml:320
-msgid "On"
-msgstr "Na"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchHeader.qml:328
-msgid "Later than"
-msgstr "Později než"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchHeader.qml:336
-msgid "Earlier than"
-msgstr "Dříve než"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchSections.qml:22
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchSections.qml:50
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchSections.qml:74
-msgid "Name / Description"
-msgstr "Název / Popis"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchSections.qml:23
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchSections.qml:51
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchSections.qml:75
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:40
-msgid "Category"
-msgstr "Kategorie"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchSections.qml:23
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchSections.qml:51
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchSections.qml:75
-msgid "Creation Date"
-msgstr "Čas vytvoření"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchSections.qml:24
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchSections.qml:76
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:472
-msgid "Target Date"
-msgstr "Cílové datum"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SearchSections.qml:76
-msgid "Completion Date"
-msgstr "Datum dokončení"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TextualButtonStyle.qml:48
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/TextualButtonStyle.qml:51
-msgid "Pick"
-msgstr "Výběr"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Walkthrough.qml:69
-#, qt-format
-msgid "Already used %1? <b>Skip the tutorial</b>"
-msgstr "Už jste používal %1? <b>Přeskočit tutoriál</b>"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Walkthrough.qml:69
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:680
-msgid "Skip"
-msgstr "Přeskočit"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:15
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:482
-msgid "About Talaan"
-msgstr "O Talaanu"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:114
-msgid "© Talaan Version "
-msgstr "© Verze Talaanu "
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:126
-msgid "Released under license"
-msgstr "Vydáno pod licensí"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:150
-msgid "Support"
-msgstr "Podpora"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:155
-msgid "Rate this App"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:153
+msgid "Nothing to do :)"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:169
-msgid "Report a bug"
-msgstr "Oznámit bug"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:184
-msgid "Contact Developer"
-msgstr "Kontaktovat vývojáře"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:199
-msgid "View source"
-msgstr "Zobrazot zdrojový kód"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:215
-msgid "Donate via Paypal"
-msgstr ""
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:231
-msgid "Donate via LibrePay"
-msgstr ""
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:247
-msgid "View in OpenStore"
-msgstr ""
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:262
-msgid "Other apps by the developer"
-msgstr "Ostatní aplikace od vývojáře"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:279
-msgid "Developers"
-msgstr "Vývojáři"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:283
-msgid "Main developer"
-msgstr "Hlavní vývojář"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:298
-msgid "Logo"
-msgstr "Logo"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:316
-msgid "Powered by"
-msgstr "Běží na"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:320
-msgid "Date and Time manipulation"
-msgstr "Manipulace s datem a časem"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/About.qml:335
-msgid "For processing JSON models"
-msgstr "Pro zpracování modelů JSON"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:37
-msgid "Add New Category"
-msgstr "Přidat novou kategorii"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:38
-msgid "Edit Category - "
-msgstr "Editovat kategorii - "
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:130
-msgid "Name:"
-msgstr "Jméno:"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:140
-msgid "Enter Category name"
-msgstr "Zadat název kategorie"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:169
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:397
-msgid "Description:"
-msgstr "Popis:"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:181
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:421
-msgid "Add description (optional)"
-msgstr "Přidat popis (volitelné)"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddCategory.qml:207
-msgid "Color:"
-msgstr "Barva:"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:34
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:46
-msgid "Create New List"
-msgstr "Vytvořit nový seznam"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:37
-msgid "Edit List - "
-msgstr "Editovat seznam - "
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:40
-msgid "Create New Saved List"
-msgstr "Vytvožit nový uložený seznam"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:225
-msgid "Checklist"
-msgstr "Zaškrtávací seznam"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:250
-msgid "Continual"
-msgstr "Nepřetržitý"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:276
-msgid "List Title:"
-msgstr "Název seznamu:"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:297
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:34
-msgid "Enter checklist name"
-msgstr "Zadejte název zaškrtávacího seznamu"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:648
-msgid "List successfully updated"
-msgstr "Seznam úspěšně aktualizován"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/AddChecklist.qml:657
-msgid "List successfully created"
-msgstr "Seznam úspěšně vytvořen"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/DefaultTab.qml:23
-msgid "Searching Lists"
-msgstr "Hledám seznamy"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/DefaultTab.qml:25
-msgid "Search Lists"
-msgstr "Hledat seznamy"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/DefaultTab.qml:26
-msgid "No List Created Yet"
-msgstr "Žádný seznam zatím nebyl vytvořen"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/DefaultTab.qml:28
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:29
-msgid "Favorite a list by using the 'starred' action"
-msgstr "Seznam"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/DefaultTab.qml:28
-msgid "Tap/Click the '+' button to add a List"
-msgstr "Stiskněte  '+' tlačítko pro přidání seznamu"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/DefaultTab.qml:28
-msgid "Swipe from the dome at the bottom edge to add a List"
-msgstr "Pro přidání seznamu přejeďte prstem zdola"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/DefaultTab.qml:30
-msgid "Loading Lists"
-msgstr "Načítám seznamy"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/HistoryTab.qml:23
-msgid "Searching History"
-msgstr "Hledám historii"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/HistoryTab.qml:25
-msgid "Search History"
-msgstr "Hledat historii"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/HistoryTab.qml:26
-msgid "History is empty"
-msgstr "Historie je prázdná"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/HistoryTab.qml:29
-msgid "Completed checklists from your Favorites are listed here"
-msgstr ""
-"Seznam dokončených zaškrtávacích seznamů z vašich oblíbených položek je zde"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/HistoryTab.qml:30
-msgid "Completed checklists are listed here"
-msgstr "Seznam dokončených zaškrtávacích seznamů je zde"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/HistoryTab.qml:32
-msgid "Loading History"
-msgstr "Načítám historii"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:313
-msgid "Find"
-msgstr "Hledat"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:322
-msgid "Mark as completed"
-msgstr "Označit jako dokončené"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:331
-msgid "Uncheck All"
-msgstr "Odznačit vše"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:410
-msgid "Set Reminders"
-msgstr "Nastavit připomenutí"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:422
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:425
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:428
-msgid "Sort"
-msgstr "Řadit"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:422
-msgid "A-Z"
-msgstr "A-Z"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:425
-msgid "Z-A"
-msgstr "Z-A"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:428
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:172
-msgid "Default"
-msgstr "Výchozí"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:448
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:705
-msgid "View Details"
-msgstr "Zobrazit detaily"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:469
-msgid "Remaining"
-msgstr "Připomenutí"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:593
-msgid "No matching item found"
-msgstr "Nebyla nalezena žádná odpovídající položka"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:596
-msgid "No remaining item"
-msgstr "Žádná zbývající položka"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:599
-msgid "List is empty"
-msgstr "Seznam je prázdný"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:604
-msgid "Please try a different query or try removing the filter if there's any"
-msgstr "Zkuste prosím jiný dotaz nebo zkuste odebrat filtr, pokud existuje"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:608
-msgid "Click the '+' button to add more items (Ctrl + L)"
-msgstr "Stiskněte '+' tlačítko pro přidání dalších položek (Ctrl + L)"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:609
-msgid "Swipe from the bottom to add more items"
-msgstr "Pro přidání dalších položek, přejeďte prstem zdola"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:613
-msgid "Click the '+' button to add items (Ctrl + L)"
-msgstr "Stiskněte '+' tlačítko pro přidání položek (Ctrl + L)"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:614
-msgid "Swipe from the bottom to add items"
-msgstr "Pro přidání položek přejeďte prstem zdola"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:631
-msgid "Loading list items"
-msgstr "Načítám seznam položek"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:691
-msgid "Toggle Priority"
-msgstr "Změnit prioritu"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ItemsPage.qml:1115
-msgid "Undo last item"
-msgstr "Vrátit poslední položku"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:24
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:233
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:17
 msgid "Categories"
 msgstr "Kategorie"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:174
-msgid "No Category Exists"
-msgstr "Neexistuje žádná kategorie"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:242
+msgid "Quick Templates"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:176
-msgid "Tap/Click the '+' button to add categories"
-msgstr "Stiskněte '+' tlačítko pro přidání kategorie"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:257
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:16
+msgid "Settings"
+msgstr "Nastavení"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:177
-msgid "Swipe from the bottom to add categories"
-msgstr "Pro přidání kategorie přejeďte prstem zdola"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:266
+msgid "About"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:288
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:303
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:321
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/build/x86_64-linux-gnu/app/talaan/talaan.desktop.h:1
+msgid "Talaan"
+msgstr "Talaan"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/Main.qml:389
+msgid "To Do Na To!"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/GroupedRadioButtons.qml:75
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/listitems/BaseSliderDelegate.qml:89
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/listitems/BaseSpinBoxDelegate.qml:49
+msgid "Reset to default"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/GroupedRadioButtons.qml:172
+msgid "Value is invalid and not saved"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/ListData.qml:11
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/database.js:297
 msgid "Uncategorized"
 msgstr "Nezařazené"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/ManageCategory.qml:340
-msgid "Category successfully deleted"
-msgstr "Kategorie úspěšně smazána"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/PopupPageStack.qml:58
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:193
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:863
+msgid "Close"
+msgstr "Zavřít"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:18
-msgid "Reminders"
-msgstr "Připomenutí"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:45
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:52
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:63
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:74
-msgid "Current"
-msgstr "Aktuální"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:191
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/TargetsPage.qml:24
-msgid "Targets"
-msgstr "Cíle"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:266
-msgid "No reminders for any list"
-msgstr "Žádné připomínky k žádnému seznamu"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:267
-msgid "No reminders for this list"
-msgstr "Žádné připomínky k tomuto seznamu"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:270
-msgid "Open a list to set reminders"
-msgstr "Otevřete seznam pro nastavení připomenutí"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/RemindersPage.qml:271
-msgid "Tap/Click the '+' button to add Reminders"
-msgstr "Stiskněte '+' tlačítko pro přidání připomenutí"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:23
-msgid "Searching Saved Lists"
-msgstr "Hledání uložených seznamů"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:25
-msgid "Search Saved Lists"
-msgstr "Hledat uložené seznamy"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:26
-msgid "No Saved Checklists"
-msgstr "Žádné uložené zaškrtávací seznamy"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:30
-msgid "Save a list from the Lists Tab"
-msgstr "Uložte seznam na kartě Seznamy"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SavedTab.qml:32
-msgid "Loading Saved Lists"
-msgstr "Načítání uložených seznamů"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:95
-msgid "Interface"
-msgstr "Rozhraní"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:99
-msgid "Hide completed items"
-msgstr "Skrýt dokončené položky"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:100
-msgid "When opening lists"
-msgstr "Při otevírání seznamů"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:108
-msgid "Show category colors"
-msgstr "Zobrazit barvy kategorií"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:109
-msgid "Category color assignment"
-msgstr "Přiřazení barev kategorií"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:119
-msgid "Theme"
-msgstr "Téma"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:176
-msgid "System"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/PopupPageStack.qml:58
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/pages/BasePageStack.qml:65
+msgid "Back"
 msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:180
-msgid "Ambiance"
-msgstr "Ambiance"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/listitems/BaseSliderDelegate.qml:110
+#, qt-format
+msgid "Decrease by %1"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:184
-msgid "Suru Dark"
-msgstr "Suru Dark"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/listitems/BaseSliderDelegate.qml:152
+#, qt-format
+msgid "Increase by %1"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:192
-msgid "Accessibility"
-msgstr "Přístupnost"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/pages/BasePageStack.qml:66
+msgid "Go back to previous page"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:198
-msgid "Bottom Menu"
-msgstr "Dolní menu"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/pages/BasePageStack.qml:164
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/pages/BasePageStack.qml:167
+msgid "Actions menu"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:250
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:315
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/qchart/Chart.qml:314
+msgid "Not enough data to display the report"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/qchart/Chart.qml:316
+msgid "Select different report criteria"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ArchiveListDialog.qml:27
+#, fuzzy
+msgid "Unarchive Checklist"
+msgstr "Nový zaškrtávací seznam"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ArchiveListDialog.qml:29
+#, fuzzy
+msgid "Archive Checklist"
+msgstr "Nový zaškrtávací seznam"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ArchiveListDialog.qml:33
+#, fuzzy
+msgid "Unarchive List"
+msgstr "Hledat seznamy"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ArchiveListDialog.qml:35
+#, fuzzy
+msgid "Archive List"
+msgstr "Hledám seznamy"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ArchiveListDialog.qml:49
+msgid "Are you sure you want to unarchive this checklist?"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ArchiveListDialog.qml:51
+msgid "Are you sure you want to archive this checklist?"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ArchiveListDialog.qml:55
+msgid "Are you sure you want to unarchive this list?"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ArchiveListDialog.qml:57
+msgid "Are you sure you want to archive this list?"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ArchiveListDialog.qml:79
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/DeleteListDialog.qml:61
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/MarkAsCompleteListDialog.qml:90
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/SaveListAsTemplateDialog.qml:51
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:86
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/ListGridDelegate.qml:218
+#, qt-format
+msgid "%1 / %2"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ArchiveListDialog.qml:104
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:241
+msgid "Unarchive"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ArchiveListDialog.qml:104
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/DeleteListDialog.qml:94
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/MarkAsCompleteListDialog.qml:123
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:241
+msgid "Archive"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ArchiveListDialog.qml:113
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/DeleteListDialog.qml:104
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/MarkAsCompleteListDialog.qml:134
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/SaveListAsTemplateDialog.qml:85
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:863
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/aboutpage/ExternalDialog.qml:55
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/DeleteCategoryDialog.qml:62
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/NewCategoryDialog.qml:77
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/DeleteProfileDialog.qml:54
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/NewProfileDialog.qml:111
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/DeleteQuickExpenseDialog.qml:76
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/NewQuickExpenseDialog.qml:95
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/DeleteListDialog.qml:25
+#, fuzzy
+msgid "Delete Checklist"
+msgstr "Nový zaškrtávací seznam"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/DeleteListDialog.qml:25
+#, fuzzy
+msgid "Delete List"
+msgstr "Smazat"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/DeleteListDialog.qml:34
+msgid "Are you sure you want to permanently delete this checklist?"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/DeleteListDialog.qml:34
+msgid "Are you sure you want to permanently delete this list?"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/DeleteListDialog.qml:41
+msgid ""
+"You can archive instead so you can still view it in the future as well as "
+"revert back."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/DeleteListDialog.qml:83
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:92
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:259
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:286
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:94
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:110
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/DeleteCategoryDialog.qml:53
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/DeleteProfileDialog.qml:45
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/DeleteQuickExpenseDialog.qml:67
+msgid "Delete"
+msgstr "Smazat"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/MarkAsCompleteListDialog.qml:28
+#, fuzzy
+msgid "Revert checklist as incomplete"
+msgstr "Zadejte název zaškrtávacího seznamu"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/MarkAsCompleteListDialog.qml:28
+#, fuzzy
+msgid "Mark checklist as completed"
+msgstr "Označit jako dokončené"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/MarkAsCompleteListDialog.qml:38
+msgid "There are unchecked items in this checklist. Select how to handle them."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/MarkAsCompleteListDialog.qml:54
+msgid "Check all unchecked items"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/MarkAsCompleteListDialog.qml:62
+msgid "Skip all unchecked items"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/MarkAsCompleteListDialog.qml:70
+msgid ""
+"You can archive instead to retain the status of all unchecked items and "
+"still be able to remove it from the active checklists."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/MarkAsCompleteListDialog.qml:112
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:173
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:262
+#, fuzzy
+msgid "Revert as incomplete"
+msgstr "Označit jako dokončené"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/MarkAsCompleteListDialog.qml:112
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:173
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:262
+msgid "Mark as completed"
+msgstr "Označit jako dokončené"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/SaveListAsTemplateDialog.qml:24
+#, fuzzy
+msgid "Save checklist as template"
+msgstr "Zadejte název zaškrtávacího seznamu"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/SaveListAsTemplateDialog.qml:32
+msgid "Are you sure you want to save this checklist as a quick template?"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/SaveListAsTemplateDialog.qml:76
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:224
+#, fuzzy
+msgid "Save as template"
+msgstr "Označit jako dokončené"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:24
+#, fuzzy
+msgid "Checklist Details"
+msgstr "Zaškrtávací seznamy"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:24
+#, fuzzy
+msgid "List Details"
+msgstr "Zobrazit detaily"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:45
+#, fuzzy
+msgid "Completed Checklist"
+msgstr "Nový zaškrtávací seznam"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:47
+#, fuzzy
+msgid "Incomplete Checklist"
+msgstr "Nový zaškrtávací seznam"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:49
+#, fuzzy
+msgid "Completed Endless Checklist"
+msgstr "Seznam dokončených zaškrtávacích seznamů je zde"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:51
+msgid "Incomplete Endless Checklist"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:53
+#, fuzzy
+msgid "Archived Checklist"
+msgstr "Nový zaškrtávací seznam"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:55
+msgid "Archived Endless Checklist"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:57
+#, fuzzy
+msgid "Archived List"
+msgstr "Hledat uložené seznamy"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:59
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:819
+#, fuzzy
+msgid "List"
+msgstr "Seznamy"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:74
+msgid "Blank name"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:103
+#, fuzzy
+msgid "Blank description"
+msgstr "Popis:"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:113
+#, fuzzy
+msgid "Creation date:"
+msgstr "Čas vytvoření"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:123
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:142
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:161
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:180
 msgid "None"
 msgstr "Žádný"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:254
-msgid "Radial"
-msgstr "Radiální"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:263
-msgid "Bottom Menu Hint"
-msgstr "Tip dolní nabídky"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:319
-msgid "Autohide"
-msgstr "Automatické skrývání"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:323
-msgid "Semihide"
-msgstr "Polo skrývání"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:328
-msgid "Always Displayed"
-msgstr "Vždy zobrazeno"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:404
-msgid "Larger font size"
-msgstr "Větší velikost fontu"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:405
-msgid "For list items"
-msgstr "Pro položky seznamu"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:413
-msgid "Toggle list items via surface"
-msgstr "Přepínání položek seznamu podle roviny"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:415
-msgid "Only the checkbox is clickable if disabled"
-msgstr "Je-li zakázáno, lze kliknout pouze na zaškrtávací políčko"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:476
-msgid "Manage Categories"
-msgstr "Spravovat kategorie"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:478
-msgid "Add, edit, and delete categories"
-msgstr "Přidat, upravit a odstranit kategorie"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/SettingsTab.qml:484
-msgid "Credits, report bugs, view source code, contact developer, donate"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:132
+msgid "Last modified date:"
 msgstr ""
-"Zásluhy, hlášení chyb, zobrazení zdrojového kódu, kontakt na vývojářeů, "
-"darování"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/TargetsPage.qml:48
-msgid "Unpin window"
-msgstr "Uvolnit okno"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:151
+#, fuzzy
+msgid "Target date:"
+msgstr "Cílové datum"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/TargetsPage.qml:48
-msgid "Pin Window"
-msgstr "Připíchnout okno"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/dialogs/ViewListDetailsDialog.qml:170
+#, fuzzy
+msgid "Completion date:"
+msgstr "Datum dokončení"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/TargetsPage.qml:58
-msgid "Overdue"
-msgstr "Zpožděné"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/models/SettingsModels.qml:29
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:148
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/CriteriaPopup.qml:168
+msgid "Ascending"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/TargetsPage.qml:105
-msgid "You have no upcoming targets"
-msgstr "Nemáte žádné nadcházející cíle"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/models/SettingsModels.qml:30
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:148
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/CriteriaPopup.qml:169
+msgid "Descending"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/TargetsPage.qml:105
-msgid "You have no overdue targets"
-msgstr "Nemáte žádné propadlé cíle"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/models/SettingsModels.qml:40
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/NameField.qml:25
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/NameField.qml:21
+#, fuzzy
+msgid "Name"
+msgstr "Jméno:"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/TargetsPage.qml:106
-msgid "All your upcoming targets will be listed here"
-msgstr "Zde budou uvedeny všechny vaše nadcházející cíle"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/models/SettingsModels.qml:41
+msgid "Code"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/TargetsPage.qml:106
-msgid "All your overdue targets will be listed here"
-msgstr "Zde budou uvedeny všechny vaše zpožděné cíle"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:12
+#, fuzzy, qt-format
+msgid "About %1"
+msgstr "O Talaanu"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/ui/TargetsPage.qml:118
-msgid "Loading Targets"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:86
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:88
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:90
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:92
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:94
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:96
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:98
+msgid "Support"
+msgstr "Podpora"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:86
+msgid "Report a bug"
+msgstr "Oznámit bug"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:88
+msgid "Contact Developer"
+msgstr "Kontaktovat vývojáře"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:90
+msgid "View source"
+msgstr "Zobrazot zdrojový kód"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:92
+msgid "Donate via LibrePay"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:94
+msgid "Donate via PayPal"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:96
+msgid "View in OpenStore"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:98
+msgid "Other apps by the developer"
+msgstr "Ostatní aplikace od vývojáře"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:100
+msgid "Developers"
+msgstr "Vývojáři"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:100
+msgid "Main developer"
+msgstr "Hlavní vývojář"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:102
+msgid "Icon"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:104
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:106
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:108
+msgid "Powered by"
+msgstr "Běží na"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:104
+#, fuzzy
+msgid "Date and Time manipulation and formatting"
+msgstr "Manipulace s datem a časem"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:106
+msgid "For processing JSON models"
+msgstr "Pro zpracování modelů JSON"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/AboutPage.qml:108
+#, fuzzy
+msgid "Date and time pickers"
+msgstr "Manipulace s datem a časem"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:23
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/NewCategoryDialog.qml:24
+#, fuzzy
+msgid "New Category"
+msgstr "Přidat novou kategorii"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:24
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/DashboardPage.qml:30
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:26
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:34
+msgid "New"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:33
+#, fuzzy
+msgid "Category added"
+msgstr "Kategorie"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:37
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:74
+msgid "Name already exists"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:39
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:76
+msgid "Color already exists"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:41
+#, fuzzy
+msgid "New category failed"
+msgstr "Zadat název kategorie"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:55
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:235
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:198
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:56
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:69
+msgid "Edit"
+msgstr "Editovat"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:70
+#, fuzzy
+msgid "Category edited"
+msgstr "Kategorie"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:78
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:80
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:96
+msgid "Editing failed"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:106
+#, fuzzy
+msgid "Category deleted"
+msgstr "Kategorie úspěšně smazána"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:109
+msgid "Cannot delete when assigned to expenses"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:111
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:270
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:105
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:121
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:5
+#, fuzzy
+msgid "Deletion failed"
+msgstr "Datum dokončení"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:143
+#, fuzzy
+msgid "No Categories"
+msgstr "Kategorie"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:144
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:140
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:153
+#, fuzzy
+msgid "Loading data"
 msgstr "Načítám cíle"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:11
-msgid "New Reminder"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/CategoriesPage.qml:145
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:323
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:381
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:141
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:154
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/ExpenseSearchView.qml:97
+msgid "Please wait"
+msgstr "Prosím čekejte"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/DashboardPage.qml:29
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:381
+#, fuzzy
+msgid "New Expense"
 msgstr "Nové připomenutí"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogAlarm.qml:266
-msgid "Silent Reminder"
-msgstr "Tiché připomenutí"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/DashboardPage.qml:41
+msgid "Menu"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:14
-msgid "New Checklist"
-msgstr "Nový zaškrtávací seznam"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/DashboardPage.qml:56
+#, fuzzy
+msgid "Toggle view type"
+msgstr "Změnit prioritu"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:28
-msgid "Checklist Name"
-msgstr "Jméno seznamu"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/DashboardPage.qml:57
+msgid "View"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogCreateFromSaved.qml:77
-msgid "Target Date?"
-msgstr "Cílové datum?"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/DashboardPage.qml:72
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:119
+msgid "Search"
+msgstr "Hledat"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:12
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/DashboardPage.qml:89
+#, fuzzy
+msgid "Next"
+msgstr "Příští týden"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/DashboardPage.qml:99
+msgid "Previous"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:93
+msgid "Add item"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:94
+msgid "Add"
+msgstr "Přidat"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:107
+msgid "Exit"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:135
+msgid "Set Reminders"
+msgstr "Nastavit připomenutí"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:147
+#, fuzzy, qt-format
+msgid "Sort: %1"
+msgstr "Řadit"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:147
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/database.js:1000
+msgid "Default"
+msgstr "Výchozí"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:149
+#, fuzzy
+msgid "Def"
+msgstr "Výchozí"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:150
+msgid "Asc"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:150
+msgid "Desc"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:160
+#, qt-format
+msgid "Priority: %1"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:160
+#, fuzzy
+msgid "List first"
+msgstr "Seznam je prázdný"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:161
+msgid "List normally"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:162
+#, qt-format
+msgid "Prio: %1"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:162
+msgid "First"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:163
+#, fuzzy
+msgid "Norm"
+msgstr "Normální"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:197
+#, fuzzy
+msgid "Uncheck all"
+msgstr "Odznačit vše"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:222
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:185
+#, fuzzy
+msgid "View details"
+msgstr "Zobrazit detaily"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:246
+msgid "Skip"
+msgstr "Přeskočit"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:268
+msgid "Expense deleted"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:321
+#, fuzzy
+msgid "This list is empty!"
+msgstr "Seznam je prázdný"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListItemsPage.qml:322
+msgid "Loading list items"
+msgstr "Načítám seznam položek"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:209
+msgid "Unfavorite"
+msgstr "Neoblíbené"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:209
+msgid "Favorite"
+msgstr "Oblíbené"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:379
+#, fuzzy
+msgid "You have no lists yet!"
+msgstr "Nemáte žádné nadcházející cíle"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ListPage.qml:380
+#, fuzzy
+msgid "Loading your lists"
+msgstr "Načítám seznamy"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:108
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:186
+msgid "Please fill required fields"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:142
+msgid "New expense added"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:145
+msgid "New expense failed"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:152
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:49
+msgid "Quick expense added"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:155
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:40
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:53
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:94
+msgid "Already exists"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:157
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:55
+msgid "New Quick expense failed"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:164
+msgid "Expense updated"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:167
+msgid "Update failed"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:378
+msgid "Edit Expense"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:384
+msgid "Quick Expense"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:477
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/newexpenseview/NameField.qml:14
+#, fuzzy
+msgid "Enter expense name"
+msgstr "Zadejte název položky"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:818
+msgid "Show list"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:818
+msgid "Show grid"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:819
+msgid "Grid"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:833
+msgid "Save as Quick Expense"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:841
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/NewCategoryDialog.qml:64
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/NewProfileDialog.qml:98
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/NewQuickExpenseDialog.qml:72
+msgid "Save"
+msgstr "Uložit"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/NewExpenseView.qml:850
+msgid "Search or create new expense"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:19
+msgid "Profiles"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:25
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/NewProfileDialog.qml:27
+msgid "New Profile"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:36
+msgid "Profile added"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:42
+msgid "New Profile failed"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:74
+msgid "Profile edited"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:78
+msgid "Same name already exists"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:103
+msgid "Profile deleted"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:139
+msgid "No Profiles"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/ProfilesPage.qml:168
+msgid "Active"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:21
+msgid "Quick Expenses"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:33
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/NewQuickExpenseDialog.qml:24
+msgid "New Quick Expense"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:90
+msgid "Quick expense edited"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:119
+msgid "Quick expense deleted"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/QuickExpensesPage.qml:152
+msgid "No Quick Expenses"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:126
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:140
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:148
+msgid "Appearance and Layout"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:128
+msgid "Theme"
+msgstr "Téma"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:129
+msgid "Sets the theme of the application"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:133
+msgid "System"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:134
+msgid "Light"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:135
+#, fuzzy
+msgid "Dark"
+msgstr "Suru Dark"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:142
+msgid "Display color coded texts"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:143
+msgid ""
+"Important texts such as categories and expense values are displayed with "
+"colors"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:150
+#, fuzzy
+msgid "Larger list item font size"
+msgstr "Větší velikost fontu"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:151
+msgid "Displays the list items with a larger font size"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:156
+#, fuzzy
+msgid "Currency"
+msgstr "Aktuální"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:158
+#, fuzzy
+msgid "Home Currency"
+msgstr "Aktuální"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:159
+msgid "The home currency that is used to process, format and display expenses"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:168
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:176
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:203
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:218
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:234
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:248
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:264
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:293
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:308
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:327
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:357
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:371
+msgid "Gestures"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:170
+msgid "Haptic feedback"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:171
+msgid "Play haptic feedback when using gestures to perform actions."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:178
+msgid "Bottom gesture area height"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:179
+msgid ""
+"The height of the gesture area at the bottom of the app that detects "
+"vertical or horizontal swipes"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:205
+#, fuzzy
+msgid "Bottom Gesture hint"
+msgstr "Tip dolní nabídky"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:206
+msgid "Displays a visual hint for the Horizontal swipe gesture"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:210
+msgid ""
+"The hint indicates the space where you can swipe horizontally to trigger "
+"page header actions"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:211
+msgid ""
+"When Bottom side gesture is enabled, the empty space on the left and right "
+"side indicate where you can swipe up to access its functions"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:220
+msgid "Header pull down"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:221
+msgid ""
+"Dragging the page contents down will expand the header's height to near half "
+"of the page"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:223
+msgid "This helps ease reaching top elements in the page."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:227
+msgid ""
+"Swipe down and release: Expands the header's height to near half of the app"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:228
+msgid "Swipe up and release: Resets back the header to its normal state"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:236
+msgid "Horizontal swipe gesture"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:237
+msgid "Enables a gesture area around the middle part of the bottom edge"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:241
+msgid ""
+"Swipe to either direction to open a bottom menu with the corresponding "
+"actions from the page header"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:242
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:301
+msgid ""
+"When there's only one action is available, it will be triggered immediately "
+"upon performing the swipe"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:250
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:310
+msgid "Direct actions"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:253
+msgid ""
+"Directly select an action instead of opening a menu when there are multiple "
+"available actions."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:257
+msgid ""
+"Swipe to either direction to show actions that corresponds to the page "
+"header actions"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:258
+msgid "An action can be triggered by releasing the touch while it is selected."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:266
+msgid "Selection sensitivity"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:269
+msgid ""
+"Determines how sensitive when swiping horizontally to select from the "
+"available actions."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:295
+#, fuzzy
+msgid "Bottom side gesture"
+msgstr "Dolní menu"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:296
+msgid ""
+"Enables gesture areas at the leftmost and rightmost parts of the bottom edge"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:300
+msgid ""
+"A swipe will open a menu with all the actions from the corresponding side of "
+"the page header"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:302
+msgid ""
+"When Direct actions is enabled, Quick swipe has to be enabled to retain the "
+"original function"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:313
+msgid ""
+"Enables a vertical menu for quickly performing actions that are present in "
+"the page header."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:315
+msgid ""
+"The list of actions correspond to the same actions present in the page "
+"header."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:319
+msgid ""
+"Swiping up from the left/right side without lifting your finger will reveal "
+"a menu of list of actions"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:320
+msgid "Lifting your swipe will perform the currently selected action"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:321
+msgid ""
+"You can cancel the gesture without triggering an action by swiping down to "
+"the bottom again and release from there"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:329
+msgid "Max height"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:332
+msgid ""
+"Maximum height of the Direct actions menu when there's enough available "
+"height"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:348
+msgid "inch"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:359
+msgid "Quick swipe"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:364
+msgid ""
+"Enable this to retain the original function of the bottom side gesture by "
+"doing a quick swipe"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:365
+msgid ""
+"A quick swipe means swiping up with enough distance and lifting the finger "
+"immediately before triggering the Quick actions menu"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:373
+msgid "Direct actions delay"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:379
+msgid "Enables a delay before the Direct action menu will appear when swiping"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/SettingsPage.qml:380
+msgid "Disabled state only takes effect when Quick swipe is disabled"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/TravelModePage.qml:17
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/newexpenseview/TravelDataFields.qml:32
+msgid "Travel Mode"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/TravelModePage.qml:38
+msgid "Enable"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/TravelModePage.qml:49
+msgid ""
+"Travel mode can be used when you are out of your home country and you spend "
+"with a different currency. Your expenses will be saved with the travel "
+"currency including the converted value to your home currency."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/TravelModePage.qml:66
+msgid "Travel Currency"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/TravelModePage.qml:68
+msgid ""
+"Currency that will be used for storing and displaying your expenses when "
+"travel mode is enabled"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/TravelModePage.qml:114
+msgid "Cannot fetch exchange rate data"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/TravelModePage.qml:119
+msgid "Please check if you have a working internet connection"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/TravelModePage.qml:126
+msgid "OK"
+msgstr "OK"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/common/pages/pageheader/HeaderActions.qml:68
+msgid "More"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/aboutpage/ExternalDialog.qml:17
 msgid "Open external link"
 msgstr "Otevřít externí odkaz"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogExternalLink.qml:13
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/aboutpage/ExternalDialog.qml:27
 msgid "You are about to open an external link. Do you wish to continue?"
 msgstr "Chystáte se otevřít externí odkaz. Přejete si pokračovat?"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:9
-msgid "Do you want to include the list item comments?"
-msgstr "Chcete zahrnout komentáře položky v seznamu?"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/aboutpage/ExternalDialog.qml:46
+msgid "Open"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:21
-msgid "No"
-msgstr "Ne"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/aboutpage/IconComponent.qml:34
+#, qt-format
+msgid "%1 version %2"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Dialogs/DialogIncludeComment.qml:29
-msgid "Yes"
-msgstr "Ano"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/aboutpage/IconComponent.qml:43
+#, fuzzy, qt-format
+msgid "Released under license %1"
+msgstr "Vydáno pod licensí"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/Search/SearchHeaderExtension.qml:13
-msgid "Results found: "
-msgstr "Nalezené výsledky: "
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/ColorField.qml:19
+#, fuzzy
+msgid "Color"
+msgstr "Barva:"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:45
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:65
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:80
-msgid "By Name (A-Z)"
-msgstr "Podle jména (A-Z)"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/DeleteCategoryDialog.qml:19
+#, fuzzy
+msgid "Delete Category"
+msgstr "Vybrat kategorii"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:49
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:69
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:89
-msgid "By Category (A-Z)"
-msgstr "Podle kategorie (A-Z)"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/DeleteCategoryDialog.qml:27
+msgid "Are you sure you want to delete this category?"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:54
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:74
-msgid "By Creation Date (Latest First)"
-msgstr "Podle času vytvoření (Poslední první)"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/DescriptionField.qml:22
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/DescriptionField.qml:22
+#, fuzzy
+msgid "Description"
+msgstr "Popis:"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:59
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:94
-msgid "By Target Date (Latest First)"
-msgstr "Podle cílového data (Poslední první)"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/DescriptionField.qml:33
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/DescriptionField.qml:33
+msgid "Add description (optional)"
+msgstr "Přidat popis (volitelné)"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:85
-msgid "By Completion Date (Latest First)"
-msgstr "Podle data dokončení (Poslední první)"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/NameField.qml:33
+#, fuzzy
+msgid "Enter category name "
+msgstr "Zadat název kategorie"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:124
-msgid "Normal Lists Only"
-msgstr "Pouze normální seznam"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/categoriespage/NewCategoryDialog.qml:24
+#, fuzzy
+msgid "Edit Category"
+msgstr "Editovat kategorii - "
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:128
-msgid "Checklists Only"
-msgstr "Pouze zaškrtávací zeznam"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/SortFilter/SortFilterFields.qml:242
-msgid "Reverse Order"
-msgstr "Obrátit výsledky"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/ProcessFunc.js:120
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/BreakdownChartsView.qml:108
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:391
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:502
 msgid "Today"
 msgstr "Dnes"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/ProcessFunc.js:123
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/BreakdownChartsView.qml:109
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:358
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:394
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:505
 msgid "Yesterday"
 msgstr "Včera"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/ProcessFunc.js:126
-msgid "Tomorrow"
-msgstr "Zítra"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/BreakdownChartsView.qml:123
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/TrendChartsView.qml:60
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:423
+#, fuzzy
+msgid "This Week"
+msgstr "Minulý týden"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/ProcessFunc.js:129
-msgid "On "
-msgstr "na"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/ProcessFunc.js:132
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/BreakdownChartsView.qml:124
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/TrendChartsView.qml:61
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:426
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:514
 msgid "Last Week"
 msgstr "Minulý týden"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/ProcessFunc.js:135
-msgid "Next Week"
-msgstr "Příští týden"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/BreakdownChartsView.qml:137
+msgid "Last 7 days"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/ProcessFunc.js:138
-msgid "Last Month"
-msgstr "Minulý měsíc"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/BreakdownChartsView.qml:138
+msgid "Previous 7 days"
+msgstr ""
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/ProcessFunc.js:141
-msgid "Next Month"
-msgstr "Příští měsíc"
-
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/ProcessFunc.js:144
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/BreakdownChartsView.qml:151
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/TrendChartsView.qml:84
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:526
 msgid "This Month"
 msgstr "Tento měsíc"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/ProcessFunc.js:147
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/BreakdownChartsView.qml:152
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/TrendChartsView.qml:85
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:520
+msgid "Last Month"
+msgstr "Minulý měsíc"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/BreakdownChartsView.qml:165
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/TrendChartsView.qml:96
+msgid "This Year"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/BreakdownChartsView.qml:166
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/TrendChartsView.qml:97
+#, fuzzy
+msgid "Last Year"
+msgstr "Minulý týden"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/BreakdownPieChart.qml:248
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/TrendLineChart.qml:148
+#, qt-format
+msgid "%1 & %2"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/BreakdownPieChart.qml:266
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/TrendLineChart.qml:165
+msgid "No expense"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/TrendChartsView.qml:72
+msgid "Last 7 Days"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/TrendChartsView.qml:73
+msgid "Previous 7 Days"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/TrendLineChart.qml:90
+msgid "Total:"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/dashboardpage/TrendLineChart.qml:116
+msgid "Average:"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/CriteriaPopup.qml:103
+msgid "View by"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/CriteriaPopup.qml:111
+msgid "Day"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/CriteriaPopup.qml:112
+#, fuzzy
+msgid "Week"
+msgstr "Minulý týden"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/CriteriaPopup.qml:113
+#, fuzzy
+msgid "Month"
+msgstr "Minulý měsíc"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/CriteriaPopup.qml:132
+#, fuzzy
+msgid "Sort by"
+msgstr "Řadit"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/CriteriaPopup.qml:140
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/CategoryField.qml:25
+msgid "Category"
+msgstr "Kategorie"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/CriteriaPopup.qml:141
+msgid "Date"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/CriteriaPopup.qml:160
+msgid "Date order"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/CriteriaPopup.qml:190
+msgid "Display colored category"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/CriteriaPopup.qml:210
+#, fuzzy
+msgid "Filter by category"
+msgstr "Vybrat kategorii"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/ExpenseSearchView.qml:63
+msgid "Type to search..."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/ExpenseSearchView.qml:95
+msgid "Search your expenses"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/ExpenseSearchView.qml:95
+#, fuzzy
+msgid "No results found"
+msgstr "Nalezené výsledky: "
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/ExpenseSearchView.qml:96
+#, fuzzy
+msgid "Searching expenses..."
+msgstr "Hledám seznamy"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/SummaryValuesDelegate.qml:86
+msgid "Overall Total"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/SummaryValuesDelegate.qml:89
+#, qt-format
+msgid "Total (%1)"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/SummaryValuesDelegate.qml:92
+msgid "Highest"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/SummaryValuesDelegate.qml:95
+msgid "Lowest"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/listpage/ValueListDelegate.qml:171
+#, qt-format
+msgid "@ %1"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/newexpenseview/ContextActionsListView.qml:30
+msgid "↵ Enter"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/newexpenseview/ContextActionsListView.qml:31
+msgid "↵"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/newexpenseview/DateField.qml:29
+msgid "Use current date and time"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/newexpenseview/DescriptionField.qml:14
+#, fuzzy
+msgid "Add description, more details or comments"
+msgstr "Přidat popis (volitelné)"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/newexpenseview/TravelDataFields.qml:32
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/travelmodepage/RateField.qml:66
+msgid "Exchange Rate"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/newexpenseview/ValueField.qml:89
+#, qt-format
+msgid "= %1"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/ColorOverlayFields.qml:25
+msgid "Enable color overlay when profile is active"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/ColorOverlayFields.qml:29
+msgid ""
+"A color overlay will be displayed whenever this profile is active so that "
+"it's easy distinguish the active profile and avoid incorrect operations."
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/ColorOverlayFields.qml:54
+msgid "Transparency"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/ColorOverlayFields.qml:56
+msgid "Determine the transparency of the color overlay"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/DeleteProfileDialog.qml:19
+#, fuzzy
+msgid "Delete Profile"
+msgstr "Smazat"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/DeleteProfileDialog.qml:27
+msgid "Are you sure you want to delete this profile?"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/NameField.qml:25
+msgid "Display Name"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/NameField.qml:33
+#, fuzzy
+msgid "Enter profile name "
+msgstr "Zadejte název položky"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/profilespage/NewProfileDialog.qml:27
+msgid "Edit Profile"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/DeleteQuickExpenseDialog.qml:20
+msgid "Delete Quick Expense"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/DeleteQuickExpenseDialog.qml:28
+msgid "Are you sure you want to delete this quick expense?"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/NameField.qml:29
+#, fuzzy
+msgid "Enter quick expense name "
+msgstr "Zadejte název položky"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/NewQuickExpenseDialog.qml:24
+msgid "Edit Quick Expense"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/quickexpensespage/ValueField.qml:24
+msgid "Value"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/travelmodepage/RateField.qml:74
+msgid "Use exchange rate data from online"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/travelmodepage/RateField.qml:91
+msgid ""
+"Fetch exchange rate data from OpenExchangeRates.org and use the, for storing "
+"the converted expense values"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/travelmodepage/RateField.qml:155
+#, qt-format
+msgid "= 1 %1"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/components/pages/travelmodepage/RateField.qml:194
+#, qt-format
+msgid "Exchange rate data as of: %1"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/database.js:124
+msgid "Food"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/database.js:124
+#, fuzzy
+msgid "Personal checklists"
+msgstr "Nový zaškrtávací seznam"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/database.js:125
+msgid "Work"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/database.js:125
+#, fuzzy
+msgid "Work-related checklists"
+msgstr "Žádné uložené zaškrtávací seznamy"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/database.js:126
+msgid "Others"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/database.js:126
+#, fuzzy
+msgid "Other checklists"
+msgstr "Nový zaškrtávací seznam"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:102
+#, qt-format
+msgid "%1 %2"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:397
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:508
+msgid "Tomorrow"
+msgstr "Zítra"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:407
+#, qt-format
+msgid "%1 (%2)"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:429
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:517
+msgid "Next Week"
+msgstr "Příští týden"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:451
+#, qt-format
+msgid "%1 - %2 (%3)"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:453
+#, qt-format
+msgid "%1 - %2"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:460
+#, fuzzy, qt-format
+msgid "%1 (Last Month)"
+msgstr "Minulý měsíc"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:463
+#, fuzzy, qt-format
+msgid "%1 (Next Month)"
+msgstr "Příští měsíc"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:466
+#, fuzzy, qt-format
+msgid "%1 (This Month)"
+msgstr "Tento měsíc"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:511
+msgid "On "
+msgstr "na"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:523
+msgid "Next Month"
+msgstr "Příští měsíc"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:529
 msgid "Older"
 msgstr "Starší"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/ProcessFunc.js:150
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/functions.js:532
 msgid "In The Future"
 msgstr "V budoucnu"
 
-#: /home/kugiigi/Documents/Development/Talaan/talaan-app/build/aarch64-linux-gnu/app/talaan/talaan.desktop.h:1
-msgid "Talaan"
-msgstr "Talaan"
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:3
+#, fuzzy
+msgid "List deleted"
+msgstr "Nevybrán žádný seznam"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:11
+#, fuzzy
+msgid "List marked as completed"
+msgstr "Označit jako dokončené"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:13
+#, fuzzy
+msgid "Failed to mark as completed"
+msgstr "Označit jako dokončené"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:19
+msgid "List reverted as incomplete"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:21
+msgid "Failed to revert as incomplete"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:27
+msgid "List archived"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:29
+msgid "Failed to archive"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:35
+msgid "List unarchived"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:37
+msgid "Failed to unarchive"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:43
+#, fuzzy
+msgid "List saved as template"
+msgstr "Seznam je prázdný"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:45
+msgid "Failed to save as template"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:51
+#, fuzzy
+msgid "List added to favorites"
+msgstr "Seznam byl úspěšně přidán do oblíbených"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:53
+msgid "Adding to favorites failed"
+msgstr ""
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:59
+#, fuzzy
+msgid "List removed from favorites"
+msgstr "Seznam byl úspěšně odebrán z oblíbených"
+
+#: /home/kugiigi/Documents/Development/Talaan/talaan-app/talaan/library/listFunctions.js:61
+msgid "Removing from favorites failed"
+msgstr ""
+
+#~ msgid "History"
+#~ msgstr "Historie"
+
+#~ msgid "Saved"
+#~ msgstr "Uloženo"
+
+#~ msgid "Select a list from the left column"
+#~ msgstr "Vyberte seznam z levého sloupce"
+
+#~ msgid "Select an item from the List, Saved or History tab"
+#~ msgstr "Vyberte položku z karty Seznam, Uložené nebo Historie"
+
+#~ msgid "Add comments / notes"
+#~ msgstr "Přidej komentář / poznámku"
+
+#~ msgid "Reminder was not set successfully"
+#~ msgstr "Připomenutí nebylo nastaveno"
+
+#~ msgid "Reminder successfully set"
+#~ msgstr "Připomenutí úspěšně nastaveno"
+
+#~ msgid "Error saving the Reminder"
+#~ msgstr "Při ukládání připomenutí došlo k chybě"
+
+#~ msgid ""
+#~ "The Target Date might have already passed or the intended reminder is set "
+#~ "in the past"
+#~ msgstr ""
+#~ "Cílové datum už pravděpodobně uplynulo nebo je zamýšlená upomínka "
+#~ "nastavena v minulosti"
+
+#~ msgid "Find..."
+#~ msgstr "Najít..."
+
+#~ msgid "Skipped"
+#~ msgstr "Přeskočeno"
+
+#~ msgid "Clear History"
+#~ msgstr "Smazat historii"
+
+#~ msgid "Sort/Filter"
+#~ msgstr "Seřadit/Filtrovat"
+
+#~ msgid "Upcoming"
+#~ msgstr "V přípravě"
+
+#~ msgid "By Category"
+#~ msgstr "Podle kategorie"
+
+#~ msgid "By Creation"
+#~ msgstr "Podle vytvoření"
+
+#~ msgid "By Target"
+#~ msgstr "Podle cíle"
+
+#~ msgid "Reverse"
+#~ msgstr "Obrátit"
+
+#~ msgid "Navigation Panel"
+#~ msgstr "Navigační panel"
+
+#~ msgid "All"
+#~ msgstr "Vše"
+
+#~ msgid "Favorites"
+#~ msgstr "Oblíbené"
+
+#~ msgid "List successfully deleted"
+#~ msgstr "Seznam byl úspěšně vymazán"
+
+#~ msgid "List successfully added to Saved Lists"
+#~ msgstr "Seznam byl úspěšně přidán do uložených seznamů"
+
+#~ msgid "New List successfully created"
+#~ msgstr "Nový seznam byl úspěšně vytvořen"
+
+#~ msgid "Reset"
+#~ msgstr "Resetovat"
+
+#~ msgid "No matching list found"
+#~ msgstr "Nebyl nalezen žádný odpovídající seznam"
+
+#~ msgid "No Favorites"
+#~ msgstr "Žádné oblíbení"
+
+#~ msgid "Please try a different query or change the Sort / Filter."
+#~ msgstr "Zkuste prosím jiný dotaz nebo změňte Řazení / Filtrování."
+
+#~ msgid "Loading results"
+#~ msgstr "Načítám výsledky"
+
+#~ msgid "Sort / Filter"
+#~ msgstr "Řazení / Filtr"
+
+#~ msgid "Apply"
+#~ msgstr "Použít"
+
+#~ msgid "All items under this list will also be deleted permanently."
+#~ msgstr "Všechny položky v tomto seznamu budou také trvale smazány."
+
+#~ msgid "Sort and Filter"
+#~ msgstr "Seřadit a filtrovat"
+
+#~ msgid "Navigation"
+#~ msgstr "Navigace"
+
+#~ msgid "On"
+#~ msgstr "Na"
+
+#~ msgid "Later than"
+#~ msgstr "Později než"
+
+#~ msgid "Earlier than"
+#~ msgstr "Dříve než"
+
+#~ msgid "Name / Description"
+#~ msgstr "Název / Popis"
+
+#~ msgid "Pick"
+#~ msgstr "Výběr"
+
+#, qt-format
+#~ msgid "Already used %1? <b>Skip the tutorial</b>"
+#~ msgstr "Už jste používal %1? <b>Přeskočit tutoriál</b>"
+
+#~ msgid "© Talaan Version "
+#~ msgstr "© Verze Talaanu "
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid "Create New List"
+#~ msgstr "Vytvořit nový seznam"
+
+#~ msgid "Edit List - "
+#~ msgstr "Editovat seznam - "
+
+#~ msgid "Create New Saved List"
+#~ msgstr "Vytvožit nový uložený seznam"
+
+#~ msgid "Checklist"
+#~ msgstr "Zaškrtávací seznam"
+
+#~ msgid "Continual"
+#~ msgstr "Nepřetržitý"
+
+#~ msgid "List Title:"
+#~ msgstr "Název seznamu:"
+
+#~ msgid "List successfully updated"
+#~ msgstr "Seznam úspěšně aktualizován"
+
+#~ msgid "List successfully created"
+#~ msgstr "Seznam úspěšně vytvořen"
+
+#~ msgid "No List Created Yet"
+#~ msgstr "Žádný seznam zatím nebyl vytvořen"
+
+#~ msgid "Favorite a list by using the 'starred' action"
+#~ msgstr "Seznam"
+
+#~ msgid "Tap/Click the '+' button to add a List"
+#~ msgstr "Stiskněte  '+' tlačítko pro přidání seznamu"
+
+#~ msgid "Swipe from the dome at the bottom edge to add a List"
+#~ msgstr "Pro přidání seznamu přejeďte prstem zdola"
+
+#~ msgid "Searching History"
+#~ msgstr "Hledám historii"
+
+#~ msgid "Search History"
+#~ msgstr "Hledat historii"
+
+#~ msgid "History is empty"
+#~ msgstr "Historie je prázdná"
+
+#~ msgid "Completed checklists from your Favorites are listed here"
+#~ msgstr ""
+#~ "Seznam dokončených zaškrtávacích seznamů z vašich oblíbených položek je "
+#~ "zde"
+
+#~ msgid "Loading History"
+#~ msgstr "Načítám historii"
+
+#~ msgid "Find"
+#~ msgstr "Hledat"
+
+#~ msgid "A-Z"
+#~ msgstr "A-Z"
+
+#~ msgid "Z-A"
+#~ msgstr "Z-A"
+
+#~ msgid "Remaining"
+#~ msgstr "Připomenutí"
+
+#~ msgid "No matching item found"
+#~ msgstr "Nebyla nalezena žádná odpovídající položka"
+
+#~ msgid "No remaining item"
+#~ msgstr "Žádná zbývající položka"
+
+#~ msgid ""
+#~ "Please try a different query or try removing the filter if there's any"
+#~ msgstr "Zkuste prosím jiný dotaz nebo zkuste odebrat filtr, pokud existuje"
+
+#~ msgid "Click the '+' button to add more items (Ctrl + L)"
+#~ msgstr "Stiskněte '+' tlačítko pro přidání dalších položek (Ctrl + L)"
+
+#~ msgid "Swipe from the bottom to add more items"
+#~ msgstr "Pro přidání dalších položek, přejeďte prstem zdola"
+
+#~ msgid "Click the '+' button to add items (Ctrl + L)"
+#~ msgstr "Stiskněte '+' tlačítko pro přidání položek (Ctrl + L)"
+
+#~ msgid "Swipe from the bottom to add items"
+#~ msgstr "Pro přidání položek přejeďte prstem zdola"
+
+#~ msgid "Undo last item"
+#~ msgstr "Vrátit poslední položku"
+
+#~ msgid "No Category Exists"
+#~ msgstr "Neexistuje žádná kategorie"
+
+#~ msgid "Tap/Click the '+' button to add categories"
+#~ msgstr "Stiskněte '+' tlačítko pro přidání kategorie"
+
+#~ msgid "Swipe from the bottom to add categories"
+#~ msgstr "Pro přidání kategorie přejeďte prstem zdola"
+
+#~ msgid "Reminders"
+#~ msgstr "Připomenutí"
+
+#~ msgid "Targets"
+#~ msgstr "Cíle"
+
+#~ msgid "No reminders for any list"
+#~ msgstr "Žádné připomínky k žádnému seznamu"
+
+#~ msgid "No reminders for this list"
+#~ msgstr "Žádné připomínky k tomuto seznamu"
+
+#~ msgid "Open a list to set reminders"
+#~ msgstr "Otevřete seznam pro nastavení připomenutí"
+
+#~ msgid "Tap/Click the '+' button to add Reminders"
+#~ msgstr "Stiskněte '+' tlačítko pro přidání připomenutí"
+
+#~ msgid "Searching Saved Lists"
+#~ msgstr "Hledání uložených seznamů"
+
+#~ msgid "Save a list from the Lists Tab"
+#~ msgstr "Uložte seznam na kartě Seznamy"
+
+#~ msgid "Loading Saved Lists"
+#~ msgstr "Načítání uložených seznamů"
+
+#~ msgid "Interface"
+#~ msgstr "Rozhraní"
+
+#~ msgid "Hide completed items"
+#~ msgstr "Skrýt dokončené položky"
+
+#~ msgid "When opening lists"
+#~ msgstr "Při otevírání seznamů"
+
+#~ msgid "Show category colors"
+#~ msgstr "Zobrazit barvy kategorií"
+
+#~ msgid "Category color assignment"
+#~ msgstr "Přiřazení barev kategorií"
+
+#~ msgid "Ambiance"
+#~ msgstr "Ambiance"
+
+#~ msgid "Accessibility"
+#~ msgstr "Přístupnost"
+
+#~ msgid "Radial"
+#~ msgstr "Radiální"
+
+#~ msgid "Autohide"
+#~ msgstr "Automatické skrývání"
+
+#~ msgid "Semihide"
+#~ msgstr "Polo skrývání"
+
+#~ msgid "Always Displayed"
+#~ msgstr "Vždy zobrazeno"
+
+#~ msgid "For list items"
+#~ msgstr "Pro položky seznamu"
+
+#~ msgid "Toggle list items via surface"
+#~ msgstr "Přepínání položek seznamu podle roviny"
+
+#~ msgid "Only the checkbox is clickable if disabled"
+#~ msgstr "Je-li zakázáno, lze kliknout pouze na zaškrtávací políčko"
+
+#~ msgid "Manage Categories"
+#~ msgstr "Spravovat kategorie"
+
+#~ msgid "Add, edit, and delete categories"
+#~ msgstr "Přidat, upravit a odstranit kategorie"
+
+#~ msgid "Credits, report bugs, view source code, contact developer, donate"
+#~ msgstr ""
+#~ "Zásluhy, hlášení chyb, zobrazení zdrojového kódu, kontakt na vývojářeů, "
+#~ "darování"
+
+#~ msgid "Unpin window"
+#~ msgstr "Uvolnit okno"
+
+#~ msgid "Pin Window"
+#~ msgstr "Připíchnout okno"
+
+#~ msgid "Overdue"
+#~ msgstr "Zpožděné"
+
+#~ msgid "You have no overdue targets"
+#~ msgstr "Nemáte žádné propadlé cíle"
+
+#~ msgid "All your upcoming targets will be listed here"
+#~ msgstr "Zde budou uvedeny všechny vaše nadcházející cíle"
+
+#~ msgid "All your overdue targets will be listed here"
+#~ msgstr "Zde budou uvedeny všechny vaše zpožděné cíle"
+
+#~ msgid "Silent Reminder"
+#~ msgstr "Tiché připomenutí"
+
+#~ msgid "Checklist Name"
+#~ msgstr "Jméno seznamu"
+
+#~ msgid "Target Date?"
+#~ msgstr "Cílové datum?"
+
+#~ msgid "Do you want to include the list item comments?"
+#~ msgstr "Chcete zahrnout komentáře položky v seznamu?"
+
+#~ msgid "No"
+#~ msgstr "Ne"
+
+#~ msgid "Yes"
+#~ msgstr "Ano"
+
+#~ msgid "By Name (A-Z)"
+#~ msgstr "Podle jména (A-Z)"
+
+#~ msgid "By Category (A-Z)"
+#~ msgstr "Podle kategorie (A-Z)"
+
+#~ msgid "By Creation Date (Latest First)"
+#~ msgstr "Podle času vytvoření (Poslední první)"
+
+#~ msgid "By Target Date (Latest First)"
+#~ msgstr "Podle cílového data (Poslední první)"
+
+#~ msgid "By Completion Date (Latest First)"
+#~ msgstr "Podle data dokončení (Poslední první)"
+
+#~ msgid "Normal Lists Only"
+#~ msgstr "Pouze normální seznam"
+
+#~ msgid "Checklists Only"
+#~ msgstr "Pouze zaškrtávací zeznam"
+
+#~ msgid "Reverse Order"
+#~ msgstr "Obrátit výsledky"
 
 #~ msgid "Donate"
 #~ msgstr "Podpořit darem"
